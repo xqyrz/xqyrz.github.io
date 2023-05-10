@@ -13,7 +13,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>电路分析基础(上册 - 第二篇) | MyBlog</title>
+  <title>考研数二_线代 | MyBlog</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -318,12 +318,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -489,12 +489,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -632,21 +632,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://gitee.com/xqyr/img/raw/img/20220927201659.png')">
+  background-position: center center;position: relative;background-image:url('/medias/2.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        电路分析基础(上册 - 第二篇)
+        考研数二_线代
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2023-02-02 |
+          <i class="fas fa-calendar"></i> 发表于：2023-05-08 |
         </span>
       
 
@@ -670,96 +670,160 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="电路分析基础-上册"><a href="#电路分析基础-上册" class="headerlink" title="电路分析基础(上册 )"></a>电路分析基础(上册 )</h1><h2 id="第二篇-动态电路的时域分析"><a href="#第二篇-动态电路的时域分析" class="headerlink" title="第二篇    动态电路的时域分析"></a>第二篇    动态电路的时域分析</h2><span id="more"></span>
-<h3 id="第五章-电容和电感"><a href="#第五章-电容和电感" class="headerlink" title="第五章 电容和电感"></a>第五章 电容和电感</h3><h4 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h4><ul>
-<li>电容公式</li>
-</ul>
+        <h2 id><a href="#" class="headerlink" title=" "></a> </h2><h1 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h1><h2 id="求线性方程组的解"><a href="#求线性方程组的解" class="headerlink" title="求线性方程组的解"></a>求线性方程组的解</h2><h3 id="齐次方程组的通解"><a href="#齐次方程组的通解" class="headerlink" title="齐次方程组的通解"></a>齐次方程组的通解</h3><p>形式$Ax=0;$</p>
 <script type="math/tex; mode=display">
-\ q(t) = C\ u(t) \ 
-\ i(t) = \frac {dq}{dt} \\\
-则\quad i(t) = -C\frac {du}{dt}</script><ul>
-<li><p>电容电压的连续性和记忆性质</p>
-<p>​    连续性       $u<em>c(t</em>-)=u<em>c(t</em>+)$</p>
+\left\{\begin{aligned}
+&有唯一解(零解):&r(A)=n;\\
+&有非零解:&r(A)<n;\\
+\end{aligned}\right.</script><p>基础解系$\xi_1,\xi_2,\cdot\cdot ,\xi_s\ 的s=n-r(A)$ ;</p>
+<p>方法:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&①\ A\stackrel{初等行变换}{\longrightarrow}梯形矩阵B(或最简阶梯形矩阵B)\ ; \\
+&②\ 按列找出一个秩为r的子矩阵，则剩余列位置的未知数即设为自由变量(个数S=n-r)\ ;\\
+&③\ 按基础解系定义求出\xi_1,\xi_2,\cdot\cdot\cdot,\xi_s并写出通解;
+\end{aligned}</script><h3 id="非齐次方程组的通解"><a href="#非齐次方程组的通解" class="headerlink" title="非齐次方程组的通解"></a>非齐次方程组的通解</h3><p>形式$Ax=b$ ;</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+r(A)\neq r(A,b),方程无解\\
+r(A)=r(A,b)\begin{cases} 
+\ =n:有唯一解\\
+\ <n:无穷解
+\end{cases}
+\end{cases}</script><p>求解步骤</p>
+<script type="math/tex; mode=display">
+\begin{aligned}&①求Ax=0的通解,k_1\xi_1+k_2\xi_2+\cdot\cdot\cdot+k_{n-r}\xi_{n-r}\\
+&②求Ax=b\ 的一个特解\eta\\
+&③则通解为k_1\xi_1+k_2\xi_2+\cdot\cdot\cdot+k_{n-r}\xi_{n-r}+\eta\end{aligned}</script><h1 id="归纳总结"><a href="#归纳总结" class="headerlink" title="归纳总结"></a>归纳总结</h1><ul>
+<li><p>若矩阵A的行列式$|A|\neq 0$ 向量<strong>线性无关</strong>$\Rightarrow$若$|A|=0$,则r(A)&lt;n;</p>
 </li>
+<li><script type="math/tex; mode=display">
+r(A^*)=\begin{cases}
+n:则r(A)=n\\
+1:则r(A)=n-1\\
+0:则r(A)<n-1\\\end{cases}</script></li>
+<li></li>
 </ul>
-<p>​        储能        $w_c(t)=\frac 12Cu^2(t)$</p>
+<h3 id="几种重要矩阵"><a href="#几种重要矩阵" class="headerlink" title="几种重要矩阵"></a>几种重要矩阵</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">矩阵</th>
+<th style="text-align:center">表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1. 数量矩阵</td>
+<td style="text-align:center">数k和单位矩阵的乘积称为数量矩阵:$kE$</td>
+</tr>
+<tr>
+<td style="text-align:center">2. 对角矩阵</td>
+<td style="text-align:center">非主对角元素<strong>均为零</strong>的矩阵称为对角矩阵</td>
+</tr>
+<tr>
+<td style="text-align:center">3. 对称矩阵</td>
+<td style="text-align:center">满足条件$A^T=A$的矩阵A称为对称矩阵，$A^T=A\Leftrightarrow a<em>{ji}=a</em>{ij}$</td>
+</tr>
+<tr>
+<td style="text-align:center">4. 正交矩阵</td>
+<td style="text-align:center">设A是n阶方阵，满足$A^TA=E$,则称A是<a href="#zjjz">正交矩阵</a></td>
+</tr>
+<tr>
+<td style="text-align:center">5.分块矩阵</td>
+<td style="text-align:center">…..</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
 <ul>
-<li>，正是电容的储能本质使电容电压具有记忆性质；正是电容电流在有界的条件下储能不能跃变使电容电容其有连续性质</li>
+<li>若A矩阵不可逆,$|A|= 0$</li>
+<li></li>
 </ul>
-<h4 id="电感"><a href="#电感" class="headerlink" title="电感"></a>电感</h4><ul>
-<li><p>电阻是有电压就一定有电流；电容是电压变化才有电流；电感则是电流变化才有电压</p>
-<script type="math/tex; mode=display">
-  \ u = \frac {d\psi}{dt} \ \quad \overrightarrow \ \quad u=\frac {dLi}{dt}=L \frac {di}{dt}</script></li>
-<li><p>对偶性</p>
+<h4 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a><a id="zjjz">正交矩阵</a></h4><p>A是正交矩阵$A^TA=E\Leftrightarrow A^T=A^{-1}\Leftrightarrow A$的<strong>行（列）向量组是标准正交向量组</strong>.</p>
+<p>​    既A是由两两正交的<strong>单位向量组</strong>（称为规范正交基）组成.</p>
+<p>​    $A^T,A^{−1},A^∗$均为正交矩阵；</p>
+<p>​    A的特征值只能为$\pm1$</p>
+<h2 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h2><h3 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h3><ul>
+<li><p>$r(A+B)\leq r([A,B])\leq r(A)+r(B)$</p>
+</li>
+<li><p>$r(AB)\leq min(r(A),r(B))$</p>
 </li>
 </ul>
-<p>​    连续性       $i<em>L(t</em>-) = i<em>L(t</em>+)$</p>
-<p>​    储能        $w_L(t)=\frac 12Li^2(t)$</p>
-<h3 id="第六章-一阶电路"><a href="#第六章-一阶电路" class="headerlink" title="第六章 一阶电路"></a>第六章 一阶电路</h3><ul>
-<li><p>含源电阻网络部分N,用戴维南定理或诺顿定理化简后，电路将如图</p>
-<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927201659.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927201659.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-</li>
-</ul>
-<script type="math/tex; mode=display">
-电压角度:\ L \frac{di_{t}(t)}{dt}+R_{o}i_{L}(t)=u_{oc}(t)</script><script type="math/tex; mode=display">
-则电感角度\quad G_{0}L \frac{di_{t}(t)}{dt}+i_{L}(t)=i_{sc}(t)</script><h4 id="零状态响应"><a href="#零状态响应" class="headerlink" title="零状态响应"></a>零状态响应</h4><p>零状态响应 $y<em>{zx}(t)$,是电路的<strong>初始储能（或称内部激励）为零</strong>，即${x_k(0)|</em>{k=1,2,..,n}=0}$,仅由<strong>施加于电路的激励</strong>${f<em>i(t)|</em>{i=1,2,..,m}}$所引起的响应。</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20220927202936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927202936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="RC串联等效电路"></p>
+<p>​    特征值的性质</p>
 <ul>
-<li><p>在$t≥ t_o$时，我们把在零初始状态下，仅由电路的输入所引起的响应称为<strong>零状态响应</strong>；把在零输入情况下，仅由非零初始状态所引起的响应称为<strong>零输入响应</strong>。</p>
-<h5 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h5></li>
+<li><script type="math/tex; mode=display">
+\begin{cases}
+①\sum_{i=1}^{n}\lambda _{i}= \sum _{i=1}^{n}a_{ii}=tr(A);\\
+②\prod _ { i = 1 } ^ { n } \lambda_ { i } = | A |
+\end{cases}</script></li>
 </ul>
-<h5 id><a href="#" class="headerlink" title></a><img src="https://gitee.com/xqyr/img/raw/img/20220927204419.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927204419.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="应用"></h5><script type="math/tex; mode=display">
-t≥ t_o  \quad          RC \frac{du_{c}}{dt}+u_{c}=U_{s}  （初始状态\quad t=0，u_c(0_+)= u_c(0_-)）</script><script type="math/tex; mode=display">
-解得\quad u_{c}(t)=U_{s}(1-e^{- \frac{1}{RC}t})\quad t \geq 0</script><h5 id="能量"><a href="#能量" class="headerlink" title="能量"></a>能量</h5><script type="math/tex; mode=display">
-消耗能量\quad W = \frac 12CU^2_{s}\\
-电容储能 \quad W = \frac 12CU^2_{s}\\
-提供总能量    \quad W = \frac 12 CU^2_{s}</script><h5 id="电感同理"><a href="#电感同理" class="headerlink" title="电感同理"></a>电感同理</h5><script type="math/tex; mode=display">
-i_L(t)=\frac {U_S}R(1-e^{\frac 1{GL}}t)</script><h4 id="阶跃响应-冲击响应-p-197"><a href="#阶跃响应-冲击响应-p-197" class="headerlink" title="阶跃响应 冲击响应 p_197"></a>阶跃响应 冲击响应 <em>p_197</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220927211936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927211936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="延时单位阶跃函数"></p>
-<script type="math/tex; mode=display">
-\varepsilon(t-t_{0})= \left\{ \begin{matrix} 0 \quad t<t_{0}\\ 1 \quad t>t_{0}\\ \end{matrix} \right.</script><p>运用阶跃函数和延时阶跃函数，分段常量信号可表示为<strong>一系列阶跃信号之和</strong>。例如，所示脉冲信号可分解为<strong>两个阶跃信号之和</strong>，<strong>其一是在t=0时作用的正单位阶跃信号</strong>，<strong>另一是在t=$t_0$,时作用的负单位延时阶跃信号</strong>。分段常量信号作用下的一阶电路分析问题，在将这类信号分解为阶跃信号后，即可按直流一阶电路处理，<strong>运用叠加性可求得其零状态响应</strong>。</p>
-<p>列题6-5 <em>p199</em></p>
-<p> <img src="https://gitee.com/xqyr/img/raw/img/20220927214231.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214231.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927215523.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927215523.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"><br><img src="https://gitee.com/xqyr/img/raw/img/20220927214318.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214318.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927214401.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214401.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"></p>
-<script type="math/tex; mode=display">
-\begin{matrix}
-u(t)=A \varepsilon(t)-A \varepsilon(t-t_{0}) \\\\
-A\varepsilon(t)作用下的零状态响应 
- \quad i^{\prime}(t)= \frac{A}{R}(1-e^{- \frac{t}{\tau}})\varepsilon(t)=A(1-e^{-t})\varepsilon(t) \\ 
- 解答式中的因子A\varepsilon(t)表明该式实际上仅适用于\ t≥0,式中\tau = \frac LR = 1s \\\\
- -A\varepsilon(t-t_0)作用下的零状态响应为\quad i^{\prime\prime}(t)=- \frac{A}{R}(1-e^{- \frac{k-t_{0}}{\tau}})\varepsilon(t-t_{0})=-A(1-e^{- \frac{t-t_{0}}{\tau}})\in(t-t_{0})\\\\
- 两者叠加\quad i(t) = i^\prime(t) + i^{\prime\prime}(t)=A(1-e^{-t})\varepsilon(t)-A [ 1-e^{-(t-t_{0})}]\varepsilon(t-t_{0})
- \end{matrix}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20220927223919.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927223919.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-<h4 id="零输入响应-p-203"><a href="#零输入响应-p-203" class="headerlink" title="零输入响应 p_203"></a>零输入响应 <em>p_203</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220929170359.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220929170359.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="p_186"></p>
-<p><strong>零输入响应$y_{zi}(t)$</strong>,是<strong>外加激励均为零</strong>时(即${ f<em>i(t)|</em>{i=1,2,..,m}=0}$)，仅由电路的<strong>初始储能</strong>{${ x<em>k(0)|</em>{k=1,2,..,n}}$}(或称<strong>内部激励</strong>）引起的响应；</p>
-<p>可以用<strong>$u_c$</strong>来表示电容电压的零输入响应。</p>
-<p>需要特别注意之处是：在图6一3(b)所示电容等效电路中，<strong>电容C的初始电压设为零</strong>，实际存在的初始<em>a b两端</em>电压$u_c(t_0)$是<strong>以电压源的形式</strong>与之串联的</p>
-<script type="math/tex; mode=display">
-u_c(t) = u_1(t)+u_c(t_0)</script><p>$u_1(t)$只存在于等效电路中，然而在图6-3(b)中它却是独立电压源$u_c(0)$作用下的<strong>零状态响应</strong> .</p>
-<script type="math/tex; mode=display">
-u _ { 1 } ( t ) = - u _ { c } ( 0 ) ( 1 - e ^ { - \frac { 1 } { \tau} } ) \quad t \geq 0</script><p>则<strong>零输入响应</strong></p>
-<script type="math/tex; mode=display">
-\begin
-{align}u_{c}(t)
-&=u_{1}(t)+u_{c}(0)\\ 
-&=-u_{c}(0)(1-e^{- \frac{t}{\tau}})+u_{c}(0)\\ 
-&=u_{c}(0)e^{- \frac{t}{\tau}}\quad t \geq 0\\\\
-一阶电感电路零输入响应为:\\ 
-i_L(t)&=I_0e^{-\frac t \tau}\quad t \geq 0\end{align}</script><p>从物理意义上看，零输入响应是依靠动态元件的<strong>初始储能</strong>进行的，当电路中存在着耗能元件R时，有限的初始储能终将被消耗殆尽，<strong>零输入响应终将为零</strong>。</p>
-<h4 id="线性动态电路的叠加原理-p-210"><a href="#线性动态电路的叠加原理-p-210" class="headerlink" title="线性动态电路的叠加原理 p_210"></a>线性动态电路的叠加原理 <em>p_210</em></h4><p>综上所述，线性一阶电路的叠加原理包含下述内容：若初始时刻为t=0,则对所有t≥0的时刻，我们有：</p>
+<p>特征向量的性质</p>
+<ul>
+<li><strong>(1)k重特征值$\lambda$至多只有k个线性无关的特征向量</strong>（<strong>直接使用，不用证明</strong>）;</li>
+<li>(2)若$\xi_1,\xi_2$是A的属于不同特征值$\lambda_1,\lambda_2$的特征向量，<strong>则$\xi_1,\xi_2$线性无关</strong>;</li>
+<li>(3)若$\xi_1,\xi_2$是A的属于同一特征值入的特征向量，则$k_1\xi_1+k_2\xi_2$($k_1,k_2$不同时为零的任意常数)仍是A的属于特征值$\lambda$的特征向量;</li>
+</ul>
+<p>相似矩阵的性质$A\sim B$</p>
 <ol>
-<li>全响应=零状态响应+零输入响应：</li>
-<li>零状态<em>响应线性</em>；</li>
-<li>零输人<em>响应线性</em>。</li>
+<li><p>$r(A)=r(B)$;</p>
+</li>
+<li><p>$|A|=|B|$;</p>
+</li>
+<li><p>$|\lambda E-A|=|\lambda E-B|$;</p>
+</li>
+<li><p>$\lambda<em>{Ai}=\lambda</em>{Bi}$</p>
+<h2 id="相似对角化总结"><a href="#相似对角化总结" class="headerlink" title="相似对角化总结"></a>相似对角化总结</h2><ol>
+<li><p>由定义,若$B=P^{-1}AP$(P可逆),则$B\sim A$</p>
+</li>
+<li><p>在众多P中若存在一个<a href="#XSDJHFF">P($P=Q$)</a>使得$P^{-1}AP=  \Lambda$则可相似对角化</p>
+<p>​    何时存在这样的一个P<a href="#xsdjhtj">(可相似对角化的条件)</a></p>
+</li>
 </ol>
-<p>列题6-13</p>
-<h4 id="三要素法-视察法"><a href="#三要素法-视察法" class="headerlink" title="三要素法(视察法)"></a>三要素法(视察法)</h4><p>y(t)可以代表电路中的<strong>任一电压或电流</strong>；<br>y($0_+$)表示该电压或电流的初始值；<br>y(∞)表示该电压或电流的稳态值；<br>$\tau$表示电路的时间常数。$\tau=LG$</p>
-<p>关系:</p>
+</li>
+</ol>
+<h2 id="相似对角化-方法"><a href="#相似对角化-方法" class="headerlink" title="相似对角化-方法"></a><a id="XSDJHFF">相似对角化-方法</a></h2><p>设n阶矩阵A,若存在n阶可逆矩阵P,使得$P^{-1}AP=\Lambda$,其中$\Lambda$是对角矩阵，则称A可相似对角化，记$A\sim \Lambda$,称$\Lambda$是A的相似标准形 。(其中:可逆矩阵P的列向量应为<strong>A的线性无关的特征向量</strong>)</p>
+<p>若A为实对称矩阵，则其用正交短阵Q相似对角化的基本步骤如下:</p>
+<p>​    (1) 求A得特征值$\lambda_1,\lambda_2,\cdot\cdot\cdot,\lambda_n:|\lambda E-A|$</p>
+<p>​    (2)求对应得特征向量$\xi_1,\xi_2,\cdot\cdot,\xi_n$</p>
+<p>​    (3)正交化$\xi_1,\xi_2,\cdot\cdot,\xi_n$,再单位化得到$\eta_1,\eta_2,\cdot\cdot\cdot,\eta_n$(<a href="#zjgfh">正交规范化</a>)</p>
+<p>​    (4)令$Q={\eta_1,\eta_2,\cdot\cdot\cdot,\eta_n}$则Q为正交矩阵,且$Q^{-1}AQ=Q^TAQ=\Lambda$</p>
+<h2 id="相似对角化-判别"><a href="#相似对角化-判别" class="headerlink" title="相似对角化-判别"></a><a id="xsdjhtj">相似对角化-判别</a></h2><p>第一步，看是不是实<strong>对称矩阵</strong>，如果是实对称矩阵，立即推可相似对角化，如果不是实对称矩阵，看第二步；</p>
+<p>第二步，求方阵的n个特征值，如果<strong>特征值彼此都不相同</strong>，也就是都是单根的话，立即推可相似对角化，如果有重根，看第三步；</p>
+<p>第三步，来验证k重根是不是<strong>具备k个线性无关的特征向量</strong>，也就是看A-λE或λE-A的秩是否等于n-k，若相等，立即推可相似对角化，不相等，则不能进行相似对角化</p>
+<h2 id="正交规范化"><a href="#正交规范化" class="headerlink" title="正交规范化"></a><a id="zjgfh">正交规范化</a></h2><p>线性无关向量组$a_1,a_2$的标准正交化（又称正交规范化）公式为</p>
 <script type="math/tex; mode=display">
-y(t)=y(\infty)+ \left[ y(0_{+})-y(\infty)\right] e^{- \frac{t}{\tau}}\\
-或y(\infty)-y(t)=\left[y(\infty) -y(0_{+})\right] e^{- \frac{t}{\tau}}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20221003152638.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221003152638.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="波形图"></p>
-<h4 id="稳态和瞬态"><a href="#稳态和瞬态" class="headerlink" title="稳态和瞬态"></a>稳态和瞬态</h4><p>当描述动态电路的变量或为<strong>不随时间而变</strong>的常量，或为<strong>随时间而变的周期量</strong>时，我们称此电路进入了<strong>稳定状态</strong>。电路不处于稳态即处于<strong>瞬态(</strong>暂态、瞬变)或非稳态(unsteady state)。</p>
-<h4 id="正弦激励的过度过程和稳态-p-227"><a href="#正弦激励的过度过程和稳态-p-227" class="headerlink" title="正弦激励的过度过程和稳态 p_227"></a>正弦激励的过度过程和稳态 <em>p_227</em></h4><p>随时间按正弦规律变化的电压和电流称为正弦交流电压和电流，它们都属正弦波。正弦波是周期波形的基本形式 。</p>
-<script type="math/tex; mode=display">
-u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七章-二阶电路"><a href="#第七章-二阶电路" class="headerlink" title="第七章 二阶电路"></a>第七章 二阶电路</h3><h4 id="LC电路中的正弦震荡"><a href="#LC电路中的正弦震荡" class="headerlink" title="LC电路中的正弦震荡"></a>LC电路中的正弦震荡</h4><h4 id="RLC串联电路的零输入响应"><a href="#RLC串联电路的零输入响应" class="headerlink" title="RLC串联电路的零输入响应"></a>RLC串联电路的零输入响应</h4><h4 id="RLC串联电路的全响应"><a href="#RLC串联电路的全响应" class="headerlink" title="RLC串联电路的全响应"></a>RLC串联电路的全响应</h4><h4 id="GCL并联电路分析"><a href="#GCL并联电路分析" class="headerlink" title="GCL并联电路分析"></a>GCL并联电路分析</h4>
+\begin{flalign}
+①找垂&直向量:\\
+&\beta_1=a_1\\
+&\beta_2=a_2-\frac {(a_1,\beta_1)}{(a_2,\beta_2)}\\
+②单位&化\beta_1,\beta_2:\\
+&\eta_1=\frac {\beta_1}{||\beta_1||};\eta_2=\frac {\beta_2}{||\beta_2||};\\
+得到标&准正交向量\eta_1,\eta_2;
+\end{flalign}</script><h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><script type="math/tex; mode=display">
+\begin{aligned}
+f(x)=x^TAx;\stackrel {可逆线性变换x=cy}\Rightarrow y^T(C^TAC)y\\
+则B=C^TAC和A合同
+\end{aligned}</script><ul>
+<li>正惯性指数: 将二次型<strong>可逆线性变换</strong>化成规范型或标准型,正项个数为p,负项个数q 。则p为正惯性指数.</li>
+<li>其中正项个数和特征值正数个数对应</li>
+<li>可逆变换矩阵合同<ul>
+<li>矩阵合同正负惯性个数相同(特征值正负数个数相同)</li>
+</ul>
+</li>
+<li>正交变换矩阵相似($A\stackrel{正交变换}\Rightarrow Q^{-1}AQ$)<ul>
+<li>任何二次型都可以通过正交变换化成<strong>标准型</strong></li>
+<li>任何二次型都可以通过<strong>配方法(可逆线性变换)</strong>化成<strong>标准型和规范型</strong><ul>
+<li>X可以通过可逆变换P成各种Y,Q,W….但是所有的都可以通过<strong>标准型</strong>作为桥梁</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
       </div>
       <div class="post-tags-categories">
         
@@ -769,8 +833,12 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
               考研
             </a>
           
-            <a href="/tags/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" class="">
-              电路分析
+            <a href="/tags/%E6%95%B0%E5%AD%A6/" class="">
+              数学
+            </a>
+          
+            <a href="/tags/%E7%BA%BF%E4%BB%A3/" class="">
+              线代
             </a>
           
         </div>
@@ -784,7 +852,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2023020212059/" target="_blank" title="电路分析基础(上册 - 第二篇)">http://example.com/2023020212059/</a>
+    <a href="/2023050835597/" target="_blank" title="考研数二_线代">http://example.com/2023050835597/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -806,20 +874,18 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2023020223943/" class="post-nav-link">
+    <a href="/2023050848903/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">电路分析基础(下册 - 第三篇)</div>
+        <div class="title-text">考研数二_高数</div>
       </div>
       
       <!-- <div class="content">
-        第三篇    动态电路的相量分析法和$S$域分析法
-第八章 阻抗和导纳复数
-
-\begin{aligned}
-&A=a\
+        公式基本求导公式
+\begin{align}
+(tan\ x)'&=sec^2x;&(cot\ x)'         
       </div> -->
     </a>
   </div>
@@ -830,16 +896,16 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/master/typora-icon.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/master/typora-icon.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2023020246583/" class="post-nav-link">
+    <a href="/2023050858877/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">typora的使用</div>
+        <div class="title-text">电路分析基础.(上册 - 第一篇)</div>
       </div>
       <!-- <div class="content">
-        typora的使用MD语法总结
-快捷键12345678910111213141516171819无序列表：- + 空格有
+        第一篇    电阻电路的分析第一章电压，电流约束关系方向 P_8
+元件电流参考方向和电压方向常关联。电流方向也就是电压参
       </div> -->
     </a>
   </div>
@@ -977,7 +1043,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80-%E4%B8%8A%E5%86%8C"><span class="toc-text">电路分析基础(上册 )</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%8A%A8%E6%80%81%E7%94%B5%E8%B7%AF%E7%9A%84%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90"><span class="toc-text">第二篇    动态电路的时域分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%94%B5%E5%AE%B9%E5%92%8C%E7%94%B5%E6%84%9F"><span class="toc-text">第五章 电容和电感</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B5%E5%AE%B9"><span class="toc-text">电容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B5%E6%84%9F"><span class="toc-text">电感</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E4%B8%80%E9%98%B6%E7%94%B5%E8%B7%AF"><span class="toc-text">第六章 一阶电路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94"><span class="toc-text">零状态响应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-text">应用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%BD%E9%87%8F"><span class="toc-text">能量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%B5%E6%84%9F%E5%90%8C%E7%90%86"><span class="toc-text">电感同理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%B6%E8%B7%83%E5%93%8D%E5%BA%94-%E5%86%B2%E5%87%BB%E5%93%8D%E5%BA%94-p-197"><span class="toc-text">阶跃响应 冲击响应 p_197</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94-p-203"><span class="toc-text">零输入响应 p_203</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E7%94%B5%E8%B7%AF%E7%9A%84%E5%8F%A0%E5%8A%A0%E5%8E%9F%E7%90%86-p-210"><span class="toc-text">线性动态电路的叠加原理 p_210</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E8%A6%81%E7%B4%A0%E6%B3%95-%E8%A7%86%E5%AF%9F%E6%B3%95"><span class="toc-text">三要素法(视察法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A8%B3%E6%80%81%E5%92%8C%E7%9E%AC%E6%80%81"><span class="toc-text">稳态和瞬态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%BC%A6%E6%BF%80%E5%8A%B1%E7%9A%84%E8%BF%87%E5%BA%A6%E8%BF%87%E7%A8%8B%E5%92%8C%E7%A8%B3%E6%80%81-p-227"><span class="toc-text">正弦激励的过度过程和稳态 p_227</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E4%BA%8C%E9%98%B6%E7%94%B5%E8%B7%AF"><span class="toc-text">第七章 二阶电路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#LC%E7%94%B5%E8%B7%AF%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%BC%A6%E9%9C%87%E8%8D%A1"><span class="toc-text">LC电路中的正弦震荡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E7%9A%84%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94"><span class="toc-text">RLC串联电路的零输入响应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E7%9A%84%E5%85%A8%E5%93%8D%E5%BA%94"><span class="toc-text">RLC串联电路的全响应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GCL%E5%B9%B6%E8%81%94%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90"><span class="toc-text">GCL并联电路分析</span></a></li></ol></li></ol></li></ol></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A2%98%E5%9E%8B%E8%A7%A3%E6%B3%95"><span class="toc-text">题型解法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%82%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E8%A7%A3"><span class="toc-text">求线性方程组的解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E9%80%9A%E8%A7%A3"><span class="toc-text">齐次方程组的通解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E9%BD%90%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E9%80%9A%E8%A7%A3"><span class="toc-text">非齐次方程组的通解</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BD%92%E7%BA%B3%E6%80%BB%E7%BB%93"><span class="toc-text">归纳总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E9%87%8D%E8%A6%81%E7%9F%A9%E9%98%B5"><span class="toc-text">几种重要矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E4%BA%A4%E7%9F%A9%E9%98%B5"><span class="toc-text">正交矩阵</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E5%BE%81%E5%80%BC%E4%B8%8E%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F"><span class="toc-text">特征值与特征向量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%A9"><span class="toc-text">秩</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E4%BC%BC%E5%AF%B9%E8%A7%92%E5%8C%96%E6%80%BB%E7%BB%93"><span class="toc-text">相似对角化总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E4%BC%BC%E5%AF%B9%E8%A7%92%E5%8C%96-%E6%96%B9%E6%B3%95"><span class="toc-text">相似对角化-方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E4%BC%BC%E5%AF%B9%E8%A7%92%E5%8C%96-%E5%88%A4%E5%88%AB"><span class="toc-text">相似对角化-判别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E4%BA%A4%E8%A7%84%E8%8C%83%E5%8C%96"><span class="toc-text">正交规范化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E6%AC%A1%E5%9E%8B"><span class="toc-text">二次型</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -1010,7 +1076,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             
 
             <div class="post-img-box">
-              <a href="/2023020225119/" class="post-img " style="background-size: cover; 
+              <a href="/2023050825119/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -1018,10 +1084,10 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020225119/">智能小车</a>
+              <a class="post-title" href="/2023050825119/">智能小车</a>
             </div>
           </div>
         
@@ -1031,7 +1097,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             
 
             <div class="post-img-box">
-              <a href="/2023020248903/" class="post-img " style="background-size: cover; 
+              <a href="/2023050848903/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -1039,10 +1105,10 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020248903/">考研数二_高数</a>
+              <a class="post-title" href="/2023050848903/">考研数二_高数</a>
             </div>
           </div>
         
@@ -1052,7 +1118,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             
 
             <div class="post-img-box">
-              <a href="/2023020235597/" class="post-img " style="background-size: cover; 
+              <a href="/2023050835597/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -1060,10 +1126,10 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020235597/">考研数二_线代</a>
+              <a class="post-title" href="/2023050835597/">考研数二_线代</a>
             </div>
           </div>
         
@@ -1073,7 +1139,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             
 
             <div class="post-img-box">
-              <a href="/2023020258877/" class="post-img " style="background-size: cover; 
+              <a href="/2023050858877/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -1081,10 +1147,10 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020258877/">电路分析基础.(上册 - 第一篇)</a>
+              <a class="post-title" href="/2023050858877/">电路分析基础.(上册 - 第一篇)</a>
             </div>
           </div>
         
@@ -1094,7 +1160,7 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             
 
             <div class="post-img-box">
-              <a href="/2023020223943/" class="post-img " style="background-size: cover; 
+              <a href="/2023050823943/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -1102,10 +1168,10 @@ u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七�
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020223943/">电路分析基础(下册 - 第三篇)</a>
+              <a class="post-title" href="/2023050823943/">电路分析基础(下册 - 第三篇)</a>
             </div>
           </div>
         

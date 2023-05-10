@@ -13,7 +13,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>智能小车 | MyBlog</title>
+  <title>hexo 使用技巧 | MyBlog</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -318,12 +318,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -489,12 +489,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -632,21 +632,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg')">
+  background-position: center center;position: relative;background-image:url('/medias/2.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        智能小车
+        hexo 使用技巧
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2023-02-02 |
+          <i class="fas fa-calendar"></i> 发表于：2023-05-08 |
         </span>
       
 
@@ -670,24 +670,24 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <p><a href="归一化/归一化.md" title="归一化">归一化</a></p>
-<p>水平电感线圈对较远处道路状况相对比较敏感。水平方向的传感器对<strong>前方弯道非常敏感</strong>,有利于提前感知跑道的变化趋势,及早做出准确的控制策略。</p>
-<p>比列K：本文以偏差的二次幂作为比例系数来达到上述目的</p>
-<p>根据两水平电感的和值与差值可以比较容易判断小车在赛道所处的位置</p>
-<p>为提高小车平均速度，使其在较短的时间内完成预定的赛道，速度控制至关重要</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电磁_pMnL-18-H8"></p>
-<p>为了保证“小曲率弯道使用较小的Kp,大曲率弯道相应地使用较大的Kp”的原则,本文以<strong>偏差的二次幂</strong>作为比例系数来达到上述目的。</p>
+        <h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>如果卡住，就换源</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h1 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h1><h2 id="Hexo-博客插件生成短链"><a href="#Hexo-博客插件生成短链" class="headerlink" title="Hexo 博客插件生成短链"></a>Hexo 博客插件生成短链</h2><ul>
+<li><a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>修改博客根目录下的 <code>_config.yml</code> 配置文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year:month:day:abbrlink/   # 具体配置参考Hexo文档https://hexo.io/zh-cn/docs/permalinksCopy</span><br><span class="line">#添加如下的对该插件的配置项：</span><br><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc16  #support crc16(default) and crc32</span><br><span class="line">  rep: dec    #support dec(default) and hex</span><br><span class="line">  drafts: false #(true)Process draft,(false)Do not process draft</span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: false</span><br><span class="line">     depth:</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/66c8.html</span><br><span class="line"></span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/65535.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/8ddf18fb.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/1690090958.htmlCopy</span><br></pre></td></tr></table></figure>
+<h2 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h2><p>hexo的启动文件地址<strong>node_modules\hexo-server\index.js</strong> 修改port即可。</p>
+<h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1><p>免费就用github+PicGo+typora。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43367829/article/details/104882071">(18条消息) PicGo+GitHub使用_我想养只汤姆猫的博客-CSDN博客_picgo github</a></p>
 
       </div>
       <div class="post-tags-categories">
-        
-        <div class="tags">
-          
-            <a href="/tags/%E6%AF%94%E8%B5%9B%EF%BC%8C%E6%99%BA%E8%83%BD%E5%B0%8F%E8%BD%A6/" class="">
-              比赛，智能小车
-            </a>
-          
-        </div>
         
       </div>
       
@@ -698,7 +698,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2023020225119/" target="_blank" title="智能小车">http://example.com/2023020225119/</a>
+    <a href="/2023050816107/" target="_blank" title="hexo 使用技巧">http://example.com/2023050816107/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -716,23 +716,41 @@
 
 
 
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+    </div>
+    <a href="/2023050821277/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> 上一篇:
+        <div class="title-text">Liunx使用</div>
+      </div>
+      
+      <!-- <div class="content">
+        命令查询网站
+一些说明软件安装路径 ==\wsl.localhost\Ubuntu\usr\share\vim==
+常用
+      </div> -->
+    </a>
+  </div>
+
 
 
   
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2023020248903/" class="post-nav-link">
+    <a href="/2023012150326/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">考研数二_高数</div>
+        <div class="title-text">MATLAB学习</div>
       </div>
       <!-- <div class="content">
-        公式基本求导公式
-\begin{align}
-(tan\ x)'&=sec^2x;&(cot\ x)'         
+        
       </div> -->
     </a>
   </div>
@@ -870,7 +888,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!--  -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-text">安装部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E7%94%9F%E6%88%90%E7%9F%AD%E9%93%BE"><span class="toc-text">Hexo 博客插件生成短链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%AB%AF%E5%8F%A3"><span class="toc-text">修改端口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A"><span class="toc-text">图床</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -903,7 +921,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020225119/" class="post-img " style="background-size: cover; 
+              <a href="/2023050825119/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -911,10 +929,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020225119/">智能小车</a>
+              <a class="post-title" href="/2023050825119/">智能小车</a>
             </div>
           </div>
         
@@ -924,7 +942,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020248903/" class="post-img " style="background-size: cover; 
+              <a href="/2023050848903/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -932,10 +950,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020248903/">考研数二_高数</a>
+              <a class="post-title" href="/2023050848903/">考研数二_高数</a>
             </div>
           </div>
         
@@ -945,7 +963,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020235597/" class="post-img " style="background-size: cover; 
+              <a href="/2023050835597/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -953,10 +971,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020235597/">考研数二_线代</a>
+              <a class="post-title" href="/2023050835597/">考研数二_线代</a>
             </div>
           </div>
         
@@ -966,7 +984,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020258877/" class="post-img " style="background-size: cover; 
+              <a href="/2023050858877/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -974,10 +992,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020258877/">电路分析基础.(上册 - 第一篇)</a>
+              <a class="post-title" href="/2023050858877/">电路分析基础.(上册 - 第一篇)</a>
             </div>
           </div>
         
@@ -987,7 +1005,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020223943/" class="post-img " style="background-size: cover; 
+              <a href="/2023050823943/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -995,10 +1013,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020223943/">电路分析基础(下册 - 第三篇)</a>
+              <a class="post-title" href="/2023050823943/">电路分析基础(下册 - 第三篇)</a>
             </div>
           </div>
         

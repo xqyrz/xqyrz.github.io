@@ -13,6 +13,34 @@
       </tags>
   </entry>
   <entry>
+    <title>vscode相关配置</title>
+    <url>/2022092962373/</url>
+    <content><![CDATA[<p>dd</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cplusplus的知识点</title>
+    <url>/2022092931398/</url>
+    <content><![CDATA[<h1 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h1><h1 id="一些知识点"><a href="#一些知识点" class="headerlink" title="一些知识点"></a>一些知识点</h1><h2 id="在C-中子类继承和调用父类的构造函数方法"><a href="#在C-中子类继承和调用父类的构造函数方法" class="headerlink" title="在C++中子类继承和调用父类的构造函数方法"></a><a href="https://blog.csdn.net/baidu_16370559/article/details/122666094">在C++中子类继承和调用父类的构造函数方法</a></h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Base</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Base</span>(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c)</span><br><span class="line">    &#123;</span><br><span class="line">        m_a = a;</span><br><span class="line">        m_b = b;</span><br><span class="line">        m_c = c;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;父类的构造函数m_a ：&quot;</span> &lt;&lt; m_a &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="type">int</span> m_a;</span><br><span class="line">    <span class="type">int</span> m_b;</span><br><span class="line">    <span class="type">int</span> m_c;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span> : <span class="keyword">public</span> Base</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//子类继承父类构造方法</span></span><br><span class="line">    <span class="keyword">using</span> Base::Base;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//子类委托父类构造方法</span></span><br><span class="line">    <span class="built_in">Child</span>(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c, <span class="type">double</span> d) : <span class="built_in">Base</span>(a, b, c)</span><br><span class="line">    &#123;</span><br><span class="line">        m_d = d;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;子类的构造函数m_d ：&quot;</span> &lt;&lt;  m_d &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="type">double</span> m_d;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//子类继承父类构造方法创建对象</span></span><br><span class="line">    <span class="function">Child <span class="title">ch1</span><span class="params">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span></span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;----------------------------&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//子类委托父类构造方法创建对象</span></span><br><span class="line">    <span class="function">Child <span class="title">ch</span><span class="params">(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7.7</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="static和new"><a href="#static和new" class="headerlink" title="static和new"></a>static和new</h2><p>new一般构造一个对象，需要delate才会析构对象</p>
+<p>static声明一个静态数据</p>
+<h2 id="for的新特性（c-11"><a href="#for的新特性（c-11" class="headerlink" title="for的新特性（c++_11)"></a>for的新特性（c++_11)</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*@bref 遍历容器</span></span><br><span class="line"><span class="comment">*@pragrm prt 遍历指针</span></span><br><span class="line"><span class="comment">*@pragrm container 需要遍历的容器</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> prt: container)&#123;</span><br><span class="line">  <span class="comment">//循环体</span></span><br><span class="line">&#125;</span><br><span class="line">  <span class="comment">//第三章遍历方式  利用STL提供遍历算法</span></span><br><span class="line">  for_each(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), myPrint);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>c</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PS使用技巧</title>
     <url>/20230113undefined/</url>
     <content><![CDATA[<div class="table-container">
@@ -41,991 +69,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>vscode相关配置</title>
-    <url>/2022092962373/</url>
-    <content><![CDATA[<p>dd</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>vscode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>叙永是个什么地方</title>
-    <url>/2021081314161/</url>
-    <content><![CDATA[<p><em>起因是一则校园小广告。然后有了接下来的故事。</em></p>
-<p>叙永，一座位于泸州的县城。它的夏天同样热，甚至还能荣登高温地区榜单。叙永人对夏天的温柔。体现在我以前没喝过的凉虾，和每家餐馆的免费菜汤。凉虾对于我来说有些齁甜。每家餐馆的菜汤也只有一碗南瓜绿豆汤深得我心。但凉虾口感确实不错。而南瓜绿豆汤的免费和外面买五块一碗的绿豆汤相比也感动了我一瞬。<span id="more"></span></p>
-<p>叙永你能看到土坯房，瓦片房，小楼房和高楼房紧凑的挨在一起。这使你不得不感叹一个词——发展。然后就没有了。因为正当我想要以抖音思维解构这座城市的时候。支撑我的豪情就提前一步消散在这错落的城市各个角落。</p>
-<p>上街发传单。用修饰过的语言同学生和家长交流。对于我的心灵来说，确实没什么。况且我还偷懒。可是心气儿还是慢慢的流走了。那段时间回想起来可能有点傻。但还是值得的。</p>
-<p>我说过，因为一则广告。我经历一场不专业的面试，一场‘有些负责人都说的什么呀’的双选会。提起包，就来到了这里。从开始到结束。有的人来了，又走了。</p>
-<p>我送给了一个女孩礼物。想过要送给每个女孩一件礼物的。但是到最后只送了一个人。礼物还是贵了。至于男孩，如果想要一个大大的拥抱，也不是不可以。</p>
-<h2 id="快乐"><a href="#快乐" class="headerlink" title="快乐"></a>快乐</h2><p>在杨武坊的大桥上看着一位酷酷的小姐姐唱歌</p>
-<p>打乒乓球。</p>
-<p>工作的快乐对于我来说真的很难总结。但这份经历真的难得。或许我从这里明白了轻松的快乐。</p>
-<h2 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h2><p>有即使是最后一天特别忙，也没有去看看杨武坊那唱歌的小姐姐还在不在</p>
-<p>有到收拾东西了，才发现我一直寻找的充电器就在书包的侧包里</p>
-<p>有和唐老师说要再瞅她一眼，却没回头的走向车站。以至于走错了方向</p>
-<p>有一直吃魏老师和胡老师的cp。但是晚餐却没有以开玩笑的样子说出来</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>想写些什么，又写不出什么东西。就像那天，我把头发剪了。之后却无所事事。</p>
-]]></content>
-      <tags>
-        <tag>落日飘绪</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>愿</title>
-    <url>/2021081418371/</url>
-    <content><![CDATA[<center>
-
- 愿百灵衔来
-一朵丁香
-为你增添
-淡淡芬芳
-
-<span id="more"></span>
-
-愿小溪流淌
-轻柔石块
-弹奏一曲民谣小调
-
-愿幼儿园的
-老旧滑梯
-有微风不厌
-常扫落叶
-
-
-愿小学的
-四层教师楼
-孩童奔跑，欢笑
-闹稚言
-
-
-愿初中的
-空心老树
-树皮粗糙
-记载岁月流逝
-叹！无常
-
-愿高中
-和那以后的以后
-那片云游过天边
-这人群路过彼此
-
-再见吧
-我喜欢的女孩
-百灵的丁香
-使你芬芳
-小溪的民谣
-使你宁静
-
-在这还不算太糟的世界里
-你会越来越好 </center>
-]]></content>
-      <tags>
-        <tag>落日飘绪</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cplusplus的知识点</title>
-    <url>/2022092931398/</url>
-    <content><![CDATA[<h1 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h1><h1 id="一些知识点"><a href="#一些知识点" class="headerlink" title="一些知识点"></a>一些知识点</h1><h2 id="在C-中子类继承和调用父类的构造函数方法"><a href="#在C-中子类继承和调用父类的构造函数方法" class="headerlink" title="在C++中子类继承和调用父类的构造函数方法"></a><a href="https://blog.csdn.net/baidu_16370559/article/details/122666094">在C++中子类继承和调用父类的构造函数方法</a></h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Base</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Base</span>(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c)</span><br><span class="line">    &#123;</span><br><span class="line">        m_a = a;</span><br><span class="line">        m_b = b;</span><br><span class="line">        m_c = c;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;父类的构造函数m_a ：&quot;</span> &lt;&lt; m_a &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="type">int</span> m_a;</span><br><span class="line">    <span class="type">int</span> m_b;</span><br><span class="line">    <span class="type">int</span> m_c;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Child</span> : <span class="keyword">public</span> Base</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//子类继承父类构造方法</span></span><br><span class="line">    <span class="keyword">using</span> Base::Base;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//子类委托父类构造方法</span></span><br><span class="line">    <span class="built_in">Child</span>(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c, <span class="type">double</span> d) : <span class="built_in">Base</span>(a, b, c)</span><br><span class="line">    &#123;</span><br><span class="line">        m_d = d;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;子类的构造函数m_d ：&quot;</span> &lt;&lt;  m_d &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="type">double</span> m_d;</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">//子类继承父类构造方法创建对象</span></span><br><span class="line">    <span class="function">Child <span class="title">ch1</span><span class="params">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span></span>;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;----------------------------&quot;</span> &lt;&lt; endl;</span><br><span class="line">    <span class="comment">//子类委托父类构造方法创建对象</span></span><br><span class="line">    <span class="function">Child <span class="title">ch</span><span class="params">(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7.7</span>)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="static和new"><a href="#static和new" class="headerlink" title="static和new"></a>static和new</h2><p>new一般构造一个对象，需要delate才会析构对象</p>
-<p>static声明一个静态数据</p>
-<h2 id="for的新特性（c-11"><a href="#for的新特性（c-11" class="headerlink" title="for的新特性（c++_11)"></a>for的新特性（c++_11)</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*@bref 遍历容器</span></span><br><span class="line"><span class="comment">*@pragrm prt 遍历指针</span></span><br><span class="line"><span class="comment">*@pragrm container 需要遍历的容器</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> prt: container)&#123;</span><br><span class="line">  <span class="comment">//循环体</span></span><br><span class="line">&#125;</span><br><span class="line">  <span class="comment">//第三章遍历方式  利用STL提供遍历算法</span></span><br><span class="line">  for_each(v.<span class="built_in">begin</span>(), v.<span class="built_in">end</span>(), myPrint);</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>c</tag>
-        <tag>c++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电路分析基础(上册 - 第二篇)</title>
-    <url>/2023020212059/</url>
-    <content><![CDATA[<h1 id="电路分析基础-上册"><a href="#电路分析基础-上册" class="headerlink" title="电路分析基础(上册 )"></a>电路分析基础(上册 )</h1><h2 id="第二篇-动态电路的时域分析"><a href="#第二篇-动态电路的时域分析" class="headerlink" title="第二篇    动态电路的时域分析"></a>第二篇    动态电路的时域分析</h2><span id="more"></span>
-<h3 id="第五章-电容和电感"><a href="#第五章-电容和电感" class="headerlink" title="第五章 电容和电感"></a>第五章 电容和电感</h3><h4 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h4><ul>
-<li>电容公式</li>
-</ul>
-<script type="math/tex; mode=display">
-\ q(t) = C\ u(t) \ 
-\ i(t) = \frac {dq}{dt} \\\
-则\quad i(t) = -C\frac {du}{dt}</script><ul>
-<li><p>电容电压的连续性和记忆性质</p>
-<p>​    连续性       $u<em>c(t</em>-)=u<em>c(t</em>+)$</p>
-</li>
-</ul>
-<p>​        储能        $w_c(t)=\frac 12Cu^2(t)$</p>
-<ul>
-<li>，正是电容的储能本质使电容电压具有记忆性质；正是电容电流在有界的条件下储能不能跃变使电容电容其有连续性质</li>
-</ul>
-<h4 id="电感"><a href="#电感" class="headerlink" title="电感"></a>电感</h4><ul>
-<li><p>电阻是有电压就一定有电流；电容是电压变化才有电流；电感则是电流变化才有电压</p>
-<script type="math/tex; mode=display">
-  \ u = \frac {d\psi}{dt} \ \quad \overrightarrow \ \quad u=\frac {dLi}{dt}=L \frac {di}{dt}</script></li>
-<li><p>对偶性</p>
-</li>
-</ul>
-<p>​    连续性       $i<em>L(t</em>-) = i<em>L(t</em>+)$</p>
-<p>​    储能        $w_L(t)=\frac 12Li^2(t)$</p>
-<h3 id="第六章-一阶电路"><a href="#第六章-一阶电路" class="headerlink" title="第六章 一阶电路"></a>第六章 一阶电路</h3><ul>
-<li><p>含源电阻网络部分N,用戴维南定理或诺顿定理化简后，电路将如图</p>
-<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927201659.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927201659.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-</li>
-</ul>
-<script type="math/tex; mode=display">
-电压角度:\ L \frac{di_{t}(t)}{dt}+R_{o}i_{L}(t)=u_{oc}(t)</script><script type="math/tex; mode=display">
-则电感角度\quad G_{0}L \frac{di_{t}(t)}{dt}+i_{L}(t)=i_{sc}(t)</script><h4 id="零状态响应"><a href="#零状态响应" class="headerlink" title="零状态响应"></a>零状态响应</h4><p>零状态响应 $y<em>{zx}(t)$,是电路的<strong>初始储能（或称内部激励）为零</strong>，即${x_k(0)|</em>{k=1,2,..,n}=0}$,仅由<strong>施加于电路的激励</strong>${f<em>i(t)|</em>{i=1,2,..,m}}$所引起的响应。</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20220927202936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927202936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="RC串联等效电路"></p>
-<ul>
-<li><p>在$t≥ t_o$时，我们把在零初始状态下，仅由电路的输入所引起的响应称为<strong>零状态响应</strong>；把在零输入情况下，仅由非零初始状态所引起的响应称为<strong>零输入响应</strong>。</p>
-<h5 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h5></li>
-</ul>
-<h5 id><a href="#" class="headerlink" title></a><img src="https://gitee.com/xqyr/img/raw/img/20220927204419.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927204419.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="应用"></h5><script type="math/tex; mode=display">
-t≥ t_o  \quad          RC \frac{du_{c}}{dt}+u_{c}=U_{s}  （初始状态\quad t=0，u_c(0_+)= u_c(0_-)）</script><script type="math/tex; mode=display">
-解得\quad u_{c}(t)=U_{s}(1-e^{- \frac{1}{RC}t})\quad t \geq 0</script><h5 id="能量"><a href="#能量" class="headerlink" title="能量"></a>能量</h5><script type="math/tex; mode=display">
-消耗能量\quad W = \frac 12CU^2_{s}\\
-电容储能 \quad W = \frac 12CU^2_{s}\\
-提供总能量    \quad W = \frac 12 CU^2_{s}</script><h5 id="电感同理"><a href="#电感同理" class="headerlink" title="电感同理"></a>电感同理</h5><script type="math/tex; mode=display">
-i_L(t)=\frac {U_S}R(1-e^{\frac 1{GL}}t)</script><h4 id="阶跃响应-冲击响应-p-197"><a href="#阶跃响应-冲击响应-p-197" class="headerlink" title="阶跃响应 冲击响应 p_197"></a>阶跃响应 冲击响应 <em>p_197</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220927211936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927211936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="延时单位阶跃函数"></p>
-<script type="math/tex; mode=display">
-\varepsilon(t-t_{0})= \left\{ \begin{matrix} 0 \quad t<t_{0}\\ 1 \quad t>t_{0}\\ \end{matrix} \right.</script><p>运用阶跃函数和延时阶跃函数，分段常量信号可表示为<strong>一系列阶跃信号之和</strong>。例如，所示脉冲信号可分解为<strong>两个阶跃信号之和</strong>，<strong>其一是在t=0时作用的正单位阶跃信号</strong>，<strong>另一是在t=$t_0$,时作用的负单位延时阶跃信号</strong>。分段常量信号作用下的一阶电路分析问题，在将这类信号分解为阶跃信号后，即可按直流一阶电路处理，<strong>运用叠加性可求得其零状态响应</strong>。</p>
-<p>列题6-5 <em>p199</em></p>
-<p> <img src="https://gitee.com/xqyr/img/raw/img/20220927214231.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214231.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927215523.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927215523.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"><br><img src="https://gitee.com/xqyr/img/raw/img/20220927214318.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214318.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927214401.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214401.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"></p>
-<script type="math/tex; mode=display">
-\begin{matrix}
-u(t)=A \varepsilon(t)-A \varepsilon(t-t_{0}) \\\\
-A\varepsilon(t)作用下的零状态响应 
- \quad i^{\prime}(t)= \frac{A}{R}(1-e^{- \frac{t}{\tau}})\varepsilon(t)=A(1-e^{-t})\varepsilon(t) \\ 
- 解答式中的因子A\varepsilon(t)表明该式实际上仅适用于\ t≥0,式中\tau = \frac LR = 1s \\\\
- -A\varepsilon(t-t_0)作用下的零状态响应为\quad i^{\prime\prime}(t)=- \frac{A}{R}(1-e^{- \frac{k-t_{0}}{\tau}})\varepsilon(t-t_{0})=-A(1-e^{- \frac{t-t_{0}}{\tau}})\in(t-t_{0})\\\\
- 两者叠加\quad i(t) = i^\prime(t) + i^{\prime\prime}(t)=A(1-e^{-t})\varepsilon(t)-A [ 1-e^{-(t-t_{0})}]\varepsilon(t-t_{0})
- \end{matrix}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20220927223919.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927223919.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-<h4 id="零输入响应-p-203"><a href="#零输入响应-p-203" class="headerlink" title="零输入响应 p_203"></a>零输入响应 <em>p_203</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220929170359.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220929170359.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="p_186"></p>
-<p><strong>零输入响应$y_{zi}(t)$</strong>,是<strong>外加激励均为零</strong>时(即${ f<em>i(t)|</em>{i=1,2,..,m}=0}$)，仅由电路的<strong>初始储能</strong>{${ x<em>k(0)|</em>{k=1,2,..,n}}$}(或称<strong>内部激励</strong>）引起的响应；</p>
-<p>可以用<strong>$u_c$</strong>来表示电容电压的零输入响应。</p>
-<p>需要特别注意之处是：在图6一3(b)所示电容等效电路中，<strong>电容C的初始电压设为零</strong>，实际存在的初始<em>a b两端</em>电压$u_c(t_0)$是<strong>以电压源的形式</strong>与之串联的</p>
-<script type="math/tex; mode=display">
-u_c(t) = u_1(t)+u_c(t_0)</script><p>$u_1(t)$只存在于等效电路中，然而在图6-3(b)中它却是独立电压源$u_c(0)$作用下的<strong>零状态响应</strong> .</p>
-<script type="math/tex; mode=display">
-u _ { 1 } ( t ) = - u _ { c } ( 0 ) ( 1 - e ^ { - \frac { 1 } { \tau} } ) \quad t \geq 0</script><p>则<strong>零输入响应</strong></p>
-<script type="math/tex; mode=display">
-\begin
-{align}u_{c}(t)
-&=u_{1}(t)+u_{c}(0)\\ 
-&=-u_{c}(0)(1-e^{- \frac{t}{\tau}})+u_{c}(0)\\ 
-&=u_{c}(0)e^{- \frac{t}{\tau}}\quad t \geq 0\\\\
-一阶电感电路零输入响应为:\\ 
-i_L(t)&=I_0e^{-\frac t \tau}\quad t \geq 0\end{align}</script><p>从物理意义上看，零输入响应是依靠动态元件的<strong>初始储能</strong>进行的，当电路中存在着耗能元件R时，有限的初始储能终将被消耗殆尽，<strong>零输入响应终将为零</strong>。</p>
-<h4 id="线性动态电路的叠加原理-p-210"><a href="#线性动态电路的叠加原理-p-210" class="headerlink" title="线性动态电路的叠加原理 p_210"></a>线性动态电路的叠加原理 <em>p_210</em></h4><p>综上所述，线性一阶电路的叠加原理包含下述内容：若初始时刻为t=0,则对所有t≥0的时刻，我们有：</p>
-<ol>
-<li>全响应=零状态响应+零输入响应：</li>
-<li>零状态<em>响应线性</em>；</li>
-<li>零输人<em>响应线性</em>。</li>
-</ol>
-<p>列题6-13</p>
-<h4 id="三要素法-视察法"><a href="#三要素法-视察法" class="headerlink" title="三要素法(视察法)"></a>三要素法(视察法)</h4><p>y(t)可以代表电路中的<strong>任一电压或电流</strong>；<br>y($0_+$)表示该电压或电流的初始值；<br>y(∞)表示该电压或电流的稳态值；<br>$\tau$表示电路的时间常数。$\tau=LG$</p>
-<p>关系:</p>
-<script type="math/tex; mode=display">
-y(t)=y(\infty)+ \left[ y(0_{+})-y(\infty)\right] e^{- \frac{t}{\tau}}\\
-或y(\infty)-y(t)=\left[y(\infty) -y(0_{+})\right] e^{- \frac{t}{\tau}}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20221003152638.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221003152638.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="波形图"></p>
-<h4 id="稳态和瞬态"><a href="#稳态和瞬态" class="headerlink" title="稳态和瞬态"></a>稳态和瞬态</h4><p>当描述动态电路的变量或为<strong>不随时间而变</strong>的常量，或为<strong>随时间而变的周期量</strong>时，我们称此电路进入了<strong>稳定状态</strong>。电路不处于稳态即处于<strong>瞬态(</strong>暂态、瞬变)或非稳态(unsteady state)。</p>
-<h4 id="正弦激励的过度过程和稳态-p-227"><a href="#正弦激励的过度过程和稳态-p-227" class="headerlink" title="正弦激励的过度过程和稳态 p_227"></a>正弦激励的过度过程和稳态 <em>p_227</em></h4><p>随时间按正弦规律变化的电压和电流称为正弦交流电压和电流，它们都属正弦波。正弦波是周期波形的基本形式 。</p>
-<script type="math/tex; mode=display">
-u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七章-二阶电路"><a href="#第七章-二阶电路" class="headerlink" title="第七章 二阶电路"></a>第七章 二阶电路</h3><h4 id="LC电路中的正弦震荡"><a href="#LC电路中的正弦震荡" class="headerlink" title="LC电路中的正弦震荡"></a>LC电路中的正弦震荡</h4><h4 id="RLC串联电路的零输入响应"><a href="#RLC串联电路的零输入响应" class="headerlink" title="RLC串联电路的零输入响应"></a>RLC串联电路的零输入响应</h4><h4 id="RLC串联电路的全响应"><a href="#RLC串联电路的全响应" class="headerlink" title="RLC串联电路的全响应"></a>RLC串联电路的全响应</h4><h4 id="GCL并联电路分析"><a href="#GCL并联电路分析" class="headerlink" title="GCL并联电路分析"></a>GCL并联电路分析</h4>]]></content>
-      <tags>
-        <tag>考研</tag>
-        <tag>电路分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电路分析基础(下册 - 第三篇)</title>
-    <url>/2023020223943/</url>
-    <content><![CDATA[<h1 id="第三篇-动态电路的相量分析法和-S-域分析法"><a href="#第三篇-动态电路的相量分析法和-S-域分析法" class="headerlink" title="第三篇    动态电路的相量分析法和$S$域分析法"></a>第三篇    动态电路的相量分析法和$S$域分析法</h1><span id="more"></span>
-<h2 id="第八章-阻抗和导纳"><a href="#第八章-阻抗和导纳" class="headerlink" title="第八章 阻抗和导纳"></a>第八章 阻抗和导纳</h2><h3 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h3><p><img src="https://gitee.com/xqyr/img/raw/img/20221011220914.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221011220914.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="复数"></p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-&A=a\cos\theta+ja\sin\theta=ae^{j\theta}=a\angle\theta\\
-&运算法则:\\
-&R_e\ A = R e ( a _ { 1 } + j a _ { 2 } ) = a _ { 1 }\\
-&Im\ A = I m ( a _ { 1 } + j a _ { 2 } ) = a _ { 2 }
-\end{aligned}</script><h3 id="振幅向量"><a href="#振幅向量" class="headerlink" title="振幅向量"></a>振幅向量</h3><script type="math/tex; mode=display">
-\begin{aligned}
-有正弦向量u ( t ) 
-&= U _ { m } \cos ( \omega t + \psi )\\
-&=Re\left[U_me^{j(\omega t+\psi)}\right]\\
-&=Re\left(U_me^{j\psi}e^{j\omega t}\right)\\
-&=Re(\stackrel{\cdotp}U_{m}\angle \omega t)\\
-(其中:\ \stackrel{\cdot}{U}=U_me^{j\omega}=&U_m\angle\psi\ 叫做电压振幅相量)
-\end{aligned}</script><h3 id="向量线性性质"><a href="#向量线性性质" class="headerlink" title="向量线性性质"></a>向量线性性质</h3><p>表示若干个同频率正弦量（可带有实系数）线性组舍的相量<strong>等于</strong>表示各个正弦量的相量的同一线性组合。亦即，如设正弦量为</p>
-<script type="math/tex; mode=display">
-f_{1}(t)=Re(\dot{A}_{1}e^{j \omega t}),f_{2}(t)=Re(\dot{A}_{2}e^{i \omega t})</script><p>举例:</p>
-<p>​    设$a_1$和,$a_2$为两个实数，则正弦量了$a_1f_1(t)$和$a_2f_2(t)$可用相量$\alpha_1\stackrel{\cdot}{A_1}$+$\alpha_2\stackrel{\cdot}{A_2}$表示</p>
-<h3 id="基尔霍夫定理"><a href="#基尔霍夫定理" class="headerlink" title="基尔霍夫定理"></a>基尔霍夫定理</h3><script type="math/tex; mode=display">
-\begin{aligned}
-&\sum_{k=1}^{k}i_{k}= \sum _{k=1}^{k}Re(\dot I_{km}e^{j \omega t})=0\\
-&\Rightarrow \sum_{k=1}^k\dot I_{km}=0;\\
-&同理\sum_{k=1}^k\dot U_{km}=0;
-\end{aligned}</script><p>列题P_14 8-5</p>
-<h3 id="三种基本电路元件VCR-的相量形式"><a href="#三种基本电路元件VCR-的相量形式" class="headerlink" title="三种基本电路元件VCR 的相量形式"></a>三种基本电路元件VCR 的相量形式</h3><h5 id="阻抗Z"><a href="#阻抗Z" class="headerlink" title="阻抗Z:"></a>阻抗Z:</h5><ul>
-<li><p>电抗:$Z=jX;X=Im[Z]$</p>
-</li>
-<li><p>$z=|z|\angle\phi$</p>
-</li>
-<li><p>$Z=\frac {\dot U}{\dot I}=\frac {U\angle\phi_u}{I\angle\phi_i}=R(\angle\phi_u-\angle\phi_i)$</p>
-</li>
-<li></li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>元件</th>
-<th>时域</th>
-<th>相量</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>—-</td>
-<td>$u=u_mcos(\omega t+\phi)$</td>
-<td>$\dot U_m=U_m\angle{\phi_u}$</td>
-<td></td>
-</tr>
-<tr>
-<td>—-</td>
-<td>$i=\sqrt2 i(\omega t+\phi)$</td>
-<td>$\dot I_m=\sqrt2I\angle{\phi_i}$</td>
-<td></td>
-</tr>
-<tr>
-<td>电阻R</td>
-<td>$u=R\cdot i$</td>
-<td>$Z_R=R=\frac {\dot U}{\dot I}$</td>
-<td>$\angle\phi<em>{uR}=\angle\phi</em>{IR}$</td>
-</tr>
-<tr>
-<td>电容C</td>
-<td>$i_c=C\frac {du_c(t)}{dt}$</td>
-<td>$Z_C=\frac 1{j\omega c}=\frac {\dot U_c}{\dot I_c}$</td>
-<td>$\angle\phi<em>{uc}-\angle\phi</em>{Ic}=-90^{\circ}$</td>
-</tr>
-<tr>
-<td>电感L</td>
-<td>$U_L=L\cdot\frac {dl_l{t}}{dt}$</td>
-<td>$Z_L=j\omega L=\frac {\dot U_L}{\dot I_L}$</td>
-<td>$\angle\phi<em>{uL}-\angle\phi</em>{IL}=90^{\circ}$</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>P_27</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="时域与相量"></p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204905.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204905.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="相量图"></p>
-<h2 id="第九章-正弦稳态功率和能量"><a href="#第九章-正弦稳态功率和能量" class="headerlink" title="第九章    正弦稳态功率和能量"></a>第九章    正弦稳态功率和能量</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>名字</th>
-<th>计算公式</th>
-<th>单位</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>平均功率</td>
-<td>$P=UIcos\phi(注：\phi为电压电流的相位差，UI都为模)$</td>
-<td>瓦特w</td>
-</tr>
-<tr>
-<td>无功功率</td>
-<td>$Q=UI\sin \phi$</td>
-<td>乏var</td>
-</tr>
-<tr>
-<td>视在功率</td>
-<td>$S=UI=\sqrt {P^2+Q^2}$</td>
-<td>$伏安V\cdot A$</td>
-</tr>
-<tr>
-<td><a href="#fgl">复功率</a></td>
-<td>$\stackrel {\sim}{S}=\dot U\dot {I^*}=P+jQ=j2\omega(W_L-W_C)$</td>
-<td>证明P_87</td>
-</tr>
-<tr>
-<td>功率因数</td>
-<td>$\lambda=\frac P S=cos\phi$</td>
-<td>$\phi&gt;0$电容性</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><a id="fgl">复功率</a></p>
-<p><strong>复功率</strong>的实部P应为网络中各电阻元件消耗功率的总和，虚部Q应为网络中各动态元件无功功率的代数和，且$W_L$应为网络中所有电感储能平均值的总和，$W_C$应为网络中所有电容储能平均值的总和。这一关系称为复功率守恒。</p>
-<h2 id="最大功率"><a href="#最大功率" class="headerlink" title="最大功率"></a>最大功率</h2><p>负载载电阻获得<strong>最大功率的条件取决于</strong>电路内何者为定值、何者为变量。</p>
-<ol>
-<li><p>当负载的电阻及电抗均可独立地变化；</p>
-<ul>
-<li>负载获得最大功率的条件是：$X_L=-X_S以及R_L=R_S。$也就是<strong>负载阻抗为电源内阻抗的共轭复数。</strong></li>
-</ul>
-<script type="math/tex; mode=display">
- \begin{split}
-   Z_L=Z_S^* \\
-   P_{Lmax}=\frac {U_s^2}{4R_S}
-\end{split}</script></li>
-</ol>
-<ol>
-<li>载阻抗角固定而模可改变。</li>
-</ol>
-<p>负载获得最大功率的条件是：<strong>负载阻抗的模</strong>应与<strong>电源内阻抗的模</strong>相等，称为模匹配。当负载是纯电阻时，即$|Z|=R_L$        时，最大功率的条件是$R_L=\sqrt {R^2_s+X^2_s}$而不是$R_L=R_S$,这是应当注意的。显然，在这一情祝下所得</p>
-<h2 id="零状态响应条件下S域元件模型"><a href="#零状态响应条件下S域元件模型" class="headerlink" title="零状态响应条件下S域元件模型)"></a><a href="(https://www.jianshu.com/p/2e70ee35a7ed">零状态响应条件下S域元件模型</a>)</h2><p>★时域电路变换为S域电路模型后，电路中的<strong>电阻</strong>R、电容C、电感L<strong>均等效为电阻来计算</strong>，电阻值分别为R、$\frac 1{sC}$、sL，电压源、<strong>电流源直接写作变换式。</strong></p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20221019180628.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221019180628.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-<p>相关连接:</p>
-<p>​    <a href="https://www.jianshu.com/p/a756f397783f">https://www.jianshu.com/p/a756f397783f</a></p>
-<h2 id="功率"><a href="#功率" class="headerlink" title="功率"></a>功率</h2>]]></content>
-      <tags>
-        <tag>考研</tag>
-        <tag>电路分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电路分析基础.(上册 - 第一篇)</title>
-    <url>/2023020258877/</url>
-    <content><![CDATA[<h1 id="第一篇-电阻电路的分析"><a href="#第一篇-电阻电路的分析" class="headerlink" title="第一篇    电阻电路的分析"></a>第一篇    电阻电路的分析</h1><h2 id="第一章电压，电流约束关系"><a href="#第一章电压，电流约束关系" class="headerlink" title="第一章电压，电流约束关系"></a>第一章电压，电流约束关系</h2><h3 id="方向-P-8"><a href="#方向-P-8" class="headerlink" title="方向 P_8"></a>方向 <em>P_8</em></h3><ul>
-<li>元件电流参考方向和电压方向常关联。电流方向也就是电压参考“+”级到“—”级方向<ul>
-<li><img src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电路方向" style="zoom:50%;"></li>
-</ul>
-</li>
-</ul>
-<h3 id="基尔霍夫-P-12"><a href="#基尔霍夫-P-12" class="headerlink" title="基尔霍夫 P_12"></a>基尔霍夫 <em>P_12</em></h3><ul>
-<li><p>将二端元件视为一条<strong>支路</strong>。流经元件的电流和元件的端电压便分别称之为<strong>支路电流和支路电压</strong>。</p>
-</li>
-<li><p>电荷守恒的意思是：电荷既不能创造也不能消灭。由此可得基尔霍夫电流定律(Kirchhoff’s current law),该定律简写为KCL。KCL表达了电路中支路电流间的约束(constraint)关系</p>
-</li>
-<li><script type="math/tex; mode=display">
-\sum_{k=1}^K i_k (t) = 0</script></li>
-</ul>
-<ul>
-<li><p>对于任，集总电路中的任，回路，在任，时刻，沿着该回路的所有支路电压降得代数和为零</p>
-</li>
-<li><script type="math/tex; mode=display">
-\sum_{k=1}^K u_k(t)=0</script></li>
-</ul>
-<h3 id="电阻元件-p-20"><a href="#电阻元件-p-20" class="headerlink" title="电阻元件 p_20"></a>电阻元件 <em>p_20</em></h3><ul>
-<li>电导用G表示，单位 <em>西</em>（符号 <em>S</em>)<script type="math/tex; mode=display">
-G= \frac1R</script></li>
-</ul>
-<h3 id="双口元件-——受控源-p-34"><a href="#双口元件-——受控源-p-34" class="headerlink" title="双口元件 ——受控源 p_34"></a>双口元件 ——受控源 <em>p_34</em></h3><ul>
-<li>受控源是一种<u>双口</u>元件，它含有两条支路，其一为<strong>控制支路</strong>，这条支路或为开路或为短路，另一为<strong>受控支路</strong>，这条支路或用一个受控“电压源”表明该支路的电压受控制的性质或用一个受控“电流源”表明该支路的电流受控制的性质。</li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th><img src="https://gitee.com/xqyr/img/raw/img/20220927143418.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927143418.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="（电）压控（制）电压源(VCVS)" style="zoom:75%;"></th>
-<th><img src="https://gitee.com/xqyr/img/raw/img/20220927143544.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927143544.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电流控电压源 CCVS" style="zoom:75%;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="https://gitee.com/xqyr/img/raw/img/20220927143902.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927143902.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="（电）压控（制）电流源(VCCS)" style="zoom:75%;"></td>
-<td><img src="https://gitee.com/xqyr/img/raw/img/20220927144040.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927144040.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="（电）流控（制）电流源（CCCS)" style="zoom:75%;"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="两类约束的独立性-p-44"><a href="#两类约束的独立性-p-44" class="headerlink" title="两类约束的独立性 p_44"></a>两类约束的独立性 <em>p_44</em></h3><ol>
-<li><p>设电路的节点数为n,则独立的KCL方程为(n-1)个，且为任意(n-1)个。</p>
-</li>
-<li><p>给定一平面电路(planar circuit):<br>(a)该电路有[b - (n-1)]个网孔；<br>(b)[b-(n-1))]个网孔的KVL方程是独立的。</p>
-</li>
-</ol>
-<h2 id="第二章-网孔和节点法-p-62"><a href="#第二章-网孔和节点法-p-62" class="headerlink" title="第二章 网孔和节点法  p_62"></a>第二章 网孔和节点法  <em>p_62</em></h2><h3 id="网孔法-p-62"><a href="#网孔法-p-62" class="headerlink" title="网孔法 p_62"></a>网孔法 <em>p_62</em></h3><ul>
-<li><p>网孔分析是以网孔电流(mesh current)作为第-步求解的对象。所谓网孔电流是一种沿着网孔边界流动的假想电流</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20220927145203.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927145203.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="网孔电流" style="zoom:67%;"></p>
-</li>
-</ul>
-<script type="math/tex; mode=display">
-\begin{matrix}
-&\begin {cases}R_1 i_{M1} + R_5 i_{M1} + R_5 i_{M2} + R_4 i_{M1} - R_4i_{M3} + u_{s4} -u_{s1} = 0 \\
-R_{2}i_{M1}+R_{5}i_{M2}+R_{5}i_{M1}+R_{6}i_{M2}+R_{6}i_{M3}-u_{s2} = 0\\
-R_{3}i_{M3}+R_{4}i_{M3}-R_{4}i_{M1}+R_{6}i_{M3}+R_{6}i_{M2}-u_{s4}-u_{s3}=0\\\end{cases}
-\\&\quad\ 整理得：\\
-&\begin {cases}(R_{1}+R_{4}+R_{5})i_{M1}+R_{5}i_{M2}-R_{4}i_{M3}=u_{s1}-u_{S4}\\
-R_{5}i_{M1}+(R_{2}+R_{5}+R_{6})i_{M2}+R_{6}i_{M3}=u_{S2}\\
-R_{4}i_{Ml}+R_{b}i_{M2}+(R_{3}+R_{4}+R_{6})i_{3M3}=u_{s3}+u_{s4}\\\end{cases}\end{matrix}</script><p>​    <strong>概括为：</strong></p>
-<p>​    </p>
-<script type="math/tex; mode=display">
-\begin{cases}R_{11}i_{M1}+R_{12}i_{M2}+R_{11}i_{M3}=u_{s11}\\ R_{21}i_{M1}+R_{22}i_{M2}+R_{23}i_{M3}=u_{s22}\\ R_{31}i_{M1}+R_{12}i_{M2}+R_{33}i_{M3}=u_{s33}\\ \end{cases}
-\begin {matrix}\quad\quad \mathsf{其中R_{11},R_{22},R_{33}风别称为网孔1，网孔2，网孔3的自电阻}\\
-\mathsf {他们分别是各自网孔内所有电阻的和}\\
-\mathsf {R_{12}为互电阻，他们是该两网孔的公有电阻}\\
-\mathsf {u_{s1}为网孔1中各电压源电压升的和。u_{s11}= u_{s1} - u_{s4}}\end {matrix}</script><h3 id="若电路中有电流源"><a href="#若电路中有电流源" class="headerlink" title="若电路中有电流源"></a>若电路中有电流源</h3><ol>
-<li><p>将电流源设为电压源;</p>
-</li>
-<li><p>增补方程:电流源=?</p>
-</li>
-<li><p>若为受控源,还要添加控制源的方程</p>
-</li>
-</ol>
-<h3 id="节点分析-p-72"><a href="#节点分析-p-72" class="headerlink" title="节点分析 p_72"></a>节点分析 <em>p_72</em></h3><p><img src="https://gitee.com/xqyr/img/raw/img/20220927154530.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927154530.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="节点分析法"></p>
-<p>概括形式</p>
-<script type="math/tex; mode=display">
-{\begin {cases}G_{11}u_{n1}+G_{12}u_{n2}+G_{13}u_{n3}=i_{s11}\\ G_{21}u_{11}+G_{22}u_{22}+G_{23}u_{33}=i_{s22}\\ 
-G_{31}u_{n1}+G_{32}u_{22}+G_{33}u_{n3}=i_{s33}\\\end {cases}}
-\quad\begin {matrix}  G11 为节点1的自电导。是节点1上所有电导的总和，G_{11} = G_1+G_5\\
- G12是节点1和节点2公有电导的负值，G_{12} = -G_1\\
- i_{s11}为电流源输送给节点1的代数和。i_{s11}=i_s \quad i_{s22} = 0\end {matrix}</script><p>$is11$为电流源输送给节点1的电流的代数和</p>
-<h3 id="若电路中有电压源"><a href="#若电路中有电压源" class="headerlink" title="若电路中有电压源"></a>若电路中有电压源</h3><ol>
-<li><p>将电压源设为电流源;</p>
-</li>
-<li><p>增补方程:电压源=?</p>
-</li>
-<li><p>若为受控源,还要添加控制源的方程</p>
-</li>
-</ol>
-<p>​    </p>
-<h2 id="第三章-叠加方法与网络函数-p-90"><a href="#第三章-叠加方法与网络函数-p-90" class="headerlink" title="第三章 叠加方法与网络函数 p_90"></a>第三章 叠加方法与网络函数 <em>p_90</em></h2><h3 id="激励与响应"><a href="#激励与响应" class="headerlink" title="激励与响应"></a>激励与响应</h3><ul>
-<li><p>由线牲元件及独立电源组成的电路为线性电路。独立电源是电路的输入，对电路起着激励(excitation)的作用。</p>
-</li>
-<li><p>响应与激励之间存在着<strong>线性关系</strong>。</p>
-</li>
-<li><p>对单一激励的线性、时不变电路，指定的响应对激励之比定义为<em>网络函数</em>，记为H,即</p>
-<script type="math/tex; mode=display">
-H = \frac{响应}{激励}</script><ul>
-<li><p>若响应与激励在同一端口，则属策动点(driving point)函数；若响应与激励不在同一端口，则属转移(transfer)函数。</p>
-<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927162457.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927162457.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="分类"></p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="叠加原理"><a href="#叠加原理" class="headerlink" title="叠加原理"></a>叠加原理</h3><p>由线性电阻、线性受控源及独立源组成的电路中，每一元件的电流或电压可看成是每一个独立源<strong>单独作用</strong>于电路时，在该元件上产生的电流或电压的代。当某一独立源单独作用时，其他独立源应为零值，即<strong>独立电压源用短路代替</strong>；<strong>独立电流源用开路代替</strong>。</p>
-<p>叠加定理一般适用于多电源作用电路的计算。 当其中某个独立源作用时，剩余的独立源不起作用，就要将其余的独立源置零。 对于独立电压源<strong>，置零的含义</strong>就是电压为零，也就是将电压源短路；对于独立电流源置零，也就是电流源电流为零，也就是将电流源开路。</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20220927162741.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927162741.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="叠加"></p>
-<script type="math/tex; mode=display">
-i_2=H_1u_S + H_2i_s</script><ul>
-<li>作为电路的响应y(t),与电路各个激励x(t)的关系可表示为：</li>
-</ul>
-<script type="math/tex; mode=display">
-y(t)= \sum _{M}H_{m}x_{m}(t)</script><h3 id="叠加方法与功率计算"><a href="#叠加方法与功率计算" class="headerlink" title="叠加方法与功率计算"></a>叠加方法与功率计算</h3><ul>
-<li>电源对电路提供的总功率等于<strong>电压源单独作用时对电路提供的功率</strong>和<strong>电流源单独作用时对电路提供功率</strong>的总和</li>
-</ul>
-<h3 id="第四章-分解法和单口网络-p-112"><a href="#第四章-分解法和单口网络-p-112" class="headerlink" title="第四章 分解法和单口网络 p_112"></a>第四章 分解法和单口网络 <em>p_112</em></h3><h3 id="分解法"><a href="#分解法" class="headerlink" title="分解法"></a>分解法</h3><ol>
-<li>把给定网络划分为两个单口网络N1和N2 ;</li>
-<li>分别求出N1和N2,的VCR（计算或测量）；</li>
-<li>联立两者的VCR或由它们伏安特性曲线的交点，求得N1,和N2的端口电压、电流：</li>
-<li>分别求解N1和N2内部各支路电压、电流。</li>
-</ol>
-<h3 id="单口网络的电压电流关系"><a href="#单口网络的电压电流关系" class="headerlink" title="单口网络的电压电流关系"></a>单口网络的电压电流关系</h3><ul>
-<li>外施电流源求电压法和外施电压源求电流法是常用的方法，也是用实验方法确定VCR的依据</li>
-</ul>
-<blockquote>
-<p>列题4-2 p116</p>
-</blockquote>
-<h3 id="置换定理"><a href="#置换定理" class="headerlink" title="置换定理"></a>置换定理</h3><p>若网络N出两个单口网络N1,和N2连接组成且己知端口电乐和电流值分别为α和β,则N2(或N1)可以用一个电压为a的电压源[或用一个电流为β的电流源置换，不影响N,(或N2)内各支路电压、电流原有数值。</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20220927172729.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927172729.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="置换定理"></p>
-<h3 id="等效电路"><a href="#等效电路" class="headerlink" title="等效电路"></a>等效电路</h3><ul>
-<li><p>如果一个单口网络N和另一个单口网络N’的电压、电流关系完全相同，亦即它们在“~i平面上的伏安特性曲线完全重在，则这两单口网络便是等效的。尽管这两个网络可以具有完全不同的结构，但对任一外电路M来说，它们却具有完全相同的影响，没有丝毫差别 。</p>
-<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927173103.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927173103.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="等效串联电路"></p>
-</li>
-</ul>
-<h3 id="一些简单的等效电路"><a href="#一些简单的等效电路" class="headerlink" title="一些简单的等效电路"></a>一些简单的等效电路</h3><ul>
-<li>(11)电压源与电阻的串联（戴维南）</li>
-<li>(12)电流源与电阻的并联 （诺顿）</li>
-</ul>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20220927174024.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927174024.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-<script type="math/tex; mode=display">
-\begin{matrix}
-(a) \quad
-u =u_s -Ri\\
-(b) \quad
-i = i_s - \frac u{R^`} \quad / \quad u=R^`i_s - R^`i\\
-当R=R^`并且 U_S = R^`i_s（i_s=\frac {u_s}{R^`}）等效
-\end{matrix}</script><h3 id="戴维南定理"><a href="#戴维南定理" class="headerlink" title="戴维南定理"></a>戴维南定理</h3><ul>
-<li>含电源和线性电阻、受控源的单口网络（今后简称为含源线性单口网络）就其端口来说，可等效为<em>一个<u>电压源串联电阻支路</u></em>。电压源的电压等于该网络N的<strong>开路电压Uoc</strong>;串联电阻R等于该网络中所<strong>有独立源为零值</strong>时所得网络N的等效电阻R。</li>
-</ul>
-<h3 id="诺顿定理"><a href="#诺顿定理" class="headerlink" title="诺顿定理"></a>诺顿定理</h3><p>含源线性单口网络N,就其端口来看，可以等效为一个<em><u>电流源并联电阻组合</u></em>。电流源的电流等于该网络N的<strong>短路电流</strong>isc;并联电导G,等于该网络中所有<strong>独立源为零值</strong>时所得网络N。的等效电导Gb。这就是诺顿定理。这-电流源并联电导组合称为诺顿等效电路。</p>
-<h3 id="最大功率传递定理"><a href="#最大功率传递定理" class="headerlink" title="最大功率传递定理"></a>最大功率传递定理</h3><p>的功率为最大的条件是：负载R应与戴维南（或诺顿）<strong><u>等效电阻相等</u></strong>。此即最大功率传递定理。，称为最大功率匹配此时负载得到的最大功率为</p>
-<script type="math/tex; mode=display">
-P_{max} = \frac {u_{oc}^2}{4R_o}</script><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><ol>
-<li>开路电压:擦除可变电阻,运用KVL算出Uoc</li>
-<li><strong>等效电阻:</strong>我们将电压源化成导线，将电流源开路。算出可变电阻的电压和电流的比值</li>
-</ol>
-]]></content>
-      <tags>
-        <tag>考研</tag>
-        <tag>电路分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数二_线代</title>
-    <url>/2023020235597/</url>
-    <content><![CDATA[<h2 id><a href="#" class="headerlink" title=" "></a> </h2><h1 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h1><h2 id="求线性方程组的解"><a href="#求线性方程组的解" class="headerlink" title="求线性方程组的解"></a>求线性方程组的解</h2><h3 id="齐次方程组的通解"><a href="#齐次方程组的通解" class="headerlink" title="齐次方程组的通解"></a>齐次方程组的通解</h3><p>形式$Ax=0;$</p>
-<script type="math/tex; mode=display">
-\left\{\begin{aligned}
-&有唯一解(零解):&r(A)=n;\\
-&有非零解:&r(A)<n;\\
-\end{aligned}\right.</script><p>基础解系$\xi_1,\xi_2,\cdot\cdot ,\xi_s\ 的s=n-r(A)$ ;</p>
-<p>方法:</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-&①\ A\stackrel{初等行变换}{\longrightarrow}梯形矩阵B(或最简阶梯形矩阵B)\ ; \\
-&②\ 按列找出一个秩为r的子矩阵，则剩余列位置的未知数即设为自由变量(个数S=n-r)\ ;\\
-&③\ 按基础解系定义求出\xi_1,\xi_2,\cdot\cdot\cdot,\xi_s并写出通解;
-\end{aligned}</script><h3 id="非齐次方程组的通解"><a href="#非齐次方程组的通解" class="headerlink" title="非齐次方程组的通解"></a>非齐次方程组的通解</h3><p>形式$Ax=b$ ;</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-r(A)\neq r(A,b),方程无解\\
-r(A)=r(A,b)\begin{cases} 
-\ =n:有唯一解\\
-\ <n:无穷解
-\end{cases}
-\end{cases}</script><p>求解步骤</p>
-<script type="math/tex; mode=display">
-\begin{aligned}&①求Ax=0的通解,k_1\xi_1+k_2\xi_2+\cdot\cdot\cdot+k_{n-r}\xi_{n-r}\\
-&②求Ax=b\ 的一个特解\eta\\
-&③则通解为k_1\xi_1+k_2\xi_2+\cdot\cdot\cdot+k_{n-r}\xi_{n-r}+\eta\end{aligned}</script><h1 id="归纳总结"><a href="#归纳总结" class="headerlink" title="归纳总结"></a>归纳总结</h1><ul>
-<li><p>若矩阵A的行列式$|A|\neq 0$ 向量<strong>线性无关</strong>$\Rightarrow$若$|A|=0$,则r(A)&lt;n;</p>
-</li>
-<li><script type="math/tex; mode=display">
-r(A^*)=\begin{cases}
-n:则r(A)=n\\
-1:则r(A)=n-1\\
-0:则r(A)<n-1\\\end{cases}</script></li>
-<li></li>
-</ul>
-<h3 id="几种重要矩阵"><a href="#几种重要矩阵" class="headerlink" title="几种重要矩阵"></a>几种重要矩阵</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">矩阵</th>
-<th style="text-align:center">表现</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1. 数量矩阵</td>
-<td style="text-align:center">数k和单位矩阵的乘积称为数量矩阵:$kE$</td>
-</tr>
-<tr>
-<td style="text-align:center">2. 对角矩阵</td>
-<td style="text-align:center">非主对角元素<strong>均为零</strong>的矩阵称为对角矩阵</td>
-</tr>
-<tr>
-<td style="text-align:center">3. 对称矩阵</td>
-<td style="text-align:center">满足条件$A^T=A$的矩阵A称为对称矩阵，$A^T=A\Leftrightarrow a<em>{ji}=a</em>{ij}$</td>
-</tr>
-<tr>
-<td style="text-align:center">4. 正交矩阵</td>
-<td style="text-align:center">设A是n阶方阵，满足$A^TA=E$,则称A是<a href="#zjjz">正交矩阵</a></td>
-</tr>
-<tr>
-<td style="text-align:center">5.分块矩阵</td>
-<td style="text-align:center">…..</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<ul>
-<li>若A矩阵不可逆,$|A|= 0$</li>
-<li></li>
-</ul>
-<h4 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a><a id="zjjz">正交矩阵</a></h4><p>A是正交矩阵$A^TA=E\Leftrightarrow A^T=A^{-1}\Leftrightarrow A$的<strong>行（列）向量组是标准正交向量组</strong>.</p>
-<p>​    既A是由两两正交的<strong>单位向量组</strong>（称为规范正交基）组成.</p>
-<p>​    $A^T,A^{−1},A^∗$均为正交矩阵；</p>
-<p>​    A的特征值只能为$\pm1$</p>
-<h2 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h2><h3 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h3><ul>
-<li><p>$r(A+B)\leq r([A,B])\leq r(A)+r(B)$</p>
-</li>
-<li><p>$r(AB)\leq min(r(A),r(B))$</p>
-</li>
-</ul>
-<p>​    特征值的性质</p>
-<ul>
-<li><script type="math/tex; mode=display">
-\begin{cases}
-①\sum_{i=1}^{n}\lambda _{i}= \sum _{i=1}^{n}a_{ii}=tr(A);\\
-②\prod _ { i = 1 } ^ { n } \lambda_ { i } = | A |
-\end{cases}</script></li>
-</ul>
-<p>特征向量的性质</p>
-<ul>
-<li><strong>(1)k重特征值$\lambda$至多只有k个线性无关的特征向量</strong>（<strong>直接使用，不用证明</strong>）;</li>
-<li>(2)若$\xi_1,\xi_2$是A的属于不同特征值$\lambda_1,\lambda_2$的特征向量，<strong>则$\xi_1,\xi_2$线性无关</strong>;</li>
-<li>(3)若$\xi_1,\xi_2$是A的属于同一特征值入的特征向量，则$k_1\xi_1+k_2\xi_2$($k_1,k_2$不同时为零的任意常数)仍是A的属于特征值$\lambda$的特征向量;</li>
-</ul>
-<p>相似矩阵的性质$A\sim B$</p>
-<ol>
-<li><p>$r(A)=r(B)$;</p>
-</li>
-<li><p>$|A|=|B|$;</p>
-</li>
-<li><p>$|\lambda E-A|=|\lambda E-B|$;</p>
-</li>
-<li><p>$\lambda<em>{Ai}=\lambda</em>{Bi}$</p>
-<h2 id="相似对角化总结"><a href="#相似对角化总结" class="headerlink" title="相似对角化总结"></a>相似对角化总结</h2><ol>
-<li><p>由定义,若$B=P^{-1}AP$(P可逆),则$B\sim A$</p>
-</li>
-<li><p>在众多P中若存在一个<a href="#XSDJHFF">P($P=Q$)</a>使得$P^{-1}AP=  \Lambda$则可相似对角化</p>
-<p>​    何时存在这样的一个P<a href="#xsdjhtj">(可相似对角化的条件)</a></p>
-</li>
-</ol>
-</li>
-</ol>
-<h2 id="相似对角化-方法"><a href="#相似对角化-方法" class="headerlink" title="相似对角化-方法"></a><a id="XSDJHFF">相似对角化-方法</a></h2><p>设n阶矩阵A,若存在n阶可逆矩阵P,使得$P^{-1}AP=\Lambda$,其中$\Lambda$是对角矩阵，则称A可相似对角化，记$A\sim \Lambda$,称$\Lambda$是A的相似标准形 。(其中:可逆矩阵P的列向量应为<strong>A的线性无关的特征向量</strong>)</p>
-<p>若A为实对称矩阵，则其用正交短阵Q相似对角化的基本步骤如下:</p>
-<p>​    (1) 求A得特征值$\lambda_1,\lambda_2,\cdot\cdot\cdot,\lambda_n:|\lambda E-A|$</p>
-<p>​    (2)求对应得特征向量$\xi_1,\xi_2,\cdot\cdot,\xi_n$</p>
-<p>​    (3)正交化$\xi_1,\xi_2,\cdot\cdot,\xi_n$,再单位化得到$\eta_1,\eta_2,\cdot\cdot\cdot,\eta_n$(<a href="#zjgfh">正交规范化</a>)</p>
-<p>​    (4)令$Q={\eta_1,\eta_2,\cdot\cdot\cdot,\eta_n}$则Q为正交矩阵,且$Q^{-1}AQ=Q^TAQ=\Lambda$</p>
-<h2 id="相似对角化-判别"><a href="#相似对角化-判别" class="headerlink" title="相似对角化-判别"></a><a id="xsdjhtj">相似对角化-判别</a></h2><p>第一步，看是不是实<strong>对称矩阵</strong>，如果是实对称矩阵，立即推可相似对角化，如果不是实对称矩阵，看第二步；</p>
-<p>第二步，求方阵的n个特征值，如果<strong>特征值彼此都不相同</strong>，也就是都是单根的话，立即推可相似对角化，如果有重根，看第三步；</p>
-<p>第三步，来验证k重根是不是<strong>具备k个线性无关的特征向量</strong>，也就是看A-λE或λE-A的秩是否等于n-k，若相等，立即推可相似对角化，不相等，则不能进行相似对角化</p>
-<h2 id="正交规范化"><a href="#正交规范化" class="headerlink" title="正交规范化"></a><a id="zjgfh">正交规范化</a></h2><p>线性无关向量组$a_1,a_2$的标准正交化（又称正交规范化）公式为</p>
-<script type="math/tex; mode=display">
-\begin{flalign}
-①找垂&直向量:\\
-&\beta_1=a_1\\
-&\beta_2=a_2-\frac {(a_1,\beta_1)}{(a_2,\beta_2)}\\
-②单位&化\beta_1,\beta_2:\\
-&\eta_1=\frac {\beta_1}{||\beta_1||};\eta_2=\frac {\beta_2}{||\beta_2||};\\
-得到标&准正交向量\eta_1,\eta_2;
-\end{flalign}</script><h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><script type="math/tex; mode=display">
-\begin{aligned}
-f(x)=x^TAx;\stackrel {可逆线性变换x=cy}\Rightarrow y^T(C^TAC)y\\
-则B=C^TAC和A合同
-\end{aligned}</script><ul>
-<li>正惯性指数: 将二次型<strong>可逆线性变换</strong>化成规范型或标准型,正项个数为p,负项个数q 。则p为正惯性指数.</li>
-<li>其中正项个数和特征值正数个数对应</li>
-<li>可逆变换矩阵合同<ul>
-<li>矩阵合同正负惯性个数相同(特征值正负数个数相同)</li>
-</ul>
-</li>
-<li>正交变换矩阵相似($A\stackrel{正交变换}\Rightarrow Q^{-1}AQ$)<ul>
-<li>任何二次型都可以通过正交变换化成<strong>标准型</strong></li>
-<li>任何二次型都可以通过<strong>配方法(可逆线性变换)</strong>化成<strong>标准型和规范型</strong><ul>
-<li>X可以通过可逆变换P成各种Y,Q,W….但是所有的都可以通过<strong>标准型</strong>作为桥梁</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>考研</tag>
-        <tag>数学</tag>
-        <tag>线代</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研数二_高数</title>
-    <url>/2023020248903/</url>
-    <content><![CDATA[<h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h2 id="基本求导公式"><a href="#基本求导公式" class="headerlink" title="基本求导公式"></a>基本求导公式</h2><script type="math/tex; mode=display">
-\begin{align}
-(tan\ x)'&=sec^2x;&(cot\ x)'            &=-csc^2x\\
-(sec\ x)'&=sec\ xtan\ x        ;        &(csc\ x)'&=-csc\ xcot\ x\\
-(arcsin\ x)'&=\frac 1{\sqrt {1-x^2}};&(arccos\ x)'&={\color{red}-}\frac 1{\sqrt {1-x^2}}\\
-(arctan\ x)'&=\frac 1{1+x^2};            &(arccot\ x)'&={\color{red}-}\frac 1{1+x^2}\\
-\end{align}</script><h2 id="积分公式"><a href="#积分公式" class="headerlink" title="积分公式"></a>积分公式</h2><script type="math/tex; mode=display">
-\begin{aligned}
-\int sec\theta d\theta=ln|sec\theta+tan\theta|
-\end{aligned}</script><h2 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h2><script type="math/tex; mode=display">
-\begin{align} 
-f(x)    &=\sum_{n=0}(n!)^{-1}f^{(n)}(x_0)(x-x_0)^n\\
-sinx     &=x-\frac {x^3}{3!}+o(x^2) \\
-cosx     &=1-\frac {x^2}{2!}+\frac {x^4}{4!}+o(x^4) \\
-tanx     &=x+\frac {x^3}{3}+o(x^3)\\
-arcsinx &=x+\frac {x^3}{3!}+o(x^3)\\
-arctanx &=x-\frac {x^3}{3}+0(x^3)\\
-e^x     &=1+x+\frac {x}{2!}+\frac {x}{3!}+o(x^3)\\
-ln(1+x) &=x-\frac {x^2}{2}+\frac {x^3}{3}+o(x^3)\\
-(1+x)^a &=1+ax+\frac {a(a-1)}{2!}x^2+0{x^2}\\
-\end{align}</script><h2 id="变限积分求导公式"><a href="#变限积分求导公式" class="headerlink" title="变限积分求导公式"></a>变限积分求导公式</h2><script type="math/tex; mode=display">
-\begin{equation}
-
-
-F^{\prime}(x)= \frac{d}{dx}\left[ \int _{\varphi _{1}(x)}^{\varphi _{2}(x)}f(t)dt \right] =f \left[ \varphi _{2}(x)\right] \varphi _{2}^{\prime}(x)-f \left[ \varphi _{1}(x)\right] \varphi _{1}^{\prime}(x)
-
-\end{equation}</script><h3 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h3><h2 id="高级求导"><a href="#高级求导" class="headerlink" title="高级求导"></a>高级求导</h2><ol>
-<li>归纳</li>
-<li>莱布尼兹公式</li>
-</ol>
-<script type="math/tex; mode=display">
-(UV)^{(n)}=\sum_{k=0}^{n}C_n^ku^{(n-k)}v^{(k)}</script><ol>
-<li>泰勒公式</li>
-</ol>
-<h2 id="解微分方程"><a href="#解微分方程" class="headerlink" title="解微分方程"></a>解微分方程</h2><h3 id="一阶微分方程-P-274"><a href="#一阶微分方程-P-274" class="headerlink" title="一阶微分方程 P_274"></a>一阶微分方程 <em>P_274</em></h3><h4 id="类型一-可分离变量型"><a href="#类型一-可分离变量型" class="headerlink" title="类型一 可分离变量型"></a>类型一 可分离变量型</h4><ol>
-<li>​     $y^{‘}=f(x)·g(y)$</li>
-</ol>
-<p>$<br>\begin{aligned}<br>2.&amp;y^{‘}=f(ax+by+c) \<br>&amp;令\ u=ax+by+c\Rightarrow u^{‘}=a+bf(u)\<br>&amp;\int \frac {du}{a+bf(u)}=\int dx<br>\end{aligned}<br>$</p>
-<h4 id="类型二-一阶线性"><a href="#类型二-一阶线性" class="headerlink" title="类型二 一阶线性"></a>类型二 一阶线性</h4><p>能写成  $y^{‘}+p(x)y=q(x)$  则为<strong>一阶线性微分方程</strong>(详解请看P288)</p>
-<script type="math/tex; mode=display">
-通解为:\quad
-y=e^{-\int{p(x)dx}}\left[\int {e^{\int{p(x)dx}}\cdot q(x)dx}+C\right]</script><h3 id="二阶可微分方程"><a href="#二阶可微分方程" class="headerlink" title="二阶可微分方程"></a>二阶可微分方程</h3><h4 id="类型一-二阶可降阶微分方程"><a href="#类型一-二阶可降阶微分方程" class="headerlink" title="类型一 二阶可降阶微分方程"></a>类型一 二阶可降阶微分方程</h4><p>能写成  $y^{“}=f(x,y^{‘})$  的形式<em>(三步)</em></p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-&第一步:令\ y^{'}=p,\ y^{''}=p^{'}\Rightarrow 原方程\ \frac {dp}{dx}=f(x,p)\\
-&第二步:求得通解\ p=y^{'}= \psi(x,C_1)  \\
-&第三步:用一阶微分方程的解法\\
-\end{aligned}</script><p>能写成 $y^{‘’}=f(y,y^{‘})$ 的形式<em>(三步)</em></p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-&① 令y^{'}=p,则\ y^{''}=p^{'}=\frac{dp}{dy}\cdot \frac{dy}{dx}=\frac{dp}{dy}\cdot p,则原方程就变为关于\\ &y\ 的一阶方程\frac{dp}{dy}\cdot p=f(y,p)\\
-&②使用一阶方程的方法得到通解\ p=y^{'}= \phi (x,C_1) ,又将\ p\ 还原得到关于\ x\ 的一阶方程\\
-&③同理得出通解
-\end{aligned}</script><h4 id="类型二-二阶常系数微分方程"><a href="#类型二-二阶常系数微分方程" class="headerlink" title="类型二 二阶常系数微分方程"></a>类型二 二阶常系数微分方程</h4><p>能写成   $y^{‘’}+qy^{‘}+py=f(x)$  叫做<strong>高阶常系数微分方程</strong>(两步)</p>
-<script type="math/tex; mode=display">
-\begin{gathered}
-第一步\ \lambda^2+p\lambda+q=0得出\lambda_1\ ,\lambda_2\ 写出其次方程的通解:\\    
-\end{gathered}</script><script type="math/tex; mode=display">
-\begin{cases}
-若\ p^2-4q>0\ 通解:\ y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}\\
-若\ p^2-4q=0\ 通解:\ y=(C_1+C_2x)e^{\lambda x}\\
-若\ p^2-4q<0\ 通解:\ y=e^{ax}(C_1cos\beta x+C_2sin\beta x)\quad 根为a\pm\beta i\\
-\end{cases}</script><script type="math/tex; mode=display">
-\begin{aligned}
-第二步 设特解y^{\ast}\Rightarrow 得待定系数\Rightarrow 得特解\Rightarrow 写通解\\
-\end{aligned}</script><script type="math/tex; mode=display">
-\quad\begin{cases}
-    &当f(x)=P_n(x)e^{ax},\\
-    &设y^{\ast} =e^{ax}Q_n(x)x^k\\
-    &其中k=\begin{cases}
-            0,\quad a\neq\lambda_1\neq\lambda_2,\\
-            1,\quad a=\lambda_1 或a=\lambda_2,\\
-            2,\quad a=\lambda_1 =\lambda_2,\\
-        \end{cases}
-\end{cases}</script><script type="math/tex; mode=display">
-\begin{cases}
-    &当f(x)=e^{ax}\left[P_m(x)cos\beta x+P_n(x)sin\beta x\right]时\\
-    &设y^{\ast} =e^{ax}\left[Q_l^{(1)}cos\beta x+Q_l^{(2)}sin\beta x\right]x^k\ ;\\
-    &\quad\quad\quad\quad其中k=\begin{cases}
-            0,a\pm\beta 不是特征根,\\
-            1,a\pm\beta 是特征根,\\
-        \end{cases}
-\end{cases}</script><h4 id="3-高阶”-y-n-n-geq3-”情况-p-296"><a href="#3-高阶”-y-n-n-geq3-”情况-p-296" class="headerlink" title="3.    高阶”$y^{(n)},n\geq3$”情况 p_296"></a>3.    高阶”$y^{(n)},n\geq3$”情况 <em>p_296</em></h4><script type="math/tex; mode=display">
-\begin{aligned}
-&解y^{'''}+p_1y^{''}+p_2y^{'}+p_3y=0:\\
-&\quad算\lambda^3+p_1\lambda^2+p_2\lambda+p_3=0的根\\
-&\begin{cases}若\lambda是单实数根,写Ce^{\lambda x};\\
-若\lambda是为k得重实根,写(C_1+C_2X+C_3X^2+\cdot\cdot+C_kX^{k-1})e^{\lambda x}\\
-若\lambda是单复数根a\pm\beta i,写(C_1COS\beta x+C_2sin\beta x)e^{ax}
-\end{cases}
-
-\end{aligned}</script><h2 id="反常积分判断收敛"><a href="#反常积分判断收敛" class="headerlink" title="反常积分判断收敛"></a>反常积分判断收敛</h2><script type="math/tex; mode=display">
-\begin{aligned}
-① 要求每一个积分有且只有一个奇点\ ;\\
-②尺度\begin{cases}
-\int_0^1\frac {1}{x^p}dx\begin{cases}
-0<p<1,收敛;\\
-p\geq1,发散\ ;\\
-\end{cases}\\
-\int_1^{+\infty}\frac 1{x^p}dx\begin{cases}
-1<p,收敛\ ;\\
-p\leq1,发散\ ;\\
-\end{cases}\\
-\end{cases}
-\end{aligned}</script><h3 id="反常积分收敛-审敛法"><a href="#反常积分收敛-审敛法" class="headerlink" title="反常积分收敛 - 审敛法"></a>反常积分收敛 - 审敛法</h3><p>对无界函数的<strong>极限审敛法</strong>：设函数f(x)在区间<strong>(a,b]</strong>上连续，且f(x)≥0，x=a为f(x)的<a href="#xd">瑕点</a>,且存在常数p,使得</p>
-<script type="math/tex; mode=display">
-\lim _{x\rightarrow 0^+}[(x-a)^pf(x)]=A\quad(比阶)</script><script type="math/tex; mode=display">
-\begin{aligned}
-&(1)若0\leq A< +\infty,0<p<1,则反常积分\int_a^bf(x)dx收敛\\
-&(2)若0< A\leq +\infty,p\geq1,则反常积分\int_a^bf(x)dx发散\\
-\end{aligned}</script><p>则反常积分f(x)dx发散.</p>
-<h2 id="多元函数"><a href="#多元函数" class="headerlink" title="多元函数"></a>多元函数</h2><h3 id="无条件：多元函数-最值"><a href="#无条件：多元函数-最值" class="headerlink" title="无条件：多元函数-最值"></a>无条件：多元函数-最值</h3><script type="math/tex; mode=display">
-\begin{flalign}
-&有多元函数z=f(x,y);\\
-&①算驻点\begin{cases}
-fx^{'}=0;\\
-fy^{'}=0;
-\end{cases}得驻点(x_0,y_0) \\
-&令A=f_{xx}^{''}(x_0,y_0),B=f_{xy}^{''}(x_0,y_0),C=f_{yy}^{''}(x_0,y_0);\\
-&则\Delta=B^2-AC
-    \begin{cases}
-    <0\Rightarrow 有极值\begin{cases}A<0\Rightarrow极大值\\A>0\Rightarrow 极小值\end{cases}\\
-    >0\Rightarrow非极值\\
-    =0失效
-    \end{cases}
-\end{flalign}</script><h3 id="有条件：拉格朗日函数最值法"><a href="#有条件：拉格朗日函数最值法" class="headerlink" title="有条件：拉格朗日函数最值法"></a>有条件：拉格朗日函数最值法</h3><p>条件：$\phi(x,y,z)=0，\psi (x,y,z)=0。求y=f(x,y,z)的最值$</p>
-<p>$令F(x,y,z)=f(x,y,z)+\lambda\phi(x,y,z)+\beta\psi(x,y,z)$</p>
-<script type="math/tex; mode=display">
-\begin{aligned}&求：\begin{cases}
-F_x=0;\\
-F_y=0;\\
-F_z=0;\\
-F_{\lambda}=0;\\
-F_{\beta}=0;
-\end{cases}\\
-&得到解p(x_0,y_0,z_0);\\
-&带入就得最值
-\end{aligned}</script><h1 id="归纳总结"><a href="#归纳总结" class="headerlink" title="归纳总结"></a>归纳总结</h1><h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><h3 id="存在极限-连续-可导"><a href="#存在极限-连续-可导" class="headerlink" title="存在极限/连续/可导"></a>存在极限/连续/可导</h3><script type="math/tex; mode=display">
-\begin{aligned}
-&①在x_0处极限存在:\lim_{x\to x_0^+}f(x)=\lim_{x\to x_0^-}f(x)=A;\\
-&②在x_0处连续:f(x_0)=A;\\
-&③在x_0处可导:\lim_{x\to x_0^+}\frac {f(x)-f(x_0)}{x=x_0}=\lim_{x\to x_0^-}\frac {f(x)-f(x_0)}{x=x_0}
-\end{aligned}\\</script><h2 id="极限-无穷小比阶"><a href="#极限-无穷小比阶" class="headerlink" title="极限-无穷小比阶"></a>极限-无穷小比阶</h2><script type="math/tex; mode=display">
-\begin{aligned}
-&若\lim\alpha(x)=0;\lim\beta(x)=0;\\
-&当\lim \frac {\alpha(x)}{\beta(x)}=0;则\alpha(x)是比\beta(x)高级的无穷小;\\
-&当\lim \frac {\alpha(x)}{\beta(x)}=1;则\alpha(x)与\beta(x)等价无穷小;\\
-&当\lim \frac {\alpha(x)}{\beta(x)}=c;则\alpha(x)与\beta(x)同阶无穷小;\\
-&当\lim \frac {\alpha(x)}{[\beta(x)]^k}=1;k>0;则\alpha(x)是\beta(x)k价无穷小;\\
-
-\end{aligned}</script><h2 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理"></a>中值定理</h2><p>设f<strong>(x)在[a,b]上连续</strong>，则</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-    &定理1（有界与最值定理）m≤f(x)≤M,其中，m,M分别为f(x)在[a,b]上的最小值与最大值。\\
-    &定理2（介值定理）当m≤\mu≤M时，存在\xi∈[a,b]们，使得f（\xi）=\mu\\
-    &\quad 积分中值定理\int_a^bf(x)dx=f(\xi)(a-b)\quad(\xi\in(a,b))\\\
-    &定理3（平均值定理）当a<x_1<x_2<\cdot\cdot\cdot<x_n<b时，在[x_1,x_n]内至少存在一点\xi，使得\\
-    &\quad\quad\quad\quad\quad\quad\quad f(\xi)=\frac {f(x_1)+f(x_2)+\cdot\cdot\cdot+f(x_n)}{n}\\
-    &定理4（零点定理）当f(a)·f(b)<0时，存在\xi∈(a,b),使得f(\xi)=0.
-\end{aligned}</script><h3 id="涉及导数（微分）的中值定理"><a href="#涉及导数（微分）的中值定理" class="headerlink" title="涉及导数（微分）的中值定理"></a>涉及导数（微分）的中值定理</h3><script type="math/tex; mode=display">
-\begin{aligned}
-&定理5（费马定理）\\&设f(x)满足在x_0点处\left\{\begin{aligned}&1.可导;\\&2.取极值;\end{aligned}\right.\ 则f^{'}(x_0)=0\ ;\\\\
-&定理6（罗尔定理）\\&设f(x)满足\left\{\begin{aligned}&1.在[a.b]上连续;\\&2.在(a,b)上导;\\&3.f(a)=f(b);\\&注:3替换为\lim_{x \rightarrow a^+}f(x) = \lim_{x \rightarrow b^-}f(x)也成立;\end{aligned}\right.\ 则存在\xi\in(a,b),使得f^{'}(\xi)=0\ ;\\\\
-&定理7（拉格朗日中值定理）\\& 设f(x)满足\left\{\begin{aligned}&1.在[a.b]上连续;\\&2.在(a,b)内可导;\end{aligned}\right.\ 则存在\xi\in(a,b),使得f(b)-f(a)=f^{'}(\xi)(b-a)\ ;\\\\
-&定理8（柯西中值定理）\\& 设f(x)满足\left\{\begin{aligned}&1.在[a.b]上连续;\\&2.在(a,b)内可导;\\ &3.g^{'}(x)\neq0;\end{aligned}\right.\ 则存在\xi\in(a,b),使得\frac {f(b)-f(a)}{g(b)-g(a)}=\frac{f^{'}(\xi)}{g^{'}(\xi)}\ ;
-\end{aligned}</script><h3 id="关系"><a href="#关系" class="headerlink" title="关系:"></a><strong>关系:</strong></h3><script type="math/tex; mode=display">
-柯西中值定理\stackrel{当g(x)=x时}\Rightarrow 拉格朗日中值定理 \stackrel{加入罗尔的条件三}\Rightarrow 罗尔中值定理\\
-罗尔中值定理\Rightarrow 拉格朗日中值定理 \Rightarrow 柯西中值定理\\
-.....\\
-三个定理都可以互相论证,由此可以看出是一回事,证明时循环论证.</script><h2 id="一元函数微分学"><a href="#一元函数微分学" class="headerlink" title="一元函数微分学"></a>一元函数微分学</h2><h3 id="一元函数几何应用-渐近线-p-76"><a href="#一元函数几何应用-渐近线-p-76" class="headerlink" title="一元函数几何应用 - 渐近线 p_76"></a>一元函数几何应用 - 渐近线 p_76</h3><ol>
-<li><p>铅锤渐近线$(x=x_0)$</p>
-<script type="math/tex; mode=display">
-若\lim _{x\rightarrow x_0^+}f(x)=\infty(或\lim _{x\rightarrow x_0^-}f(x)=\infty)</script></li>
-<li><p>水平渐近线$(y=y_0)$</p>
-<script type="math/tex; mode=display">
- \begin{aligned}
- &\lim_{x\rightarrow+\infty}f(x)=y_1,则y=y_1是一条水平渐近线\\
- &\lim_{x\rightarrow-\infty}f(x)=y_2,则y=y_2是一条水平渐近线\\
- &\lim_{x\rightarrow+\infty}f(x)=\lim_{x\rightarrow-\infty}f(x)=y_3,则y=y_3是一条水平渐近线\\
- \end{aligned}</script></li>
-<li><p>斜渐近线(y=kx+b)</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-&\lim_{x\rightarrow+\infty}\frac {f(x)}x=k_1,\lim_{x\rightarrow+\infty}[f(x)-k_{1}x]= b _{1},则y = k_{1}x+b_1\\
-&\lim_{x\rightarrow-\infty}\frac{f(x)}{x}=k_{2},\lim_{x\rightarrow-\infty}[f(x)-k_{2}x]= b _{2},则y = k_{2}x+b_2\\
-&\lim_{x\rightarrow-\infty}\frac{f(x)}{x}=\lim_{x\rightarrow+\infty}\frac {f(x)}x=k_{3},\lim_{x\rightarrow-\infty}\frac{f(x)}{x}=\lim_{x\rightarrow+\infty}[f(x)-k_{3}x]= b _{3},则y = k_{3}x+b_3\\
-
-\end{aligned}</script></li>
-</ol>
-<h2 id="一元函数积分学"><a href="#一元函数积分学" class="headerlink" title="一元函数积分学"></a>一元函数积分学</h2><p>定义：</p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-\int_a^bf(x)dx=\lim_{n\rightarrow\infty}\frac {b-a}n\sum_{i=1}^n{f(a+\frac {i(b-a)}{n}})\\
-通常：\ 
-\int _{0}^{1}f(x)dx=\lim _{n \rightarrow \infty}\sum _{i=1}^{n}f(0+ \frac{1-0}{n}i)\frac{1-0}{n}
-\end{aligned}</script><h3 id="积分换元法"><a href="#积分换元法" class="headerlink" title="积分换元法:"></a>积分换元法:</h3><script type="math/tex; mode=display">
-三角函数代换\begin{cases}
-\sqrt {a^2-x^2}\rightarrow x=asint,\\
-\sqrt {a^2+x^2}\rightarrow x=atant,\\
-\sqrt {x^2-a^2}\rightarrow x=ast,\\
-\end{cases}</script><h3 id="几种常见积分图形"><a href="#几种常见积分图形" class="headerlink" title="几种常见积分图形"></a>几种常见积分图形</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>类型</th>
-<th>图像</th>
-<th>直角坐标系</th>
-<th>极坐标系</th>
-<th>参数坐标系</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>摆线</td>
-<td><img src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
-<td></td>
-<td></td>
-<td>$\begin{cases}x=a(1-sint)\y=a(1-cost)\end{cases}$</td>
-</tr>
-<tr>
-<td>心型线</td>
-<td><img src="https://gitee.com/xqyr/img/raw/img/20221018195315.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018195315.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
-<td></td>
-<td>$r=a(1+cos\theta)$</td>
-<td></td>
-</tr>
-<tr>
-<td>伯努利双纽线</td>
-<td><img src="https://gitee.com/xqyr/img/raw/img/20221018195416.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018195416.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
-<td></td>
-<td>$r^2=a^2cos\theta$</td>
-<td></td>
-</tr>
-<tr>
-<td>玫瑰线</td>
-<td><img src="https://gitee.com/xqyr/img/raw/img/20221021000126.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221021000126.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
-<td></td>
-<td>$r=a \sin 3 \theta(a&gt;0)$</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="几何应用-弧长"><a href="#几何应用-弧长" class="headerlink" title="几何应用 - 弧长"></a>几何应用 - 弧长</h3><script type="math/tex; mode=display">
-\begin{aligned}
-&①直角坐标系:s= \int _{a}^{b}\sqrt{1+ \left[ y^{\prime}(x)\right] ^{2}}dx\\
-&②参数方程:s= \int _{a}^{\beta}\sqrt{\left[ x^{\prime}(t)\right] ^{2}+ \left[ y^{\prime}(t)\right] ^{2}}dt\\
-&③极坐标方程:s= \int _{\alpha}^{\beta}\sqrt{\left[ r(\theta)\right] ^{2}+ \left[ r^{\prime}(\theta)\right] ^{2}}d \theta
-\end{aligned}</script><h3 id="几何应用-极坐标面积"><a href="#几何应用-极坐标面积" class="headerlink" title="几何应用-极坐标面积"></a>几何应用-极坐标面积</h3><script type="math/tex; mode=display">
-\begin{aligned}
-&若r=r(\theta)(\alpha<\theta<\beta)\\
-&则A=\int_\alpha^\beta \frac 12[r(\theta)]^2d\theta
-\end{aligned}</script><h3 id="几何应用-旋转体体积"><a href="#几何应用-旋转体体积" class="headerlink" title="几何应用-旋转体体积"></a>几何应用-旋转体体积</h3><ol>
-<li>曲线 y=y(x）与x=a,x=b(a &lt;b）及x 轴围成的曲边梯形<strong>绕x 轴旋转</strong> 周所得到的旋转体的体积</li>
-</ol>
-<script type="math/tex; mode=display">
-V=\pi\int_a^by^2(x)dx</script><ol>
-<li><p>曲线$y=y_1(x)\geq0与y=y_2(x)\geq0及x=a,x=b(a&lt;b)$所围成的平面图形<strong>绕x轴旋转</strong>一周所得到的旋转体的体积</p>
-<script type="math/tex; mode=display">
-V=\pi\int_a^b|y_1^2(x)-y_2^2(x)|dx</script></li>
-<li><p>曲线y=y(x)与x=a,x=b(0≤a&lt;b)及x轴围成的曲边梯形<strong>绕y轴</strong>旋转一周所得到的旋转体的体积</p>
-<script type="math/tex; mode=display">
-V=2\pi\int_a^bx|y(x)|dx</script></li>
-<li><p>曲线$y=y_1(x)与y=y_2(x)及x=a,x=b(0≤a≤b)$所围成的图形<strong>绕y轴</strong>旋转一周所成的旋转体的体积</p>
-<script type="math/tex; mode=display">
-V=2\pi\int_a^bx|y_1(x)-y_2(x)|dx</script></li>
-</ol>
-<h2 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h2><p>①判别时要求每个积分有且仅有一个奇点.</p>
-<p>②尺度</p>
-<script type="math/tex; mode=display">
-\int_0^1\frac 1{x^p}dx\begin{cases}
-0<p<1时,收敛,\\
-p>1时,发散,\\
-\end{cases}\\
-\int_1^{+\infty}\frac 1{x^p}dx\begin{cases}
-p>1时,收敛,\\
-p\leq1时,发散,\\
-\end{cases}\\</script><h2 id="二重积分"><a href="#二重积分" class="headerlink" title="二重积分"></a>二重积分</h2><p>$rd\theta dr=dxdy$</p>
-<h4 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h4><h5 id="瑕点"><a href="#瑕点" class="headerlink" title="瑕点"></a><a id="xd">瑕点</a></h5><script type="math/tex; mode=display">
-\lim_{x\rightarrow a^+}f(x)=+\infty</script>]]></content>
-      <tags>
-        <tag>考研</tag>
-        <tag>数学</tag>
-        <tag>高数</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Liunx使用</title>
-    <url>/2023020221277/</url>
+    <url>/2023050821277/</url>
     <content><![CDATA[<p><a href="https://www.linuxcool.com/">命令查询网站</a></p>
 <h1 id="一些说明"><a href="#一些说明" class="headerlink" title="一些说明"></a>一些说明</h1><p>软件安装路径 ==\wsl.localhost\Ubuntu\usr\share\vim==</p>
 <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><a href="https://www.linuxcool.com/">常用命令</a></h1><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">ll #打印文件列表</span><br><span class="line">rm #删除文件</span><br><span class="line">find #查找</span><br></pre></td></tr></table></figure>
@@ -1206,6 +251,32 @@ p\leq1时,发散,\\
       </tags>
   </entry>
   <entry>
+    <title>hexo 使用技巧</title>
+    <url>/2023050816107/</url>
+    <content><![CDATA[<h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>如果卡住，就换源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h1 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h1><h2 id="Hexo-博客插件生成短链"><a href="#Hexo-博客插件生成短链" class="headerlink" title="Hexo 博客插件生成短链"></a>Hexo 博客插件生成短链</h2><ul>
+<li><a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>修改博客根目录下的 <code>_config.yml</code> 配置文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: :year:month:day:abbrlink/   # 具体配置参考Hexo文档https://hexo.io/zh-cn/docs/permalinksCopy</span><br><span class="line">#添加如下的对该插件的配置项：</span><br><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc16  #support crc16(default) and crc32</span><br><span class="line">  rep: dec    #support dec(default) and hex</span><br><span class="line">  drafts: false #(true)Process draft,(false)Do not process draft</span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: false</span><br><span class="line">     depth:</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/66c8.html</span><br><span class="line"></span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/65535.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/8ddf18fb.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/1690090958.htmlCopy</span><br></pre></td></tr></table></figure>
+<h2 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h2><p>hexo的启动文件地址<strong>node_modules\hexo-server\index.js</strong> 修改port即可。</p>
+<h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1><p>免费就用github+PicGo+typora。</p>
+<p><a href="https://blog.csdn.net/qq_43367829/article/details/104882071">(18条消息) PicGo+GitHub使用_我想养只汤姆猫的博客-CSDN博客_picgo github</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>摩擦离合器</title>
+    <url>/2023050825118/</url>
+    <content><![CDATA[<h2 id="markdown居中对齐，左对齐，右对齐"><a href="#markdown居中对齐，左对齐，右对齐" class="headerlink" title="markdown居中对齐，左对齐，右对齐"></a>markdown居中对齐，左对齐，右对齐</h2><p>Markdown语法本身没有居中，但Markdown中支持基本的HTMl语法，可以使用HTML语法。<br>居中：<br><code>&lt;center&gt;月是故乡明&lt;/center&gt;</code><br>左对齐：<br><code>&lt;p align=&quot;left&quot;&gt;月是故乡明&lt;/p&gt;</code><br>右对齐：<br><code>&lt;p align=&quot;right&quot;&gt;月是故乡明&lt;/p&gt;</code></p>
+]]></content>
+  </entry>
+  <entry>
     <title>next使用的一些坑</title>
     <url>/2022100549402/</url>
     <content><![CDATA[<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexo-theme-next&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;7.8.0&quot;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
@@ -1228,7 +299,7 @@ p\leq1时,发散,\\
   </entry>
   <entry>
     <title>simulink</title>
-    <url>/2023020233435/</url>
+    <url>/2023050833435/</url>
     <content><![CDATA[<h1 id="simulink"><a href="#simulink" class="headerlink" title="simulink"></a>simulink</h1><h2 id="电路仿真"><a href="#电路仿真" class="headerlink" title="电路仿真"></a>电路仿真</h2><h3 id="相关操作"><a href="#相关操作" class="headerlink" title="相关操作"></a>相关操作</h3><h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><p>如电容,电感…等元器件在simspace产品库中,需要安装相应的产品.</p>
 <h2 id="matlab操作"><a href="#matlab操作" class="headerlink" title="matlab操作"></a>matlab操作</h2><h2 id="simulink操作"><a href="#simulink操作" class="headerlink" title="simulink操作"></a>simulink操作</h2><p>Zero Order Hold是零阶保持器的意思，就是输入的信号帮你保持一段时间，经过这个模块后的信号会有阶梯状的感觉。如果前后两个模块的采样频率不一样的话，就要在两者中间加入Rate Transition，否则就会报错。假如前级的采样频率大，而后级的采样频率小的话，它的作用就是Zero Order Hold，以保证数据的完整性。</p>
 <h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3>]]></content>
@@ -1237,21 +308,427 @@ p\leq1时,发散,\\
       </tags>
   </entry>
   <entry>
-    <title>hexo 使用技巧</title>
-    <url>/2023020216107/</url>
-    <content><![CDATA[<h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h4 id="Hexo-博客插件生成短链-使用-abbrlink-生成短链接"><a href="#Hexo-博客插件生成短链-使用-abbrlink-生成短链接" class="headerlink" title="Hexo 博客插件生成短链 - 使用 abbrlink 生成短链接"></a>Hexo 博客插件生成短链 - <a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>修改博客根目录下的 <code>_config.yml</code> 配置文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: :year:month:day:abbrlink/   # 具体配置参考Hexo文档https://hexo.io/zh-cn/docs/permalinksCopy</span><br><span class="line">#添加如下的对该插件的配置项：</span><br><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc16  #support crc16(default) and crc32</span><br><span class="line">  rep: dec    #support dec(default) and hex</span><br><span class="line">  drafts: false #(true)Process draft,(false)Do not process draft</span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: false</span><br><span class="line">     depth:</span><br></pre></td></tr></table></figure>
-<p>效果</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/66c8.html</span><br><span class="line"></span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/65535.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/8ddf18fb.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/1690090958.htmlCopy</span><br></pre></td></tr></table></figure>
-<h2 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h2><p>hexo的启动文件地址<strong>node_modules\hexo-server\index.js</strong> 修改port即可。</p>
+    <title>蓝桥杯问题</title>
+    <url>/2022012412972/</url>
+    <content><![CDATA[<h2 id="大家好，我想问个事情。比赛的时候驱动会出问题吗"><a href="#大家好，我想问个事情。比赛的时候驱动会出问题吗" class="headerlink" title="大家好，我想问个事情。比赛的时候驱动会出问题吗"></a>大家好，我想问个事情。比赛的时候驱动会出问题吗</h2><h2 id="我在网上找了一个2021数据包。下面这个。"><a href="#我在网上找了一个2021数据包。下面这个。" class="headerlink" title="我在网上找了一个2021数据包。下面这个。"></a>我在网上找了一个2021数据包。下面这个。</h2><h2 id="但是我发现他的驱动有点问题。ds18b20他是这么写的"><a href="#但是我发现他的驱动有点问题。ds18b20他是这么写的" class="headerlink" title="但是我发现他的驱动有点问题。ds18b20他是这么写的"></a>但是我发现他的驱动有点问题。ds18b20他是这么写的</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  程序说明: 单总线驱动程序</span></span><br><span class="line"><span class="comment">  软件环境: Keil uVision 4.10 </span></span><br><span class="line"><span class="comment">  硬件环境: CT107单片机综合实训平台(外部晶振12MHz) STC89C52RC单片机</span></span><br><span class="line"><span class="comment">  日    期: 2011-8-9</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;reg52.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">sbit DQ = P1^<span class="number">4</span>;  <span class="comment">//单总线接口</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//单总线延时函数</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Delay_OneWire</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> t)</span>  <span class="comment">//STC89C52RC</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>(t--);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//通过单总线向DS18B20写一个字节</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Write_DS18B20</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> dat)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		DQ = dat&amp;<span class="number">0x01</span>;</span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//从DS18B20读取一个字节</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">Read_DS18B20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> dat;</span><br><span class="line">  </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(DQ)</span><br><span class="line">		&#123;</span><br><span class="line">			dat |= <span class="number">0x80</span>;</span><br><span class="line">		&#125;	    </span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dat;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//DS18B20设备初始化</span></span><br><span class="line">bit <span class="title function_">init_ds18b20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  	bit initflag = <span class="number">0</span>;</span><br><span class="line">  	</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">60</span>);</span><br><span class="line">  	DQ = <span class="number">0</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">480</span>);</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">120</span>); </span><br><span class="line">    initflag = DQ;     </span><br><span class="line">  	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">  </span><br><span class="line">  	<span class="keyword">return</span> initflag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="他读和写的延迟时间不对"><a href="#他读和写的延迟时间不对" class="headerlink" title="他读和写的延迟时间不对"></a>他读和写的延迟时间不对</h2><p><img src="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" class="lazyload placeholder" data-srcset="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="屏幕截图 2022-01-24 135205"></p>
+<h2 id="所以考试的时候，给的驱动会出这种类似的问题吗？"><a href="#所以考试的时候，给的驱动会出这种类似的问题吗？" class="headerlink" title="所以考试的时候，给的驱动会出这种类似的问题吗？"></a>所以考试的时候，给的驱动会出这种类似的问题吗？</h2>]]></content>
+      <categories>
+        <category>单片机</category>
+      </categories>
+      <tags>
+        <tag>-蓝桥杯 -驱动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vim使用教程</title>
+    <url>/2022121127729/</url>
+    <content><![CDATA[<h1 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h1><p>vim编辑器有三种模式：命令模式、编辑模式、末行模式。</p>
+<ul>
+<li>「命令模式」：可以进行删除、复制、粘贴等快捷操作。按==i== 进入编辑模式</li>
+<li>「编辑模式」：可以编辑文件内容。</li>
+<li><p>「末行模式」：可以通过命令操作文件，比如搜索、保存、退出等。</p>
+<h2 id="1-编辑模式"><a href="#1-编辑模式" class="headerlink" title="1. 编辑模式"></a>1. 编辑模式</h2></li>
+</ul>
+<p>按 ==:wq== 保存退出vim</p>
+<h2 id="2-命令模式"><a href="#2-命令模式" class="headerlink" title="2.命令模式"></a>2.命令模式</h2><p>​    </p>
+<h2 id="3-1-移动光标"><a href="#3-1-移动光标" class="headerlink" title="3.1 移动光标"></a>3.1 移动光标</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>h 或 左方向键（←）</td>
+<td>光标向左移动一个字符</td>
+</tr>
+<tr>
+<td>l 或 右方向键（→）</td>
+<td>光标向右移动一个字符</td>
+</tr>
+<tr>
+<td>k 或 上方向键（↑）</td>
+<td>光标向上移动一个字符</td>
+</tr>
+<tr>
+<td>j 或 下方向键（↓）</td>
+<td>光标向下移动一个字符</td>
+</tr>
+<tr>
+<td>j’k</td>
+<td>光标移动到行首</td>
+</tr>
+<tr>
+<td>Ctrl+4 或 end键</td>
+<td>光标移动到行尾</td>
+</tr>
+<tr>
+<td>Ctrl + f 或 pg up键</td>
+<td>【屏幕】向下移动一页</td>
+</tr>
+<tr>
+<td>Ctrl + b 或 pg dn键</td>
+<td>【屏幕】向上移动一页</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>移动到文件的第一行</td>
+</tr>
+<tr>
+<td>G</td>
+<td>移动到文件的最后一行</td>
+</tr>
+<tr>
+<td>nG</td>
+<td>移动到文件的第n行</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="3-2-搜索替换"><a href="#3-2-搜索替换" class="headerlink" title="3.2 搜索替换"></a>3.2 搜索替换</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/字符串 + 回车</td>
+<td>向下搜索指定字符串</td>
+</tr>
+<tr>
+<td>n</td>
+<td>继续向下搜索下一个字符串</td>
+</tr>
+<tr>
+<td>?字符串 + 回车</td>
+<td>向上搜索指定字符串</td>
+</tr>
+<tr>
+<td>N</td>
+<td>继续向上搜索下一个字符串</td>
+</tr>
+<tr>
+<td>:%s/word1/word2/g</td>
+<td>将文件中的word1替换为word2</td>
+</tr>
+<tr>
+<td>:%s/word1/word2/gc</td>
+<td>将文件中的word1替换为word2，但替换前需要用户确认！</td>
+</tr>
+<tr>
+<td>:1,10s/word1/word2/g</td>
+<td>将第1行到第10行的word1替换为word2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="3-3-复制粘贴删除"><a href="#3-3-复制粘贴删除" class="headerlink" title="3.3 复制粘贴删除"></a>3.3 复制粘贴删除</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>删除后一个字符</td>
+</tr>
+<tr>
+<td>X</td>
+<td>删除前一个字符</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>剪切一行</td>
+</tr>
+<tr>
+<td>数字dd</td>
+<td>剪切多行</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>复制一行</td>
+</tr>
+<tr>
+<td>数字yy</td>
+<td>复制多行</td>
+</tr>
+<tr>
+<td>p</td>
+<td>粘贴到下一行</td>
+</tr>
+<tr>
+<td>P</td>
+<td>粘贴到上一行</td>
+</tr>
+<tr>
+<td>u</td>
+<td>撤回操作</td>
+</tr>
+<tr>
+<td>Ctrl + r</td>
+<td>撤回刚才的撤回操作</td>
+</tr>
+<tr>
+<td>.（小数点）</td>
+<td>重复刚才的操作</td>
+</tr>
+<tr>
+<td>Ctrl+WW</td>
+<td>多窗口切换</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="3-末行模式"><a href="#3-末行模式" class="headerlink" title="3. 末行模式"></a>3. 末行模式</h2><p>英文状态的 <code>:</code>键 进入末行模式</p>
+<p>命令模式 或 vim打开文件时，按下 <code>:</code> 键，左下角出现 ：时，即表示末行模式。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:w</td>
+<td>保存</td>
+</tr>
+<tr>
+<td>:q</td>
+<td>退出</td>
+</tr>
+<tr>
+<td>:wq</td>
+<td>保存后退出</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>不保存，强制退出</td>
+</tr>
+<tr>
+<td>:set nu</td>
+<td>显示行号</td>
+</tr>
+<tr>
+<td>:set nonu</td>
+<td>取消 显示行号</td>
+</tr>
+<tr>
+<td>:w [文件名]</td>
+<td>将编辑后的内容保存到另一个文件中（另存为）</td>
+</tr>
+<tr>
+<td>:2,5 w [文件名]</td>
+<td>将第2到5行的内容保存到另一个文件中（指定行另存为）</td>
+</tr>
+<tr>
+<td>:r [文件名]</td>
+<td>输入另一个文件的内容，到光标的下一行</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h2><p><img src="https://gitee.com/xqyr/img/raw/img/20230108145358.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20230108145358.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<p>安装安装coc.nvim，依赖nodejs和yarn</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL install-node.now.sh | sh</span><br><span class="line">curl --compressed -o- -L https://yarnpkg.com/install.sh | bash</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>建立软连接</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@VM-4-12-centos bin]<span class="comment"># cd /usr/local/nodejs/bin</span></span><br><span class="line">[root@VM-4-12-centos bin]<span class="comment"># ln -s /usr/local/nodejs/bin/npm /usr/local/bin</span></span><br><span class="line">[root@VM-4-12-centos bin]<span class="comment"># ln -s /usr/local/nodejs/bin/node /usr/local/bin</span></span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/wooin/article/details/1858917">配置vim</a></p>
+<p>1</p>
+<h3 id="wsl"><a href="#wsl" class="headerlink" title="wsl"></a>wsl</h3><p>所有默认改成root</p>
+<p>1 找到(centos 或者<a href="https://so.csdn.net/so/search?q=Ubuntu&amp;spm=1001.2101.3001.7020">Ubuntu</a> )的exe文件<br>一般在 C:\Users\admin\AppData\Local\Microsoft\WindowsApps 目录下<br>打开cmd 执行<br>Centos7.exe config —default-user root<br>然后关掉wsl<br>wsl —shutdown</p>
+<h1 id="neovim"><a href="#neovim" class="headerlink" title="neovim"></a>neovim</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line"> add-apt-repository ppa:neovim-ppa/stable</span><br><span class="line"> apt-get update</span><br><span class="line"> apt install -y neovim</span><br></pre></td></tr></table></figure>
+<h2 id="安装vim-plug"><a href="#安装vim-plug" class="headerlink" title="安装vim_plug"></a>安装vim_plug</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#依赖curl</span></span><br><span class="line">apt-get install curl</span><br><span class="line"><span class="comment">#还是失败</span></span><br><span class="line">sudo vim /etc/hosts</span><br><span class="line"><span class="comment"># 添加</span></span><br><span class="line">199.232.28.133 raw.githubusercontent.com</span><br><span class="line"><span class="comment"># 插件网站 https://vimawesome.com/</span></span><br></pre></td></tr></table></figure>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#出现 E325: ATTENTION</span></span><br><span class="line">Found a swap file by the name <span class="string">&quot;~/.local/share/nvim/swap//%home%dev%xuexi%tool%main.c.swp&quot;</span></span><br><span class="line"><span class="comment"># 删除</span></span><br><span class="line"><span class="built_in">rm</span> ~/.local/share/nvim/swap//%home%dev%xuexi%tool%main.c.swp</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vscode+qt</title>
+    <url>/2022121929032/</url>
+    <content><![CDATA[<p> dddk</p>
+<h1 id="vsCode如何搭建Qt的开发环境"><a href="#vsCode如何搭建Qt的开发环境" class="headerlink" title="vsCode如何搭建Qt的开发环境"></a><a href="https://www.cnblogs.com/QingYiShouJiuRen/p/16859974.html">vsCode如何搭建Qt的开发环境</a></h1><p><strong>vs搭建Qt的开发环境步骤如下:</strong></p>
+<p>1.打开vscode商店下载QtTools和QtConfigure两个插件，然后安装。</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105113854705-959930031.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105113854705-959930031.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p> 2.打开vscode,创建终端，然后在终端中创建文件夹，然后打开。</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105113625698-1140627704.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105113625698-1140627704.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105114335897-1345090558.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105114335897-1345090558.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p> 3.F1快捷键打开搜索引擎，输入”QtConfigfigure”,选择第一个”QtConfigfigure:Set Qt Dir”,然后选择Qt的安装目录即可。</p>
+<p>如果弹出下面的提示信息，就说明Qt的安装路径已经设置成功了。</p>
+<p> <img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105114557836-1467911467.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105114557836-1467911467.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p> 4.在搜索引擎中输入QtConfigfigure:new project,创建一个测试项目</p>
+<p><img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115151989-520744708.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115151989-520744708.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p> 输入项目名称：</p>
+<p><img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115245932-852700741.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115245932-852700741.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p> 选择编译器类型，然后编译运行即可</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105115332358-1225691560.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105115332358-1225691560.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
+<p>运行结果</p>
+<p><img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105121212812-597697988.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105121212812-597697988.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img" style="zoom: 33%;"></p>
+<p> 我选择的是带有UI文件的类型，如果想打开UI设计器，在搜索引擎中输入”Open Qt Designer “,点击打开就可。</p>
+]]></content>
+      <categories>
+        <category>编程</category>
+      </categories>
+      <tags>
+        <tag>vscode</tag>
+        <tag>qt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>资源聚合网站拓展</title>
+    <url>/2023011240569/</url>
+    <content><![CDATA[<h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1><h2 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h2><blockquote>
+<p><a href="https://www.chongbuluo.com/thread-13891-1-1.html">虫部落书籍聚合推荐</a></p>
+<h2 id="影视"><a href="#影视" class="headerlink" title="影视"></a>影视</h2></blockquote>
+<h2 id="音乐和"><a href="#音乐和" class="headerlink" title="音乐和"></a>音乐和</h2><h1 id="博客，hexo"><a href="#博客，hexo" class="headerlink" title="博客，hexo"></a>博客，hexo</h1><blockquote>
+<p><a href="http://120.48.121.186/">博客主题：hexo-theme-bamboo</a></p>
+<h1 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h1><p><a href="https://www.lanqiao.cn/problems/?sort=students_count">题库 - 蓝桥云课 (lanqiao.cn)</a></p>
+</blockquote>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><blockquote>
+<p><a href="https://vimawesome.com/">Vim Awesome_Linux插件</a></p>
+</blockquote>
+<h1 id="以前"><a href="#以前" class="headerlink" title="以前"></a>以前</h1><h2 id="电子书"><a href="#电子书" class="headerlink" title="电子书"></a>电子书</h2><p><strong>1. Zlibrary</strong></p>
+<p><a href="https://z-lib.org/">https://z-lib.org/</a></p>
+<p><strong>2. Libgen</strong></p>
+<p><a href="http://libgen.rs/">http://libgen.rs/</a></p>
+<p><strong>3. PDFdrive</strong></p>
+<p><a href="https://www.pdfdrive.com/">https://www.pdfdrive.com/</a></p>
+<p><strong>细分领域电子书网址</strong></p>
+<p><strong>1. Project Gutenberg（古腾堡计划）文学</strong></p>
+<p><a href="http://www.gutenberg.org">http://www.gutenberg.org</a></p>
+<p><strong>2. Scribd 有声书</strong></p>
+<p><a href="https://zh.scribd.com/">https://zh.scribd.com/</a></p>
+<p><strong>3. E-Books Directory 技术类</strong></p>
+<p><a href="http://www.e-booksdirectory.com/">http://www.e-booksdirectory.com/</a></p>
+<p><strong>4. itEbookShare IT技术</strong></p>
+<p><a href="http://www.itebookshare.com/">http://www.itebookshare.com/</a></p>
+<p><strong>5. QcEnglish 英语学习</strong></p>
+<p><a href="http://www.qcenglish.com/">http://www.qcenglish.com/</a></p>
+<p><strong>6. Many Books 小说</strong></p>
+<p><a href="http://manybooks.net/">http://manybooks.net/</a></p>
+<p><strong>7. OpenLibrary 偏历史宗教艺术</strong></p>
+<p> <a href="https://openlibrary.org/">https://openlibrary.org/</a></p>
+<p><strong>8. PlanetEbook 经典文学</strong></p>
+<p><a href="https://www.planetebook.com/">https://www.planetebook.com/</a></p>
+<p><strong>9. Bookyards K12儿童类</strong></p>
+<p><a href="https://www.bookyards.com/en">https://www.bookyards.com/en</a></p>
+<p><strong>10. ebook3000 偏全球杂志</strong></p>
+<p><a href="http://www.ebook3000.com/">http://www.ebook3000.com/</a></p>
+<p><strong>11. Mox.moe 漫画书</strong></p>
+<p><a href="https://mox.moe/">https://mox.moe/</a></p>
+<p><strong>12. EpubPub 小说</strong></p>
+<p><a href="https://www.epub.pub/">https://www.epub.pub/</a></p>
+<p><strong>13. Archive of Our Own 全球最大同人小说网站</strong></p>
+<p><a href="https://archiveofourown.org/">https://archiveofourown.org/</a></p>
+<p><strong>14. getfreeebooks 书籍推荐</strong></p>
+<p><a href="https://www.getfreeebooks.com/">https://www.getfreeebooks.com/</a></p>
+<p><strong>15. BookBub 限免正版</strong></p>
+<p><a href="https://www.bookbub.com/ebook-deals/free-ebooks">https://www.bookbub.com/ebook-deals/free-ebooks</a></p>
+<p><strong>16. europeana 欧洲艺术历史</strong></p>
+<p><a href="https://www.europeana.eu/">https://www.europeana.eu/</a></p>
+<p><strong>17. OpenCulture 教科书</strong></p>
+<p><a href="https://www.openculture.com/">https://www.openculture.com/</a></p>
+<p><strong>18. OnlineProgrammingBooks 计算机技术</strong></p>
+<p><a href="https://www.onlineprogrammingbooks.com/">https://www.onlineprogrammingbooks.com/</a></p>
+<p><strong>19. Read Print 名著小说</strong></p>
+<p><a href="http://www.readprint.com/">http://www.readprint.com/</a></p>
+<p><strong>20. LibriVox 精品有声书</strong></p>
+<p><a href="https://librivox.org/">https://librivox.org/</a></p>
+<p><strong>21. KuPDF 大学课程</strong></p>
+<p><a href="https://kupdf.net/">https://kupdf.net/</a></p>
+<p><strong>22. Engineering Books PDF 机械工程电器书籍</strong></p>
+<p><a href="https://engineeringbookspdf.com/">https://engineeringbookspdf.com/</a></p>
+<p><strong>23. FaaDoOEngineers 印度最大工程师书籍网站</strong></p>
+<p><a href="http://www.faadooengineers.com/">http://www.faadooengineers.com/</a></p>
+<p><strong>24. 12min 国外版得到或樊登读书</strong></p>
+<p><a href="https://12min.com/">https://12min.com/</a></p>
+<p><strong>25. OverDrive 畅销书</strong></p>
+<p><a href="https://www.overdrive.com/">https://www.overdrive.com/</a></p>
+<p><strong>26. EasyEngineering 工程师</strong></p>
+<p><a href="https://easyengineering.net/">https://easyengineering.net/</a></p>
+<p><strong>27. Holybooks 宗教类</strong></p>
+<p><a href="https://holybooks.com/">https://holybooks.com/</a></p>
+<p><strong>28. GLOBAL GREY 神秘小说</strong></p>
+<p><a href="https://www.globalgreyebooks.com/index.html">https://www.globalgreyebooks.com/index.html</a></p>
+]]></content>
+      <categories>
+        <category>网站</category>
+      </categories>
+      <tags>
+        <tag>网站聚合</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>愿</title>
+    <url>/2021081418371/</url>
+    <content><![CDATA[<center>
+
+ 愿百灵衔来
+一朵丁香
+为你增添
+淡淡芬芳
+
+<span id="more"></span>
+
+愿小溪流淌
+轻柔石块
+弹奏一曲民谣小调
+
+愿幼儿园的
+老旧滑梯
+有微风不厌
+常扫落叶
+
+
+愿小学的
+四层教师楼
+孩童奔跑，欢笑
+闹稚言
+
+
+愿初中的
+空心老树
+树皮粗糙
+记载岁月流逝
+叹！无常
+
+愿高中
+和那以后的以后
+那片云游过天边
+这人群路过彼此
+
+再见吧
+我喜欢的女孩
+百灵的丁香
+使你芬芳
+小溪的民谣
+使你宁静
+
+在这还不算太糟的世界里
+你会越来越好 </center>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
   </entry>
   <entry>
     <title>typora的使用</title>
-    <url>/2023020246583/</url>
+    <url>/2023050846583/</url>
     <content><![CDATA[<h1 id="typora的使用"><a href="#typora的使用" class="headerlink" title="typora的使用"></a>typora的使用</h1><h2 id="MD语法总结"><a href="#MD语法总结" class="headerlink" title="MD语法总结"></a>MD语法总结</h2><span id="more"></span>
 <h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">无序列表：- + 空格</span><br><span class="line">有序列表：1. + 空格</span><br><span class="line">引用：&gt; + 空格</span><br><span class="line">标题：ctrl + 数字</span><br><span class="line">表格：ctrl + t</span><br><span class="line">生成目录：[TOC] + 回车</span><br><span class="line">选中一整行：ctrl + l</span><br><span class="line">选中单词：ctrl + d</span><br><span class="line">选中相同格式的文字：ctrl + e</span><br><span class="line">跳转到文章开头：ctrl + home</span><br><span class="line">跳转到文章结尾：ctrl + end</span><br><span class="line">搜索：ctrl + f</span><br><span class="line">替换：ctrl + h</span><br><span class="line">加粗：ctrl + b</span><br><span class="line">倾斜：ctrl + i</span><br><span class="line">下划线：ctrl + u</span><br><span class="line">删除线：alt + shift + 5</span><br><span class="line">插入图片：直接拖动到指定位置即可或者ctrl + shift + i</span><br><span class="line">插入链接：ctrl + k</span><br></pre></td></tr></table></figure>
 <p>见<a href="#zs">展示</a></p>
@@ -1588,376 +1065,293 @@ p\leq1时,发散,\\
       </tags>
   </entry>
   <entry>
-    <title>vim使用教程</title>
-    <url>/2022121127729/</url>
-    <content><![CDATA[<h1 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h1><p>vim编辑器有三种模式：命令模式、编辑模式、末行模式。</p>
-<ul>
-<li>「命令模式」：可以进行删除、复制、粘贴等快捷操作。按==i== 进入编辑模式</li>
-<li>「编辑模式」：可以编辑文件内容。</li>
-<li><p>「末行模式」：可以通过命令操作文件，比如搜索、保存、退出等。</p>
-<h2 id="1-编辑模式"><a href="#1-编辑模式" class="headerlink" title="1. 编辑模式"></a>1. 编辑模式</h2></li>
+    <title>叙永是个什么地方</title>
+    <url>/2021081314161/</url>
+    <content><![CDATA[<p><em>起因是一则校园小广告。然后有了接下来的故事。</em></p>
+<p>叙永，一座位于泸州的县城。它的夏天同样热，甚至还能荣登高温地区榜单。叙永人对夏天的温柔。体现在我以前没喝过的凉虾，和每家餐馆的免费菜汤。凉虾对于我来说有些齁甜。每家餐馆的菜汤也只有一碗南瓜绿豆汤深得我心。但凉虾口感确实不错。而南瓜绿豆汤的免费和外面买五块一碗的绿豆汤相比也感动了我一瞬。<span id="more"></span></p>
+<p>叙永你能看到土坯房，瓦片房，小楼房和高楼房紧凑的挨在一起。这使你不得不感叹一个词——发展。然后就没有了。因为正当我想要以抖音思维解构这座城市的时候。支撑我的豪情就提前一步消散在这错落的城市各个角落。</p>
+<p>上街发传单。用修饰过的语言同学生和家长交流。对于我的心灵来说，确实没什么。况且我还偷懒。可是心气儿还是慢慢的流走了。那段时间回想起来可能有点傻。但还是值得的。</p>
+<p>我说过，因为一则广告。我经历一场不专业的面试，一场‘有些负责人都说的什么呀’的双选会。提起包，就来到了这里。从开始到结束。有的人来了，又走了。</p>
+<p>我送给了一个女孩礼物。想过要送给每个女孩一件礼物的。但是到最后只送了一个人。礼物还是贵了。至于男孩，如果想要一个大大的拥抱，也不是不可以。</p>
+<h2 id="快乐"><a href="#快乐" class="headerlink" title="快乐"></a>快乐</h2><p>在杨武坊的大桥上看着一位酷酷的小姐姐唱歌</p>
+<p>打乒乓球。</p>
+<p>工作的快乐对于我来说真的很难总结。但这份经历真的难得。或许我从这里明白了轻松的快乐。</p>
+<h2 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h2><p>有即使是最后一天特别忙，也没有去看看杨武坊那唱歌的小姐姐还在不在</p>
+<p>有到收拾东西了，才发现我一直寻找的充电器就在书包的侧包里</p>
+<p>有和唐老师说要再瞅她一眼，却没回头的走向车站。以至于走错了方向</p>
+<p>有一直吃魏老师和胡老师的cp。但是晚餐却没有以开玩笑的样子说出来</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>想写些什么，又写不出什么东西。就像那天，我把头发剪了。之后却无所事事。</p>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析基础(上册 - 第二篇)</title>
+    <url>/2023050812059/</url>
+    <content><![CDATA[<h1 id="电路分析基础-上册"><a href="#电路分析基础-上册" class="headerlink" title="电路分析基础(上册 )"></a>电路分析基础(上册 )</h1><h2 id="第二篇-动态电路的时域分析"><a href="#第二篇-动态电路的时域分析" class="headerlink" title="第二篇    动态电路的时域分析"></a>第二篇    动态电路的时域分析</h2><span id="more"></span>
+<h3 id="第五章-电容和电感"><a href="#第五章-电容和电感" class="headerlink" title="第五章 电容和电感"></a>第五章 电容和电感</h3><h4 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h4><ul>
+<li>电容公式</li>
 </ul>
-<p>按 ==:wq== 保存退出vim</p>
-<h2 id="2-命令模式"><a href="#2-命令模式" class="headerlink" title="2.命令模式"></a>2.命令模式</h2><p>​    </p>
-<h2 id="3-1-移动光标"><a href="#3-1-移动光标" class="headerlink" title="3.1 移动光标"></a>3.1 移动光标</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>指令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>h 或 左方向键（←）</td>
-<td>光标向左移动一个字符</td>
-</tr>
-<tr>
-<td>l 或 右方向键（→）</td>
-<td>光标向右移动一个字符</td>
-</tr>
-<tr>
-<td>k 或 上方向键（↑）</td>
-<td>光标向上移动一个字符</td>
-</tr>
-<tr>
-<td>j 或 下方向键（↓）</td>
-<td>光标向下移动一个字符</td>
-</tr>
-<tr>
-<td>j’k</td>
-<td>光标移动到行首</td>
-</tr>
-<tr>
-<td>Ctrl+4 或 end键</td>
-<td>光标移动到行尾</td>
-</tr>
-<tr>
-<td>Ctrl + f 或 pg up键</td>
-<td>【屏幕】向下移动一页</td>
-</tr>
-<tr>
-<td>Ctrl + b 或 pg dn键</td>
-<td>【屏幕】向上移动一页</td>
-</tr>
-<tr>
-<td>gg</td>
-<td>移动到文件的第一行</td>
-</tr>
-<tr>
-<td>G</td>
-<td>移动到文件的最后一行</td>
-</tr>
-<tr>
-<td>nG</td>
-<td>移动到文件的第n行</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="3-2-搜索替换"><a href="#3-2-搜索替换" class="headerlink" title="3.2 搜索替换"></a>3.2 搜索替换</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>指令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/字符串 + 回车</td>
-<td>向下搜索指定字符串</td>
-</tr>
-<tr>
-<td>n</td>
-<td>继续向下搜索下一个字符串</td>
-</tr>
-<tr>
-<td>?字符串 + 回车</td>
-<td>向上搜索指定字符串</td>
-</tr>
-<tr>
-<td>N</td>
-<td>继续向上搜索下一个字符串</td>
-</tr>
-<tr>
-<td>:%s/word1/word2/g</td>
-<td>将文件中的word1替换为word2</td>
-</tr>
-<tr>
-<td>:%s/word1/word2/gc</td>
-<td>将文件中的word1替换为word2，但替换前需要用户确认！</td>
-</tr>
-<tr>
-<td>:1,10s/word1/word2/g</td>
-<td>将第1行到第10行的word1替换为word2</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="3-3-复制粘贴删除"><a href="#3-3-复制粘贴删除" class="headerlink" title="3.3 复制粘贴删除"></a>3.3 复制粘贴删除</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>指令</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x</td>
-<td>删除后一个字符</td>
-</tr>
-<tr>
-<td>X</td>
-<td>删除前一个字符</td>
-</tr>
-<tr>
-<td>dd</td>
-<td>剪切一行</td>
-</tr>
-<tr>
-<td>数字dd</td>
-<td>剪切多行</td>
-</tr>
-<tr>
-<td>yy</td>
-<td>复制一行</td>
-</tr>
-<tr>
-<td>数字yy</td>
-<td>复制多行</td>
-</tr>
-<tr>
-<td>p</td>
-<td>粘贴到下一行</td>
-</tr>
-<tr>
-<td>P</td>
-<td>粘贴到上一行</td>
-</tr>
-<tr>
-<td>u</td>
-<td>撤回操作</td>
-</tr>
-<tr>
-<td>Ctrl + r</td>
-<td>撤回刚才的撤回操作</td>
-</tr>
-<tr>
-<td>.（小数点）</td>
-<td>重复刚才的操作</td>
-</tr>
-<tr>
-<td>Ctrl+WW</td>
-<td>多窗口切换</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="3-末行模式"><a href="#3-末行模式" class="headerlink" title="3. 末行模式"></a>3. 末行模式</h2><p>英文状态的 <code>:</code>键 进入末行模式</p>
-<p>命令模式 或 vim打开文件时，按下 <code>:</code> 键，左下角出现 ：时，即表示末行模式。</p>
+<script type="math/tex; mode=display">
+\ q(t) = C\ u(t) \ 
+\ i(t) = \frac {dq}{dt} \\\
+则\quad i(t) = -C\frac {du}{dt}</script><ul>
+<li><p>电容电压的连续性和记忆性质</p>
+<p>​    连续性       $u<em>c(t</em>-)=u<em>c(t</em>+)$</p>
+</li>
+</ul>
+<p>​        储能        $w_c(t)=\frac 12Cu^2(t)$</p>
+<ul>
+<li>，正是电容的储能本质使电容电压具有记忆性质；正是电容电流在有界的条件下储能不能跃变使电容电容其有连续性质</li>
+</ul>
+<h4 id="电感"><a href="#电感" class="headerlink" title="电感"></a>电感</h4><ul>
+<li><p>电阻是有电压就一定有电流；电容是电压变化才有电流；电感则是电流变化才有电压</p>
+<script type="math/tex; mode=display">
+  \ u = \frac {d\psi}{dt} \ \quad \overrightarrow \ \quad u=\frac {dLi}{dt}=L \frac {di}{dt}</script></li>
+<li><p>对偶性</p>
+</li>
+</ul>
+<p>​    连续性       $i<em>L(t</em>-) = i<em>L(t</em>+)$</p>
+<p>​    储能        $w_L(t)=\frac 12Li^2(t)$</p>
+<h3 id="第六章-一阶电路"><a href="#第六章-一阶电路" class="headerlink" title="第六章 一阶电路"></a>第六章 一阶电路</h3><ul>
+<li><p>含源电阻网络部分N,用戴维南定理或诺顿定理化简后，电路将如图</p>
+<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927201659.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927201659.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+电压角度:\ L \frac{di_{t}(t)}{dt}+R_{o}i_{L}(t)=u_{oc}(t)</script><script type="math/tex; mode=display">
+则电感角度\quad G_{0}L \frac{di_{t}(t)}{dt}+i_{L}(t)=i_{sc}(t)</script><h4 id="零状态响应"><a href="#零状态响应" class="headerlink" title="零状态响应"></a>零状态响应</h4><p>零状态响应 $y<em>{zx}(t)$,是电路的<strong>初始储能（或称内部激励）为零</strong>，即${x_k(0)|</em>{k=1,2,..,n}=0}$,仅由<strong>施加于电路的激励</strong>${f<em>i(t)|</em>{i=1,2,..,m}}$所引起的响应。</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20220927202936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927202936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="RC串联等效电路"></p>
+<ul>
+<li><p>在$t≥ t_o$时，我们把在零初始状态下，仅由电路的输入所引起的响应称为<strong>零状态响应</strong>；把在零输入情况下，仅由非零初始状态所引起的响应称为<strong>零输入响应</strong>。</p>
+<h5 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h5></li>
+</ul>
+<h5 id><a href="#" class="headerlink" title></a><img src="https://gitee.com/xqyr/img/raw/img/20220927204419.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927204419.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="应用"></h5><script type="math/tex; mode=display">
+t≥ t_o  \quad          RC \frac{du_{c}}{dt}+u_{c}=U_{s}  （初始状态\quad t=0，u_c(0_+)= u_c(0_-)）</script><script type="math/tex; mode=display">
+解得\quad u_{c}(t)=U_{s}(1-e^{- \frac{1}{RC}t})\quad t \geq 0</script><h5 id="能量"><a href="#能量" class="headerlink" title="能量"></a>能量</h5><script type="math/tex; mode=display">
+消耗能量\quad W = \frac 12CU^2_{s}\\
+电容储能 \quad W = \frac 12CU^2_{s}\\
+提供总能量    \quad W = \frac 12 CU^2_{s}</script><h5 id="电感同理"><a href="#电感同理" class="headerlink" title="电感同理"></a>电感同理</h5><script type="math/tex; mode=display">
+i_L(t)=\frac {U_S}R(1-e^{\frac 1{GL}}t)</script><h4 id="阶跃响应-冲击响应-p-197"><a href="#阶跃响应-冲击响应-p-197" class="headerlink" title="阶跃响应 冲击响应 p_197"></a>阶跃响应 冲击响应 <em>p_197</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220927211936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927211936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="延时单位阶跃函数"></p>
+<script type="math/tex; mode=display">
+\varepsilon(t-t_{0})= \left\{ \begin{matrix} 0 \quad t<t_{0}\\ 1 \quad t>t_{0}\\ \end{matrix} \right.</script><p>运用阶跃函数和延时阶跃函数，分段常量信号可表示为<strong>一系列阶跃信号之和</strong>。例如，所示脉冲信号可分解为<strong>两个阶跃信号之和</strong>，<strong>其一是在t=0时作用的正单位阶跃信号</strong>，<strong>另一是在t=$t_0$,时作用的负单位延时阶跃信号</strong>。分段常量信号作用下的一阶电路分析问题，在将这类信号分解为阶跃信号后，即可按直流一阶电路处理，<strong>运用叠加性可求得其零状态响应</strong>。</p>
+<p>列题6-5 <em>p199</em></p>
+<p> <img src="https://gitee.com/xqyr/img/raw/img/20220927214231.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214231.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927215523.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927215523.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"><br><img src="https://gitee.com/xqyr/img/raw/img/20220927214318.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214318.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927214401.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214401.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"></p>
+<script type="math/tex; mode=display">
+\begin{matrix}
+u(t)=A \varepsilon(t)-A \varepsilon(t-t_{0}) \\\\
+A\varepsilon(t)作用下的零状态响应 
+ \quad i^{\prime}(t)= \frac{A}{R}(1-e^{- \frac{t}{\tau}})\varepsilon(t)=A(1-e^{-t})\varepsilon(t) \\ 
+ 解答式中的因子A\varepsilon(t)表明该式实际上仅适用于\ t≥0,式中\tau = \frac LR = 1s \\\\
+ -A\varepsilon(t-t_0)作用下的零状态响应为\quad i^{\prime\prime}(t)=- \frac{A}{R}(1-e^{- \frac{k-t_{0}}{\tau}})\varepsilon(t-t_{0})=-A(1-e^{- \frac{t-t_{0}}{\tau}})\in(t-t_{0})\\\\
+ 两者叠加\quad i(t) = i^\prime(t) + i^{\prime\prime}(t)=A(1-e^{-t})\varepsilon(t)-A [ 1-e^{-(t-t_{0})}]\varepsilon(t-t_{0})
+ \end{matrix}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20220927223919.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927223919.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<h4 id="零输入响应-p-203"><a href="#零输入响应-p-203" class="headerlink" title="零输入响应 p_203"></a>零输入响应 <em>p_203</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220929170359.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220929170359.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="p_186"></p>
+<p><strong>零输入响应$y_{zi}(t)$</strong>,是<strong>外加激励均为零</strong>时(即${ f<em>i(t)|</em>{i=1,2,..,m}=0}$)，仅由电路的<strong>初始储能</strong>{${ x<em>k(0)|</em>{k=1,2,..,n}}$}(或称<strong>内部激励</strong>）引起的响应；</p>
+<p>可以用<strong>$u_c$</strong>来表示电容电压的零输入响应。</p>
+<p>需要特别注意之处是：在图6一3(b)所示电容等效电路中，<strong>电容C的初始电压设为零</strong>，实际存在的初始<em>a b两端</em>电压$u_c(t_0)$是<strong>以电压源的形式</strong>与之串联的</p>
+<script type="math/tex; mode=display">
+u_c(t) = u_1(t)+u_c(t_0)</script><p>$u_1(t)$只存在于等效电路中，然而在图6-3(b)中它却是独立电压源$u_c(0)$作用下的<strong>零状态响应</strong> .</p>
+<script type="math/tex; mode=display">
+u _ { 1 } ( t ) = - u _ { c } ( 0 ) ( 1 - e ^ { - \frac { 1 } { \tau} } ) \quad t \geq 0</script><p>则<strong>零输入响应</strong></p>
+<script type="math/tex; mode=display">
+\begin
+{align}u_{c}(t)
+&=u_{1}(t)+u_{c}(0)\\ 
+&=-u_{c}(0)(1-e^{- \frac{t}{\tau}})+u_{c}(0)\\ 
+&=u_{c}(0)e^{- \frac{t}{\tau}}\quad t \geq 0\\\\
+一阶电感电路零输入响应为:\\ 
+i_L(t)&=I_0e^{-\frac t \tau}\quad t \geq 0\end{align}</script><p>从物理意义上看，零输入响应是依靠动态元件的<strong>初始储能</strong>进行的，当电路中存在着耗能元件R时，有限的初始储能终将被消耗殆尽，<strong>零输入响应终将为零</strong>。</p>
+<h4 id="线性动态电路的叠加原理-p-210"><a href="#线性动态电路的叠加原理-p-210" class="headerlink" title="线性动态电路的叠加原理 p_210"></a>线性动态电路的叠加原理 <em>p_210</em></h4><p>综上所述，线性一阶电路的叠加原理包含下述内容：若初始时刻为t=0,则对所有t≥0的时刻，我们有：</p>
+<ol>
+<li>全响应=零状态响应+零输入响应：</li>
+<li>零状态<em>响应线性</em>；</li>
+<li>零输人<em>响应线性</em>。</li>
+</ol>
+<p>列题6-13</p>
+<h4 id="三要素法-视察法"><a href="#三要素法-视察法" class="headerlink" title="三要素法(视察法)"></a>三要素法(视察法)</h4><p>y(t)可以代表电路中的<strong>任一电压或电流</strong>；<br>y($0_+$)表示该电压或电流的初始值；<br>y(∞)表示该电压或电流的稳态值；<br>$\tau$表示电路的时间常数。$\tau=LG$</p>
+<p>关系:</p>
+<script type="math/tex; mode=display">
+y(t)=y(\infty)+ \left[ y(0_{+})-y(\infty)\right] e^{- \frac{t}{\tau}}\\
+或y(\infty)-y(t)=\left[y(\infty) -y(0_{+})\right] e^{- \frac{t}{\tau}}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20221003152638.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221003152638.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="波形图"></p>
+<h4 id="稳态和瞬态"><a href="#稳态和瞬态" class="headerlink" title="稳态和瞬态"></a>稳态和瞬态</h4><p>当描述动态电路的变量或为<strong>不随时间而变</strong>的常量，或为<strong>随时间而变的周期量</strong>时，我们称此电路进入了<strong>稳定状态</strong>。电路不处于稳态即处于<strong>瞬态(</strong>暂态、瞬变)或非稳态(unsteady state)。</p>
+<h4 id="正弦激励的过度过程和稳态-p-227"><a href="#正弦激励的过度过程和稳态-p-227" class="headerlink" title="正弦激励的过度过程和稳态 p_227"></a>正弦激励的过度过程和稳态 <em>p_227</em></h4><p>随时间按正弦规律变化的电压和电流称为正弦交流电压和电流，它们都属正弦波。正弦波是周期波形的基本形式 。</p>
+<script type="math/tex; mode=display">
+u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七章-二阶电路"><a href="#第七章-二阶电路" class="headerlink" title="第七章 二阶电路"></a>第七章 二阶电路</h3><h4 id="LC电路中的正弦震荡"><a href="#LC电路中的正弦震荡" class="headerlink" title="LC电路中的正弦震荡"></a>LC电路中的正弦震荡</h4><h4 id="RLC串联电路的零输入响应"><a href="#RLC串联电路的零输入响应" class="headerlink" title="RLC串联电路的零输入响应"></a>RLC串联电路的零输入响应</h4><h4 id="RLC串联电路的全响应"><a href="#RLC串联电路的全响应" class="headerlink" title="RLC串联电路的全响应"></a>RLC串联电路的全响应</h4><h4 id="GCL并联电路分析"><a href="#GCL并联电路分析" class="headerlink" title="GCL并联电路分析"></a>GCL并联电路分析</h4>]]></content>
+      <tags>
+        <tag>考研</tag>
+        <tag>电路分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析基础.(上册 - 第一篇)</title>
+    <url>/2023050858877/</url>
+    <content><![CDATA[<h1 id="第一篇-电阻电路的分析"><a href="#第一篇-电阻电路的分析" class="headerlink" title="第一篇    电阻电路的分析"></a>第一篇    电阻电路的分析</h1><h2 id="第一章电压，电流约束关系"><a href="#第一章电压，电流约束关系" class="headerlink" title="第一章电压，电流约束关系"></a>第一章电压，电流约束关系</h2><h3 id="方向-P-8"><a href="#方向-P-8" class="headerlink" title="方向 P_8"></a>方向 <em>P_8</em></h3><ul>
+<li>元件电流参考方向和电压方向常关联。电流方向也就是电压参考“+”级到“—”级方向<ul>
+<li><img src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电路方向" style="zoom:50%;"></li>
+</ul>
+</li>
+</ul>
+<h3 id="基尔霍夫-P-12"><a href="#基尔霍夫-P-12" class="headerlink" title="基尔霍夫 P_12"></a>基尔霍夫 <em>P_12</em></h3><ul>
+<li><p>将二端元件视为一条<strong>支路</strong>。流经元件的电流和元件的端电压便分别称之为<strong>支路电流和支路电压</strong>。</p>
+</li>
+<li><p>电荷守恒的意思是：电荷既不能创造也不能消灭。由此可得基尔霍夫电流定律(Kirchhoff’s current law),该定律简写为KCL。KCL表达了电路中支路电流间的约束(constraint)关系</p>
+</li>
+<li><script type="math/tex; mode=display">
+\sum_{k=1}^K i_k (t) = 0</script></li>
+</ul>
+<ul>
+<li><p>对于任，集总电路中的任，回路，在任，时刻，沿着该回路的所有支路电压降得代数和为零</p>
+</li>
+<li><script type="math/tex; mode=display">
+\sum_{k=1}^K u_k(t)=0</script></li>
+</ul>
+<h3 id="电阻元件-p-20"><a href="#电阻元件-p-20" class="headerlink" title="电阻元件 p_20"></a>电阻元件 <em>p_20</em></h3><ul>
+<li>电导用G表示，单位 <em>西</em>（符号 <em>S</em>)<script type="math/tex; mode=display">
+G= \frac1R</script></li>
+</ul>
+<h3 id="双口元件-——受控源-p-34"><a href="#双口元件-——受控源-p-34" class="headerlink" title="双口元件 ——受控源 p_34"></a>双口元件 ——受控源 <em>p_34</em></h3><ul>
+<li>受控源是一种<u>双口</u>元件，它含有两条支路，其一为<strong>控制支路</strong>，这条支路或为开路或为短路，另一为<strong>受控支路</strong>，这条支路或用一个受控“电压源”表明该支路的电压受控制的性质或用一个受控“电流源”表明该支路的电流受控制的性质。</li>
+</ul>
 <div class="table-container">
 <table>
 <thead>
 <tr>
-<th>指令</th>
-<th>作用</th>
+<th><img src="https://gitee.com/xqyr/img/raw/img/20220927143418.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927143418.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="（电）压控（制）电压源(VCVS)" style="zoom:75%;"></th>
+<th><img src="https://gitee.com/xqyr/img/raw/img/20220927143544.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927143544.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电流控电压源 CCVS" style="zoom:75%;"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>:w</td>
-<td>保存</td>
-</tr>
-<tr>
-<td>:q</td>
-<td>退出</td>
-</tr>
-<tr>
-<td>:wq</td>
-<td>保存后退出</td>
-</tr>
-<tr>
-<td>:q!</td>
-<td>不保存，强制退出</td>
-</tr>
-<tr>
-<td>:set nu</td>
-<td>显示行号</td>
-</tr>
-<tr>
-<td>:set nonu</td>
-<td>取消 显示行号</td>
-</tr>
-<tr>
-<td>:w [文件名]</td>
-<td>将编辑后的内容保存到另一个文件中（另存为）</td>
-</tr>
-<tr>
-<td>:2,5 w [文件名]</td>
-<td>将第2到5行的内容保存到另一个文件中（指定行另存为）</td>
-</tr>
-<tr>
-<td>:r [文件名]</td>
-<td>输入另一个文件的内容，到光标的下一行</td>
+<td><img src="https://gitee.com/xqyr/img/raw/img/20220927143902.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927143902.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="（电）压控（制）电流源(VCCS)" style="zoom:75%;"></td>
+<td><img src="https://gitee.com/xqyr/img/raw/img/20220927144040.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927144040.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="（电）流控（制）电流源（CCCS)" style="zoom:75%;"></td>
 </tr>
 </tbody>
 </table>
 </div>
-<h2 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h2><p><img src="https://gitee.com/xqyr/img/raw/img/20230108145358.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20230108145358.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-<p>安装安装coc.nvim，依赖nodejs和yarn</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">curl -sL install-node.now.sh | sh</span><br><span class="line">curl --compressed -o- -L https://yarnpkg.com/install.sh | bash</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>建立软连接</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[root@VM-4-12-centos bin]<span class="comment"># cd /usr/local/nodejs/bin</span></span><br><span class="line">[root@VM-4-12-centos bin]<span class="comment"># ln -s /usr/local/nodejs/bin/npm /usr/local/bin</span></span><br><span class="line">[root@VM-4-12-centos bin]<span class="comment"># ln -s /usr/local/nodejs/bin/node /usr/local/bin</span></span><br></pre></td></tr></table></figure>
-<p><a href="https://blog.csdn.net/wooin/article/details/1858917">配置vim</a></p>
-<p>1</p>
-<h3 id="wsl"><a href="#wsl" class="headerlink" title="wsl"></a>wsl</h3><p>所有默认改成root</p>
-<p>1 找到(centos 或者<a href="https://so.csdn.net/so/search?q=Ubuntu&amp;spm=1001.2101.3001.7020">Ubuntu</a> )的exe文件<br>一般在 C:\Users\admin\AppData\Local\Microsoft\WindowsApps 目录下<br>打开cmd 执行<br>Centos7.exe config —default-user root<br>然后关掉wsl<br>wsl —shutdown</p>
-<h1 id="neovim"><a href="#neovim" class="headerlink" title="neovim"></a>neovim</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line"> add-apt-repository ppa:neovim-ppa/stable</span><br><span class="line"> apt-get update</span><br><span class="line"> apt install -y neovim</span><br></pre></td></tr></table></figure>
-<h2 id="安装vim-plug"><a href="#安装vim-plug" class="headerlink" title="安装vim_plug"></a>安装vim_plug</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#依赖curl</span></span><br><span class="line">apt-get install curl</span><br><span class="line"><span class="comment">#还是失败</span></span><br><span class="line">sudo vim /etc/hosts</span><br><span class="line"><span class="comment"># 添加</span></span><br><span class="line">199.232.28.133 raw.githubusercontent.com</span><br><span class="line"><span class="comment"># 插件网站 https://vimawesome.com/</span></span><br></pre></td></tr></table></figure>
-<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#出现 E325: ATTENTION</span></span><br><span class="line">Found a swap file by the name <span class="string">&quot;~/.local/share/nvim/swap//%home%dev%xuexi%tool%main.c.swp&quot;</span></span><br><span class="line"><span class="comment"># 删除</span></span><br><span class="line"><span class="built_in">rm</span> ~/.local/share/nvim/swap//%home%dev%xuexi%tool%main.c.swp</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>vim</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vscode+qt</title>
-    <url>/2022121929032/</url>
-    <content><![CDATA[<p> dddk</p>
-<h1 id="vsCode如何搭建Qt的开发环境"><a href="#vsCode如何搭建Qt的开发环境" class="headerlink" title="vsCode如何搭建Qt的开发环境"></a><a href="https://www.cnblogs.com/QingYiShouJiuRen/p/16859974.html">vsCode如何搭建Qt的开发环境</a></h1><p><strong>vs搭建Qt的开发环境步骤如下:</strong></p>
-<p>1.打开vscode商店下载QtTools和QtConfigure两个插件，然后安装。</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105113854705-959930031.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105113854705-959930031.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p> 2.打开vscode,创建终端，然后在终端中创建文件夹，然后打开。</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105113625698-1140627704.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105113625698-1140627704.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105114335897-1345090558.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105114335897-1345090558.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p> 3.F1快捷键打开搜索引擎，输入”QtConfigfigure”,选择第一个”QtConfigfigure:Set Qt Dir”,然后选择Qt的安装目录即可。</p>
-<p>如果弹出下面的提示信息，就说明Qt的安装路径已经设置成功了。</p>
-<p> <img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105114557836-1467911467.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105114557836-1467911467.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p> 4.在搜索引擎中输入QtConfigfigure:new project,创建一个测试项目</p>
-<p><img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115151989-520744708.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115151989-520744708.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p> 输入项目名称：</p>
-<p><img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115245932-852700741.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105115245932-852700741.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p> 选择编译器类型，然后编译运行即可</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/1574098-20221105115332358-1225691560.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/1574098-20221105115332358-1225691560.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img"></p>
-<p>运行结果</p>
-<p><img src="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105121212812-597697988.png" class="lazyload placeholder" data-srcset="https://img2022.cnblogs.com/blog/1574098/202211/1574098-20221105121212812-597697988.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="img" style="zoom: 33%;"></p>
-<p> 我选择的是带有UI文件的类型，如果想打开UI设计器，在搜索引擎中输入”Open Qt Designer “,点击打开就可。</p>
-]]></content>
-      <categories>
-        <category>编程</category>
-      </categories>
-      <tags>
-        <tag>vscode</tag>
-        <tag>qt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯问题</title>
-    <url>/2022012412972/</url>
-    <content><![CDATA[<h2 id="大家好，我想问个事情。比赛的时候驱动会出问题吗"><a href="#大家好，我想问个事情。比赛的时候驱动会出问题吗" class="headerlink" title="大家好，我想问个事情。比赛的时候驱动会出问题吗"></a>大家好，我想问个事情。比赛的时候驱动会出问题吗</h2><h2 id="我在网上找了一个2021数据包。下面这个。"><a href="#我在网上找了一个2021数据包。下面这个。" class="headerlink" title="我在网上找了一个2021数据包。下面这个。"></a>我在网上找了一个2021数据包。下面这个。</h2><h2 id="但是我发现他的驱动有点问题。ds18b20他是这么写的"><a href="#但是我发现他的驱动有点问题。ds18b20他是这么写的" class="headerlink" title="但是我发现他的驱动有点问题。ds18b20他是这么写的"></a>但是我发现他的驱动有点问题。ds18b20他是这么写的</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  程序说明: 单总线驱动程序</span></span><br><span class="line"><span class="comment">  软件环境: Keil uVision 4.10 </span></span><br><span class="line"><span class="comment">  硬件环境: CT107单片机综合实训平台(外部晶振12MHz) STC89C52RC单片机</span></span><br><span class="line"><span class="comment">  日    期: 2011-8-9</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;reg52.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">sbit DQ = P1^<span class="number">4</span>;  <span class="comment">//单总线接口</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//单总线延时函数</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Delay_OneWire</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> t)</span>  <span class="comment">//STC89C52RC</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>(t--);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//通过单总线向DS18B20写一个字节</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Write_DS18B20</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> dat)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		DQ = dat&amp;<span class="number">0x01</span>;</span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//从DS18B20读取一个字节</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">Read_DS18B20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> dat;</span><br><span class="line">  </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(DQ)</span><br><span class="line">		&#123;</span><br><span class="line">			dat |= <span class="number">0x80</span>;</span><br><span class="line">		&#125;	    </span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dat;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//DS18B20设备初始化</span></span><br><span class="line">bit <span class="title function_">init_ds18b20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  	bit initflag = <span class="number">0</span>;</span><br><span class="line">  	</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">60</span>);</span><br><span class="line">  	DQ = <span class="number">0</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">480</span>);</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">120</span>); </span><br><span class="line">    initflag = DQ;     </span><br><span class="line">  	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">  </span><br><span class="line">  	<span class="keyword">return</span> initflag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="他读和写的延迟时间不对"><a href="#他读和写的延迟时间不对" class="headerlink" title="他读和写的延迟时间不对"></a>他读和写的延迟时间不对</h2><p><img src="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" class="lazyload placeholder" data-srcset="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="屏幕截图 2022-01-24 135205"></p>
-<h2 id="所以考试的时候，给的驱动会出这种类似的问题吗？"><a href="#所以考试的时候，给的驱动会出这种类似的问题吗？" class="headerlink" title="所以考试的时候，给的驱动会出这种类似的问题吗？"></a>所以考试的时候，给的驱动会出这种类似的问题吗？</h2>]]></content>
-      <categories>
-        <category>单片机</category>
-      </categories>
-      <tags>
-        <tag>-蓝桥杯 -驱动</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>资源聚合网站拓展</title>
-    <url>/2023011240569/</url>
-    <content><![CDATA[<h1 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h1><h2 id="书籍"><a href="#书籍" class="headerlink" title="书籍"></a>书籍</h2><blockquote>
-<p><a href="https://www.chongbuluo.com/thread-13891-1-1.html">虫部落书籍聚合推荐</a></p>
-<h2 id="影视"><a href="#影视" class="headerlink" title="影视"></a>影视</h2></blockquote>
-<h2 id="音乐和"><a href="#音乐和" class="headerlink" title="音乐和"></a>音乐和</h2><h1 id="博客，hexo"><a href="#博客，hexo" class="headerlink" title="博客，hexo"></a>博客，hexo</h1><blockquote>
-<p><a href="http://120.48.121.186/">博客主题：hexo-theme-bamboo</a></p>
-<h1 id="编程"><a href="#编程" class="headerlink" title="编程"></a>编程</h1><p><a href="https://www.lanqiao.cn/problems/?sort=students_count">题库 - 蓝桥云课 (lanqiao.cn)</a></p>
+<h3 id="两类约束的独立性-p-44"><a href="#两类约束的独立性-p-44" class="headerlink" title="两类约束的独立性 p_44"></a>两类约束的独立性 <em>p_44</em></h3><ol>
+<li><p>设电路的节点数为n,则独立的KCL方程为(n-1)个，且为任意(n-1)个。</p>
+</li>
+<li><p>给定一平面电路(planar circuit):<br>(a)该电路有[b - (n-1)]个网孔；<br>(b)[b-(n-1))]个网孔的KVL方程是独立的。</p>
+</li>
+</ol>
+<h2 id="第二章-网孔和节点法-p-62"><a href="#第二章-网孔和节点法-p-62" class="headerlink" title="第二章 网孔和节点法  p_62"></a>第二章 网孔和节点法  <em>p_62</em></h2><h3 id="网孔法-p-62"><a href="#网孔法-p-62" class="headerlink" title="网孔法 p_62"></a>网孔法 <em>p_62</em></h3><ul>
+<li><p>网孔分析是以网孔电流(mesh current)作为第-步求解的对象。所谓网孔电流是一种沿着网孔边界流动的假想电流</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20220927145203.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927145203.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="网孔电流" style="zoom:67%;"></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+\begin{matrix}
+&\begin {cases}R_1 i_{M1} + R_5 i_{M1} + R_5 i_{M2} + R_4 i_{M1} - R_4i_{M3} + u_{s4} -u_{s1} = 0 \\
+R_{2}i_{M1}+R_{5}i_{M2}+R_{5}i_{M1}+R_{6}i_{M2}+R_{6}i_{M3}-u_{s2} = 0\\
+R_{3}i_{M3}+R_{4}i_{M3}-R_{4}i_{M1}+R_{6}i_{M3}+R_{6}i_{M2}-u_{s4}-u_{s3}=0\\\end{cases}
+\\&\quad\ 整理得：\\
+&\begin {cases}(R_{1}+R_{4}+R_{5})i_{M1}+R_{5}i_{M2}-R_{4}i_{M3}=u_{s1}-u_{S4}\\
+R_{5}i_{M1}+(R_{2}+R_{5}+R_{6})i_{M2}+R_{6}i_{M3}=u_{S2}\\
+R_{4}i_{Ml}+R_{b}i_{M2}+(R_{3}+R_{4}+R_{6})i_{3M3}=u_{s3}+u_{s4}\\\end{cases}\end{matrix}</script><p>​    <strong>概括为：</strong></p>
+<p>​    </p>
+<script type="math/tex; mode=display">
+\begin{cases}R_{11}i_{M1}+R_{12}i_{M2}+R_{11}i_{M3}=u_{s11}\\ R_{21}i_{M1}+R_{22}i_{M2}+R_{23}i_{M3}=u_{s22}\\ R_{31}i_{M1}+R_{12}i_{M2}+R_{33}i_{M3}=u_{s33}\\ \end{cases}
+\begin {matrix}\quad\quad \mathsf{其中R_{11},R_{22},R_{33}风别称为网孔1，网孔2，网孔3的自电阻}\\
+\mathsf {他们分别是各自网孔内所有电阻的和}\\
+\mathsf {R_{12}为互电阻，他们是该两网孔的公有电阻}\\
+\mathsf {u_{s1}为网孔1中各电压源电压升的和。u_{s11}= u_{s1} - u_{s4}}\end {matrix}</script><h3 id="若电路中有电流源"><a href="#若电路中有电流源" class="headerlink" title="若电路中有电流源"></a>若电路中有电流源</h3><ol>
+<li><p>将电流源设为电压源;</p>
+</li>
+<li><p>增补方程:电流源=?</p>
+</li>
+<li><p>若为受控源,还要添加控制源的方程</p>
+</li>
+</ol>
+<h3 id="节点分析-p-72"><a href="#节点分析-p-72" class="headerlink" title="节点分析 p_72"></a>节点分析 <em>p_72</em></h3><p><img src="https://gitee.com/xqyr/img/raw/img/20220927154530.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927154530.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="节点分析法"></p>
+<p>概括形式</p>
+<script type="math/tex; mode=display">
+{\begin {cases}G_{11}u_{n1}+G_{12}u_{n2}+G_{13}u_{n3}=i_{s11}\\ G_{21}u_{11}+G_{22}u_{22}+G_{23}u_{33}=i_{s22}\\ 
+G_{31}u_{n1}+G_{32}u_{22}+G_{33}u_{n3}=i_{s33}\\\end {cases}}
+\quad\begin {matrix}  G11 为节点1的自电导。是节点1上所有电导的总和，G_{11} = G_1+G_5\\
+ G12是节点1和节点2公有电导的负值，G_{12} = -G_1\\
+ i_{s11}为电流源输送给节点1的代数和。i_{s11}=i_s \quad i_{s22} = 0\end {matrix}</script><p>$is11$为电流源输送给节点1的电流的代数和</p>
+<h3 id="若电路中有电压源"><a href="#若电路中有电压源" class="headerlink" title="若电路中有电压源"></a>若电路中有电压源</h3><ol>
+<li><p>将电压源设为电流源;</p>
+</li>
+<li><p>增补方程:电压源=?</p>
+</li>
+<li><p>若为受控源,还要添加控制源的方程</p>
+</li>
+</ol>
+<p>​    </p>
+<h2 id="第三章-叠加方法与网络函数-p-90"><a href="#第三章-叠加方法与网络函数-p-90" class="headerlink" title="第三章 叠加方法与网络函数 p_90"></a>第三章 叠加方法与网络函数 <em>p_90</em></h2><h3 id="激励与响应"><a href="#激励与响应" class="headerlink" title="激励与响应"></a>激励与响应</h3><ul>
+<li><p>由线牲元件及独立电源组成的电路为线性电路。独立电源是电路的输入，对电路起着激励(excitation)的作用。</p>
+</li>
+<li><p>响应与激励之间存在着<strong>线性关系</strong>。</p>
+</li>
+<li><p>对单一激励的线性、时不变电路，指定的响应对激励之比定义为<em>网络函数</em>，记为H,即</p>
+<script type="math/tex; mode=display">
+H = \frac{响应}{激励}</script><ul>
+<li><p>若响应与激励在同一端口，则属策动点(driving point)函数；若响应与激励不在同一端口，则属转移(transfer)函数。</p>
+<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927162457.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927162457.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="分类"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="叠加原理"><a href="#叠加原理" class="headerlink" title="叠加原理"></a>叠加原理</h3><p>由线性电阻、线性受控源及独立源组成的电路中，每一元件的电流或电压可看成是每一个独立源<strong>单独作用</strong>于电路时，在该元件上产生的电流或电压的代。当某一独立源单独作用时，其他独立源应为零值，即<strong>独立电压源用短路代替</strong>；<strong>独立电流源用开路代替</strong>。</p>
+<p>叠加定理一般适用于多电源作用电路的计算。 当其中某个独立源作用时，剩余的独立源不起作用，就要将其余的独立源置零。 对于独立电压源<strong>，置零的含义</strong>就是电压为零，也就是将电压源短路；对于独立电流源置零，也就是电流源电流为零，也就是将电流源开路。</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20220927162741.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927162741.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="叠加"></p>
+<script type="math/tex; mode=display">
+i_2=H_1u_S + H_2i_s</script><ul>
+<li>作为电路的响应y(t),与电路各个激励x(t)的关系可表示为：</li>
+</ul>
+<script type="math/tex; mode=display">
+y(t)= \sum _{M}H_{m}x_{m}(t)</script><h3 id="叠加方法与功率计算"><a href="#叠加方法与功率计算" class="headerlink" title="叠加方法与功率计算"></a>叠加方法与功率计算</h3><ul>
+<li>电源对电路提供的总功率等于<strong>电压源单独作用时对电路提供的功率</strong>和<strong>电流源单独作用时对电路提供功率</strong>的总和</li>
+</ul>
+<h3 id="第四章-分解法和单口网络-p-112"><a href="#第四章-分解法和单口网络-p-112" class="headerlink" title="第四章 分解法和单口网络 p_112"></a>第四章 分解法和单口网络 <em>p_112</em></h3><h3 id="分解法"><a href="#分解法" class="headerlink" title="分解法"></a>分解法</h3><ol>
+<li>把给定网络划分为两个单口网络N1和N2 ;</li>
+<li>分别求出N1和N2,的VCR（计算或测量）；</li>
+<li>联立两者的VCR或由它们伏安特性曲线的交点，求得N1,和N2的端口电压、电流：</li>
+<li>分别求解N1和N2内部各支路电压、电流。</li>
+</ol>
+<h3 id="单口网络的电压电流关系"><a href="#单口网络的电压电流关系" class="headerlink" title="单口网络的电压电流关系"></a>单口网络的电压电流关系</h3><ul>
+<li>外施电流源求电压法和外施电压源求电流法是常用的方法，也是用实验方法确定VCR的依据</li>
+</ul>
+<blockquote>
+<p>列题4-2 p116</p>
 </blockquote>
-<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><blockquote>
-<p><a href="https://vimawesome.com/">Vim Awesome_Linux插件</a></p>
-</blockquote>
-<h1 id="以前"><a href="#以前" class="headerlink" title="以前"></a>以前</h1><h2 id="电子书"><a href="#电子书" class="headerlink" title="电子书"></a>电子书</h2><p><strong>1. Zlibrary</strong></p>
-<p><a href="https://z-lib.org/">https://z-lib.org/</a></p>
-<p><strong>2. Libgen</strong></p>
-<p><a href="http://libgen.rs/">http://libgen.rs/</a></p>
-<p><strong>3. PDFdrive</strong></p>
-<p><a href="https://www.pdfdrive.com/">https://www.pdfdrive.com/</a></p>
-<p><strong>细分领域电子书网址</strong></p>
-<p><strong>1. Project Gutenberg（古腾堡计划）文学</strong></p>
-<p><a href="http://www.gutenberg.org">http://www.gutenberg.org</a></p>
-<p><strong>2. Scribd 有声书</strong></p>
-<p><a href="https://zh.scribd.com/">https://zh.scribd.com/</a></p>
-<p><strong>3. E-Books Directory 技术类</strong></p>
-<p><a href="http://www.e-booksdirectory.com/">http://www.e-booksdirectory.com/</a></p>
-<p><strong>4. itEbookShare IT技术</strong></p>
-<p><a href="http://www.itebookshare.com/">http://www.itebookshare.com/</a></p>
-<p><strong>5. QcEnglish 英语学习</strong></p>
-<p><a href="http://www.qcenglish.com/">http://www.qcenglish.com/</a></p>
-<p><strong>6. Many Books 小说</strong></p>
-<p><a href="http://manybooks.net/">http://manybooks.net/</a></p>
-<p><strong>7. OpenLibrary 偏历史宗教艺术</strong></p>
-<p> <a href="https://openlibrary.org/">https://openlibrary.org/</a></p>
-<p><strong>8. PlanetEbook 经典文学</strong></p>
-<p><a href="https://www.planetebook.com/">https://www.planetebook.com/</a></p>
-<p><strong>9. Bookyards K12儿童类</strong></p>
-<p><a href="https://www.bookyards.com/en">https://www.bookyards.com/en</a></p>
-<p><strong>10. ebook3000 偏全球杂志</strong></p>
-<p><a href="http://www.ebook3000.com/">http://www.ebook3000.com/</a></p>
-<p><strong>11. Mox.moe 漫画书</strong></p>
-<p><a href="https://mox.moe/">https://mox.moe/</a></p>
-<p><strong>12. EpubPub 小说</strong></p>
-<p><a href="https://www.epub.pub/">https://www.epub.pub/</a></p>
-<p><strong>13. Archive of Our Own 全球最大同人小说网站</strong></p>
-<p><a href="https://archiveofourown.org/">https://archiveofourown.org/</a></p>
-<p><strong>14. getfreeebooks 书籍推荐</strong></p>
-<p><a href="https://www.getfreeebooks.com/">https://www.getfreeebooks.com/</a></p>
-<p><strong>15. BookBub 限免正版</strong></p>
-<p><a href="https://www.bookbub.com/ebook-deals/free-ebooks">https://www.bookbub.com/ebook-deals/free-ebooks</a></p>
-<p><strong>16. europeana 欧洲艺术历史</strong></p>
-<p><a href="https://www.europeana.eu/">https://www.europeana.eu/</a></p>
-<p><strong>17. OpenCulture 教科书</strong></p>
-<p><a href="https://www.openculture.com/">https://www.openculture.com/</a></p>
-<p><strong>18. OnlineProgrammingBooks 计算机技术</strong></p>
-<p><a href="https://www.onlineprogrammingbooks.com/">https://www.onlineprogrammingbooks.com/</a></p>
-<p><strong>19. Read Print 名著小说</strong></p>
-<p><a href="http://www.readprint.com/">http://www.readprint.com/</a></p>
-<p><strong>20. LibriVox 精品有声书</strong></p>
-<p><a href="https://librivox.org/">https://librivox.org/</a></p>
-<p><strong>21. KuPDF 大学课程</strong></p>
-<p><a href="https://kupdf.net/">https://kupdf.net/</a></p>
-<p><strong>22. Engineering Books PDF 机械工程电器书籍</strong></p>
-<p><a href="https://engineeringbookspdf.com/">https://engineeringbookspdf.com/</a></p>
-<p><strong>23. FaaDoOEngineers 印度最大工程师书籍网站</strong></p>
-<p><a href="http://www.faadooengineers.com/">http://www.faadooengineers.com/</a></p>
-<p><strong>24. 12min 国外版得到或樊登读书</strong></p>
-<p><a href="https://12min.com/">https://12min.com/</a></p>
-<p><strong>25. OverDrive 畅销书</strong></p>
-<p><a href="https://www.overdrive.com/">https://www.overdrive.com/</a></p>
-<p><strong>26. EasyEngineering 工程师</strong></p>
-<p><a href="https://easyengineering.net/">https://easyengineering.net/</a></p>
-<p><strong>27. Holybooks 宗教类</strong></p>
-<p><a href="https://holybooks.com/">https://holybooks.com/</a></p>
-<p><strong>28. GLOBAL GREY 神秘小说</strong></p>
-<p><a href="https://www.globalgreyebooks.com/index.html">https://www.globalgreyebooks.com/index.html</a></p>
+<h3 id="置换定理"><a href="#置换定理" class="headerlink" title="置换定理"></a>置换定理</h3><p>若网络N出两个单口网络N1,和N2连接组成且己知端口电乐和电流值分别为α和β,则N2(或N1)可以用一个电压为a的电压源[或用一个电流为β的电流源置换，不影响N,(或N2)内各支路电压、电流原有数值。</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20220927172729.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927172729.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="置换定理"></p>
+<h3 id="等效电路"><a href="#等效电路" class="headerlink" title="等效电路"></a>等效电路</h3><ul>
+<li><p>如果一个单口网络N和另一个单口网络N’的电压、电流关系完全相同，亦即它们在“~i平面上的伏安特性曲线完全重在，则这两单口网络便是等效的。尽管这两个网络可以具有完全不同的结构，但对任一外电路M来说，它们却具有完全相同的影响，没有丝毫差别 。</p>
+<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927173103.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927173103.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="等效串联电路"></p>
+</li>
+</ul>
+<h3 id="一些简单的等效电路"><a href="#一些简单的等效电路" class="headerlink" title="一些简单的等效电路"></a>一些简单的等效电路</h3><ul>
+<li>(11)电压源与电阻的串联（戴维南）</li>
+<li>(12)电流源与电阻的并联 （诺顿）</li>
+</ul>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20220927174024.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927174024.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<script type="math/tex; mode=display">
+\begin{matrix}
+(a) \quad
+u =u_s -Ri\\
+(b) \quad
+i = i_s - \frac u{R^`} \quad / \quad u=R^`i_s - R^`i\\
+当R=R^`并且 U_S = R^`i_s（i_s=\frac {u_s}{R^`}）等效
+\end{matrix}</script><h3 id="戴维南定理"><a href="#戴维南定理" class="headerlink" title="戴维南定理"></a>戴维南定理</h3><ul>
+<li>含电源和线性电阻、受控源的单口网络（今后简称为含源线性单口网络）就其端口来说，可等效为<em>一个<u>电压源串联电阻支路</u></em>。电压源的电压等于该网络N的<strong>开路电压Uoc</strong>;串联电阻R等于该网络中所<strong>有独立源为零值</strong>时所得网络N的等效电阻R。</li>
+</ul>
+<h3 id="诺顿定理"><a href="#诺顿定理" class="headerlink" title="诺顿定理"></a>诺顿定理</h3><p>含源线性单口网络N,就其端口来看，可以等效为一个<em><u>电流源并联电阻组合</u></em>。电流源的电流等于该网络N的<strong>短路电流</strong>isc;并联电导G,等于该网络中所有<strong>独立源为零值</strong>时所得网络N。的等效电导Gb。这就是诺顿定理。这-电流源并联电导组合称为诺顿等效电路。</p>
+<h3 id="最大功率传递定理"><a href="#最大功率传递定理" class="headerlink" title="最大功率传递定理"></a>最大功率传递定理</h3><p>的功率为最大的条件是：负载R应与戴维南（或诺顿）<strong><u>等效电阻相等</u></strong>。此即最大功率传递定理。，称为最大功率匹配此时负载得到的最大功率为</p>
+<script type="math/tex; mode=display">
+P_{max} = \frac {u_{oc}^2}{4R_o}</script><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><ol>
+<li>开路电压:擦除可变电阻,运用KVL算出Uoc</li>
+<li><strong>等效电阻:</strong>我们将电压源化成导线，将电流源开路。算出可变电阻的电压和电流的比值</li>
+</ol>
 ]]></content>
-      <categories>
-        <category>网站</category>
-      </categories>
       <tags>
-        <tag>网站聚合</tag>
+        <tag>考研</tag>
+        <tag>电路分析</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>摩擦离合器</title>
-    <url>/2023020225118/</url>
-    <content><![CDATA[<h2 id="markdown居中对齐，左对齐，右对齐"><a href="#markdown居中对齐，左对齐，右对齐" class="headerlink" title="markdown居中对齐，左对齐，右对齐"></a>markdown居中对齐，左对齐，右对齐</h2><p>Markdown语法本身没有居中，但Markdown中支持基本的HTMl语法，可以使用HTML语法。<br>居中：<br><code>&lt;center&gt;月是故乡明&lt;/center&gt;</code><br>左对齐：<br><code>&lt;p align=&quot;left&quot;&gt;月是故乡明&lt;/p&gt;</code><br>右对齐：<br><code>&lt;p align=&quot;right&quot;&gt;月是故乡明&lt;/p&gt;</code></p>
-]]></content>
   </entry>
   <entry>
     <title>发动机原理-参数篇</title>
@@ -1969,6 +1363,169 @@ p\leq1时,发散,\\
       <tags>
         <tag>汽车构造</tag>
         <tag>发动机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研数二_线代</title>
+    <url>/2023050835597/</url>
+    <content><![CDATA[<h2 id><a href="#" class="headerlink" title=" "></a> </h2><h1 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h1><h2 id="求线性方程组的解"><a href="#求线性方程组的解" class="headerlink" title="求线性方程组的解"></a>求线性方程组的解</h2><h3 id="齐次方程组的通解"><a href="#齐次方程组的通解" class="headerlink" title="齐次方程组的通解"></a>齐次方程组的通解</h3><p>形式$Ax=0;$</p>
+<script type="math/tex; mode=display">
+\left\{\begin{aligned}
+&有唯一解(零解):&r(A)=n;\\
+&有非零解:&r(A)<n;\\
+\end{aligned}\right.</script><p>基础解系$\xi_1,\xi_2,\cdot\cdot ,\xi_s\ 的s=n-r(A)$ ;</p>
+<p>方法:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&①\ A\stackrel{初等行变换}{\longrightarrow}梯形矩阵B(或最简阶梯形矩阵B)\ ; \\
+&②\ 按列找出一个秩为r的子矩阵，则剩余列位置的未知数即设为自由变量(个数S=n-r)\ ;\\
+&③\ 按基础解系定义求出\xi_1,\xi_2,\cdot\cdot\cdot,\xi_s并写出通解;
+\end{aligned}</script><h3 id="非齐次方程组的通解"><a href="#非齐次方程组的通解" class="headerlink" title="非齐次方程组的通解"></a>非齐次方程组的通解</h3><p>形式$Ax=b$ ;</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+r(A)\neq r(A,b),方程无解\\
+r(A)=r(A,b)\begin{cases} 
+\ =n:有唯一解\\
+\ <n:无穷解
+\end{cases}
+\end{cases}</script><p>求解步骤</p>
+<script type="math/tex; mode=display">
+\begin{aligned}&①求Ax=0的通解,k_1\xi_1+k_2\xi_2+\cdot\cdot\cdot+k_{n-r}\xi_{n-r}\\
+&②求Ax=b\ 的一个特解\eta\\
+&③则通解为k_1\xi_1+k_2\xi_2+\cdot\cdot\cdot+k_{n-r}\xi_{n-r}+\eta\end{aligned}</script><h1 id="归纳总结"><a href="#归纳总结" class="headerlink" title="归纳总结"></a>归纳总结</h1><ul>
+<li><p>若矩阵A的行列式$|A|\neq 0$ 向量<strong>线性无关</strong>$\Rightarrow$若$|A|=0$,则r(A)&lt;n;</p>
+</li>
+<li><script type="math/tex; mode=display">
+r(A^*)=\begin{cases}
+n:则r(A)=n\\
+1:则r(A)=n-1\\
+0:则r(A)<n-1\\\end{cases}</script></li>
+<li></li>
+</ul>
+<h3 id="几种重要矩阵"><a href="#几种重要矩阵" class="headerlink" title="几种重要矩阵"></a>几种重要矩阵</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">矩阵</th>
+<th style="text-align:center">表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1. 数量矩阵</td>
+<td style="text-align:center">数k和单位矩阵的乘积称为数量矩阵:$kE$</td>
+</tr>
+<tr>
+<td style="text-align:center">2. 对角矩阵</td>
+<td style="text-align:center">非主对角元素<strong>均为零</strong>的矩阵称为对角矩阵</td>
+</tr>
+<tr>
+<td style="text-align:center">3. 对称矩阵</td>
+<td style="text-align:center">满足条件$A^T=A$的矩阵A称为对称矩阵，$A^T=A\Leftrightarrow a<em>{ji}=a</em>{ij}$</td>
+</tr>
+<tr>
+<td style="text-align:center">4. 正交矩阵</td>
+<td style="text-align:center">设A是n阶方阵，满足$A^TA=E$,则称A是<a href="#zjjz">正交矩阵</a></td>
+</tr>
+<tr>
+<td style="text-align:center">5.分块矩阵</td>
+<td style="text-align:center">…..</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>若A矩阵不可逆,$|A|= 0$</li>
+<li></li>
+</ul>
+<h4 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a><a id="zjjz">正交矩阵</a></h4><p>A是正交矩阵$A^TA=E\Leftrightarrow A^T=A^{-1}\Leftrightarrow A$的<strong>行（列）向量组是标准正交向量组</strong>.</p>
+<p>​    既A是由两两正交的<strong>单位向量组</strong>（称为规范正交基）组成.</p>
+<p>​    $A^T,A^{−1},A^∗$均为正交矩阵；</p>
+<p>​    A的特征值只能为$\pm1$</p>
+<h2 id="特征值与特征向量"><a href="#特征值与特征向量" class="headerlink" title="特征值与特征向量"></a>特征值与特征向量</h2><h3 id="秩"><a href="#秩" class="headerlink" title="秩"></a>秩</h3><ul>
+<li><p>$r(A+B)\leq r([A,B])\leq r(A)+r(B)$</p>
+</li>
+<li><p>$r(AB)\leq min(r(A),r(B))$</p>
+</li>
+</ul>
+<p>​    特征值的性质</p>
+<ul>
+<li><script type="math/tex; mode=display">
+\begin{cases}
+①\sum_{i=1}^{n}\lambda _{i}= \sum _{i=1}^{n}a_{ii}=tr(A);\\
+②\prod _ { i = 1 } ^ { n } \lambda_ { i } = | A |
+\end{cases}</script></li>
+</ul>
+<p>特征向量的性质</p>
+<ul>
+<li><strong>(1)k重特征值$\lambda$至多只有k个线性无关的特征向量</strong>（<strong>直接使用，不用证明</strong>）;</li>
+<li>(2)若$\xi_1,\xi_2$是A的属于不同特征值$\lambda_1,\lambda_2$的特征向量，<strong>则$\xi_1,\xi_2$线性无关</strong>;</li>
+<li>(3)若$\xi_1,\xi_2$是A的属于同一特征值入的特征向量，则$k_1\xi_1+k_2\xi_2$($k_1,k_2$不同时为零的任意常数)仍是A的属于特征值$\lambda$的特征向量;</li>
+</ul>
+<p>相似矩阵的性质$A\sim B$</p>
+<ol>
+<li><p>$r(A)=r(B)$;</p>
+</li>
+<li><p>$|A|=|B|$;</p>
+</li>
+<li><p>$|\lambda E-A|=|\lambda E-B|$;</p>
+</li>
+<li><p>$\lambda<em>{Ai}=\lambda</em>{Bi}$</p>
+<h2 id="相似对角化总结"><a href="#相似对角化总结" class="headerlink" title="相似对角化总结"></a>相似对角化总结</h2><ol>
+<li><p>由定义,若$B=P^{-1}AP$(P可逆),则$B\sim A$</p>
+</li>
+<li><p>在众多P中若存在一个<a href="#XSDJHFF">P($P=Q$)</a>使得$P^{-1}AP=  \Lambda$则可相似对角化</p>
+<p>​    何时存在这样的一个P<a href="#xsdjhtj">(可相似对角化的条件)</a></p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="相似对角化-方法"><a href="#相似对角化-方法" class="headerlink" title="相似对角化-方法"></a><a id="XSDJHFF">相似对角化-方法</a></h2><p>设n阶矩阵A,若存在n阶可逆矩阵P,使得$P^{-1}AP=\Lambda$,其中$\Lambda$是对角矩阵，则称A可相似对角化，记$A\sim \Lambda$,称$\Lambda$是A的相似标准形 。(其中:可逆矩阵P的列向量应为<strong>A的线性无关的特征向量</strong>)</p>
+<p>若A为实对称矩阵，则其用正交短阵Q相似对角化的基本步骤如下:</p>
+<p>​    (1) 求A得特征值$\lambda_1,\lambda_2,\cdot\cdot\cdot,\lambda_n:|\lambda E-A|$</p>
+<p>​    (2)求对应得特征向量$\xi_1,\xi_2,\cdot\cdot,\xi_n$</p>
+<p>​    (3)正交化$\xi_1,\xi_2,\cdot\cdot,\xi_n$,再单位化得到$\eta_1,\eta_2,\cdot\cdot\cdot,\eta_n$(<a href="#zjgfh">正交规范化</a>)</p>
+<p>​    (4)令$Q={\eta_1,\eta_2,\cdot\cdot\cdot,\eta_n}$则Q为正交矩阵,且$Q^{-1}AQ=Q^TAQ=\Lambda$</p>
+<h2 id="相似对角化-判别"><a href="#相似对角化-判别" class="headerlink" title="相似对角化-判别"></a><a id="xsdjhtj">相似对角化-判别</a></h2><p>第一步，看是不是实<strong>对称矩阵</strong>，如果是实对称矩阵，立即推可相似对角化，如果不是实对称矩阵，看第二步；</p>
+<p>第二步，求方阵的n个特征值，如果<strong>特征值彼此都不相同</strong>，也就是都是单根的话，立即推可相似对角化，如果有重根，看第三步；</p>
+<p>第三步，来验证k重根是不是<strong>具备k个线性无关的特征向量</strong>，也就是看A-λE或λE-A的秩是否等于n-k，若相等，立即推可相似对角化，不相等，则不能进行相似对角化</p>
+<h2 id="正交规范化"><a href="#正交规范化" class="headerlink" title="正交规范化"></a><a id="zjgfh">正交规范化</a></h2><p>线性无关向量组$a_1,a_2$的标准正交化（又称正交规范化）公式为</p>
+<script type="math/tex; mode=display">
+\begin{flalign}
+①找垂&直向量:\\
+&\beta_1=a_1\\
+&\beta_2=a_2-\frac {(a_1,\beta_1)}{(a_2,\beta_2)}\\
+②单位&化\beta_1,\beta_2:\\
+&\eta_1=\frac {\beta_1}{||\beta_1||};\eta_2=\frac {\beta_2}{||\beta_2||};\\
+得到标&准正交向量\eta_1,\eta_2;
+\end{flalign}</script><h2 id="二次型"><a href="#二次型" class="headerlink" title="二次型"></a>二次型</h2><script type="math/tex; mode=display">
+\begin{aligned}
+f(x)=x^TAx;\stackrel {可逆线性变换x=cy}\Rightarrow y^T(C^TAC)y\\
+则B=C^TAC和A合同
+\end{aligned}</script><ul>
+<li>正惯性指数: 将二次型<strong>可逆线性变换</strong>化成规范型或标准型,正项个数为p,负项个数q 。则p为正惯性指数.</li>
+<li>其中正项个数和特征值正数个数对应</li>
+<li>可逆变换矩阵合同<ul>
+<li>矩阵合同正负惯性个数相同(特征值正负数个数相同)</li>
+</ul>
+</li>
+<li>正交变换矩阵相似($A\stackrel{正交变换}\Rightarrow Q^{-1}AQ$)<ul>
+<li>任何二次型都可以通过正交变换化成<strong>标准型</strong></li>
+<li>任何二次型都可以通过<strong>配方法(可逆线性变换)</strong>化成<strong>标准型和规范型</strong><ul>
+<li>X可以通过可逆变换P成各种Y,Q,W….但是所有的都可以通过<strong>标准型</strong>作为桥梁</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>考研</tag>
+        <tag>数学</tag>
+        <tag>线代</tag>
       </tags>
   </entry>
   <entry>
@@ -1996,8 +1553,170 @@ p\leq1时,发散,\\
       </tags>
   </entry>
   <entry>
+    <title>电路分析基础(下册 - 第三篇)</title>
+    <url>/2023050823943/</url>
+    <content><![CDATA[<h1 id="第三篇-动态电路的相量分析法和-S-域分析法"><a href="#第三篇-动态电路的相量分析法和-S-域分析法" class="headerlink" title="第三篇    动态电路的相量分析法和$S$域分析法"></a>第三篇    动态电路的相量分析法和$S$域分析法</h1><span id="more"></span>
+<h2 id="第八章-阻抗和导纳"><a href="#第八章-阻抗和导纳" class="headerlink" title="第八章 阻抗和导纳"></a>第八章 阻抗和导纳</h2><h3 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h3><p><img src="https://gitee.com/xqyr/img/raw/img/20221011220914.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221011220914.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="复数"></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&A=a\cos\theta+ja\sin\theta=ae^{j\theta}=a\angle\theta\\
+&运算法则:\\
+&R_e\ A = R e ( a _ { 1 } + j a _ { 2 } ) = a _ { 1 }\\
+&Im\ A = I m ( a _ { 1 } + j a _ { 2 } ) = a _ { 2 }
+\end{aligned}</script><h3 id="振幅向量"><a href="#振幅向量" class="headerlink" title="振幅向量"></a>振幅向量</h3><script type="math/tex; mode=display">
+\begin{aligned}
+有正弦向量u ( t ) 
+&= U _ { m } \cos ( \omega t + \psi )\\
+&=Re\left[U_me^{j(\omega t+\psi)}\right]\\
+&=Re\left(U_me^{j\psi}e^{j\omega t}\right)\\
+&=Re(\stackrel{\cdotp}U_{m}\angle \omega t)\\
+(其中:\ \stackrel{\cdot}{U}=U_me^{j\omega}=&U_m\angle\psi\ 叫做电压振幅相量)
+\end{aligned}</script><h3 id="向量线性性质"><a href="#向量线性性质" class="headerlink" title="向量线性性质"></a>向量线性性质</h3><p>表示若干个同频率正弦量（可带有实系数）线性组舍的相量<strong>等于</strong>表示各个正弦量的相量的同一线性组合。亦即，如设正弦量为</p>
+<script type="math/tex; mode=display">
+f_{1}(t)=Re(\dot{A}_{1}e^{j \omega t}),f_{2}(t)=Re(\dot{A}_{2}e^{i \omega t})</script><p>举例:</p>
+<p>​    设$a_1$和,$a_2$为两个实数，则正弦量了$a_1f_1(t)$和$a_2f_2(t)$可用相量$\alpha_1\stackrel{\cdot}{A_1}$+$\alpha_2\stackrel{\cdot}{A_2}$表示</p>
+<h3 id="基尔霍夫定理"><a href="#基尔霍夫定理" class="headerlink" title="基尔霍夫定理"></a>基尔霍夫定理</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&\sum_{k=1}^{k}i_{k}= \sum _{k=1}^{k}Re(\dot I_{km}e^{j \omega t})=0\\
+&\Rightarrow \sum_{k=1}^k\dot I_{km}=0;\\
+&同理\sum_{k=1}^k\dot U_{km}=0;
+\end{aligned}</script><p>列题P_14 8-5</p>
+<h3 id="三种基本电路元件VCR-的相量形式"><a href="#三种基本电路元件VCR-的相量形式" class="headerlink" title="三种基本电路元件VCR 的相量形式"></a>三种基本电路元件VCR 的相量形式</h3><h5 id="阻抗Z"><a href="#阻抗Z" class="headerlink" title="阻抗Z:"></a>阻抗Z:</h5><ul>
+<li><p>电抗:$Z=jX;X=Im[Z]$</p>
+</li>
+<li><p>$z=|z|\angle\phi$</p>
+</li>
+<li><p>$Z=\frac {\dot U}{\dot I}=\frac {U\angle\phi_u}{I\angle\phi_i}=R(\angle\phi_u-\angle\phi_i)$</p>
+</li>
+<li></li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>元件</th>
+<th>时域</th>
+<th>相量</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—-</td>
+<td>$u=u_mcos(\omega t+\phi)$</td>
+<td>$\dot U_m=U_m\angle{\phi_u}$</td>
+<td></td>
+</tr>
+<tr>
+<td>—-</td>
+<td>$i=\sqrt2 i(\omega t+\phi)$</td>
+<td>$\dot I_m=\sqrt2I\angle{\phi_i}$</td>
+<td></td>
+</tr>
+<tr>
+<td>电阻R</td>
+<td>$u=R\cdot i$</td>
+<td>$Z_R=R=\frac {\dot U}{\dot I}$</td>
+<td>$\angle\phi<em>{uR}=\angle\phi</em>{IR}$</td>
+</tr>
+<tr>
+<td>电容C</td>
+<td>$i_c=C\frac {du_c(t)}{dt}$</td>
+<td>$Z_C=\frac 1{j\omega c}=\frac {\dot U_c}{\dot I_c}$</td>
+<td>$\angle\phi<em>{uc}-\angle\phi</em>{Ic}=-90^{\circ}$</td>
+</tr>
+<tr>
+<td>电感L</td>
+<td>$U_L=L\cdot\frac {dl_l{t}}{dt}$</td>
+<td>$Z_L=j\omega L=\frac {\dot U_L}{\dot I_L}$</td>
+<td>$\angle\phi<em>{uL}-\angle\phi</em>{IL}=90^{\circ}$</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>P_27</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="时域与相量"></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204905.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204905.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="相量图"></p>
+<h2 id="第九章-正弦稳态功率和能量"><a href="#第九章-正弦稳态功率和能量" class="headerlink" title="第九章    正弦稳态功率和能量"></a>第九章    正弦稳态功率和能量</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>计算公式</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平均功率</td>
+<td>$P=UIcos\phi(注：\phi为电压电流的相位差，UI都为模)$</td>
+<td>瓦特w</td>
+</tr>
+<tr>
+<td>无功功率</td>
+<td>$Q=UI\sin \phi$</td>
+<td>乏var</td>
+</tr>
+<tr>
+<td>视在功率</td>
+<td>$S=UI=\sqrt {P^2+Q^2}$</td>
+<td>$伏安V\cdot A$</td>
+</tr>
+<tr>
+<td><a href="#fgl">复功率</a></td>
+<td>$\stackrel {\sim}{S}=\dot U\dot {I^*}=P+jQ=j2\omega(W_L-W_C)$</td>
+<td>证明P_87</td>
+</tr>
+<tr>
+<td>功率因数</td>
+<td>$\lambda=\frac P S=cos\phi$</td>
+<td>$\phi&gt;0$电容性</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a id="fgl">复功率</a></p>
+<p><strong>复功率</strong>的实部P应为网络中各电阻元件消耗功率的总和，虚部Q应为网络中各动态元件无功功率的代数和，且$W_L$应为网络中所有电感储能平均值的总和，$W_C$应为网络中所有电容储能平均值的总和。这一关系称为复功率守恒。</p>
+<h2 id="最大功率"><a href="#最大功率" class="headerlink" title="最大功率"></a>最大功率</h2><p>负载载电阻获得<strong>最大功率的条件取决于</strong>电路内何者为定值、何者为变量。</p>
+<ol>
+<li><p>当负载的电阻及电抗均可独立地变化；</p>
+<ul>
+<li>负载获得最大功率的条件是：$X_L=-X_S以及R_L=R_S。$也就是<strong>负载阻抗为电源内阻抗的共轭复数。</strong></li>
+</ul>
+<script type="math/tex; mode=display">
+ \begin{split}
+   Z_L=Z_S^* \\
+   P_{Lmax}=\frac {U_s^2}{4R_S}
+\end{split}</script></li>
+</ol>
+<ol>
+<li>载阻抗角固定而模可改变。</li>
+</ol>
+<p>负载获得最大功率的条件是：<strong>负载阻抗的模</strong>应与<strong>电源内阻抗的模</strong>相等，称为模匹配。当负载是纯电阻时，即$|Z|=R_L$        时，最大功率的条件是$R_L=\sqrt {R^2_s+X^2_s}$而不是$R_L=R_S$,这是应当注意的。显然，在这一情祝下所得</p>
+<h2 id="零状态响应条件下S域元件模型"><a href="#零状态响应条件下S域元件模型" class="headerlink" title="零状态响应条件下S域元件模型)"></a><a href="(https://www.jianshu.com/p/2e70ee35a7ed">零状态响应条件下S域元件模型</a>)</h2><p>★时域电路变换为S域电路模型后，电路中的<strong>电阻</strong>R、电容C、电感L<strong>均等效为电阻来计算</strong>，电阻值分别为R、$\frac 1{sC}$、sL，电压源、<strong>电流源直接写作变换式。</strong></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221019180628.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221019180628.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<p>相关连接:</p>
+<p>​    <a href="https://www.jianshu.com/p/a756f397783f">https://www.jianshu.com/p/a756f397783f</a></p>
+<h2 id="功率"><a href="#功率" class="headerlink" title="功率"></a>功率</h2>]]></content>
+      <tags>
+        <tag>考研</tag>
+        <tag>电路分析</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>智能小车</title>
-    <url>/2023020225119/</url>
+    <url>/2023050825119/</url>
     <content><![CDATA[<p><a href="归一化/归一化.md" title="归一化">归一化</a></p>
 <p>水平电感线圈对较远处道路状况相对比较敏感。水平方向的传感器对<strong>前方弯道非常敏感</strong>,有利于提前感知跑道的变化趋势,及早做出准确的控制策略。</p>
 <p>比列K：本文以偏差的二次幂作为比例系数来达到上述目的</p>
@@ -2008,6 +1727,294 @@ p\leq1时,发散,\\
 ]]></content>
       <tags>
         <tag>比赛，智能小车</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>考研数二_高数</title>
+    <url>/2023050848903/</url>
+    <content><![CDATA[<h1 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h1><h2 id="基本求导公式"><a href="#基本求导公式" class="headerlink" title="基本求导公式"></a>基本求导公式</h2><script type="math/tex; mode=display">
+\begin{align}
+(tan\ x)'&=sec^2x;&(cot\ x)'            &=-csc^2x\\
+(sec\ x)'&=sec\ xtan\ x        ;        &(csc\ x)'&=-csc\ xcot\ x\\
+(arcsin\ x)'&=\frac 1{\sqrt {1-x^2}};&(arccos\ x)'&={\color{red}-}\frac 1{\sqrt {1-x^2}}\\
+(arctan\ x)'&=\frac 1{1+x^2};            &(arccot\ x)'&={\color{red}-}\frac 1{1+x^2}\\
+\end{align}</script><h2 id="积分公式"><a href="#积分公式" class="headerlink" title="积分公式"></a>积分公式</h2><script type="math/tex; mode=display">
+\begin{aligned}
+\int sec\theta d\theta=ln|sec\theta+tan\theta|
+\end{aligned}</script><h2 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h2><script type="math/tex; mode=display">
+\begin{align} 
+f(x)    &=\sum_{n=0}(n!)^{-1}f^{(n)}(x_0)(x-x_0)^n\\
+sinx     &=x-\frac {x^3}{3!}+o(x^2) \\
+cosx     &=1-\frac {x^2}{2!}+\frac {x^4}{4!}+o(x^4) \\
+tanx     &=x+\frac {x^3}{3}+o(x^3)\\
+arcsinx &=x+\frac {x^3}{3!}+o(x^3)\\
+arctanx &=x-\frac {x^3}{3}+0(x^3)\\
+e^x     &=1+x+\frac {x}{2!}+\frac {x}{3!}+o(x^3)\\
+ln(1+x) &=x-\frac {x^2}{2}+\frac {x^3}{3}+o(x^3)\\
+(1+x)^a &=1+ax+\frac {a(a-1)}{2!}x^2+0{x^2}\\
+\end{align}</script><h2 id="变限积分求导公式"><a href="#变限积分求导公式" class="headerlink" title="变限积分求导公式"></a>变限积分求导公式</h2><script type="math/tex; mode=display">
+\begin{equation}
+
+
+F^{\prime}(x)= \frac{d}{dx}\left[ \int _{\varphi _{1}(x)}^{\varphi _{2}(x)}f(t)dt \right] =f \left[ \varphi _{2}(x)\right] \varphi _{2}^{\prime}(x)-f \left[ \varphi _{1}(x)\right] \varphi _{1}^{\prime}(x)
+
+\end{equation}</script><h3 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h3><h2 id="高级求导"><a href="#高级求导" class="headerlink" title="高级求导"></a>高级求导</h2><ol>
+<li>归纳</li>
+<li>莱布尼兹公式</li>
+</ol>
+<script type="math/tex; mode=display">
+(UV)^{(n)}=\sum_{k=0}^{n}C_n^ku^{(n-k)}v^{(k)}</script><ol>
+<li>泰勒公式</li>
+</ol>
+<h2 id="解微分方程"><a href="#解微分方程" class="headerlink" title="解微分方程"></a>解微分方程</h2><h3 id="一阶微分方程-P-274"><a href="#一阶微分方程-P-274" class="headerlink" title="一阶微分方程 P_274"></a>一阶微分方程 <em>P_274</em></h3><h4 id="类型一-可分离变量型"><a href="#类型一-可分离变量型" class="headerlink" title="类型一 可分离变量型"></a>类型一 可分离变量型</h4><ol>
+<li>​     $y^{‘}=f(x)·g(y)$</li>
+</ol>
+<p>$<br>\begin{aligned}<br>2.&amp;y^{‘}=f(ax+by+c) \<br>&amp;令\ u=ax+by+c\Rightarrow u^{‘}=a+bf(u)\<br>&amp;\int \frac {du}{a+bf(u)}=\int dx<br>\end{aligned}<br>$</p>
+<h4 id="类型二-一阶线性"><a href="#类型二-一阶线性" class="headerlink" title="类型二 一阶线性"></a>类型二 一阶线性</h4><p>能写成  $y^{‘}+p(x)y=q(x)$  则为<strong>一阶线性微分方程</strong>(详解请看P288)</p>
+<script type="math/tex; mode=display">
+通解为:\quad
+y=e^{-\int{p(x)dx}}\left[\int {e^{\int{p(x)dx}}\cdot q(x)dx}+C\right]</script><h3 id="二阶可微分方程"><a href="#二阶可微分方程" class="headerlink" title="二阶可微分方程"></a>二阶可微分方程</h3><h4 id="类型一-二阶可降阶微分方程"><a href="#类型一-二阶可降阶微分方程" class="headerlink" title="类型一 二阶可降阶微分方程"></a>类型一 二阶可降阶微分方程</h4><p>能写成  $y^{“}=f(x,y^{‘})$  的形式<em>(三步)</em></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&第一步:令\ y^{'}=p,\ y^{''}=p^{'}\Rightarrow 原方程\ \frac {dp}{dx}=f(x,p)\\
+&第二步:求得通解\ p=y^{'}= \psi(x,C_1)  \\
+&第三步:用一阶微分方程的解法\\
+\end{aligned}</script><p>能写成 $y^{‘’}=f(y,y^{‘})$ 的形式<em>(三步)</em></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&① 令y^{'}=p,则\ y^{''}=p^{'}=\frac{dp}{dy}\cdot \frac{dy}{dx}=\frac{dp}{dy}\cdot p,则原方程就变为关于\\ &y\ 的一阶方程\frac{dp}{dy}\cdot p=f(y,p)\\
+&②使用一阶方程的方法得到通解\ p=y^{'}= \phi (x,C_1) ,又将\ p\ 还原得到关于\ x\ 的一阶方程\\
+&③同理得出通解
+\end{aligned}</script><h4 id="类型二-二阶常系数微分方程"><a href="#类型二-二阶常系数微分方程" class="headerlink" title="类型二 二阶常系数微分方程"></a>类型二 二阶常系数微分方程</h4><p>能写成   $y^{‘’}+qy^{‘}+py=f(x)$  叫做<strong>高阶常系数微分方程</strong>(两步)</p>
+<script type="math/tex; mode=display">
+\begin{gathered}
+第一步\ \lambda^2+p\lambda+q=0得出\lambda_1\ ,\lambda_2\ 写出其次方程的通解:\\    
+\end{gathered}</script><script type="math/tex; mode=display">
+\begin{cases}
+若\ p^2-4q>0\ 通解:\ y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}\\
+若\ p^2-4q=0\ 通解:\ y=(C_1+C_2x)e^{\lambda x}\\
+若\ p^2-4q<0\ 通解:\ y=e^{ax}(C_1cos\beta x+C_2sin\beta x)\quad 根为a\pm\beta i\\
+\end{cases}</script><script type="math/tex; mode=display">
+\begin{aligned}
+第二步 设特解y^{\ast}\Rightarrow 得待定系数\Rightarrow 得特解\Rightarrow 写通解\\
+\end{aligned}</script><script type="math/tex; mode=display">
+\quad\begin{cases}
+    &当f(x)=P_n(x)e^{ax},\\
+    &设y^{\ast} =e^{ax}Q_n(x)x^k\\
+    &其中k=\begin{cases}
+            0,\quad a\neq\lambda_1\neq\lambda_2,\\
+            1,\quad a=\lambda_1 或a=\lambda_2,\\
+            2,\quad a=\lambda_1 =\lambda_2,\\
+        \end{cases}
+\end{cases}</script><script type="math/tex; mode=display">
+\begin{cases}
+    &当f(x)=e^{ax}\left[P_m(x)cos\beta x+P_n(x)sin\beta x\right]时\\
+    &设y^{\ast} =e^{ax}\left[Q_l^{(1)}cos\beta x+Q_l^{(2)}sin\beta x\right]x^k\ ;\\
+    &\quad\quad\quad\quad其中k=\begin{cases}
+            0,a\pm\beta 不是特征根,\\
+            1,a\pm\beta 是特征根,\\
+        \end{cases}
+\end{cases}</script><h4 id="3-高阶”-y-n-n-geq3-”情况-p-296"><a href="#3-高阶”-y-n-n-geq3-”情况-p-296" class="headerlink" title="3.    高阶”$y^{(n)},n\geq3$”情况 p_296"></a>3.    高阶”$y^{(n)},n\geq3$”情况 <em>p_296</em></h4><script type="math/tex; mode=display">
+\begin{aligned}
+&解y^{'''}+p_1y^{''}+p_2y^{'}+p_3y=0:\\
+&\quad算\lambda^3+p_1\lambda^2+p_2\lambda+p_3=0的根\\
+&\begin{cases}若\lambda是单实数根,写Ce^{\lambda x};\\
+若\lambda是为k得重实根,写(C_1+C_2X+C_3X^2+\cdot\cdot+C_kX^{k-1})e^{\lambda x}\\
+若\lambda是单复数根a\pm\beta i,写(C_1COS\beta x+C_2sin\beta x)e^{ax}
+\end{cases}
+
+\end{aligned}</script><h2 id="反常积分判断收敛"><a href="#反常积分判断收敛" class="headerlink" title="反常积分判断收敛"></a>反常积分判断收敛</h2><script type="math/tex; mode=display">
+\begin{aligned}
+① 要求每一个积分有且只有一个奇点\ ;\\
+②尺度\begin{cases}
+\int_0^1\frac {1}{x^p}dx\begin{cases}
+0<p<1,收敛;\\
+p\geq1,发散\ ;\\
+\end{cases}\\
+\int_1^{+\infty}\frac 1{x^p}dx\begin{cases}
+1<p,收敛\ ;\\
+p\leq1,发散\ ;\\
+\end{cases}\\
+\end{cases}
+\end{aligned}</script><h3 id="反常积分收敛-审敛法"><a href="#反常积分收敛-审敛法" class="headerlink" title="反常积分收敛 - 审敛法"></a>反常积分收敛 - 审敛法</h3><p>对无界函数的<strong>极限审敛法</strong>：设函数f(x)在区间<strong>(a,b]</strong>上连续，且f(x)≥0，x=a为f(x)的<a href="#xd">瑕点</a>,且存在常数p,使得</p>
+<script type="math/tex; mode=display">
+\lim _{x\rightarrow 0^+}[(x-a)^pf(x)]=A\quad(比阶)</script><script type="math/tex; mode=display">
+\begin{aligned}
+&(1)若0\leq A< +\infty,0<p<1,则反常积分\int_a^bf(x)dx收敛\\
+&(2)若0< A\leq +\infty,p\geq1,则反常积分\int_a^bf(x)dx发散\\
+\end{aligned}</script><p>则反常积分f(x)dx发散.</p>
+<h2 id="多元函数"><a href="#多元函数" class="headerlink" title="多元函数"></a>多元函数</h2><h3 id="无条件：多元函数-最值"><a href="#无条件：多元函数-最值" class="headerlink" title="无条件：多元函数-最值"></a>无条件：多元函数-最值</h3><script type="math/tex; mode=display">
+\begin{flalign}
+&有多元函数z=f(x,y);\\
+&①算驻点\begin{cases}
+fx^{'}=0;\\
+fy^{'}=0;
+\end{cases}得驻点(x_0,y_0) \\
+&令A=f_{xx}^{''}(x_0,y_0),B=f_{xy}^{''}(x_0,y_0),C=f_{yy}^{''}(x_0,y_0);\\
+&则\Delta=B^2-AC
+    \begin{cases}
+    <0\Rightarrow 有极值\begin{cases}A<0\Rightarrow极大值\\A>0\Rightarrow 极小值\end{cases}\\
+    >0\Rightarrow非极值\\
+    =0失效
+    \end{cases}
+\end{flalign}</script><h3 id="有条件：拉格朗日函数最值法"><a href="#有条件：拉格朗日函数最值法" class="headerlink" title="有条件：拉格朗日函数最值法"></a>有条件：拉格朗日函数最值法</h3><p>条件：$\phi(x,y,z)=0，\psi (x,y,z)=0。求y=f(x,y,z)的最值$</p>
+<p>$令F(x,y,z)=f(x,y,z)+\lambda\phi(x,y,z)+\beta\psi(x,y,z)$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}&求：\begin{cases}
+F_x=0;\\
+F_y=0;\\
+F_z=0;\\
+F_{\lambda}=0;\\
+F_{\beta}=0;
+\end{cases}\\
+&得到解p(x_0,y_0,z_0);\\
+&带入就得最值
+\end{aligned}</script><h1 id="归纳总结"><a href="#归纳总结" class="headerlink" title="归纳总结"></a>归纳总结</h1><h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><h3 id="存在极限-连续-可导"><a href="#存在极限-连续-可导" class="headerlink" title="存在极限/连续/可导"></a>存在极限/连续/可导</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&①在x_0处极限存在:\lim_{x\to x_0^+}f(x)=\lim_{x\to x_0^-}f(x)=A;\\
+&②在x_0处连续:f(x_0)=A;\\
+&③在x_0处可导:\lim_{x\to x_0^+}\frac {f(x)-f(x_0)}{x=x_0}=\lim_{x\to x_0^-}\frac {f(x)-f(x_0)}{x=x_0}
+\end{aligned}\\</script><h2 id="极限-无穷小比阶"><a href="#极限-无穷小比阶" class="headerlink" title="极限-无穷小比阶"></a>极限-无穷小比阶</h2><script type="math/tex; mode=display">
+\begin{aligned}
+&若\lim\alpha(x)=0;\lim\beta(x)=0;\\
+&当\lim \frac {\alpha(x)}{\beta(x)}=0;则\alpha(x)是比\beta(x)高级的无穷小;\\
+&当\lim \frac {\alpha(x)}{\beta(x)}=1;则\alpha(x)与\beta(x)等价无穷小;\\
+&当\lim \frac {\alpha(x)}{\beta(x)}=c;则\alpha(x)与\beta(x)同阶无穷小;\\
+&当\lim \frac {\alpha(x)}{[\beta(x)]^k}=1;k>0;则\alpha(x)是\beta(x)k价无穷小;\\
+
+\end{aligned}</script><h2 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理"></a>中值定理</h2><p>设f<strong>(x)在[a,b]上连续</strong>，则</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+    &定理1（有界与最值定理）m≤f(x)≤M,其中，m,M分别为f(x)在[a,b]上的最小值与最大值。\\
+    &定理2（介值定理）当m≤\mu≤M时，存在\xi∈[a,b]们，使得f（\xi）=\mu\\
+    &\quad 积分中值定理\int_a^bf(x)dx=f(\xi)(a-b)\quad(\xi\in(a,b))\\\
+    &定理3（平均值定理）当a<x_1<x_2<\cdot\cdot\cdot<x_n<b时，在[x_1,x_n]内至少存在一点\xi，使得\\
+    &\quad\quad\quad\quad\quad\quad\quad f(\xi)=\frac {f(x_1)+f(x_2)+\cdot\cdot\cdot+f(x_n)}{n}\\
+    &定理4（零点定理）当f(a)·f(b)<0时，存在\xi∈(a,b),使得f(\xi)=0.
+\end{aligned}</script><h3 id="涉及导数（微分）的中值定理"><a href="#涉及导数（微分）的中值定理" class="headerlink" title="涉及导数（微分）的中值定理"></a>涉及导数（微分）的中值定理</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&定理5（费马定理）\\&设f(x)满足在x_0点处\left\{\begin{aligned}&1.可导;\\&2.取极值;\end{aligned}\right.\ 则f^{'}(x_0)=0\ ;\\\\
+&定理6（罗尔定理）\\&设f(x)满足\left\{\begin{aligned}&1.在[a.b]上连续;\\&2.在(a,b)上导;\\&3.f(a)=f(b);\\&注:3替换为\lim_{x \rightarrow a^+}f(x) = \lim_{x \rightarrow b^-}f(x)也成立;\end{aligned}\right.\ 则存在\xi\in(a,b),使得f^{'}(\xi)=0\ ;\\\\
+&定理7（拉格朗日中值定理）\\& 设f(x)满足\left\{\begin{aligned}&1.在[a.b]上连续;\\&2.在(a,b)内可导;\end{aligned}\right.\ 则存在\xi\in(a,b),使得f(b)-f(a)=f^{'}(\xi)(b-a)\ ;\\\\
+&定理8（柯西中值定理）\\& 设f(x)满足\left\{\begin{aligned}&1.在[a.b]上连续;\\&2.在(a,b)内可导;\\ &3.g^{'}(x)\neq0;\end{aligned}\right.\ 则存在\xi\in(a,b),使得\frac {f(b)-f(a)}{g(b)-g(a)}=\frac{f^{'}(\xi)}{g^{'}(\xi)}\ ;
+\end{aligned}</script><h3 id="关系"><a href="#关系" class="headerlink" title="关系:"></a><strong>关系:</strong></h3><script type="math/tex; mode=display">
+柯西中值定理\stackrel{当g(x)=x时}\Rightarrow 拉格朗日中值定理 \stackrel{加入罗尔的条件三}\Rightarrow 罗尔中值定理\\
+罗尔中值定理\Rightarrow 拉格朗日中值定理 \Rightarrow 柯西中值定理\\
+.....\\
+三个定理都可以互相论证,由此可以看出是一回事,证明时循环论证.</script><h2 id="一元函数微分学"><a href="#一元函数微分学" class="headerlink" title="一元函数微分学"></a>一元函数微分学</h2><h3 id="一元函数几何应用-渐近线-p-76"><a href="#一元函数几何应用-渐近线-p-76" class="headerlink" title="一元函数几何应用 - 渐近线 p_76"></a>一元函数几何应用 - 渐近线 p_76</h3><ol>
+<li><p>铅锤渐近线$(x=x_0)$</p>
+<script type="math/tex; mode=display">
+若\lim _{x\rightarrow x_0^+}f(x)=\infty(或\lim _{x\rightarrow x_0^-}f(x)=\infty)</script></li>
+<li><p>水平渐近线$(y=y_0)$</p>
+<script type="math/tex; mode=display">
+ \begin{aligned}
+ &\lim_{x\rightarrow+\infty}f(x)=y_1,则y=y_1是一条水平渐近线\\
+ &\lim_{x\rightarrow-\infty}f(x)=y_2,则y=y_2是一条水平渐近线\\
+ &\lim_{x\rightarrow+\infty}f(x)=\lim_{x\rightarrow-\infty}f(x)=y_3,则y=y_3是一条水平渐近线\\
+ \end{aligned}</script></li>
+<li><p>斜渐近线(y=kx+b)</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&\lim_{x\rightarrow+\infty}\frac {f(x)}x=k_1,\lim_{x\rightarrow+\infty}[f(x)-k_{1}x]= b _{1},则y = k_{1}x+b_1\\
+&\lim_{x\rightarrow-\infty}\frac{f(x)}{x}=k_{2},\lim_{x\rightarrow-\infty}[f(x)-k_{2}x]= b _{2},则y = k_{2}x+b_2\\
+&\lim_{x\rightarrow-\infty}\frac{f(x)}{x}=\lim_{x\rightarrow+\infty}\frac {f(x)}x=k_{3},\lim_{x\rightarrow-\infty}\frac{f(x)}{x}=\lim_{x\rightarrow+\infty}[f(x)-k_{3}x]= b _{3},则y = k_{3}x+b_3\\
+
+\end{aligned}</script></li>
+</ol>
+<h2 id="一元函数积分学"><a href="#一元函数积分学" class="headerlink" title="一元函数积分学"></a>一元函数积分学</h2><p>定义：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\int_a^bf(x)dx=\lim_{n\rightarrow\infty}\frac {b-a}n\sum_{i=1}^n{f(a+\frac {i(b-a)}{n}})\\
+通常：\ 
+\int _{0}^{1}f(x)dx=\lim _{n \rightarrow \infty}\sum _{i=1}^{n}f(0+ \frac{1-0}{n}i)\frac{1-0}{n}
+\end{aligned}</script><h3 id="积分换元法"><a href="#积分换元法" class="headerlink" title="积分换元法:"></a>积分换元法:</h3><script type="math/tex; mode=display">
+三角函数代换\begin{cases}
+\sqrt {a^2-x^2}\rightarrow x=asint,\\
+\sqrt {a^2+x^2}\rightarrow x=atant,\\
+\sqrt {x^2-a^2}\rightarrow x=ast,\\
+\end{cases}</script><h3 id="几种常见积分图形"><a href="#几种常见积分图形" class="headerlink" title="几种常见积分图形"></a>几种常见积分图形</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>图像</th>
+<th>直角坐标系</th>
+<th>极坐标系</th>
+<th>参数坐标系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>摆线</td>
+<td><img src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
+<td></td>
+<td></td>
+<td>$\begin{cases}x=a(1-sint)\y=a(1-cost)\end{cases}$</td>
+</tr>
+<tr>
+<td>心型线</td>
+<td><img src="https://gitee.com/xqyr/img/raw/img/20221018195315.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018195315.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
+<td></td>
+<td>$r=a(1+cos\theta)$</td>
+<td></td>
+</tr>
+<tr>
+<td>伯努利双纽线</td>
+<td><img src="https://gitee.com/xqyr/img/raw/img/20221018195416.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018195416.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
+<td></td>
+<td>$r^2=a^2cos\theta$</td>
+<td></td>
+</tr>
+<tr>
+<td>玫瑰线</td>
+<td><img src="https://gitee.com/xqyr/img/raw/img/20221021000126.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221021000126.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:50%;"></td>
+<td></td>
+<td>$r=a \sin 3 \theta(a&gt;0)$</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="几何应用-弧长"><a href="#几何应用-弧长" class="headerlink" title="几何应用 - 弧长"></a>几何应用 - 弧长</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&①直角坐标系:s= \int _{a}^{b}\sqrt{1+ \left[ y^{\prime}(x)\right] ^{2}}dx\\
+&②参数方程:s= \int _{a}^{\beta}\sqrt{\left[ x^{\prime}(t)\right] ^{2}+ \left[ y^{\prime}(t)\right] ^{2}}dt\\
+&③极坐标方程:s= \int _{\alpha}^{\beta}\sqrt{\left[ r(\theta)\right] ^{2}+ \left[ r^{\prime}(\theta)\right] ^{2}}d \theta
+\end{aligned}</script><h3 id="几何应用-极坐标面积"><a href="#几何应用-极坐标面积" class="headerlink" title="几何应用-极坐标面积"></a>几何应用-极坐标面积</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&若r=r(\theta)(\alpha<\theta<\beta)\\
+&则A=\int_\alpha^\beta \frac 12[r(\theta)]^2d\theta
+\end{aligned}</script><h3 id="几何应用-旋转体体积"><a href="#几何应用-旋转体体积" class="headerlink" title="几何应用-旋转体体积"></a>几何应用-旋转体体积</h3><ol>
+<li>曲线 y=y(x）与x=a,x=b(a &lt;b）及x 轴围成的曲边梯形<strong>绕x 轴旋转</strong> 周所得到的旋转体的体积</li>
+</ol>
+<script type="math/tex; mode=display">
+V=\pi\int_a^by^2(x)dx</script><ol>
+<li><p>曲线$y=y_1(x)\geq0与y=y_2(x)\geq0及x=a,x=b(a&lt;b)$所围成的平面图形<strong>绕x轴旋转</strong>一周所得到的旋转体的体积</p>
+<script type="math/tex; mode=display">
+V=\pi\int_a^b|y_1^2(x)-y_2^2(x)|dx</script></li>
+<li><p>曲线y=y(x)与x=a,x=b(0≤a&lt;b)及x轴围成的曲边梯形<strong>绕y轴</strong>旋转一周所得到的旋转体的体积</p>
+<script type="math/tex; mode=display">
+V=2\pi\int_a^bx|y(x)|dx</script></li>
+<li><p>曲线$y=y_1(x)与y=y_2(x)及x=a,x=b(0≤a≤b)$所围成的图形<strong>绕y轴</strong>旋转一周所成的旋转体的体积</p>
+<script type="math/tex; mode=display">
+V=2\pi\int_a^bx|y_1(x)-y_2(x)|dx</script></li>
+</ol>
+<h2 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h2><p>①判别时要求每个积分有且仅有一个奇点.</p>
+<p>②尺度</p>
+<script type="math/tex; mode=display">
+\int_0^1\frac 1{x^p}dx\begin{cases}
+0<p<1时,收敛,\\
+p>1时,发散,\\
+\end{cases}\\
+\int_1^{+\infty}\frac 1{x^p}dx\begin{cases}
+p>1时,收敛,\\
+p\leq1时,发散,\\
+\end{cases}\\</script><h2 id="二重积分"><a href="#二重积分" class="headerlink" title="二重积分"></a>二重积分</h2><p>$rd\theta dr=dxdy$</p>
+<h4 id="注"><a href="#注" class="headerlink" title="注:"></a>注:</h4><h5 id="瑕点"><a href="#瑕点" class="headerlink" title="瑕点"></a><a id="xd">瑕点</a></h5><script type="math/tex; mode=display">
+\lim_{x\rightarrow a^+}f(x)=+\infty</script>]]></content>
+      <tags>
+        <tag>考研</tag>
+        <tag>数学</tag>
+        <tag>高数</tag>
       </tags>
   </entry>
   <entry>

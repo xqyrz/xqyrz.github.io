@@ -13,7 +13,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>hexo 使用技巧 | MyBlog</title>
+  <title>电路分析基础(下册 - 第三篇) | MyBlog</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -318,12 +318,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -489,12 +489,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -632,21 +632,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('/medias/2.jpg')">
+  background-position: center center;position: relative;background-image:url('https://gitee.com/xqyr/img/raw/img/20221014204750.png')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        hexo 使用技巧
+        电路分析基础(下册 - 第三篇)
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2023-02-02 |
+          <i class="fas fa-calendar"></i> 发表于：2023-05-08 |
         </span>
       
 
@@ -670,17 +670,174 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h4 id="Hexo-博客插件生成短链-使用-abbrlink-生成短链接"><a href="#Hexo-博客插件生成短链-使用-abbrlink-生成短链接" class="headerlink" title="Hexo 博客插件生成短链 - 使用 abbrlink 生成短链接"></a>Hexo 博客插件生成短链 - <a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>修改博客根目录下的 <code>_config.yml</code> 配置文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year:month:day:abbrlink/   # 具体配置参考Hexo文档https://hexo.io/zh-cn/docs/permalinksCopy</span><br><span class="line">#添加如下的对该插件的配置项：</span><br><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc16  #support crc16(default) and crc32</span><br><span class="line">  rep: dec    #support dec(default) and hex</span><br><span class="line">  drafts: false #(true)Process draft,(false)Do not process draft</span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: false</span><br><span class="line">     depth:</span><br></pre></td></tr></table></figure>
-<p>效果</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/66c8.html</span><br><span class="line"></span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/65535.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/8ddf18fb.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/1690090958.htmlCopy</span><br></pre></td></tr></table></figure>
-<h2 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h2><p>hexo的启动文件地址<strong>node_modules\hexo-server\index.js</strong> 修改port即可。</p>
-
+        <h1 id="第三篇-动态电路的相量分析法和-S-域分析法"><a href="#第三篇-动态电路的相量分析法和-S-域分析法" class="headerlink" title="第三篇    动态电路的相量分析法和$S$域分析法"></a>第三篇    动态电路的相量分析法和$S$域分析法</h1><span id="more"></span>
+<h2 id="第八章-阻抗和导纳"><a href="#第八章-阻抗和导纳" class="headerlink" title="第八章 阻抗和导纳"></a>第八章 阻抗和导纳</h2><h3 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h3><p><img src="https://gitee.com/xqyr/img/raw/img/20221011220914.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221011220914.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="复数"></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&A=a\cos\theta+ja\sin\theta=ae^{j\theta}=a\angle\theta\\
+&运算法则:\\
+&R_e\ A = R e ( a _ { 1 } + j a _ { 2 } ) = a _ { 1 }\\
+&Im\ A = I m ( a _ { 1 } + j a _ { 2 } ) = a _ { 2 }
+\end{aligned}</script><h3 id="振幅向量"><a href="#振幅向量" class="headerlink" title="振幅向量"></a>振幅向量</h3><script type="math/tex; mode=display">
+\begin{aligned}
+有正弦向量u ( t ) 
+&= U _ { m } \cos ( \omega t + \psi )\\
+&=Re\left[U_me^{j(\omega t+\psi)}\right]\\
+&=Re\left(U_me^{j\psi}e^{j\omega t}\right)\\
+&=Re(\stackrel{\cdotp}U_{m}\angle \omega t)\\
+(其中:\ \stackrel{\cdot}{U}=U_me^{j\omega}=&U_m\angle\psi\ 叫做电压振幅相量)
+\end{aligned}</script><h3 id="向量线性性质"><a href="#向量线性性质" class="headerlink" title="向量线性性质"></a>向量线性性质</h3><p>表示若干个同频率正弦量（可带有实系数）线性组舍的相量<strong>等于</strong>表示各个正弦量的相量的同一线性组合。亦即，如设正弦量为</p>
+<script type="math/tex; mode=display">
+f_{1}(t)=Re(\dot{A}_{1}e^{j \omega t}),f_{2}(t)=Re(\dot{A}_{2}e^{i \omega t})</script><p>举例:</p>
+<p>​    设$a_1$和,$a_2$为两个实数，则正弦量了$a_1f_1(t)$和$a_2f_2(t)$可用相量$\alpha_1\stackrel{\cdot}{A_1}$+$\alpha_2\stackrel{\cdot}{A_2}$表示</p>
+<h3 id="基尔霍夫定理"><a href="#基尔霍夫定理" class="headerlink" title="基尔霍夫定理"></a>基尔霍夫定理</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&\sum_{k=1}^{k}i_{k}= \sum _{k=1}^{k}Re(\dot I_{km}e^{j \omega t})=0\\
+&\Rightarrow \sum_{k=1}^k\dot I_{km}=0;\\
+&同理\sum_{k=1}^k\dot U_{km}=0;
+\end{aligned}</script><p>列题P_14 8-5</p>
+<h3 id="三种基本电路元件VCR-的相量形式"><a href="#三种基本电路元件VCR-的相量形式" class="headerlink" title="三种基本电路元件VCR 的相量形式"></a>三种基本电路元件VCR 的相量形式</h3><h5 id="阻抗Z"><a href="#阻抗Z" class="headerlink" title="阻抗Z:"></a>阻抗Z:</h5><ul>
+<li><p>电抗:$Z=jX;X=Im[Z]$</p>
+</li>
+<li><p>$z=|z|\angle\phi$</p>
+</li>
+<li><p>$Z=\frac {\dot U}{\dot I}=\frac {U\angle\phi_u}{I\angle\phi_i}=R(\angle\phi_u-\angle\phi_i)$</p>
+</li>
+<li></li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>元件</th>
+<th>时域</th>
+<th>相量</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—-</td>
+<td>$u=u_mcos(\omega t+\phi)$</td>
+<td>$\dot U_m=U_m\angle{\phi_u}$</td>
+<td></td>
+</tr>
+<tr>
+<td>—-</td>
+<td>$i=\sqrt2 i(\omega t+\phi)$</td>
+<td>$\dot I_m=\sqrt2I\angle{\phi_i}$</td>
+<td></td>
+</tr>
+<tr>
+<td>电阻R</td>
+<td>$u=R\cdot i$</td>
+<td>$Z_R=R=\frac {\dot U}{\dot I}$</td>
+<td>$\angle\phi<em>{uR}=\angle\phi</em>{IR}$</td>
+</tr>
+<tr>
+<td>电容C</td>
+<td>$i_c=C\frac {du_c(t)}{dt}$</td>
+<td>$Z_C=\frac 1{j\omega c}=\frac {\dot U_c}{\dot I_c}$</td>
+<td>$\angle\phi<em>{uc}-\angle\phi</em>{Ic}=-90^{\circ}$</td>
+</tr>
+<tr>
+<td>电感L</td>
+<td>$U_L=L\cdot\frac {dl_l{t}}{dt}$</td>
+<td>$Z_L=j\omega L=\frac {\dot U_L}{\dot I_L}$</td>
+<td>$\angle\phi<em>{uL}-\angle\phi</em>{IL}=90^{\circ}$</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>P_27</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="时域与相量"></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204905.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204905.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="相量图"></p>
+<h2 id="第九章-正弦稳态功率和能量"><a href="#第九章-正弦稳态功率和能量" class="headerlink" title="第九章    正弦稳态功率和能量"></a>第九章    正弦稳态功率和能量</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>计算公式</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平均功率</td>
+<td>$P=UIcos\phi(注：\phi为电压电流的相位差，UI都为模)$</td>
+<td>瓦特w</td>
+</tr>
+<tr>
+<td>无功功率</td>
+<td>$Q=UI\sin \phi$</td>
+<td>乏var</td>
+</tr>
+<tr>
+<td>视在功率</td>
+<td>$S=UI=\sqrt {P^2+Q^2}$</td>
+<td>$伏安V\cdot A$</td>
+</tr>
+<tr>
+<td><a href="#fgl">复功率</a></td>
+<td>$\stackrel {\sim}{S}=\dot U\dot {I^*}=P+jQ=j2\omega(W_L-W_C)$</td>
+<td>证明P_87</td>
+</tr>
+<tr>
+<td>功率因数</td>
+<td>$\lambda=\frac P S=cos\phi$</td>
+<td>$\phi&gt;0$电容性</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a id="fgl">复功率</a></p>
+<p><strong>复功率</strong>的实部P应为网络中各电阻元件消耗功率的总和，虚部Q应为网络中各动态元件无功功率的代数和，且$W_L$应为网络中所有电感储能平均值的总和，$W_C$应为网络中所有电容储能平均值的总和。这一关系称为复功率守恒。</p>
+<h2 id="最大功率"><a href="#最大功率" class="headerlink" title="最大功率"></a>最大功率</h2><p>负载载电阻获得<strong>最大功率的条件取决于</strong>电路内何者为定值、何者为变量。</p>
+<ol>
+<li><p>当负载的电阻及电抗均可独立地变化；</p>
+<ul>
+<li>负载获得最大功率的条件是：$X_L=-X_S以及R_L=R_S。$也就是<strong>负载阻抗为电源内阻抗的共轭复数。</strong></li>
+</ul>
+<script type="math/tex; mode=display">
+ \begin{split}
+   Z_L=Z_S^* \\
+   P_{Lmax}=\frac {U_s^2}{4R_S}
+\end{split}</script></li>
+</ol>
+<ol>
+<li>载阻抗角固定而模可改变。</li>
+</ol>
+<p>负载获得最大功率的条件是：<strong>负载阻抗的模</strong>应与<strong>电源内阻抗的模</strong>相等，称为模匹配。当负载是纯电阻时，即$|Z|=R_L$        时，最大功率的条件是$R_L=\sqrt {R^2_s+X^2_s}$而不是$R_L=R_S$,这是应当注意的。显然，在这一情祝下所得</p>
+<h2 id="零状态响应条件下S域元件模型"><a href="#零状态响应条件下S域元件模型" class="headerlink" title="零状态响应条件下S域元件模型)"></a><a href="(https://www.jianshu.com/p/2e70ee35a7ed">零状态响应条件下S域元件模型</a>)</h2><p>★时域电路变换为S域电路模型后，电路中的<strong>电阻</strong>R、电容C、电感L<strong>均等效为电阻来计算</strong>，电阻值分别为R、$\frac 1{sC}$、sL，电压源、<strong>电流源直接写作变换式。</strong></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221019180628.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221019180628.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<p>相关连接:</p>
+<p>​    <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a756f397783f">https://www.jianshu.com/p/a756f397783f</a></p>
+<h2 id="功率"><a href="#功率" class="headerlink" title="功率"></a>功率</h2>
       </div>
       <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E8%80%83%E7%A0%94/" class="">
+              考研
+            </a>
+          
+            <a href="/tags/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" class="">
+              电路分析
+            </a>
+          
+        </div>
         
       </div>
       
@@ -691,7 +848,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2023020216107/" target="_blank" title="hexo 使用技巧">http://example.com/2023020216107/</a>
+    <a href="/2023050823943/" target="_blank" title="电路分析基础(下册 - 第三篇)">http://example.com/2023050823943/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -713,18 +870,17 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2023020221277/" class="post-nav-link">
+    <a href="/2023050858877/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">Liunx使用</div>
+        <div class="title-text">电路分析基础.(上册 - 第一篇)</div>
       </div>
       
       <!-- <div class="content">
-        命令查询网站
-一些说明软件安装路径 ==\wsl.localhost\Ubuntu\usr\share\vim==
-常用
+        第一篇    电阻电路的分析第一章电压，电流约束关系方向 P_8
+元件电流参考方向和电压方向常关联。电流方向也就是电压参
       </div> -->
     </a>
   </div>
@@ -735,15 +891,20 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20220927201659.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927201659.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2023012150326/" class="post-nav-link">
+    <a href="/2023050812059/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">MATLAB学习</div>
+        <div class="title-text">电路分析基础(上册 - 第二篇)</div>
       </div>
       <!-- <div class="content">
-        
+        电路分析基础(上册 )第二篇    动态电路的时域分析
+第五章 电容和电感电容
+电容公式
+
+
+\ q(t) = C\ u
       </div> -->
     </a>
   </div>
@@ -881,7 +1042,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-text">安装部署</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E7%94%9F%E6%88%90%E7%9F%AD%E9%93%BE-%E4%BD%BF%E7%94%A8-abbrlink-%E7%94%9F%E6%88%90%E7%9F%AD%E9%93%BE%E6%8E%A5"><span class="toc-text">Hexo 博客插件生成短链 - 使用 abbrlink 生成短链接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%AB%AF%E5%8F%A3"><span class="toc-text">修改端口</span></a></li></ol></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AF%87-%E5%8A%A8%E6%80%81%E7%94%B5%E8%B7%AF%E7%9A%84%E7%9B%B8%E9%87%8F%E5%88%86%E6%9E%90%E6%B3%95%E5%92%8C-S-%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95"><span class="toc-text">第三篇    动态电路的相量分析法和$S$域分析法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E9%98%BB%E6%8A%97%E5%92%8C%E5%AF%BC%E7%BA%B3"><span class="toc-text">第八章 阻抗和导纳</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%95%B0"><span class="toc-text">复数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%AF%E5%B9%85%E5%90%91%E9%87%8F"><span class="toc-text">振幅向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%BA%BF%E6%80%A7%E6%80%A7%E8%B4%A8"><span class="toc-text">向量线性性质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E5%B0%94%E9%9C%8D%E5%A4%AB%E5%AE%9A%E7%90%86"><span class="toc-text">基尔霍夫定理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%94%B5%E8%B7%AF%E5%85%83%E4%BB%B6VCR-%E7%9A%84%E7%9B%B8%E9%87%8F%E5%BD%A2%E5%BC%8F"><span class="toc-text">三种基本电路元件VCR 的相量形式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%98%BB%E6%8A%97Z"><span class="toc-text">阻抗Z:</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B9%9D%E7%AB%A0-%E6%AD%A3%E5%BC%A6%E7%A8%B3%E6%80%81%E5%8A%9F%E7%8E%87%E5%92%8C%E8%83%BD%E9%87%8F"><span class="toc-text">第九章    正弦稳态功率和能量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%A4%A7%E5%8A%9F%E7%8E%87"><span class="toc-text">最大功率</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94%E6%9D%A1%E4%BB%B6%E4%B8%8BS%E5%9F%9F%E5%85%83%E4%BB%B6%E6%A8%A1%E5%9E%8B"><span class="toc-text">零状态响应条件下S域元件模型)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E7%8E%87"><span class="toc-text">功率</span></a></li></ol></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -914,7 +1075,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020225119/" class="post-img " style="background-size: cover; 
+              <a href="/2023050825119/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -922,10 +1083,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020225119/">智能小车</a>
+              <a class="post-title" href="/2023050825119/">智能小车</a>
             </div>
           </div>
         
@@ -935,7 +1096,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020248903/" class="post-img " style="background-size: cover; 
+              <a href="/2023050848903/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -943,10 +1104,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020248903/">考研数二_高数</a>
+              <a class="post-title" href="/2023050848903/">考研数二_高数</a>
             </div>
           </div>
         
@@ -956,7 +1117,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020235597/" class="post-img " style="background-size: cover; 
+              <a href="/2023050835597/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -964,10 +1125,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020235597/">考研数二_线代</a>
+              <a class="post-title" href="/2023050835597/">考研数二_线代</a>
             </div>
           </div>
         
@@ -977,7 +1138,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020258877/" class="post-img " style="background-size: cover; 
+              <a href="/2023050858877/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -985,10 +1146,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020258877/">电路分析基础.(上册 - 第一篇)</a>
+              <a class="post-title" href="/2023050858877/">电路分析基础.(上册 - 第一篇)</a>
             </div>
           </div>
         
@@ -998,7 +1159,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023020223943/" class="post-img " style="background-size: cover; 
+              <a href="/2023050823943/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -1006,10 +1167,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">02-02</span>
+                  <span class="post-date">05-08</span>
                 
               </div>
-              <a class="post-title" href="/2023020223943/">电路分析基础(下册 - 第三篇)</a>
+              <a class="post-title" href="/2023050823943/">电路分析基础(下册 - 第三篇)</a>
             </div>
           </div>
         

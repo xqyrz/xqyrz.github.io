@@ -13,7 +13,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>归档: 2023/2 | MyBlog</title>
+  <title>电路分析基础(上册 - 第二篇) | MyBlog</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -318,12 +318,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -489,12 +489,12 @@
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
-                      <span>关于我</span>
+                      <span>我的简历</span>
                     </a>
                   </li>
                   
                   <li>
-                    <a target="_blank" rel="noopener" href="http://baidu.com">
+                    <a target="_blank" rel="noopener" href="http://xqyr-jv.gitee.io/">
                       
                       <i class="fas fa-film" style="margin-top: -20px;"></i>
                       
@@ -618,275 +618,660 @@
     
 </header>
         <!-- 内容区域 -->
-        <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<div class="bg-light-floor-archive" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -3;"></div>
-<div class="archive-header" style="background-image:url('https://pic1.zhimg.com/80/v2-1414b3a4b205e19060db18a20d08723a_1440w.jpg?source=1940ef5c')">
-  <div class="archive-header-title">
-    archive
-  </div>
-  <div class="archive-header-desc">
-  
-  <span class="title" id="archive-header-desc"></span>
-  <script>
-  function typedFn() {
-    const el = '#archive-header-desc';
-    const type = 'archive';
-    let desc = '愿你如风，被人温柔以待'
-    var typed = new Typed(el, {
-      strings: [desc],
-      startDelay: 100,
-      typeSpeed: 100,
-      loop: true,
-      backSpeed: 50,
-      showCursor: true
-    });
-  }
-  typedFn();
-</script>
-  
-  </div>
-  <div class="mask-box"></div>
-</div>
+        
+ <!-- prismjs 代码高亮 -->
+ 
 
-<div class="archive-video">
-  <video class="full-video" autoplay loop muted>
-      <source style="width: 100%;height: 100vh;" src="/">
-  </video>
-  <div class="video-header-title">
-    archive
-  </div>
-  <div class="video-header-desc">
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+
+  <!-- 文章详情页顶部图片和标题 -->
+
+
+
+
+<div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;background-image:url('https://gitee.com/xqyr/img/raw/img/20220927201659.png')">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
-      <span class="title" id="archive-video-header-desc"></span>
-      <script>
-  function typedFn() {
-    const el = '#archive-video-header-desc';
-    const type = 'archive';
-    let desc = '愿你如风，被人温柔以待'
-    var typed = new Typed(el, {
-      strings: [desc],
-      startDelay: 100,
-      typeSpeed: 100,
-      loop: true,
-      backSpeed: 50,
-      showCursor: true
-    });
-  }
-  typedFn();
-</script>
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        电路分析基础(上册 - 第二篇)
+      </span>
+    </div>
+    
+    
       
+        <span class="post-detail-header_date">
+          <i class="fas fa-calendar"></i> 发表于：2023-05-08 |
+        </span>
+      
+
+      
+
+      
+    
   </div>
-  <div class="mask-box"></div>
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
 </div>
 
-<!-- hash算法 -->
 
 
-<div class="archive-main">
-  <section class="archive">
-    <div class="archive-content">
-      <ul class="post-archive">
+
+
+<div class="post-detail-content post-row" 
+  style="padding-top: 0px;">
+  <div class="main-content">
+    <article class="post post-detail">
+      <div class="post-content">
+        <h1 id="电路分析基础-上册"><a href="#电路分析基础-上册" class="headerlink" title="电路分析基础(上册 )"></a>电路分析基础(上册 )</h1><h2 id="第二篇-动态电路的时域分析"><a href="#第二篇-动态电路的时域分析" class="headerlink" title="第二篇    动态电路的时域分析"></a>第二篇    动态电路的时域分析</h2><span id="more"></span>
+<h3 id="第五章-电容和电感"><a href="#第五章-电容和电感" class="headerlink" title="第五章 电容和电感"></a>第五章 电容和电感</h3><h4 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h4><ul>
+<li>电容公式</li>
+</ul>
+<script type="math/tex; mode=display">
+\ q(t) = C\ u(t) \ 
+\ i(t) = \frac {dq}{dt} \\\
+则\quad i(t) = -C\frac {du}{dt}</script><ul>
+<li><p>电容电压的连续性和记忆性质</p>
+<p>​    连续性       $u<em>c(t</em>-)=u<em>c(t</em>+)$</p>
+</li>
+</ul>
+<p>​        储能        $w_c(t)=\frac 12Cu^2(t)$</p>
+<ul>
+<li>，正是电容的储能本质使电容电压具有记忆性质；正是电容电流在有界的条件下储能不能跃变使电容电容其有连续性质</li>
+</ul>
+<h4 id="电感"><a href="#电感" class="headerlink" title="电感"></a>电感</h4><ul>
+<li><p>电阻是有电压就一定有电流；电容是电压变化才有电流；电感则是电流变化才有电压</p>
+<script type="math/tex; mode=display">
+  \ u = \frac {d\psi}{dt} \ \quad \overrightarrow \ \quad u=\frac {dLi}{dt}=L \frac {di}{dt}</script></li>
+<li><p>对偶性</p>
+</li>
+</ul>
+<p>​    连续性       $i<em>L(t</em>-) = i<em>L(t</em>+)$</p>
+<p>​    储能        $w_L(t)=\frac 12Li^2(t)$</p>
+<h3 id="第六章-一阶电路"><a href="#第六章-一阶电路" class="headerlink" title="第六章 一阶电路"></a>第六章 一阶电路</h3><ul>
+<li><p>含源电阻网络部分N,用戴维南定理或诺顿定理化简后，电路将如图</p>
+<p>​    <img src="https://gitee.com/xqyr/img/raw/img/20220927201659.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927201659.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+</li>
+</ul>
+<script type="math/tex; mode=display">
+电压角度:\ L \frac{di_{t}(t)}{dt}+R_{o}i_{L}(t)=u_{oc}(t)</script><script type="math/tex; mode=display">
+则电感角度\quad G_{0}L \frac{di_{t}(t)}{dt}+i_{L}(t)=i_{sc}(t)</script><h4 id="零状态响应"><a href="#零状态响应" class="headerlink" title="零状态响应"></a>零状态响应</h4><p>零状态响应 $y<em>{zx}(t)$,是电路的<strong>初始储能（或称内部激励）为零</strong>，即${x_k(0)|</em>{k=1,2,..,n}=0}$,仅由<strong>施加于电路的激励</strong>${f<em>i(t)|</em>{i=1,2,..,m}}$所引起的响应。</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20220927202936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927202936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="RC串联等效电路"></p>
+<ul>
+<li><p>在$t≥ t_o$时，我们把在零初始状态下，仅由电路的输入所引起的响应称为<strong>零状态响应</strong>；把在零输入情况下，仅由非零初始状态所引起的响应称为<strong>零输入响应</strong>。</p>
+<h5 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h5></li>
+</ul>
+<h5 id><a href="#" class="headerlink" title></a><img src="https://gitee.com/xqyr/img/raw/img/20220927204419.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927204419.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="应用"></h5><script type="math/tex; mode=display">
+t≥ t_o  \quad          RC \frac{du_{c}}{dt}+u_{c}=U_{s}  （初始状态\quad t=0，u_c(0_+)= u_c(0_-)）</script><script type="math/tex; mode=display">
+解得\quad u_{c}(t)=U_{s}(1-e^{- \frac{1}{RC}t})\quad t \geq 0</script><h5 id="能量"><a href="#能量" class="headerlink" title="能量"></a>能量</h5><script type="math/tex; mode=display">
+消耗能量\quad W = \frac 12CU^2_{s}\\
+电容储能 \quad W = \frac 12CU^2_{s}\\
+提供总能量    \quad W = \frac 12 CU^2_{s}</script><h5 id="电感同理"><a href="#电感同理" class="headerlink" title="电感同理"></a>电感同理</h5><script type="math/tex; mode=display">
+i_L(t)=\frac {U_S}R(1-e^{\frac 1{GL}}t)</script><h4 id="阶跃响应-冲击响应-p-197"><a href="#阶跃响应-冲击响应-p-197" class="headerlink" title="阶跃响应 冲击响应 p_197"></a>阶跃响应 冲击响应 <em>p_197</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220927211936.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927211936.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="延时单位阶跃函数"></p>
+<script type="math/tex; mode=display">
+\varepsilon(t-t_{0})= \left\{ \begin{matrix} 0 \quad t<t_{0}\\ 1 \quad t>t_{0}\\ \end{matrix} \right.</script><p>运用阶跃函数和延时阶跃函数，分段常量信号可表示为<strong>一系列阶跃信号之和</strong>。例如，所示脉冲信号可分解为<strong>两个阶跃信号之和</strong>，<strong>其一是在t=0时作用的正单位阶跃信号</strong>，<strong>另一是在t=$t_0$,时作用的负单位延时阶跃信号</strong>。分段常量信号作用下的一阶电路分析问题，在将这类信号分解为阶跃信号后，即可按直流一阶电路处理，<strong>运用叠加性可求得其零状态响应</strong>。</p>
+<p>列题6-5 <em>p199</em></p>
+<p> <img src="https://gitee.com/xqyr/img/raw/img/20220927214231.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214231.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927215523.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927215523.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"><br><img src="https://gitee.com/xqyr/img/raw/img/20220927214318.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214318.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"> <img src="https://gitee.com/xqyr/img/raw/img/20220927214401.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927214401.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" style="zoom:80%;"></p>
+<script type="math/tex; mode=display">
+\begin{matrix}
+u(t)=A \varepsilon(t)-A \varepsilon(t-t_{0}) \\\\
+A\varepsilon(t)作用下的零状态响应 
+ \quad i^{\prime}(t)= \frac{A}{R}(1-e^{- \frac{t}{\tau}})\varepsilon(t)=A(1-e^{-t})\varepsilon(t) \\ 
+ 解答式中的因子A\varepsilon(t)表明该式实际上仅适用于\ t≥0,式中\tau = \frac LR = 1s \\\\
+ -A\varepsilon(t-t_0)作用下的零状态响应为\quad i^{\prime\prime}(t)=- \frac{A}{R}(1-e^{- \frac{k-t_{0}}{\tau}})\varepsilon(t-t_{0})=-A(1-e^{- \frac{t-t_{0}}{\tau}})\in(t-t_{0})\\\\
+ 两者叠加\quad i(t) = i^\prime(t) + i^{\prime\prime}(t)=A(1-e^{-t})\varepsilon(t)-A [ 1-e^{-(t-t_{0})}]\varepsilon(t-t_{0})
+ \end{matrix}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20220927223919.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927223919.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<h4 id="零输入响应-p-203"><a href="#零输入响应-p-203" class="headerlink" title="零输入响应 p_203"></a>零输入响应 <em>p_203</em></h4><p><img src="https://gitee.com/xqyr/img/raw/img/20220929170359.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220929170359.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="p_186"></p>
+<p><strong>零输入响应$y_{zi}(t)$</strong>,是<strong>外加激励均为零</strong>时(即${ f<em>i(t)|</em>{i=1,2,..,m}=0}$)，仅由电路的<strong>初始储能</strong>{${ x<em>k(0)|</em>{k=1,2,..,n}}$}(或称<strong>内部激励</strong>）引起的响应；</p>
+<p>可以用<strong>$u_c$</strong>来表示电容电压的零输入响应。</p>
+<p>需要特别注意之处是：在图6一3(b)所示电容等效电路中，<strong>电容C的初始电压设为零</strong>，实际存在的初始<em>a b两端</em>电压$u_c(t_0)$是<strong>以电压源的形式</strong>与之串联的</p>
+<script type="math/tex; mode=display">
+u_c(t) = u_1(t)+u_c(t_0)</script><p>$u_1(t)$只存在于等效电路中，然而在图6-3(b)中它却是独立电压源$u_c(0)$作用下的<strong>零状态响应</strong> .</p>
+<script type="math/tex; mode=display">
+u _ { 1 } ( t ) = - u _ { c } ( 0 ) ( 1 - e ^ { - \frac { 1 } { \tau} } ) \quad t \geq 0</script><p>则<strong>零输入响应</strong></p>
+<script type="math/tex; mode=display">
+\begin
+{align}u_{c}(t)
+&=u_{1}(t)+u_{c}(0)\\ 
+&=-u_{c}(0)(1-e^{- \frac{t}{\tau}})+u_{c}(0)\\ 
+&=u_{c}(0)e^{- \frac{t}{\tau}}\quad t \geq 0\\\\
+一阶电感电路零输入响应为:\\ 
+i_L(t)&=I_0e^{-\frac t \tau}\quad t \geq 0\end{align}</script><p>从物理意义上看，零输入响应是依靠动态元件的<strong>初始储能</strong>进行的，当电路中存在着耗能元件R时，有限的初始储能终将被消耗殆尽，<strong>零输入响应终将为零</strong>。</p>
+<h4 id="线性动态电路的叠加原理-p-210"><a href="#线性动态电路的叠加原理-p-210" class="headerlink" title="线性动态电路的叠加原理 p_210"></a>线性动态电路的叠加原理 <em>p_210</em></h4><p>综上所述，线性一阶电路的叠加原理包含下述内容：若初始时刻为t=0,则对所有t≥0的时刻，我们有：</p>
+<ol>
+<li>全响应=零状态响应+零输入响应：</li>
+<li>零状态<em>响应线性</em>；</li>
+<li>零输人<em>响应线性</em>。</li>
+</ol>
+<p>列题6-13</p>
+<h4 id="三要素法-视察法"><a href="#三要素法-视察法" class="headerlink" title="三要素法(视察法)"></a>三要素法(视察法)</h4><p>y(t)可以代表电路中的<strong>任一电压或电流</strong>；<br>y($0_+$)表示该电压或电流的初始值；<br>y(∞)表示该电压或电流的稳态值；<br>$\tau$表示电路的时间常数。$\tau=LG$</p>
+<p>关系:</p>
+<script type="math/tex; mode=display">
+y(t)=y(\infty)+ \left[ y(0_{+})-y(\infty)\right] e^{- \frac{t}{\tau}}\\
+或y(\infty)-y(t)=\left[y(\infty) -y(0_{+})\right] e^{- \frac{t}{\tau}}</script><p><img src="https://gitee.com/xqyr/img/raw/img/20221003152638.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221003152638.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="波形图"></p>
+<h4 id="稳态和瞬态"><a href="#稳态和瞬态" class="headerlink" title="稳态和瞬态"></a>稳态和瞬态</h4><p>当描述动态电路的变量或为<strong>不随时间而变</strong>的常量，或为<strong>随时间而变的周期量</strong>时，我们称此电路进入了<strong>稳定状态</strong>。电路不处于稳态即处于<strong>瞬态(</strong>暂态、瞬变)或非稳态(unsteady state)。</p>
+<h4 id="正弦激励的过度过程和稳态-p-227"><a href="#正弦激励的过度过程和稳态-p-227" class="headerlink" title="正弦激励的过度过程和稳态 p_227"></a>正弦激励的过度过程和稳态 <em>p_227</em></h4><p>随时间按正弦规律变化的电压和电流称为正弦交流电压和电流，它们都属正弦波。正弦波是周期波形的基本形式 。</p>
+<script type="math/tex; mode=display">
+u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七章-二阶电路"><a href="#第七章-二阶电路" class="headerlink" title="第七章 二阶电路"></a>第七章 二阶电路</h3><h4 id="LC电路中的正弦震荡"><a href="#LC电路中的正弦震荡" class="headerlink" title="LC电路中的正弦震荡"></a>LC电路中的正弦震荡</h4><h4 id="RLC串联电路的零输入响应"><a href="#RLC串联电路的零输入响应" class="headerlink" title="RLC串联电路的零输入响应"></a>RLC串联电路的零输入响应</h4><h4 id="RLC串联电路的全响应"><a href="#RLC串联电路的全响应" class="headerlink" title="RLC串联电路的全响应"></a>RLC串联电路的全响应</h4><h4 id="GCL并联电路分析"><a href="#GCL并联电路分析" class="headerlink" title="GCL并联电路分析"></a>GCL并联电路分析</h4>
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E8%80%83%E7%A0%94/" class="">
+              考研
+            </a>
+          
+            <a href="/tags/%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90/" class="">
+              电路分析
+            </a>
+          
+        </div>
+        
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>xqyr</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="/2023050812059/" target="_blank" title="电路分析基础(上册 - 第二篇)">http://example.com/2023050812059/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+    </div>
+    <a href="/2023050823943/" class="post-nav-link">
+      <div class="title">
+        <i class="fas fa-angle-left"></i> 上一篇:
+        <div class="title-text">电路分析基础(下册 - 第三篇)</div>
+      </div>
+      
+      <!-- <div class="content">
+        第三篇    动态电路的相量分析法和$S$域分析法
+第八章 阻抗和导纳复数
+
+\begin{aligned}
+&A=a\
+      </div> -->
+    </a>
+  </div>
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img" style="background-size: cover; 
+      background-position: center center;">
+      <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/master/typora-icon.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/master/typora-icon.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
+    </div>
+    <a href="/2023050846583/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fas fa-angle-right"></i>
+        <div class="title-text">typora的使用</div>
+      </div>
+      <!-- <div class="content">
+        typora的使用MD语法总结
+快捷键12345678910111213141516171819无序列表：- + 空格有
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
+
+  <div id="myComment">
+    
+      <div id="gitment-container"></div>
+
+    
+  </div>
+
+<!-- comment script in themes\hexo-theme-bamboo\layout\_partial\scripts\index.ejs -->
+
+
+  </div>
+
+  <!-- 目录 -->
+  
+<aside id='l_side'>
+  
+    
+      
+        <section class="widget side_blogger">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img src='/medias/logo.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>小憩悠然</h2>
         
         
+        
+          <p><span id="jinrishici-sentence">MyBlog</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
           
-            
-            <div class="year" data-aos="zoom-in-up">
-                <div class="bullet"></div>
-                <a href="/archives/2023">2023</a>
-            </div>
+            <a href="https://xqyr2.github.io/"
+              class="social fab fa-wordpress flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
           
-          <li class="post-item" data-aos="fade-left">
+        
+          
+            <a href="mailto:2513777371@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=你的qq号码"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+      
+    
+  
+  
+  
+
+  <div class="layout_sticky">    
+    
+      
+<section class="widget side_toc">
+  
+  <header>
+    
+      <i style="color: " class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="toc-main">
+      <div class="toc-content">
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90%E5%9F%BA%E7%A1%80-%E4%B8%8A%E5%86%8C"><span class="toc-text">电路分析基础(上册 )</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AF%87-%E5%8A%A8%E6%80%81%E7%94%B5%E8%B7%AF%E7%9A%84%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90"><span class="toc-text">第二篇    动态电路的时域分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E7%94%B5%E5%AE%B9%E5%92%8C%E7%94%B5%E6%84%9F"><span class="toc-text">第五章 电容和电感</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B5%E5%AE%B9"><span class="toc-text">电容</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B5%E6%84%9F"><span class="toc-text">电感</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E4%B8%80%E9%98%B6%E7%94%B5%E8%B7%AF"><span class="toc-text">第六章 一阶电路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%B6%E7%8A%B6%E6%80%81%E5%93%8D%E5%BA%94"><span class="toc-text">零状态响应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-text">应用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%83%BD%E9%87%8F"><span class="toc-text">能量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%B5%E6%84%9F%E5%90%8C%E7%90%86"><span class="toc-text">电感同理</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%98%B6%E8%B7%83%E5%93%8D%E5%BA%94-%E5%86%B2%E5%87%BB%E5%93%8D%E5%BA%94-p-197"><span class="toc-text">阶跃响应 冲击响应 p_197</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94-p-203"><span class="toc-text">零输入响应 p_203</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BA%BF%E6%80%A7%E5%8A%A8%E6%80%81%E7%94%B5%E8%B7%AF%E7%9A%84%E5%8F%A0%E5%8A%A0%E5%8E%9F%E7%90%86-p-210"><span class="toc-text">线性动态电路的叠加原理 p_210</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E8%A6%81%E7%B4%A0%E6%B3%95-%E8%A7%86%E5%AF%9F%E6%B3%95"><span class="toc-text">三要素法(视察法)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A8%B3%E6%80%81%E5%92%8C%E7%9E%AC%E6%80%81"><span class="toc-text">稳态和瞬态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AD%A3%E5%BC%A6%E6%BF%80%E5%8A%B1%E7%9A%84%E8%BF%87%E5%BA%A6%E8%BF%87%E7%A8%8B%E5%92%8C%E7%A8%B3%E6%80%81-p-227"><span class="toc-text">正弦激励的过度过程和稳态 p_227</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E4%BA%8C%E9%98%B6%E7%94%B5%E8%B7%AF"><span class="toc-text">第七章 二阶电路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#LC%E7%94%B5%E8%B7%AF%E4%B8%AD%E7%9A%84%E6%AD%A3%E5%BC%A6%E9%9C%87%E8%8D%A1"><span class="toc-text">LC电路中的正弦震荡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E7%9A%84%E9%9B%B6%E8%BE%93%E5%85%A5%E5%93%8D%E5%BA%94"><span class="toc-text">RLC串联电路的零输入响应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RLC%E4%B8%B2%E8%81%94%E7%94%B5%E8%B7%AF%E7%9A%84%E5%85%A8%E5%93%8D%E5%BA%94"><span class="toc-text">RLC串联电路的全响应</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#GCL%E5%B9%B6%E8%81%94%E7%94%B5%E8%B7%AF%E5%88%86%E6%9E%90"><span class="toc-text">GCL并联电路分析</span></a></li></ol></li></ol></li></ol></li></ol> -->
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 手机端目录按钮 -->
+<div id="toc-mobile-btn">
+  <i class="fas fa-list-ul" aria-hidden="true"></i>
+</div>
+
+      
+  <section class="widget side_recent_post">
+    
+  <header>
+    
+      <a style="color: " href='/tags/'><i class="fas fa-book fa-fw" aria-hidden="true"></i><span class='name'>最新文章</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      
+      <!-- hash算法 -->
+      
+      <div class="aside-list">
+        
+          <div class="aside-list-item">
             
+            
+            
+
             <div class="post-img-box">
-              <a href="/2023020225119/" class="post-img " style="background-size: cover; 
+              <a href="/2023050825119/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
-                <span class="post-date">02-02</span>
+                
+                  <span class="post-date">05-08</span>
+                
               </div>
-              <a class="post-title" href="/2023020225119/">智能小车</a>
+              <a class="post-title" href="/2023050825119/">智能小车</a>
             </div>
-          </li>
+          </div>
         
-          
-          <li class="post-item" data-aos="fade-left">
+          <div class="aside-list-item">
             
+            
+            
+
             <div class="post-img-box">
-              <a href="/2023020248903/" class="post-img " style="background-size: cover; 
+              <a href="/2023050848903/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
-                <span class="post-date">02-02</span>
+                
+                  <span class="post-date">05-08</span>
+                
               </div>
-              <a class="post-title" href="/2023020248903/">考研数二_高数</a>
+              <a class="post-title" href="/2023050848903/">考研数二_高数</a>
             </div>
-          </li>
+          </div>
         
-          
-          <li class="post-item" data-aos="fade-left">
+          <div class="aside-list-item">
             
+            
+            
+
             <div class="post-img-box">
-              <a href="/2023020235597/" class="post-img " style="background-size: cover; 
+              <a href="/2023050835597/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
-                <span class="post-date">02-02</span>
+                
+                  <span class="post-date">05-08</span>
+                
               </div>
-              <a class="post-title" href="/2023020235597/">考研数二_线代</a>
+              <a class="post-title" href="/2023050835597/">考研数二_线代</a>
             </div>
-          </li>
+          </div>
         
-          
-          <li class="post-item" data-aos="fade-left">
+          <div class="aside-list-item">
             
+            
+            
+
             <div class="post-img-box">
-              <a href="/2023020258877/" class="post-img " style="background-size: cover; 
+              <a href="/2023050858877/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
-                <span class="post-date">02-02</span>
+                
+                  <span class="post-date">05-08</span>
+                
               </div>
-              <a class="post-title" href="/2023020258877/">电路分析基础.(上册 - 第一篇)</a>
+              <a class="post-title" href="/2023050858877/">电路分析基础.(上册 - 第一篇)</a>
             </div>
-          </li>
+          </div>
         
-          
-          <li class="post-item" data-aos="fade-left">
+          <div class="aside-list-item">
             
+            
+            
+
             <div class="post-img-box">
-              <a href="/2023020223943/" class="post-img " style="background-size: cover; 
+              <a href="/2023050823943/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
-                <span class="post-date">02-02</span>
+                
+                  <span class="post-date">05-08</span>
+                
               </div>
-              <a class="post-title" href="/2023020223943/">电路分析基础(下册 - 第三篇)</a>
+              <a class="post-title" href="/2023050823943/">电路分析基础(下册 - 第三篇)</a>
             </div>
-          </li>
+          </div>
         
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/2023020212059/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/img/20220927201659.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20220927201659.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-02</span>
-              </div>
-              <a class="post-title" href="/2023020212059/">电路分析基础(上册 - 第二篇)</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/2023020246583/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="https://gitee.com/xqyr/img/raw/master/typora-icon.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/master/typora-icon.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-02</span>
-              </div>
-              <a class="post-title" href="/2023020246583/">typora的使用</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/2023020233435/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-02</span>
-              </div>
-              <a class="post-title" href="/2023020233435/">simulink</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/2023020225118/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-02</span>
-              </div>
-              <a class="post-title" href="/2023020225118/">摩擦离合器</a>
-            </div>
-          </li>
-        
-          
-          <li class="post-item" data-aos="fade-left">
-            
-            <div class="post-img-box">
-              <a href="/2023020221277/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                <span class="post-date">02-02</span>
-              </div>
-              <a class="post-title" href="/2023020221277/">Liunx使用</a>
-            </div>
-          </li>
-        
-      </ul>
+      </div>
     </div>
   </section>
-  <div class="w-70">
-    
-  <!-- <nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/2023/02/page/2/">2</a><a class="extend next" rel="next" href="/archives/2023/02/page/2/">下一页</a>
-  </nav> -->
-  <div class="page-nav">
-    
-    <div class="page-info">
-        <div class="page-info-text">1 / 2</div>
-    </div>
-    
-      <a href="/archives/2023/02/page/2/"
-         class="page-nav-next">
-          <span class="mr-5">下一页</span><i class="fas fa-angle-right"></i>
-      </a>
-      
-  </div>
 
+    
   </div>
+</aside>
+
+
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
 </div>
+
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"
+	:style="{'background-color': bgColor ? bgColor : 'transparent'}">
+	<transition-group tag="ul" :name="names">
+		<li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+			<img :src="image" class="bg-swiper-img no-lazy">
+		</li>
+	</transition-group>
+</div>
+<script>
+	var vm = new Vue({
+		el: '#appBgSwiper',
+		data: {
+			names: '' || 'fade' || 'fade', // translate-fade fade
+			mark: 0,
+			img: [],
+			bgColor: '',
+			time: null
+		},
+		methods: {   //添加方法
+			change(i, m) {
+				if (i > m) {
+					// this.names = 'fade';
+				} else if (i < m) {
+					// this.names = 'fade';
+				} else {
+					return;
+				}
+				this.mark = i;
+			},
+			prev() {
+				// this.names = 'fade';
+				this.mark--;
+				if (this.mark === -1) {
+					this.mark = 3;
+					return
+				}
+			},
+			next() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			autoPlay() {
+				// this.names = 'fade';
+				this.mark++;
+				if (this.mark === this.img.length) {
+					this.mark = 0;
+					return
+				}
+			},
+			play() {
+				let bgImgDelay = '' || '180000'
+				let delay = parseInt(bgImgDelay) || 180000;
+				this.time = setInterval(this.autoPlay, delay);
+			},
+			enter() {
+				clearInterval(this.time);
+			},
+			leave() {
+				this.play();
+			}
+		},
+		created() {
+			this.play()
+		},
+		beforeDestroy() {
+			clearInterval(this.time);
+		},
+		mounted() {
+			let prop = '' || '';
+			let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://')
+			if (isImg) {
+				let img = prop.split(',');
+				let configRoot = '/'
+				let arrImg = [];
+				img.forEach(el => {
+					var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+					var objExp = new RegExp(Expression);
+
+					if (objExp.test(el)) {
+						// http or https
+						arrImg.push(el);
+					} else {
+						// 非http or https开头
+						// 本地文件
+						let firstStr = el.charAt(0);
+						if (firstStr == '/') {
+							el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+						}
+						el = configRoot + el;
+						arrImg.push(el);
+					}
+				})
+				this.img = arrImg;
+			} else {
+				this.bgColor = prop;
+			}
+		}
+	})
+</script>
+
+<style>
+	.bg-swiper-box {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.bg-swiper-img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+
+
+
+  <script>
+  function loadMermaid() {
+    if (document.getElementsByClassName('mermaid').length) {
+      if (window.mermaidJsLoad) mermaid.init()
+      else {
+        loadScript('https://unpkg.com/mermaid/dist/mermaid.min.js').then(() => {
+          window.mermaidJsLoad = true
+          mermaid.initialize({
+            theme: 'default',
+          })
+          if ('true') {
+            mermaid.init();
+          }
+        })
+      }
+    }
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    loadMermaid();
+  })
+
+  document.addEventListener('pjax:complete', function () {
+    loadMermaid();
+  })
+  
+</script>
+
 
       </main>
     </div>
