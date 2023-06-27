@@ -670,10 +670,14 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+        <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029/">(42条消息) hexo史上最全搭建教程_zjufangzh的博客-CSDN博客</a></p>
+<h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <p>如果卡住，就换源</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h1 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<p>可能22端口不行，就在密钥处写个<code>config</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br></pre></td></tr></table></figure>
 <h1 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h1><h2 id="Hexo-博客插件生成短链"><a href="#Hexo-博客插件生成短链" class="headerlink" title="Hexo 博客插件生成短链"></a>Hexo 博客插件生成短链</h2><ul>
 <li><a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></li>
 </ul>
@@ -888,7 +892,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-text">安装部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E7%94%9F%E6%88%90%E7%9F%AD%E9%93%BE"><span class="toc-text">Hexo 博客插件生成短链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%AB%AF%E5%8F%A3"><span class="toc-text">修改端口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A"><span class="toc-text">图床</span></a></li></ol> -->
+        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"><span class="toc-text">安装部署</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="toc-text">部署到github</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-text">使用技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E7%94%9F%E6%88%90%E7%9F%AD%E9%93%BE"><span class="toc-text">Hexo 博客插件生成短链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E7%AB%AF%E5%8F%A3"><span class="toc-text">修改端口</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E5%BA%8A"><span class="toc-text">图床</span></a></li></ol> -->
         <div class="toc"></div>
       </div>
     </div>
@@ -921,49 +925,7 @@
             
 
             <div class="post-img-box">
-              <a href="/2023050825119/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                
-                  <span class="post-date">05-08</span>
-                
-              </div>
-              <a class="post-title" href="/2023050825119/">智能小车</a>
-            </div>
-          </div>
-        
-          <div class="aside-list-item">
-            
-            
-            
-
-            <div class="post-img-box">
-              <a href="/2023050848903/" class="post-img " style="background-size: cover; 
-                background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221018194950.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221018194950.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
-              </a>
-            </div>
-            <div class="post-date-title">
-              <div>
-                
-                  <span class="post-date">05-08</span>
-                
-              </div>
-              <a class="post-title" href="/2023050848903/">考研数二_高数</a>
-            </div>
-          </div>
-        
-          <div class="aside-list-item">
-            
-            
-            
-
-            <div class="post-img-box">
-              <a href="/2023050835597/" class="post-img " style="background-size: cover; 
+              <a href="/2023062717402/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
                 <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
@@ -971,10 +933,10 @@
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-08</span>
+                  <span class="post-date">06-27</span>
                 
               </div>
-              <a class="post-title" href="/2023050835597/">考研数二_线代</a>
+              <a class="post-title" href="/2023062717402/">划过天空的橙红</a>
             </div>
           </div>
         
@@ -984,18 +946,18 @@
             
 
             <div class="post-img-box">
-              <a href="/2023050858877/" class="post-img " style="background-size: cover; 
+              <a href="/2023062734107/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20220927140136463.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-08</span>
+                  <span class="post-date">06-27</span>
                 
               </div>
-              <a class="post-title" href="/2023050858877/">电路分析基础.(上册 - 第一篇)</a>
+              <a class="post-title" href="/2023062734107/">我在末日当丧尸</a>
             </div>
           </div>
         
@@ -1005,18 +967,60 @@
             
 
             <div class="post-img-box">
-              <a href="/2023050823943/" class="post-img " style="background-size: cover; 
+              <a href="/2023062747006/" class="post-img " style="background-size: cover; 
                 background-position: center center;">
-                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
               </a>
             </div>
             <div class="post-date-title">
               <div>
                 
-                  <span class="post-date">05-08</span>
+                  <span class="post-date">06-27</span>
                 
               </div>
-              <a class="post-title" href="/2023050823943/">电路分析基础(下册 - 第三篇)</a>
+              <a class="post-title" href="/2023062747006/">屋外的树</a>
+            </div>
+          </div>
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2023062765152/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">06-27</span>
+                
+              </div>
+              <a class="post-title" href="/2023062765152/">高中的三观</a>
+            </div>
+          </div>
+        
+          <div class="aside-list-item">
+            
+            
+            
+
+            <div class="post-img-box">
+              <a href="/2023062764278/" class="post-img " style="background-size: cover; 
+                background-position: center center;">
+                <img class="lazyload lazyload placeholder" style="width:100%;height:100%;object-fit:cover;" data-src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
+              </a>
+            </div>
+            <div class="post-date-title">
+              <div>
+                
+                  <span class="post-date">06-27</span>
+                
+              </div>
+              <a class="post-title" href="/2023062764278/">qt编程</a>
             </div>
           </div>
         

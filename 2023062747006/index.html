@@ -13,7 +13,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>git使用技巧 | MyBlog</title>
+  <title>屋外的树 | MyBlog</title>
 
   <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1911880_c1nvbyezg17.css">
@@ -632,21 +632,21 @@
 
 
 <div class="post-detail-header" id="thumbnail_canvas" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;background-image:url('https://img-blog.csdnimg.cn/fef6994554a146a88fe6bef26b32260e.png')">
+  background-position: center center;position: relative;background-image:url('/medias/2.jpg')">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        git使用技巧
+        屋外的树
       </span>
     </div>
     
     
       
         <span class="post-detail-header_date">
-          <i class="fas fa-calendar"></i> 发表于：2022-10-26 |
+          <i class="fas fa-calendar"></i> 发表于：2023-06-27 |
         </span>
       
 
@@ -670,123 +670,25 @@
   <div class="main-content">
     <article class="post post-detail">
       <div class="post-content">
-        <h1 id="git的工作流程一般是这样的："><a href="#git的工作流程一般是这样的：" class="headerlink" title="git的工作流程一般是这样的："></a>git的工作流程一般是这样的：</h1><ul>
-<li>使用git add将<strong>工作区（workspace）</strong>的文件提交到<strong>暂存区（Index）</strong></li>
-<li>使用commit将暂存区（Index）提交到本地<strong>仓库（Repository)</strong></li>
-</ul>
-<ol>
-<li><p>在工作中添加，修改文件</p>
-</li>
-<li><p>将需要进行的版本管理的文件放入暂存区域</p>
-</li>
-<li><p>将暂存区域文件提交到git仓库</p>
-<p>因此，git管理的文件有三种状态：已修改（modified）,已暂存（staged）,已提交（committed）</p>
-<p><img src="https://img-blog.csdnimg.cn/fef6994554a146a88fe6bef26b32260e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP6JOd56iz5L2P,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/fef6994554a146a88fe6bef26b32260e.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP6JOd56iz5L2P,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-</li>
-</ol>
-<p>上面j讲的是Git的基本配置和项目搭建，接下来才是关于如何操作文件内容</p>
-<h1 id="git的4个区"><a href="#git的4个区" class="headerlink" title="git的4个区"></a>git的4个区</h1><ul>
-<li><p>工作区（Working Area）</p>
-<blockquote>
-<p>就相当于我们的工作空间的目录，我们代码本地存放的地方。</p>
-</blockquote>
-</li>
-<li><p>暂存区（缓冲）（Stage）</p>
-<blockquote>
-<p>也称作Index，用来跟踪已暂存的文件，一般是存在<code>.git</code>下的index文件，所以有时也称暂存区为索引。</p>
-</blockquote>
-</li>
-<li><p>本地仓库（Local Repository）</p>
-</li>
-<li><p>远程仓库（Remote Repository）</p>
-</li>
-</ul>
-<h1 id="文件的五种状态"><a href="#文件的五种状态" class="headerlink" title="文件的五种状态"></a>文件的五种状态</h1><p>版本控制就是对文件的版本控制，要对文件进行修改，提交等操作，首先要知道文件当前什么状态，不然可能会提交了现在还不想提交的文件，或者要提交的文件没提交上。</p>
-<ul>
-<li><strong>Untracked</strong>:未跟踪，此文件在文件夹中，但并没有加入到git仓库，不参与版本控制.通过<strong>git add</strong> 状态变为<strong>Staged</strong>.</li>
-<li><strong>Unmodify</strong>:文件已经入库，未修改，即版本库中的文件快照内容与文件夹完全一致.这种类型的文件有两种去处，如果它被修改，而变为<strong>Modified</strong>.如果使用<strong>git rm</strong> 移出版本库，则成为<strong>Untracked</strong>文件.</li>
-<li><strong>Modified</strong>（已修改）:文件已修改，仅仅是修改，并没有进行其他的操作.这个文件也有两个去处，通过<strong>git add</strong>可进入暂存<strong>staged</strong>状态，使用<strong>git checkout</strong>，则丢弃修改过，返回<strong>unmodify</strong>状态，这个<strong>git checkout</strong>即从库中取出文件，覆盖当前修改！</li>
-<li><strong>Staged</strong>（已暂存）：暂存状态，执行<strong>git commit</strong>则将修改同步到库中，这时库中的文件和本地文件又变为一致，文件为<strong>Unmodify</strong>状态.执行<strong>git reset HEAD filename</strong>取消暂存，文件状态为<strong>Modified</strong></li>
-<li>已提交（Committed）</li>
-<li>已推送（Pushed）</li>
-</ul>
-<p><img src="https://gitee.com/xqyr/img/raw/img/image-20230101164700294.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20230101164700294.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20230101164700294"></p>
-<blockquote>
-<p><strong>查看文件状态</strong></p>
-</blockquote>
-<p>上面说的文件的4种状态，通过如下命令可以查看到文件的状态:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看制定文件状态</span></span><br><span class="line">git status [文件名]</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看所有文件状态</span></span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line"><span class="comment">#添加所有文件到暂存区</span></span><br><span class="line">git add . </span><br><span class="line"></span><br><span class="line"><span class="comment">#提交暂存区中的内容到本地仓库 -m:提交的信息</span></span><br><span class="line">git commit -m <span class="string">&quot;信息&quot;</span></span><br></pre></td></tr></table></figure>
-<h1 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h1><p>有些时候我们不想把某些文件纳入版本控制中，比如数据库文件，临时文件，设计文件等</p>
-<p>在主目录下建立“.gitignore”文件，此文件有如下规则：</p>
-<p>1.忽略文件中的空行或以井号（# ）开始的行将会被忽略。<br>2.可以使用Linux通配符。例如∶星号(*)代表任意多个字符，问号(﹖)代表一个字符，方括号([abc] )代表可选字符范围，大括号( {string1,string2……})代表可选的字符串等。<br>3.如果名称的最前面有一个感叹号( !)，表示例外规则，将不被忽略。<br>4.如果名称的最前面是一个路径分隔符(/ )，表示要忽略的文件在此目录下，而子目录中的文件不忽略。<br>5.如果名称的最后面是一个路径分隔符(/ )，表示要忽略的是此目录下该名称的子目录，而非文件（默认文件或目录都忽略）。</p>
-<p>例如以下这些实例:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*.txt   <span class="comment">#忽略所有的.txt结尾的文件</span></span><br><span class="line">！lib.txt  <span class="comment">#但lib.txt除外</span></span><br><span class="line">/temp  <span class="comment">#进忽略项目根目录下的TODO文件，不包括其他目录temp</span></span><br><span class="line">bulid/  <span class="comment">#忽略bulid目录下的所有文件</span></span><br><span class="line">doc/*.txt <span class="comment">#会忽略doc/notes.txt 但是不包括doc/sever/arch.txt</span></span><br></pre></td></tr></table></figure>
-<h2 id="git-修改-gitignore后生效"><a href="#git-修改-gitignore后生效" class="headerlink" title="git 修改.gitignore后生效"></a>git 修改.gitignore后生效</h2><p>有时在使用过称中，需要对.gitignore文件进行再次的修改。这次我们需要清除一下缓存cache，才能是.gitignore 生效。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">rm</span> -r --cached .  <span class="comment">#清除缓存</span></span><br><span class="line">git add . <span class="comment">#重新trace file</span></span><br><span class="line">git commit -m <span class="string">&quot;update .gitignore&quot;</span> <span class="comment">#提交和注释</span></span><br><span class="line">git push origin master <span class="comment">#可选，如果需要同步到remote上的话</span></span><br></pre></td></tr></table></figure>
-<h1 id="配置git账户"><a href="#配置git账户" class="headerlink" title="配置git账户"></a>配置git账户</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git config --global --list  <span class="comment"># 查看当前git的配置信息</span></span><br><span class="line">git config user.name</span><br><span class="line">git config user.email   </span><br><span class="line"></span><br><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span> <span class="comment"># 修改</span></span><br><span class="line">git config --global user.email <span class="string">&quot;email&quot;</span></span><br></pre></td></tr></table></figure>
-<h1 id="连接远程仓库和多远程仓库"><a href="#连接远程仓库和多远程仓库" class="headerlink" title="连接远程仓库和多远程仓库"></a>连接远程仓库和多远程仓库</h1><p><a target="_blank" rel="noopener" href="https://xenolies.gitee.io/2022/11/10/Hexo折腾笔记-git分别配置Github和Gitee/">Hexo折腾笔记:git分别配置Github和Gitee</a></p>
-<ol>
-<li>清除全局设置</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git config --global --<span class="built_in">unset</span> user.name</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>生成ssh-key</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#github</span></span><br><span class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C <span class="string">&quot;邮箱&quot;</span></span><br><span class="line"><span class="comment">#gitee</span></span><br><span class="line">ssh-keygen -t rsa -f ~/.ssh/id_rsa.gitee -C <span class="string">&quot;邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-<p>id_rsa.github可以换成你可以辨别的名字，user/.ssh / 下就可以看到生成的文件.</p>
-</li>
-<li><p>识别 SSH 新的私钥</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   ```</span><br><span class="line"></span><br><span class="line">   </span><br><span class="line"></span><br><span class="line"># git接管文件夹</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">git init 		# 初始化git仓库 (mac中Command+Shift+. 可以显示隐藏文件)</span><br><span class="line">git status 		# 查看文件状态</span><br><span class="line">git add 		# 文件列表 追踪文件</span><br><span class="line">git commit -m 	# 提交信息 向仓库中提交代码</span><br><span class="line">git log 		# 查看提交记录</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>git分支常用命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#列出本地所有分支</span></span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line"><span class="comment">#列出所有远程分支</span></span><br><span class="line">git branch -r</span><br><span class="line"></span><br><span class="line"><span class="comment">#新建一个分支，但依然停留在当前分支</span></span><br><span class="line">git branch 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment">#新建一个分支，并切换到该分支</span></span><br><span class="line">git checkout -b 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment">#合并指定分支到当前分支</span></span><br><span class="line">git merge 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除分支</span></span><br><span class="line">git branch -d 分支名</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除远程分支</span></span><br><span class="line">git push origin --delete 分支名</span><br><span class="line">git branch -dr 分支名</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>连接远程仓库(可见仓库提供方法)</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:xxx.git</span><br></pre></td></tr></table></figure>
-<h1 id="查看库"><a href="#查看库" class="headerlink" title="查看库"></a>查看库</h1><h2 id="查看该库的本地分支"><a href="#查看该库的本地分支" class="headerlink" title="查看该库的本地分支"></a>查看该库的本地分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure>
-<h2 id="git-查看已经放到本地仓库的文件"><a href="#git-查看已经放到本地仓库的文件" class="headerlink" title="git 查看已经放到本地仓库的文件"></a>git 查看已经放到本地仓库的文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-files</span><br></pre></td></tr></table></figure>
-<h2 id="删除-Git-仓库中的文件"><a href="#删除-Git-仓库中的文件" class="headerlink" title="删除 Git 仓库中的文件"></a>删除 Git 仓库中的文件</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git rm &lt;filename&gt;</span><br><span class="line"></span><br><span class="line">$ git commit -m &quot;commit message&quot;</span><br><span class="line"></span><br><span class="line">$ git push origin branch_name</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看最后一次提交记录的修改文件信息</span></span><br><span class="line">git show --raw</span><br><span class="line"><span class="comment">#查看所有</span></span><br><span class="line">git <span class="built_in">log</span> --<span class="built_in">stat</span></span><br></pre></td></tr></table></figure>
-<h1 id="git文件比较"><a href="#git文件比较" class="headerlink" title="git文件比较"></a>git文件比较</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git diff  命令，默认查看的就是 工作区 和 暂存区之间文件的差异</span><br><span class="line">1.git diff : 查看工作区和暂存区之间所有的文件差异</span><br><span class="line">2.git diff -- 文件名：查看具体某个文件 在工作区和暂存区之间的差异</span><br><span class="line">3.git diff -- 文件名1 文件名2 文件名3：查看多个文件在工作区和暂存区之间的差异</span><br><span class="line">【注意】：查看具体文件的时候 `--` 和`文件名` 之间有一个 `空格`,`文件名1` 和 `文件名2` 和 `文件名3`之间也有`空格</span><br></pre></td></tr></table></figure>
-<h1 id="撤回"><a href="#撤回" class="headerlink" title="撤回"></a>撤回</h1><h2 id="git-checkout-用法总结"><a href="#git-checkout-用法总结" class="headerlink" title="git checkout 用法总结"></a>git checkout 用法总结</h2><p><strong>git checkout</strong> – <file_name> 丢弃工作区的修改，并用最近一次的commit内容还原到当前工作区（<strong>对文件中内容的操作，无法对添加文件、删除文件起作用</strong>）</file_name></p>
-<p><strong>git checkout HEAD^</strong> – <file_name> 将指定commit提交的内容(HEAD^表示上一个版本)还原到当前工作区</file_name></p>
-<p><strong>git checkout</strong> <branch_name> – <file_name> 将指定分支的指定提交内容还原到当前分支工作区</file_name></branch_name></p>
-<h2 id="git-restore"><a href="#git-restore" class="headerlink" title="git restore"></a>git restore</h2><p><strong>git restore —staged</strong> <file_name> 将暂存区的修改重新放回工作区（<strong>包括对文件自身的操作，如添加文件、删除文件</strong>）</file_name></p>
-<p><strong>git restore</strong> <file_name> 丢弃工作区的修改（<strong>不包括对文件自身的操作，如添加文件、删除文件</strong>）</file_name></p>
-<h2 id="git-reset回退"><a href="#git-reset回退" class="headerlink" title="git reset回退"></a><a target="_blank" rel="noopener" href="https://blog.csdn.net/qing040513/article/details/109150075">git reset回退</a></h2><p><code>--soft</code> 、<code>--mixed</code>以及<code>--hard</code>是三个恢复等级。</p>
-<ul>
-<li>使用<code>--soft</code>就仅仅将头指针恢复，已经add的暂存区以及工作空间的所有东西都不变。</li>
-<li>如果使用<code>--mixed</code>，就将头恢复掉，已经add的暂存区也会丢失掉，工作空间的代码什么的是不变的。</li>
-<li><p>如果使用<code>--hard</code>，那么一切就全都恢复了，头变，aad的暂存区消失，代码什么的也恢复到以前状态。</p>
-</li>
-<li><p><code>git reset --hard</code> ：进行已修改或者暂存，但未提交文件的回退</p>
-</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard <span class="built_in">head</span> <span class="comment">#当前版本</span></span><br><span class="line">git reset --hard HEAD^ <span class="comment">#回退到上一个版本</span></span><br><span class="line">git reset --hard HEAD^^ <span class="comment">#回退到上上一个版本</span></span><br><span class="line">git reset --hard HEAD~3 <span class="comment">#回退到往上3个版本</span></span><br><span class="line">git reset --hard HEAD~10 <span class="comment">#回退到往上10个版本</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>git reset --hard origin/master</code> ”进行已提交，但未推送的版本回退</li>
-<li>1: <code>git reset --hard HEAD^</code> 2:<code>git push -f</code> 这两条命令是进行已提交且推送的回退，<ul>
-<li><code>git reset --hard HEAD^</code>为先回退到上一个版本</li>
-<li><code>git push -f</code>是进行强制推送，覆盖远程分支。</li>
-</ul>
-</li>
-</ul>
-<h1 id="github访问"><a href="#github访问" class="headerlink" title="github访问"></a>github访问</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hosts文件修改：C:\Windows\System32\drivers\etc\hosts</span></span><br><span class="line"><span class="comment"># 去这里看方法 https://gitee.com/snow2zhou/GitHub520</span></span><br><span class="line"><span class="comment"># ipconfig /flushdns</span></span><br></pre></td></tr></table></figure>
-<h1 id="换行符警告和解决"><a href="#换行符警告和解决" class="headerlink" title="换行符警告和解决"></a>换行符警告和解决</h1><p>最简单的一种办法就是把<code>自动转换功能</code>关掉即可。<br>输入命令 ：<code>git config core.autocrlf false</code> (仅对当前git仓库有效）<br><code>git config --global core.autocrlf false</code> (全局有效，不设置推荐全局）</p>
-<p>修改gitigone后生效</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">rm</span> -r --cached .  <span class="comment">#清除缓存</span></span><br><span class="line">git add . <span class="comment">#重新trace file</span></span><br><span class="line">git commit -m <span class="string">&quot;update .gitignore&quot;</span> <span class="comment">#提交和注释</span></span><br><span class="line">git push origin master <span class="comment">#可选，如果需要同步到remote上的话</span></span><br></pre></td></tr></table></figure>
-<h1 id="参考连接"><a href="#参考连接" class="headerlink" title="参考连接"></a>参考连接</h1><p><a target="_blank" rel="noopener" href="https://www.bootcss.com/p/git-guide/">git 使用简易指南 (bootcss.com)</a></p>
-<p><a target="_blank" rel="noopener" href="http://linux.51yip.com/search/git">git linux 命令 在线中文手册 (51yip.com)</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git">菜鸟git入门（.runoob.com/）</a></p>
+        <p>在我小时候，我家屋外有三棵果树。两株橘子树和一棵梨树。</p>
+<p>橘子树一矮一高。矮的那株就算是小时后的我用力够一够也能够碰到枝丫，将橘子摘下。不过我摘完那几个够得着的橘子后，想要再吃到橘子。就要叫大人了。但是小时候的我通常都是不好叫大人帮忙的。因为通过自己摘子。感觉自己有一份独特的本领。特别是我将摘下的橘子拿个大人的时候，大人们总会用逗小孩的语气夸赞我，这对我是几位受用的。</p>
+<p>这颗橘子树虽然矮，但是却不好爬上去。枝丫都比较细，我还没有抓住树枝增上去呢，树枝就断了。但是那高处的橘子却总是诱惑着我。我在屋外玩泥土，找蚯蚓的时候总是能看见那树上的橘子。这样的念头跑到一个小孩的脑中，就会让他不知不觉中去爬那棵树。但树枝却总被我扳断。这时候母亲就会出来骂我，说我顽皮。有几次还差点被母亲用那断枝教训。</p>
+<p>相比于那棵矮树。他右边那棵高的橘子树就好爬的很多。它有许多向外支出的粗壮的树枝。我能用手抓住那些树枝蹭上去。只需要几步，我就能爬到很高，大概三四米的样子。这时候大人们又出现了。他们并没有佩服我的爬树能力。只是骂我，说这样很危险。我能也只好从树上下来了。但是这样的教训却没有让我感到沮丧，我只是怕被打。我能从他们那生气而又担心的语气中听出他们是绝不会做这样危险的事情的。这不像摘橘子。大人们都能够做到，而这个爬树我却是超越了大人。</p>
+<p>以后我也会趁他们的目光不在我身上的时候，爬到树上去，靠着树枝，半躺着，摘橘子吃。他们慢慢的也表现出了无奈。又换了另外一种方法说我，橘子吃多了会上火。我自然不信，当然也不知道上火的具体意思。可每年这个时候我嘴巴都会生疮。这就不由得我不信了。</p>
+<p>那棵梨树，我确实想不到有趣的记忆了。它又高又少枝丫。记得他那光秃秃的主杆总是留着一些黄色透明固体。它结的梨，我想吃的话也只有去拿一根长长的杆子打下了。但是通常打下了的梨，就是已经面目全非了。好像它的果子有些时候很涩，有些时候却有些甜味。</p>
+<p>大人告诉我这三棵果树包括后山上的几棵果树都是爷爷年轻时候种的。那时候如果母亲从集市上买回水果，我吃的时候就总会问，我们可以在屋外种吗？母亲也对这个话题有兴趣，会和我聊几句。但是吃完水果后，母亲忘了，我也忘了。我也试过将水果的种子埋到土里，但是都没有涨起来。</p>
+<p>我们都知道树可以活很多年。但这三棵果树却没有活过我的童年。好像是因为树干中空死了。好像因为树挡了上山干活人的路。这些都是大人告诉我的。我也记得在树被父亲砍了的前年，那棵矮树结的果子不太甜了。</p>
+<p>当我放学回家，发现树没有了，我是生气和沮丧的。但是父母给了我理由，我也找不到生气的理由，好像还有一点懵。我没有想过树会没有。</p>
+<p>后来父亲从外面拿了两株树苗。因为我家屋外那小路下面就是一片鱼塘。父亲说需要有树的根巩固泥土，要不小路容易塌。可这两株树苗不是果树。我是有点失落的。</p>
+<p>现在爷爷栽的树没了。父亲栽的两株树长成了两簇灌木丛。他们说这树就是这样的。</p>
 
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/git/" class="">
-              git
+            <a href="/tags/%E8%90%BD%E6%97%A5%E9%A3%98%E7%BB%AA/" class="">
+              落日飘绪
             </a>
           
         </div>
@@ -800,7 +702,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2022102635481/" target="_blank" title="git使用技巧">http://example.com/2022102635481/</a>
+    <a href="/2023062747006/" target="_blank" title="屋外的树">http://example.com/2023062747006/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -824,16 +726,15 @@
       background-position: center center;">
       <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="">
     </div>
-    <a href="/2022121127729/" class="post-nav-link">
+    <a href="/2023062734107/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">vim使用教程</div>
+        <div class="title-text">我在末日当丧尸</div>
       </div>
       
       <!-- <div class="content">
-        三种模式vim编辑器有三种模式：命令模式、编辑模式、末行模式。
-
-「命令模式」：可以进行删除、复制、粘贴等快捷操作。按=
+        我正在一堆被血侵染的杂物里翻着东西，还不时将带有较多血液的布料放入嘴中咀嚼。周围是残败的建筑，和还燃烧着的汽车。
+刚才这
       </div> -->
     </a>
   </div>
@@ -846,13 +747,14 @@
       background-position: center center;">
       <img class="lazyload lazyload placeholder" src="/medias/2.jpg" class="lazyload placeholder" data-srcset="/medias/2.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" src="" alt="">
     </div>
-    <a href="/2022100549402/" class="post-nav-link">
+    <a href="/2023062765152/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">next使用的一些坑</div>
+        <div class="title-text">高中的三观</div>
       </div>
       <!-- <div class="content">
-        12&quot;name&quot;: &quot;hexo-theme-next&quot;,&quot;versio
+        高三那年我很难受。
+我成绩不好。高一高二那年老师觉得我还可以，想把我当重本生培养。但是我懒或者不适合学某些科目，成绩越来
       </div> -->
     </a>
   </div>
@@ -990,7 +892,7 @@
   <div class='content'>
     <div class="toc-main">
       <div class="toc-content">
-        <!-- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#git%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E4%B8%80%E8%88%AC%E6%98%AF%E8%BF%99%E6%A0%B7%E7%9A%84%EF%BC%9A"><span class="toc-text">git的工作流程一般是这样的：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git%E7%9A%844%E4%B8%AA%E5%8C%BA"><span class="toc-text">git的4个区</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E4%BA%94%E7%A7%8D%E7%8A%B6%E6%80%81"><span class="toc-text">文件的五种状态</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6"><span class="toc-text">忽略文件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E4%BF%AE%E6%94%B9-gitignore%E5%90%8E%E7%94%9F%E6%95%88"><span class="toc-text">git 修改.gitignore后生效</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEgit%E8%B4%A6%E6%88%B7"><span class="toc-text">配置git账户</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E5%92%8C%E5%A4%9A%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-text">连接远程仓库和多远程仓库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BA%93"><span class="toc-text">查看库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%AF%A5%E5%BA%93%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF"><span class="toc-text">查看该库的本地分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E7%BB%8F%E6%94%BE%E5%88%B0%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">git 查看已经放到本地仓库的文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4-Git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-text">删除 Git 仓库中的文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git%E6%96%87%E4%BB%B6%E6%AF%94%E8%BE%83"><span class="toc-text">git文件比较</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%92%A4%E5%9B%9E"><span class="toc-text">撤回</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#git-checkout-%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93"><span class="toc-text">git checkout 用法总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-restore"><span class="toc-text">git restore</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-reset%E5%9B%9E%E9%80%80"><span class="toc-text">git reset回退</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#github%E8%AE%BF%E9%97%AE"><span class="toc-text">github访问</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%AD%A6%E5%91%8A%E5%92%8C%E8%A7%A3%E5%86%B3"><span class="toc-text">换行符警告和解决</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%BF%9E%E6%8E%A5"><span class="toc-text">参考连接</span></a></li></ol> -->
+        <!--  -->
         <div class="toc"></div>
       </div>
     </div>

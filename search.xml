@@ -13,6 +13,81 @@
       </tags>
   </entry>
   <entry>
+    <title>叙永是个什么地方</title>
+    <url>/2021081314161/</url>
+    <content><![CDATA[<p><em>起因是一则校园小广告。然后有了接下来的故事。</em></p>
+<p>叙永，一座位于泸州的县城。它的夏天同样热，甚至还能荣登高温地区榜单。叙永人对夏天的温柔。体现在我以前没喝过的凉虾，和每家餐馆的免费菜汤。凉虾对于我来说有些齁甜。每家餐馆的菜汤也只有一碗南瓜绿豆汤深得我心。但凉虾口感确实不错。而南瓜绿豆汤的免费和外面买五块一碗的绿豆汤相比也感动了我一瞬。<span id="more"></span></p>
+<p>叙永你能看到土坯房，瓦片房，小楼房和高楼房紧凑的挨在一起。这使你不得不感叹一个词——发展。然后就没有了。因为正当我想要以抖音思维解构这座城市的时候。支撑我的豪情就提前一步消散在这错落的城市各个角落。</p>
+<p>上街发传单。用修饰过的语言同学生和家长交流。对于我的心灵来说，确实没什么。况且我还偷懒。可是心气儿还是慢慢的流走了。那段时间回想起来可能有点傻。但还是值得的。</p>
+<p>我说过，因为一则广告。我经历一场不专业的面试，一场‘有些负责人都说的什么呀’的双选会。提起包，就来到了这里。从开始到结束。有的人来了，又走了。</p>
+<p>我送给了一个女孩礼物。想过要送给每个女孩一件礼物的。但是到最后只送了一个人。礼物还是贵了。至于男孩，如果想要一个大大的拥抱，也不是不可以。</p>
+<h2 id="快乐"><a href="#快乐" class="headerlink" title="快乐"></a>快乐</h2><p>在杨武坊的大桥上看着一位酷酷的小姐姐唱歌</p>
+<p>打乒乓球。</p>
+<p>工作的快乐对于我来说真的很难总结。但这份经历真的难得。或许我从这里明白了轻松的快乐。</p>
+<h2 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h2><p>有即使是最后一天特别忙，也没有去看看杨武坊那唱歌的小姐姐还在不在</p>
+<p>有到收拾东西了，才发现我一直寻找的充电器就在书包的侧包里</p>
+<p>有和唐老师说要再瞅她一眼，却没回头的走向车站。以至于走错了方向</p>
+<p>有一直吃魏老师和胡老师的cp。但是晚餐却没有以开玩笑的样子说出来</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>想写些什么，又写不出什么东西。就像那天，我把头发剪了。之后却无所事事。</p>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>愿</title>
+    <url>/2021081418371/</url>
+    <content><![CDATA[<center>
+
+ 愿百灵衔来
+一朵丁香
+为你增添
+淡淡芬芳
+
+<span id="more"></span>
+
+愿小溪流淌
+轻柔石块
+弹奏一曲民谣小调
+
+愿幼儿园的
+老旧滑梯
+有微风不厌
+常扫落叶
+
+
+愿小学的
+四层教师楼
+孩童奔跑，欢笑
+闹稚言
+
+
+愿初中的
+空心老树
+树皮粗糙
+记载岁月流逝
+叹！无常
+
+愿高中
+和那以后的以后
+那片云游过天边
+这人群路过彼此
+
+再见吧
+我喜欢的女孩
+百灵的丁香
+使你芬芳
+小溪的民谣
+使你宁静
+
+在这还不算太糟的世界里
+你会越来越好 </center>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>vscode相关配置</title>
     <url>/2022092962373/</url>
     <content><![CDATA[<p>dd</p>
@@ -134,6 +209,405 @@
       </tags>
   </entry>
   <entry>
+    <title>hexo 使用技巧</title>
+    <url>/2023050816107/</url>
+    <content><![CDATA[<p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029/">(42条消息) hexo史上最全搭建教程_zjufangzh的博客-CSDN博客</a></p>
+<h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>如果卡住，就换源</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<h1 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<p>可能22端口不行，就在密钥处写个<code>config</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br></pre></td></tr></table></figure>
+<h1 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h1><h2 id="Hexo-博客插件生成短链"><a href="#Hexo-博客插件生成短链" class="headerlink" title="Hexo 博客插件生成短链"></a>Hexo 博客插件生成短链</h2><ul>
+<li><a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>修改博客根目录下的 <code>_config.yml</code> 配置文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: :year:month:day:abbrlink/   # 具体配置参考Hexo文档https://hexo.io/zh-cn/docs/permalinksCopy</span><br><span class="line">#添加如下的对该插件的配置项：</span><br><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc16  #support crc16(default) and crc32</span><br><span class="line">  rep: dec    #support dec(default) and hex</span><br><span class="line">  drafts: false #(true)Process draft,(false)Do not process draft</span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: false</span><br><span class="line">     depth:</span><br></pre></td></tr></table></figure>
+<p>效果</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/66c8.html</span><br><span class="line"></span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/65535.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/8ddf18fb.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/1690090958.htmlCopy</span><br></pre></td></tr></table></figure>
+<h2 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h2><p>hexo的启动文件地址<strong>node_modules\hexo-server\index.js</strong> 修改port即可。</p>
+<h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1><p>免费就用github+PicGo+typora。</p>
+<p><a href="https://blog.csdn.net/qq_43367829/article/details/104882071">(18条消息) PicGo+GitHub使用_我想养只汤姆猫的博客-CSDN博客_picgo github</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>next使用的一些坑</title>
+    <url>/2022100549402/</url>
+    <content><![CDATA[<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexo-theme-next&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;7.8.0&quot;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<h1 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h1><h2 id="图片显示问题"><a href="#图片显示问题" class="headerlink" title="图片显示问题"></a>图片显示问题</h2><p>找到head.swig文件,添加如下代码.next6.0文件路径<em><u>themes\next\layout_partials\head\head.swig</u></em></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;referrer&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-referrer&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="数学公式显示问题"><a href="#数学公式显示问题" class="headerlink" title="数学公式显示问题"></a>数学公式显示问题</h2><p>在next的配置文件themes\next\<u>crowdin.yml</u></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 数学公式渲染支持</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="comment"># 是否自动渲染每一页</span></span><br><span class="line"><span class="comment"># 如果为false就只渲染配置块中包含mathjax: true的文章</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">mhchem:</span> <span class="literal">false</span></span><br><span class="line">    </span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">copy_tex:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h2 id="增添加载条"><a href="#增添加载条" class="headerlink" title="增添加载条"></a>增添加载条</h2><p>下载进度条文件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace</span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/xqyr/img/raw/img/image-20221030222138153.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20221030222138153.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20221030222138153"></p>
+<p><a href="https://hexo-next.readthedocs.io/zh_CN/latest/">推荐next参考文档</a></p>
+]]></content>
+      <categories>
+        <category>next</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摩擦离合器</title>
+    <url>/2023050825118/</url>
+    <content><![CDATA[<h2 id="markdown居中对齐，左对齐，右对齐"><a href="#markdown居中对齐，左对齐，右对齐" class="headerlink" title="markdown居中对齐，左对齐，右对齐"></a>markdown居中对齐，左对齐，右对齐</h2><p>Markdown语法本身没有居中，但Markdown中支持基本的HTMl语法，可以使用HTML语法。<br>居中：<br><code>&lt;center&gt;月是故乡明&lt;/center&gt;</code><br>左对齐：<br><code>&lt;p align=&quot;left&quot;&gt;月是故乡明&lt;/p&gt;</code><br>右对齐：<br><code>&lt;p align=&quot;right&quot;&gt;月是故乡明&lt;/p&gt;</code></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>simulink</title>
+    <url>/2023050833435/</url>
+    <content><![CDATA[<h1 id="simulink"><a href="#simulink" class="headerlink" title="simulink"></a>simulink</h1><h2 id="电路仿真"><a href="#电路仿真" class="headerlink" title="电路仿真"></a>电路仿真</h2><h3 id="相关操作"><a href="#相关操作" class="headerlink" title="相关操作"></a>相关操作</h3><h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><p>如电容,电感…等元器件在simspace产品库中,需要安装相应的产品.</p>
+<h2 id="matlab操作"><a href="#matlab操作" class="headerlink" title="matlab操作"></a>matlab操作</h2><h2 id="simulink操作"><a href="#simulink操作" class="headerlink" title="simulink操作"></a>simulink操作</h2><p>Zero Order Hold是零阶保持器的意思，就是输入的信号帮你保持一段时间，经过这个模块后的信号会有阶梯状的感觉。如果前后两个模块的采样频率不一样的话，就要在两者中间加入Rate Transition，否则就会报错。假如前级的采样频率大，而后级的采样频率小的话，它的作用就是Zero Order Hold，以保证数据的完整性。</p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3>]]></content>
+      <tags>
+        <tag>simulink</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>typora的使用</title>
+    <url>/2023050846583/</url>
+    <content><![CDATA[<h1 id="typora的使用"><a href="#typora的使用" class="headerlink" title="typora的使用"></a>typora的使用</h1><h2 id="MD语法总结"><a href="#MD语法总结" class="headerlink" title="MD语法总结"></a>MD语法总结</h2><span id="more"></span>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">无序列表：- + 空格</span><br><span class="line">有序列表：1. + 空格</span><br><span class="line">引用：&gt; + 空格</span><br><span class="line">标题：ctrl + 数字</span><br><span class="line">表格：ctrl + t</span><br><span class="line">生成目录：[TOC] + 回车</span><br><span class="line">选中一整行：ctrl + l</span><br><span class="line">选中单词：ctrl + d</span><br><span class="line">选中相同格式的文字：ctrl + e</span><br><span class="line">跳转到文章开头：ctrl + home</span><br><span class="line">跳转到文章结尾：ctrl + end</span><br><span class="line">搜索：ctrl + f</span><br><span class="line">替换：ctrl + h</span><br><span class="line">加粗：ctrl + b</span><br><span class="line">倾斜：ctrl + i</span><br><span class="line">下划线：ctrl + u</span><br><span class="line">删除线：alt + shift + 5</span><br><span class="line">插入图片：直接拖动到指定位置即可或者ctrl + shift + i</span><br><span class="line">插入链接：ctrl + k</span><br></pre></td></tr></table></figure>
+<p>见<a href="#zs">展示</a></p>
+<h2 id="公式Mathjax语法总结"><a href="#公式Mathjax语法总结" class="headerlink" title="公式Mathjax语法总结"></a><a href="https://blog.csdn.net/ajacker/article/details/80301378">公式Mathjax语法总结</a></h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>语法</th>
+<th>展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 行内公式:使用<script type="math/tex">…</script>定义，此时公式在一行内显示</td>
+<td>和的公式$a+b$</td>
+</tr>
+<tr>
+<td>2. <a href="#xlzf">希腊字符</a>如果要大写,首字母大写,<a href="https://blog.csdn.net/liyuanbhu/article/details/50636416">其他符号</a></td>
+<td>$\alpha\Alpha$</td>
+</tr>
+<tr>
+<td>3. 上下标<script type="math/tex">A^2_i</script></td>
+<td>$A^2_i$</td>
+</tr>
+<tr>
+<td>4. 空格<code>\qaud</code></td>
+<td>$a\quad b$</td>
+</tr>
+<tr>
+<td>5. <a href="#fz">分组和括号</a></td>
+<td>$(..) \ [..] \ {..} \ \langle …$</td>
+</tr>
+<tr>
+<td>6. <a href="#运算符">运算符</a></td>
+<td></td>
+</tr>
+<tr>
+<td>7. 积分符号<script type="math/tex">\int</script>和,<a href="https://www.jianshu.com/p/8aa646fad1c5">导数相关符号 </a></td>
+<td>$\int$</td>
+</tr>
+<tr>
+<td>8.<a href="https://blog.csdn.net/liyuanbhu/article/details/51473886">(各种箭头符号)_</a></td>
+<td></td>
+</tr>
+<tr>
+<td>9. <a href="https://www.mohu.org/info/symbols/symbols.htm">一些总结</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="展示"><a href="#展示" class="headerlink" title="展示 "></a><a id="zs">展示 </a></h3><ul>
+<li><p><strong>加粗： <code>Ctrl + B</code></strong></p>
+</li>
+<li><p>撤销： <code>Ctrl + Z</code></p>
+</li>
+<li><p><em>字体倾斜 ：<code>Ctrl+I</code></em></p>
+</li>
+<li><p><u>下划线：<code>Ctrl+U</code></u></p>
+</li>
+<li><p>多级标题： <code>Ctrl + 1~6</code></p>
+</li>
+<li><p>有序列表：<code>Ctrl + Shift + [</code></p>
+</li>
+<li><p>无序列表：<code>Ctrl + Shift + ]</code></p>
+<ul>
+<li>降级快捷键 ：<code>Tab</code></li>
+</ul>
+</li>
+<li><p>升级快捷键：<code>Shift + Tab</code></p>
+</li>
+<li><p><a href="baidu.com">插入链接： <code>Ctrl + K</code></a></p>
+</li>
+<li><script type="math/tex; mode=display">
+插入公式： Ctrl + Shift + M</script></li>
+</ul>
+<ul>
+<li><pre><code class="lang-c">行内代码： Ctrl + Shift + K
+</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>“插入图片： <code>Ctrl + Shift + I</code><img src="https://gitee.com/xqyr/img/raw/master/typora-icon.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/master/typora-icon.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" a style="zoom:25%;"></p>
+</li>
+<li><p>返回Typora顶部：<code>Ctrl+Home</code></p>
+</li>
+<li><p>返回Typora底部 ：<code>Ctrl+End</code></p>
+</li>
+<li><p>| 创建表格 | ctrl+T |<br>| ———— | :——: |</p>
+</li>
+<li><p>选中某句话 ：<code>Ctrl+L</code></p>
+</li>
+<li><p>选中某个单词 ：<code>Ctrl+D</code></p>
+</li>
+<li><p>选中相同格式的文字 ：<code>Ctrl+E</code></p>
+</li>
+<li><p>搜索: <code>Ctrl+F</code></p>
+</li>
+<li><p>搜索并替换 ：<code>Ctrl+H</code></p>
+</li>
+<li><p><del>删除线 ：<code>Alt+Shift+5</code></del></p>
+</li>
+<li><blockquote>
+<p>引用 ：<code>Ctrl+Shift+Q</code></p>
+</blockquote>
+</li>
+<li><p>生成目录：[TOC]+Enter</p>
+</li>
+</ul>
+<h2 id="CSS和html"><a href="#CSS和html" class="headerlink" title="CSS和html"></a>CSS和html</h2><blockquote>
+<h2 id="一些参考表"><a href="#一些参考表" class="headerlink" title="一些参考表"></a>一些参考表</h2><h4 id="希腊字符表"><a href="#希腊字符表" class="headerlink" title="希腊字符表"></a><a id="xlzf">希腊字符表</a></h4></blockquote>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>显示</th>
+<th>命令</th>
+<th>显示</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>α</td>
+<td>\alpha</td>
+<td>β</td>
+<td>\beta</td>
+</tr>
+<tr>
+<td>γ</td>
+<td>\gamma</td>
+<td>$\Delta$δ</td>
+<td>\delta</td>
+</tr>
+<tr>
+<td>ϵ</td>
+<td>\epsilon</td>
+<td>ζ</td>
+<td>\zeta</td>
+</tr>
+<tr>
+<td>η</td>
+<td>\eta</td>
+<td>θ</td>
+<td>\theta</td>
+</tr>
+<tr>
+<td>ι</td>
+<td>\iota</td>
+<td>κ</td>
+<td>\kappa</td>
+</tr>
+<tr>
+<td>$\Lambda$λ</td>
+<td>\lambda</td>
+<td>μ</td>
+<td>\mu</td>
+</tr>
+<tr>
+<td>ν</td>
+<td>\nu</td>
+<td>ξ</td>
+<td>\xi</td>
+</tr>
+<tr>
+<td>π</td>
+<td>\pi</td>
+<td>ρ</td>
+<td>\rho</td>
+</tr>
+<tr>
+<td>σ</td>
+<td>\sigma</td>
+<td>τ</td>
+<td>\tau</td>
+</tr>
+<tr>
+<td>υ</td>
+<td>\upsilon</td>
+<td>ϕ</td>
+<td>\phi</td>
+</tr>
+<tr>
+<td>χ</td>
+<td>\chi</td>
+<td>ψ</td>
+<td>\psi</td>
+</tr>
+<tr>
+<td>ω</td>
+<td>\omega</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> α  阿尔法， β 贝塔， γ 伽玛，δ 德尔塔， ε 伊普西隆， ζ 泽塔， η 伊塔， θ 西塔， ι 约塔， κ 卡帕， λ 兰姆达，μ 米欧 ，ν 纽， ξ 克西， ο 欧米克隆， π 派， ρ 柔 ，σ 西格玛， τ 陶 ，υ 玉普西隆， φ 弗爱， χ 凯， ψ 普赛 。</p>
+<blockquote>
+<h4 id="分组和括号"><a href="#分组和括号" class="headerlink" title="分组和括号"></a><a id="fz">分组和括号</a></h4></blockquote>
+<ul>
+<li>使用<code>&#123;&#125;</code>将同一级的括在一起，成组处理</li>
+<li>举例:<code>x_i^2</code>显示为x i 2 x<em>i^2<em>x**i</em>2，而`x</em>{i^2}`显示为x i 2 x_{i^2}<em>x**i</em>2<br>###1.2.4括号</li>
+<li>小括号:<code>(...)</code>显示为( . . . ) (…)(…)</li>
+<li>中括号:<code>[...]</code>显示为[ . . . ] […][…]</li>
+<li><p>大括号:<code>\&#123;...\&#125;</code><a href="https://blog.csdn.net/ajacker/article/details/80301378#fn1">1</a>显示为{ . . . } {…}{…}</p>
+</li>
+<li><p>尖括号：<code>\langle ... \rangle</code></p>
+</li>
+<li><p>绝对值：`\vert … \ver</p>
+</li>
+<li><p>双竖线：<code>\Vert ... \Vert</code></p>
+</li>
+<li><p>使用<code>\left</code>和<code>\right</code>使符号大小与邻近的公式相适应,该语句适用于所有括号类型。<code>变大括号</code></p>
+<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><a id="ysf">运算符</a></h4></li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:center">应用举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td style="text-align:left">加</td>
+<td style="text-align:center">$x + y x+y<em>x</em>+<em>y</em>$</td>
+</tr>
+<tr>
+<td>-</td>
+<td style="text-align:left">减</td>
+<td style="text-align:center">x − y</td>
+</tr>
+<tr>
+<td>\times</td>
+<td style="text-align:left">叉乘</td>
+<td style="text-align:center">x × y</td>
+</tr>
+<tr>
+<td>\cdot</td>
+<td style="text-align:left">点乘</td>
+<td style="text-align:center">x ⋅ y</td>
+</tr>
+<tr>
+<td>\ast(*)</td>
+<td style="text-align:left">星乘</td>
+<td style="text-align:center">x ∗ y</td>
+</tr>
+<tr>
+<td>\div</td>
+<td style="text-align:left">除</td>
+<td style="text-align:center">x ÷ y</td>
+</tr>
+<tr>
+<td>\pm</td>
+<td style="text-align:left">加减</td>
+<td style="text-align:center">x ± y</td>
+</tr>
+<tr>
+<td>\mp</td>
+<td style="text-align:left">减加</td>
+<td style="text-align:center"><em>x</em>∓<em>y</em></td>
+</tr>
+<tr>
+<td>=</td>
+<td style="text-align:left">等于</td>
+<td style="text-align:center">x = y</td>
+</tr>
+<tr>
+<td>\leq</td>
+<td style="text-align:left">小于等于</td>
+<td style="text-align:center">x ≤ y</td>
+</tr>
+<tr>
+<td>\geq</td>
+<td style="text-align:left">大于等于</td>
+<td style="text-align:center">x ≥ y</td>
+</tr>
+<tr>
+<td>\approx</td>
+<td style="text-align:left">约等于</td>
+<td style="text-align:center">x ≈ y</td>
+</tr>
+<tr>
+<td>\equiv</td>
+<td style="text-align:left">恒等于</td>
+<td style="text-align:center">x ≡ y</td>
+</tr>
+<tr>
+<td>\bigodot</td>
+<td style="text-align:left">定义运算符</td>
+<td style="text-align:center">x ⨀ y</td>
+</tr>
+<tr>
+<td>\bigtimes</td>
+<td style="text-align:left">定义运算符</td>
+<td style="text-align:center">x ⨂ y</td>
+</tr>
+<tr>
+<td>\neq</td>
+<td style="text-align:left">不等号</td>
+<td style="text-align:center">$x\neq y$</td>
+</tr>
+</tbody>
+</table>
+</div>
+]]></content>
+      <tags>
+        <tag>md</tag>
+        <tag>typora</tag>
+        <tag>mathjax</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git使用技巧</title>
     <url>/2022102635481/</url>
     <content><![CDATA[<h1 id="git的工作流程一般是这样的："><a href="#git的工作流程一般是这样的：" class="headerlink" title="git的工作流程一般是这样的："></a>git的工作流程一般是这样的：</h1><ul>
@@ -248,76 +722,6 @@
 ]]></content>
       <tags>
         <tag>git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 使用技巧</title>
-    <url>/2023050816107/</url>
-    <content><![CDATA[<h1 id="安装部署"><a href="#安装部署" class="headerlink" title="安装部署"></a>安装部署</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<p>如果卡住，就换源</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<h1 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h1><h2 id="Hexo-博客插件生成短链"><a href="#Hexo-博客插件生成短链" class="headerlink" title="Hexo 博客插件生成短链"></a>Hexo 博客插件生成短链</h2><ul>
-<li><a href="Https://yooziki.github.io/2020/11/1718446/">使用 abbrlink 生成短链接</a></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>修改博客根目录下的 <code>_config.yml</code> 配置文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink: :year:month:day:abbrlink/   # 具体配置参考Hexo文档https://hexo.io/zh-cn/docs/permalinksCopy</span><br><span class="line">#添加如下的对该插件的配置项：</span><br><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc16  #support crc16(default) and crc32</span><br><span class="line">  rep: dec    #support dec(default) and hex</span><br><span class="line">  drafts: false #(true)Process draft,(false)Do not process draft</span><br><span class="line">  # Generate categories from directory-tree</span><br><span class="line">  # depth: the max_depth of directory-tree you want to generate, should &gt; 0</span><br><span class="line">  auto_category:</span><br><span class="line">     enable: false</span><br><span class="line">     depth:</span><br></pre></td></tr></table></figure>
-<p>效果</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/66c8.html</span><br><span class="line"></span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/65535.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; hex</span><br><span class="line">https://post.zz173.com/posts/8ddf18fb.html</span><br><span class="line"></span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://post.zz173.com/posts/1690090958.htmlCopy</span><br></pre></td></tr></table></figure>
-<h2 id="修改端口"><a href="#修改端口" class="headerlink" title="修改端口"></a>修改端口</h2><p>hexo的启动文件地址<strong>node_modules\hexo-server\index.js</strong> 修改port即可。</p>
-<h1 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h1><p>免费就用github+PicGo+typora。</p>
-<p><a href="https://blog.csdn.net/qq_43367829/article/details/104882071">(18条消息) PicGo+GitHub使用_我想养只汤姆猫的博客-CSDN博客_picgo github</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>摩擦离合器</title>
-    <url>/2023050825118/</url>
-    <content><![CDATA[<h2 id="markdown居中对齐，左对齐，右对齐"><a href="#markdown居中对齐，左对齐，右对齐" class="headerlink" title="markdown居中对齐，左对齐，右对齐"></a>markdown居中对齐，左对齐，右对齐</h2><p>Markdown语法本身没有居中，但Markdown中支持基本的HTMl语法，可以使用HTML语法。<br>居中：<br><code>&lt;center&gt;月是故乡明&lt;/center&gt;</code><br>左对齐：<br><code>&lt;p align=&quot;left&quot;&gt;月是故乡明&lt;/p&gt;</code><br>右对齐：<br><code>&lt;p align=&quot;right&quot;&gt;月是故乡明&lt;/p&gt;</code></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>next使用的一些坑</title>
-    <url>/2022100549402/</url>
-    <content><![CDATA[<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexo-theme-next&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;7.8.0&quot;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
-<h1 id="显示问题"><a href="#显示问题" class="headerlink" title="显示问题"></a>显示问题</h1><h2 id="图片显示问题"><a href="#图片显示问题" class="headerlink" title="图片显示问题"></a>图片显示问题</h2><p>找到head.swig文件,添加如下代码.next6.0文件路径<em><u>themes\next\layout_partials\head\head.swig</u></em></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;referrer&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-referrer&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="数学公式显示问题"><a href="#数学公式显示问题" class="headerlink" title="数学公式显示问题"></a>数学公式显示问题</h2><p>在next的配置文件themes\next\<u>crowdin.yml</u></p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 数学公式渲染支持</span></span><br><span class="line"><span class="attr">math:</span></span><br><span class="line"><span class="comment"># 是否自动渲染每一页</span></span><br><span class="line"><span class="comment"># 如果为false就只渲染配置块中包含mathjax: true的文章</span></span><br><span class="line">  <span class="attr">per_page:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">mhchem:</span> <span class="literal">false</span></span><br><span class="line">    </span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">copy_tex:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<h2 id="增添加载条"><a href="#增添加载条" class="headerlink" title="增添加载条"></a>增添加载条</h2><p>下载进度条文件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace</span><br></pre></td></tr></table></figure>
-<p><img src="https://gitee.com/xqyr/img/raw/img/image-20221030222138153.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/image-20221030222138153.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="image-20221030222138153"></p>
-<p><a href="https://hexo-next.readthedocs.io/zh_CN/latest/">推荐next参考文档</a></p>
-]]></content>
-      <categories>
-        <category>next</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>simulink</title>
-    <url>/2023050833435/</url>
-    <content><![CDATA[<h1 id="simulink"><a href="#simulink" class="headerlink" title="simulink"></a>simulink</h1><h2 id="电路仿真"><a href="#电路仿真" class="headerlink" title="电路仿真"></a>电路仿真</h2><h3 id="相关操作"><a href="#相关操作" class="headerlink" title="相关操作"></a>相关操作</h3><h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><p>如电容,电感…等元器件在simspace产品库中,需要安装相应的产品.</p>
-<h2 id="matlab操作"><a href="#matlab操作" class="headerlink" title="matlab操作"></a>matlab操作</h2><h2 id="simulink操作"><a href="#simulink操作" class="headerlink" title="simulink操作"></a>simulink操作</h2><p>Zero Order Hold是零阶保持器的意思，就是输入的信号帮你保持一段时间，经过这个模块后的信号会有阶梯状的感觉。如果前后两个模块的采样频率不一样的话，就要在两者中间加入Rate Transition，否则就会报错。假如前级的采样频率大，而后级的采样频率小的话，它的作用就是Zero Order Hold，以保证数据的完整性。</p>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3>]]></content>
-      <tags>
-        <tag>simulink</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯问题</title>
-    <url>/2022012412972/</url>
-    <content><![CDATA[<h2 id="大家好，我想问个事情。比赛的时候驱动会出问题吗"><a href="#大家好，我想问个事情。比赛的时候驱动会出问题吗" class="headerlink" title="大家好，我想问个事情。比赛的时候驱动会出问题吗"></a>大家好，我想问个事情。比赛的时候驱动会出问题吗</h2><h2 id="我在网上找了一个2021数据包。下面这个。"><a href="#我在网上找了一个2021数据包。下面这个。" class="headerlink" title="我在网上找了一个2021数据包。下面这个。"></a>我在网上找了一个2021数据包。下面这个。</h2><h2 id="但是我发现他的驱动有点问题。ds18b20他是这么写的"><a href="#但是我发现他的驱动有点问题。ds18b20他是这么写的" class="headerlink" title="但是我发现他的驱动有点问题。ds18b20他是这么写的"></a>但是我发现他的驱动有点问题。ds18b20他是这么写的</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  程序说明: 单总线驱动程序</span></span><br><span class="line"><span class="comment">  软件环境: Keil uVision 4.10 </span></span><br><span class="line"><span class="comment">  硬件环境: CT107单片机综合实训平台(外部晶振12MHz) STC89C52RC单片机</span></span><br><span class="line"><span class="comment">  日    期: 2011-8-9</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;reg52.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">sbit DQ = P1^<span class="number">4</span>;  <span class="comment">//单总线接口</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//单总线延时函数</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Delay_OneWire</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> t)</span>  <span class="comment">//STC89C52RC</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>(t--);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//通过单总线向DS18B20写一个字节</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Write_DS18B20</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> dat)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		DQ = dat&amp;<span class="number">0x01</span>;</span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//从DS18B20读取一个字节</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">Read_DS18B20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> dat;</span><br><span class="line">  </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(DQ)</span><br><span class="line">		&#123;</span><br><span class="line">			dat |= <span class="number">0x80</span>;</span><br><span class="line">		&#125;	    </span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dat;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//DS18B20设备初始化</span></span><br><span class="line">bit <span class="title function_">init_ds18b20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  	bit initflag = <span class="number">0</span>;</span><br><span class="line">  	</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">60</span>);</span><br><span class="line">  	DQ = <span class="number">0</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">480</span>);</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">120</span>); </span><br><span class="line">    initflag = DQ;     </span><br><span class="line">  	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">  </span><br><span class="line">  	<span class="keyword">return</span> initflag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="他读和写的延迟时间不对"><a href="#他读和写的延迟时间不对" class="headerlink" title="他读和写的延迟时间不对"></a>他读和写的延迟时间不对</h2><p><img src="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" class="lazyload placeholder" data-srcset="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="屏幕截图 2022-01-24 135205"></p>
-<h2 id="所以考试的时候，给的驱动会出这种类似的问题吗？"><a href="#所以考试的时候，给的驱动会出这种类似的问题吗？" class="headerlink" title="所以考试的时候，给的驱动会出这种类似的问题吗？"></a>所以考试的时候，给的驱动会出这种类似的问题吗？</h2>]]></content>
-      <categories>
-        <category>单片机</category>
-      </categories>
-      <tags>
-        <tag>-蓝桥杯 -驱动</tag>
       </tags>
   </entry>
   <entry>
@@ -674,419 +1078,6 @@
       </tags>
   </entry>
   <entry>
-    <title>愿</title>
-    <url>/2021081418371/</url>
-    <content><![CDATA[<center>
-
- 愿百灵衔来
-一朵丁香
-为你增添
-淡淡芬芳
-
-<span id="more"></span>
-
-愿小溪流淌
-轻柔石块
-弹奏一曲民谣小调
-
-愿幼儿园的
-老旧滑梯
-有微风不厌
-常扫落叶
-
-
-愿小学的
-四层教师楼
-孩童奔跑，欢笑
-闹稚言
-
-
-愿初中的
-空心老树
-树皮粗糙
-记载岁月流逝
-叹！无常
-
-愿高中
-和那以后的以后
-那片云游过天边
-这人群路过彼此
-
-再见吧
-我喜欢的女孩
-百灵的丁香
-使你芬芳
-小溪的民谣
-使你宁静
-
-在这还不算太糟的世界里
-你会越来越好 </center>
-]]></content>
-      <tags>
-        <tag>落日飘绪</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>typora的使用</title>
-    <url>/2023050846583/</url>
-    <content><![CDATA[<h1 id="typora的使用"><a href="#typora的使用" class="headerlink" title="typora的使用"></a>typora的使用</h1><h2 id="MD语法总结"><a href="#MD语法总结" class="headerlink" title="MD语法总结"></a>MD语法总结</h2><span id="more"></span>
-<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">无序列表：- + 空格</span><br><span class="line">有序列表：1. + 空格</span><br><span class="line">引用：&gt; + 空格</span><br><span class="line">标题：ctrl + 数字</span><br><span class="line">表格：ctrl + t</span><br><span class="line">生成目录：[TOC] + 回车</span><br><span class="line">选中一整行：ctrl + l</span><br><span class="line">选中单词：ctrl + d</span><br><span class="line">选中相同格式的文字：ctrl + e</span><br><span class="line">跳转到文章开头：ctrl + home</span><br><span class="line">跳转到文章结尾：ctrl + end</span><br><span class="line">搜索：ctrl + f</span><br><span class="line">替换：ctrl + h</span><br><span class="line">加粗：ctrl + b</span><br><span class="line">倾斜：ctrl + i</span><br><span class="line">下划线：ctrl + u</span><br><span class="line">删除线：alt + shift + 5</span><br><span class="line">插入图片：直接拖动到指定位置即可或者ctrl + shift + i</span><br><span class="line">插入链接：ctrl + k</span><br></pre></td></tr></table></figure>
-<p>见<a href="#zs">展示</a></p>
-<h2 id="公式Mathjax语法总结"><a href="#公式Mathjax语法总结" class="headerlink" title="公式Mathjax语法总结"></a><a href="https://blog.csdn.net/ajacker/article/details/80301378">公式Mathjax语法总结</a></h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>语法</th>
-<th>展示</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. 行内公式:使用<script type="math/tex">…</script>定义，此时公式在一行内显示</td>
-<td>和的公式$a+b$</td>
-</tr>
-<tr>
-<td>2. <a href="#xlzf">希腊字符</a>如果要大写,首字母大写,<a href="https://blog.csdn.net/liyuanbhu/article/details/50636416">其他符号</a></td>
-<td>$\alpha\Alpha$</td>
-</tr>
-<tr>
-<td>3. 上下标<script type="math/tex">A^2_i</script></td>
-<td>$A^2_i$</td>
-</tr>
-<tr>
-<td>4. 空格<code>\qaud</code></td>
-<td>$a\quad b$</td>
-</tr>
-<tr>
-<td>5. <a href="#fz">分组和括号</a></td>
-<td>$(..) \ [..] \ {..} \ \langle …$</td>
-</tr>
-<tr>
-<td>6. <a href="#运算符">运算符</a></td>
-<td></td>
-</tr>
-<tr>
-<td>7. 积分符号<script type="math/tex">\int</script>和,<a href="https://www.jianshu.com/p/8aa646fad1c5">导数相关符号 </a></td>
-<td>$\int$</td>
-</tr>
-<tr>
-<td>8.<a href="https://blog.csdn.net/liyuanbhu/article/details/51473886">(各种箭头符号)_</a></td>
-<td></td>
-</tr>
-<tr>
-<td>9. <a href="https://www.mohu.org/info/symbols/symbols.htm">一些总结</a></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h3 id="展示"><a href="#展示" class="headerlink" title="展示 "></a><a id="zs">展示 </a></h3><ul>
-<li><p><strong>加粗： <code>Ctrl + B</code></strong></p>
-</li>
-<li><p>撤销： <code>Ctrl + Z</code></p>
-</li>
-<li><p><em>字体倾斜 ：<code>Ctrl+I</code></em></p>
-</li>
-<li><p><u>下划线：<code>Ctrl+U</code></u></p>
-</li>
-<li><p>多级标题： <code>Ctrl + 1~6</code></p>
-</li>
-<li><p>有序列表：<code>Ctrl + Shift + [</code></p>
-</li>
-<li><p>无序列表：<code>Ctrl + Shift + ]</code></p>
-<ul>
-<li>降级快捷键 ：<code>Tab</code></li>
-</ul>
-</li>
-<li><p>升级快捷键：<code>Shift + Tab</code></p>
-</li>
-<li><p><a href="baidu.com">插入链接： <code>Ctrl + K</code></a></p>
-</li>
-<li><script type="math/tex; mode=display">
-插入公式： Ctrl + Shift + M</script></li>
-</ul>
-<ul>
-<li><pre><code class="lang-c">行内代码： Ctrl + Shift + K
-</code></pre>
-</li>
-</ul>
-<ul>
-<li><p>“插入图片： <code>Ctrl + Shift + I</code><img src="https://gitee.com/xqyr/img/raw/master/typora-icon.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/master/typora-icon.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" a style="zoom:25%;"></p>
-</li>
-<li><p>返回Typora顶部：<code>Ctrl+Home</code></p>
-</li>
-<li><p>返回Typora底部 ：<code>Ctrl+End</code></p>
-</li>
-<li><p>| 创建表格 | ctrl+T |<br>| ———— | :——: |</p>
-</li>
-<li><p>选中某句话 ：<code>Ctrl+L</code></p>
-</li>
-<li><p>选中某个单词 ：<code>Ctrl+D</code></p>
-</li>
-<li><p>选中相同格式的文字 ：<code>Ctrl+E</code></p>
-</li>
-<li><p>搜索: <code>Ctrl+F</code></p>
-</li>
-<li><p>搜索并替换 ：<code>Ctrl+H</code></p>
-</li>
-<li><p><del>删除线 ：<code>Alt+Shift+5</code></del></p>
-</li>
-<li><blockquote>
-<p>引用 ：<code>Ctrl+Shift+Q</code></p>
-</blockquote>
-</li>
-<li><p>生成目录：[TOC]+Enter</p>
-</li>
-</ul>
-<h2 id="CSS和html"><a href="#CSS和html" class="headerlink" title="CSS和html"></a>CSS和html</h2><blockquote>
-<h2 id="一些参考表"><a href="#一些参考表" class="headerlink" title="一些参考表"></a>一些参考表</h2><h4 id="希腊字符表"><a href="#希腊字符表" class="headerlink" title="希腊字符表"></a><a id="xlzf">希腊字符表</a></h4></blockquote>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>显示</th>
-<th>命令</th>
-<th>显示</th>
-<th>命令</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>α</td>
-<td>\alpha</td>
-<td>β</td>
-<td>\beta</td>
-</tr>
-<tr>
-<td>γ</td>
-<td>\gamma</td>
-<td>$\Delta$δ</td>
-<td>\delta</td>
-</tr>
-<tr>
-<td>ϵ</td>
-<td>\epsilon</td>
-<td>ζ</td>
-<td>\zeta</td>
-</tr>
-<tr>
-<td>η</td>
-<td>\eta</td>
-<td>θ</td>
-<td>\theta</td>
-</tr>
-<tr>
-<td>ι</td>
-<td>\iota</td>
-<td>κ</td>
-<td>\kappa</td>
-</tr>
-<tr>
-<td>$\Lambda$λ</td>
-<td>\lambda</td>
-<td>μ</td>
-<td>\mu</td>
-</tr>
-<tr>
-<td>ν</td>
-<td>\nu</td>
-<td>ξ</td>
-<td>\xi</td>
-</tr>
-<tr>
-<td>π</td>
-<td>\pi</td>
-<td>ρ</td>
-<td>\rho</td>
-</tr>
-<tr>
-<td>σ</td>
-<td>\sigma</td>
-<td>τ</td>
-<td>\tau</td>
-</tr>
-<tr>
-<td>υ</td>
-<td>\upsilon</td>
-<td>ϕ</td>
-<td>\phi</td>
-</tr>
-<tr>
-<td>χ</td>
-<td>\chi</td>
-<td>ψ</td>
-<td>\psi</td>
-</tr>
-<tr>
-<td>ω</td>
-<td>\omega</td>
-<td>—</td>
-<td>—</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p> α  阿尔法， β 贝塔， γ 伽玛，δ 德尔塔， ε 伊普西隆， ζ 泽塔， η 伊塔， θ 西塔， ι 约塔， κ 卡帕， λ 兰姆达，μ 米欧 ，ν 纽， ξ 克西， ο 欧米克隆， π 派， ρ 柔 ，σ 西格玛， τ 陶 ，υ 玉普西隆， φ 弗爱， χ 凯， ψ 普赛 。</p>
-<blockquote>
-<h4 id="分组和括号"><a href="#分组和括号" class="headerlink" title="分组和括号"></a><a id="fz">分组和括号</a></h4></blockquote>
-<ul>
-<li>使用<code>&#123;&#125;</code>将同一级的括在一起，成组处理</li>
-<li>举例:<code>x_i^2</code>显示为x i 2 x<em>i^2<em>x**i</em>2，而`x</em>{i^2}`显示为x i 2 x_{i^2}<em>x**i</em>2<br>###1.2.4括号</li>
-<li>小括号:<code>(...)</code>显示为( . . . ) (…)(…)</li>
-<li>中括号:<code>[...]</code>显示为[ . . . ] […][…]</li>
-<li><p>大括号:<code>\&#123;...\&#125;</code><a href="https://blog.csdn.net/ajacker/article/details/80301378#fn1">1</a>显示为{ . . . } {…}{…}</p>
-</li>
-<li><p>尖括号：<code>\langle ... \rangle</code></p>
-</li>
-<li><p>绝对值：`\vert … \ver</p>
-</li>
-<li><p>双竖线：<code>\Vert ... \Vert</code></p>
-</li>
-<li><p>使用<code>\left</code>和<code>\right</code>使符号大小与邻近的公式相适应,该语句适用于所有括号类型。<code>变大括号</code></p>
-<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a><a id="ysf">运算符</a></h4></li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>运算符</th>
-<th style="text-align:left">说明</th>
-<th style="text-align:center">应用举例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>+</td>
-<td style="text-align:left">加</td>
-<td style="text-align:center">$x + y x+y<em>x</em>+<em>y</em>$</td>
-</tr>
-<tr>
-<td>-</td>
-<td style="text-align:left">减</td>
-<td style="text-align:center">x − y</td>
-</tr>
-<tr>
-<td>\times</td>
-<td style="text-align:left">叉乘</td>
-<td style="text-align:center">x × y</td>
-</tr>
-<tr>
-<td>\cdot</td>
-<td style="text-align:left">点乘</td>
-<td style="text-align:center">x ⋅ y</td>
-</tr>
-<tr>
-<td>\ast(*)</td>
-<td style="text-align:left">星乘</td>
-<td style="text-align:center">x ∗ y</td>
-</tr>
-<tr>
-<td>\div</td>
-<td style="text-align:left">除</td>
-<td style="text-align:center">x ÷ y</td>
-</tr>
-<tr>
-<td>\pm</td>
-<td style="text-align:left">加减</td>
-<td style="text-align:center">x ± y</td>
-</tr>
-<tr>
-<td>\mp</td>
-<td style="text-align:left">减加</td>
-<td style="text-align:center"><em>x</em>∓<em>y</em></td>
-</tr>
-<tr>
-<td>=</td>
-<td style="text-align:left">等于</td>
-<td style="text-align:center">x = y</td>
-</tr>
-<tr>
-<td>\leq</td>
-<td style="text-align:left">小于等于</td>
-<td style="text-align:center">x ≤ y</td>
-</tr>
-<tr>
-<td>\geq</td>
-<td style="text-align:left">大于等于</td>
-<td style="text-align:center">x ≥ y</td>
-</tr>
-<tr>
-<td>\approx</td>
-<td style="text-align:left">约等于</td>
-<td style="text-align:center">x ≈ y</td>
-</tr>
-<tr>
-<td>\equiv</td>
-<td style="text-align:left">恒等于</td>
-<td style="text-align:center">x ≡ y</td>
-</tr>
-<tr>
-<td>\bigodot</td>
-<td style="text-align:left">定义运算符</td>
-<td style="text-align:center">x ⨀ y</td>
-</tr>
-<tr>
-<td>\bigtimes</td>
-<td style="text-align:left">定义运算符</td>
-<td style="text-align:center">x ⨂ y</td>
-</tr>
-<tr>
-<td>\neq</td>
-<td style="text-align:left">不等号</td>
-<td style="text-align:center">$x\neq y$</td>
-</tr>
-</tbody>
-</table>
-</div>
-]]></content>
-      <tags>
-        <tag>md</tag>
-        <tag>typora</tag>
-        <tag>mathjax</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>叙永是个什么地方</title>
-    <url>/2021081314161/</url>
-    <content><![CDATA[<p><em>起因是一则校园小广告。然后有了接下来的故事。</em></p>
-<p>叙永，一座位于泸州的县城。它的夏天同样热，甚至还能荣登高温地区榜单。叙永人对夏天的温柔。体现在我以前没喝过的凉虾，和每家餐馆的免费菜汤。凉虾对于我来说有些齁甜。每家餐馆的菜汤也只有一碗南瓜绿豆汤深得我心。但凉虾口感确实不错。而南瓜绿豆汤的免费和外面买五块一碗的绿豆汤相比也感动了我一瞬。<span id="more"></span></p>
-<p>叙永你能看到土坯房，瓦片房，小楼房和高楼房紧凑的挨在一起。这使你不得不感叹一个词——发展。然后就没有了。因为正当我想要以抖音思维解构这座城市的时候。支撑我的豪情就提前一步消散在这错落的城市各个角落。</p>
-<p>上街发传单。用修饰过的语言同学生和家长交流。对于我的心灵来说，确实没什么。况且我还偷懒。可是心气儿还是慢慢的流走了。那段时间回想起来可能有点傻。但还是值得的。</p>
-<p>我说过，因为一则广告。我经历一场不专业的面试，一场‘有些负责人都说的什么呀’的双选会。提起包，就来到了这里。从开始到结束。有的人来了，又走了。</p>
-<p>我送给了一个女孩礼物。想过要送给每个女孩一件礼物的。但是到最后只送了一个人。礼物还是贵了。至于男孩，如果想要一个大大的拥抱，也不是不可以。</p>
-<h2 id="快乐"><a href="#快乐" class="headerlink" title="快乐"></a>快乐</h2><p>在杨武坊的大桥上看着一位酷酷的小姐姐唱歌</p>
-<p>打乒乓球。</p>
-<p>工作的快乐对于我来说真的很难总结。但这份经历真的难得。或许我从这里明白了轻松的快乐。</p>
-<h2 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h2><p>有即使是最后一天特别忙，也没有去看看杨武坊那唱歌的小姐姐还在不在</p>
-<p>有到收拾东西了，才发现我一直寻找的充电器就在书包的侧包里</p>
-<p>有和唐老师说要再瞅她一眼，却没回头的走向车站。以至于走错了方向</p>
-<p>有一直吃魏老师和胡老师的cp。但是晚餐却没有以开玩笑的样子说出来</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>想写些什么，又写不出什么东西。就像那天，我把头发剪了。之后却无所事事。</p>
-]]></content>
-      <tags>
-        <tag>落日飘绪</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>电路分析基础(上册 - 第二篇)</title>
     <url>/2023050812059/</url>
     <content><![CDATA[<h1 id="电路分析基础-上册"><a href="#电路分析基础-上册" class="headerlink" title="电路分析基础(上册 )"></a>电路分析基础(上册 )</h1><h2 id="第二篇-动态电路的时域分析"><a href="#第二篇-动态电路的时域分析" class="headerlink" title="第二篇    动态电路的时域分析"></a>第二篇    动态电路的时域分析</h2><span id="more"></span>
@@ -1179,6 +1170,181 @@ y(t)=y(\infty)+ \left[ y(0_{+})-y(\infty)\right] e^{- \frac{t}{\tau}}\\
 <h4 id="正弦激励的过度过程和稳态-p-227"><a href="#正弦激励的过度过程和稳态-p-227" class="headerlink" title="正弦激励的过度过程和稳态 p_227"></a>正弦激励的过度过程和稳态 <em>p_227</em></h4><p>随时间按正弦规律变化的电压和电流称为正弦交流电压和电流，它们都属正弦波。正弦波是周期波形的基本形式 。</p>
 <script type="math/tex; mode=display">
 u(t)=U_m \ cos^{(wt+\psi)} = U_m \ cos^{(2\pi ft+\psi)}</script><h3 id="第七章-二阶电路"><a href="#第七章-二阶电路" class="headerlink" title="第七章 二阶电路"></a>第七章 二阶电路</h3><h4 id="LC电路中的正弦震荡"><a href="#LC电路中的正弦震荡" class="headerlink" title="LC电路中的正弦震荡"></a>LC电路中的正弦震荡</h4><h4 id="RLC串联电路的零输入响应"><a href="#RLC串联电路的零输入响应" class="headerlink" title="RLC串联电路的零输入响应"></a>RLC串联电路的零输入响应</h4><h4 id="RLC串联电路的全响应"><a href="#RLC串联电路的全响应" class="headerlink" title="RLC串联电路的全响应"></a>RLC串联电路的全响应</h4><h4 id="GCL并联电路分析"><a href="#GCL并联电路分析" class="headerlink" title="GCL并联电路分析"></a>GCL并联电路分析</h4>]]></content>
+      <tags>
+        <tag>考研</tag>
+        <tag>电路分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯问题</title>
+    <url>/2022012412972/</url>
+    <content><![CDATA[<h2 id="大家好，我想问个事情。比赛的时候驱动会出问题吗"><a href="#大家好，我想问个事情。比赛的时候驱动会出问题吗" class="headerlink" title="大家好，我想问个事情。比赛的时候驱动会出问题吗"></a>大家好，我想问个事情。比赛的时候驱动会出问题吗</h2><h2 id="我在网上找了一个2021数据包。下面这个。"><a href="#我在网上找了一个2021数据包。下面这个。" class="headerlink" title="我在网上找了一个2021数据包。下面这个。"></a>我在网上找了一个2021数据包。下面这个。</h2><h2 id="但是我发现他的驱动有点问题。ds18b20他是这么写的"><a href="#但是我发现他的驱动有点问题。ds18b20他是这么写的" class="headerlink" title="但是我发现他的驱动有点问题。ds18b20他是这么写的"></a>但是我发现他的驱动有点问题。ds18b20他是这么写的</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  程序说明: 单总线驱动程序</span></span><br><span class="line"><span class="comment">  软件环境: Keil uVision 4.10 </span></span><br><span class="line"><span class="comment">  硬件环境: CT107单片机综合实训平台(外部晶振12MHz) STC89C52RC单片机</span></span><br><span class="line"><span class="comment">  日    期: 2011-8-9</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;reg52.h&quot;</span></span></span><br><span class="line"></span><br><span class="line">sbit DQ = P1^<span class="number">4</span>;  <span class="comment">//单总线接口</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//单总线延时函数</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Delay_OneWire</span><span class="params">(<span class="type">unsigned</span> <span class="type">int</span> t)</span>  <span class="comment">//STC89C52RC</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">while</span>(t--);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//通过单总线向DS18B20写一个字节</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">Write_DS18B20</span><span class="params">(<span class="type">unsigned</span> <span class="type">char</span> dat)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		DQ = dat&amp;<span class="number">0x01</span>;</span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//从DS18B20读取一个字节</span></span><br><span class="line"><span class="type">unsigned</span> <span class="type">char</span> <span class="title function_">Read_DS18B20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> i;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> dat;</span><br><span class="line">  </span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;<span class="number">8</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		DQ = <span class="number">0</span>;</span><br><span class="line">		dat &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		DQ = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span>(DQ)</span><br><span class="line">		&#123;</span><br><span class="line">			dat |= <span class="number">0x80</span>;</span><br><span class="line">		&#125;	    </span><br><span class="line">		Delay_OneWire(<span class="number">5</span>);<span class="comment">//有问题</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dat;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//DS18B20设备初始化</span></span><br><span class="line">bit <span class="title function_">init_ds18b20</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  	bit initflag = <span class="number">0</span>;</span><br><span class="line">  	</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">60</span>);</span><br><span class="line">  	DQ = <span class="number">0</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">480</span>);</span><br><span class="line">  	DQ = <span class="number">1</span>;</span><br><span class="line">  	Delay_OneWire(<span class="number">120</span>); </span><br><span class="line">    initflag = DQ;     </span><br><span class="line">  	Delay_OneWire(<span class="number">5</span>);</span><br><span class="line">  </span><br><span class="line">  	<span class="keyword">return</span> initflag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="他读和写的延迟时间不对"><a href="#他读和写的延迟时间不对" class="headerlink" title="他读和写的延迟时间不对"></a>他读和写的延迟时间不对</h2><p><img src="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" class="lazyload placeholder" data-srcset="/2022012412972/Pictures/Saved%20Pictures/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202022-01-24%20135205.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="屏幕截图 2022-01-24 135205"></p>
+<h2 id="所以考试的时候，给的驱动会出这种类似的问题吗？"><a href="#所以考试的时候，给的驱动会出这种类似的问题吗？" class="headerlink" title="所以考试的时候，给的驱动会出这种类似的问题吗？"></a>所以考试的时候，给的驱动会出这种类似的问题吗？</h2>]]></content>
+      <categories>
+        <category>单片机</category>
+      </categories>
+      <tags>
+        <tag>-蓝桥杯 -驱动</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电路分析基础(下册 - 第三篇)</title>
+    <url>/2023050823943/</url>
+    <content><![CDATA[<h1 id="第三篇-动态电路的相量分析法和-S-域分析法"><a href="#第三篇-动态电路的相量分析法和-S-域分析法" class="headerlink" title="第三篇    动态电路的相量分析法和$S$域分析法"></a>第三篇    动态电路的相量分析法和$S$域分析法</h1><span id="more"></span>
+<h2 id="第八章-阻抗和导纳"><a href="#第八章-阻抗和导纳" class="headerlink" title="第八章 阻抗和导纳"></a>第八章 阻抗和导纳</h2><h3 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h3><p><img src="https://gitee.com/xqyr/img/raw/img/20221011220914.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221011220914.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="复数"></p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+&A=a\cos\theta+ja\sin\theta=ae^{j\theta}=a\angle\theta\\
+&运算法则:\\
+&R_e\ A = R e ( a _ { 1 } + j a _ { 2 } ) = a _ { 1 }\\
+&Im\ A = I m ( a _ { 1 } + j a _ { 2 } ) = a _ { 2 }
+\end{aligned}</script><h3 id="振幅向量"><a href="#振幅向量" class="headerlink" title="振幅向量"></a>振幅向量</h3><script type="math/tex; mode=display">
+\begin{aligned}
+有正弦向量u ( t ) 
+&= U _ { m } \cos ( \omega t + \psi )\\
+&=Re\left[U_me^{j(\omega t+\psi)}\right]\\
+&=Re\left(U_me^{j\psi}e^{j\omega t}\right)\\
+&=Re(\stackrel{\cdotp}U_{m}\angle \omega t)\\
+(其中:\ \stackrel{\cdot}{U}=U_me^{j\omega}=&U_m\angle\psi\ 叫做电压振幅相量)
+\end{aligned}</script><h3 id="向量线性性质"><a href="#向量线性性质" class="headerlink" title="向量线性性质"></a>向量线性性质</h3><p>表示若干个同频率正弦量（可带有实系数）线性组舍的相量<strong>等于</strong>表示各个正弦量的相量的同一线性组合。亦即，如设正弦量为</p>
+<script type="math/tex; mode=display">
+f_{1}(t)=Re(\dot{A}_{1}e^{j \omega t}),f_{2}(t)=Re(\dot{A}_{2}e^{i \omega t})</script><p>举例:</p>
+<p>​    设$a_1$和,$a_2$为两个实数，则正弦量了$a_1f_1(t)$和$a_2f_2(t)$可用相量$\alpha_1\stackrel{\cdot}{A_1}$+$\alpha_2\stackrel{\cdot}{A_2}$表示</p>
+<h3 id="基尔霍夫定理"><a href="#基尔霍夫定理" class="headerlink" title="基尔霍夫定理"></a>基尔霍夫定理</h3><script type="math/tex; mode=display">
+\begin{aligned}
+&\sum_{k=1}^{k}i_{k}= \sum _{k=1}^{k}Re(\dot I_{km}e^{j \omega t})=0\\
+&\Rightarrow \sum_{k=1}^k\dot I_{km}=0;\\
+&同理\sum_{k=1}^k\dot U_{km}=0;
+\end{aligned}</script><p>列题P_14 8-5</p>
+<h3 id="三种基本电路元件VCR-的相量形式"><a href="#三种基本电路元件VCR-的相量形式" class="headerlink" title="三种基本电路元件VCR 的相量形式"></a>三种基本电路元件VCR 的相量形式</h3><h5 id="阻抗Z"><a href="#阻抗Z" class="headerlink" title="阻抗Z:"></a>阻抗Z:</h5><ul>
+<li><p>电抗:$Z=jX;X=Im[Z]$</p>
+</li>
+<li><p>$z=|z|\angle\phi$</p>
+</li>
+<li><p>$Z=\frac {\dot U}{\dot I}=\frac {U\angle\phi_u}{I\angle\phi_i}=R(\angle\phi_u-\angle\phi_i)$</p>
+</li>
+<li></li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>元件</th>
+<th>时域</th>
+<th>相量</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—-</td>
+<td>$u=u_mcos(\omega t+\phi)$</td>
+<td>$\dot U_m=U_m\angle{\phi_u}$</td>
+<td></td>
+</tr>
+<tr>
+<td>—-</td>
+<td>$i=\sqrt2 i(\omega t+\phi)$</td>
+<td>$\dot I_m=\sqrt2I\angle{\phi_i}$</td>
+<td></td>
+</tr>
+<tr>
+<td>电阻R</td>
+<td>$u=R\cdot i$</td>
+<td>$Z_R=R=\frac {\dot U}{\dot I}$</td>
+<td>$\angle\phi<em>{uR}=\angle\phi</em>{IR}$</td>
+</tr>
+<tr>
+<td>电容C</td>
+<td>$i_c=C\frac {du_c(t)}{dt}$</td>
+<td>$Z_C=\frac 1{j\omega c}=\frac {\dot U_c}{\dot I_c}$</td>
+<td>$\angle\phi<em>{uc}-\angle\phi</em>{Ic}=-90^{\circ}$</td>
+</tr>
+<tr>
+<td>电感L</td>
+<td>$U_L=L\cdot\frac {dl_l{t}}{dt}$</td>
+<td>$Z_L=j\omega L=\frac {\dot U_L}{\dot I_L}$</td>
+<td>$\angle\phi<em>{uL}-\angle\phi</em>{IL}=90^{\circ}$</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>P_27</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="时域与相量"></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204905.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204905.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="相量图"></p>
+<h2 id="第九章-正弦稳态功率和能量"><a href="#第九章-正弦稳态功率和能量" class="headerlink" title="第九章    正弦稳态功率和能量"></a>第九章    正弦稳态功率和能量</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名字</th>
+<th>计算公式</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>平均功率</td>
+<td>$P=UIcos\phi(注：\phi为电压电流的相位差，UI都为模)$</td>
+<td>瓦特w</td>
+</tr>
+<tr>
+<td>无功功率</td>
+<td>$Q=UI\sin \phi$</td>
+<td>乏var</td>
+</tr>
+<tr>
+<td>视在功率</td>
+<td>$S=UI=\sqrt {P^2+Q^2}$</td>
+<td>$伏安V\cdot A$</td>
+</tr>
+<tr>
+<td><a href="#fgl">复功率</a></td>
+<td>$\stackrel {\sim}{S}=\dot U\dot {I^*}=P+jQ=j2\omega(W_L-W_C)$</td>
+<td>证明P_87</td>
+</tr>
+<tr>
+<td>功率因数</td>
+<td>$\lambda=\frac P S=cos\phi$</td>
+<td>$\phi&gt;0$电容性</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a id="fgl">复功率</a></p>
+<p><strong>复功率</strong>的实部P应为网络中各电阻元件消耗功率的总和，虚部Q应为网络中各动态元件无功功率的代数和，且$W_L$应为网络中所有电感储能平均值的总和，$W_C$应为网络中所有电容储能平均值的总和。这一关系称为复功率守恒。</p>
+<h2 id="最大功率"><a href="#最大功率" class="headerlink" title="最大功率"></a>最大功率</h2><p>负载载电阻获得<strong>最大功率的条件取决于</strong>电路内何者为定值、何者为变量。</p>
+<ol>
+<li><p>当负载的电阻及电抗均可独立地变化；</p>
+<ul>
+<li>负载获得最大功率的条件是：$X_L=-X_S以及R_L=R_S。$也就是<strong>负载阻抗为电源内阻抗的共轭复数。</strong></li>
+</ul>
+<script type="math/tex; mode=display">
+ \begin{split}
+   Z_L=Z_S^* \\
+   P_{Lmax}=\frac {U_s^2}{4R_S}
+\end{split}</script></li>
+</ol>
+<ol>
+<li>载阻抗角固定而模可改变。</li>
+</ol>
+<p>负载获得最大功率的条件是：<strong>负载阻抗的模</strong>应与<strong>电源内阻抗的模</strong>相等，称为模匹配。当负载是纯电阻时，即$|Z|=R_L$        时，最大功率的条件是$R_L=\sqrt {R^2_s+X^2_s}$而不是$R_L=R_S$,这是应当注意的。显然，在这一情祝下所得</p>
+<h2 id="零状态响应条件下S域元件模型"><a href="#零状态响应条件下S域元件模型" class="headerlink" title="零状态响应条件下S域元件模型)"></a><a href="(https://www.jianshu.com/p/2e70ee35a7ed">零状态响应条件下S域元件模型</a>)</h2><p>★时域电路变换为S域电路模型后，电路中的<strong>电阻</strong>R、电容C、电感L<strong>均等效为电阻来计算</strong>，电阻值分别为R、$\frac 1{sC}$、sL，电压源、<strong>电流源直接写作变换式。</strong></p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/20221019180628.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221019180628.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
+<p>相关连接:</p>
+<p>​    <a href="https://www.jianshu.com/p/a756f397783f">https://www.jianshu.com/p/a756f397783f</a></p>
+<h2 id="功率"><a href="#功率" class="headerlink" title="功率"></a>功率</h2>]]></content>
       <tags>
         <tag>考研</tag>
         <tag>电路分析</tag>
@@ -1354,18 +1520,6 @@ P_{max} = \frac {u_{oc}^2}{4R_o}</script><h4 id="方法"><a href="#方法" class
       </tags>
   </entry>
   <entry>
-    <title>发动机原理-参数篇</title>
-    <url>/2021101116575/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>发动机原理</category>
-      </categories>
-      <tags>
-        <tag>汽车构造</tag>
-        <tag>发动机</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>考研数二_线代</title>
     <url>/2023050835597/</url>
     <content><![CDATA[<h2 id><a href="#" class="headerlink" title=" "></a> </h2><h1 id="题型解法"><a href="#题型解法" class="headerlink" title="题型解法"></a>题型解法</h1><h2 id="求线性方程组的解"><a href="#求线性方程组的解" class="headerlink" title="求线性方程组的解"></a>求线性方程组的解</h2><h3 id="齐次方程组的通解"><a href="#齐次方程组的通解" class="headerlink" title="齐次方程组的通解"></a>齐次方程组的通解</h3><p>形式$Ax=0;$</p>
@@ -1526,207 +1680,6 @@ f(x)=x^TAx;\stackrel {可逆线性变换x=cy}\Rightarrow y^T(C^TAC)y\\
         <tag>考研</tag>
         <tag>数学</tag>
         <tag>线代</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>变速器认识</title>
-    <url>/2021092936547/</url>
-    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291711188.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291711188.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="变速器认识"></p>
-<h1 id="变速器"><a href="#变速器" class="headerlink" title="变速器"></a>变速器</h1><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><h3 id="操纵机构"><a href="#操纵机构" class="headerlink" title="操纵机构"></a>操纵机构</h3><h4 id="远距离换挡"><a href="#远距离换挡" class="headerlink" title="远距离换挡"></a>远距离换挡</h4><p>在有些汽车上，由于变速器离驾驶员座位较远，则需要在<font color="cornflowerblue">变速杆</font>与<font color="cornflowerblue">拨叉</font>之间加装一些<font color="cornflowerblue">辅助杠杆</font>或<font color="cornflowerblue">一套传动机构</font>，构成远距离操纵机构。这种操纵机构多用于发动机<font color="cornflowerblue">前置前轮驱动</font>的汽车，如桑塔纳2000汽车的五档手动变速器，由于其变速器安装在前驱动桥处，远离驾驶员座椅，需要采用这种操纵方式，如图3－42所示。</p>
-<p align="right"><font color="orange">--- 《手动变速器换挡结构图》</font></p>
-
-<p><img src="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291934266.jpeg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291934266.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="手动变速器换挡机构结构图"></p>
-<h3 id="安全装置"><a href="#安全装置" class="headerlink" title="安全装置"></a>安全装置</h3><p><font color="cornflowerblue">自锁装置</font>都是采用自锁钢球对拨叉轴进行<font color="cornflowerblue">轴向定位</font>锁止</p>
-<p><font color="cornflowerblue">互锁装置</font>用于防止同时挂上两个档位。如图3－46所示，互锁装置由互锁钢球和互锁销组成。</p>
-<p><font color="cornflowerblue">倒档锁</font>装置用于防止误挂倒档</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291955435.jpeg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291955435.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="手动变速器换挡机构结构图"></p>
-<p align="right"><font color="orange">--- 《手动变速器换挡结构图》</font></p>
-
-<h2 id="参考连接"><a href="#参考连接" class="headerlink" title="参考连接"></a>参考连接</h2><p><a href="https://www.qcwxjs.com/shoudongbianshuqi/12391.html">手动变速器换挡机构结构图</a></p>
-]]></content>
-      <categories>
-        <category>汽车构造</category>
-      </categories>
-      <tags>
-        <tag>汽车构造</tag>
-        <tag>变速器</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电路分析基础(下册 - 第三篇)</title>
-    <url>/2023050823943/</url>
-    <content><![CDATA[<h1 id="第三篇-动态电路的相量分析法和-S-域分析法"><a href="#第三篇-动态电路的相量分析法和-S-域分析法" class="headerlink" title="第三篇    动态电路的相量分析法和$S$域分析法"></a>第三篇    动态电路的相量分析法和$S$域分析法</h1><span id="more"></span>
-<h2 id="第八章-阻抗和导纳"><a href="#第八章-阻抗和导纳" class="headerlink" title="第八章 阻抗和导纳"></a>第八章 阻抗和导纳</h2><h3 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h3><p><img src="https://gitee.com/xqyr/img/raw/img/20221011220914.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221011220914.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="复数"></p>
-<script type="math/tex; mode=display">
-\begin{aligned}
-&A=a\cos\theta+ja\sin\theta=ae^{j\theta}=a\angle\theta\\
-&运算法则:\\
-&R_e\ A = R e ( a _ { 1 } + j a _ { 2 } ) = a _ { 1 }\\
-&Im\ A = I m ( a _ { 1 } + j a _ { 2 } ) = a _ { 2 }
-\end{aligned}</script><h3 id="振幅向量"><a href="#振幅向量" class="headerlink" title="振幅向量"></a>振幅向量</h3><script type="math/tex; mode=display">
-\begin{aligned}
-有正弦向量u ( t ) 
-&= U _ { m } \cos ( \omega t + \psi )\\
-&=Re\left[U_me^{j(\omega t+\psi)}\right]\\
-&=Re\left(U_me^{j\psi}e^{j\omega t}\right)\\
-&=Re(\stackrel{\cdotp}U_{m}\angle \omega t)\\
-(其中:\ \stackrel{\cdot}{U}=U_me^{j\omega}=&U_m\angle\psi\ 叫做电压振幅相量)
-\end{aligned}</script><h3 id="向量线性性质"><a href="#向量线性性质" class="headerlink" title="向量线性性质"></a>向量线性性质</h3><p>表示若干个同频率正弦量（可带有实系数）线性组舍的相量<strong>等于</strong>表示各个正弦量的相量的同一线性组合。亦即，如设正弦量为</p>
-<script type="math/tex; mode=display">
-f_{1}(t)=Re(\dot{A}_{1}e^{j \omega t}),f_{2}(t)=Re(\dot{A}_{2}e^{i \omega t})</script><p>举例:</p>
-<p>​    设$a_1$和,$a_2$为两个实数，则正弦量了$a_1f_1(t)$和$a_2f_2(t)$可用相量$\alpha_1\stackrel{\cdot}{A_1}$+$\alpha_2\stackrel{\cdot}{A_2}$表示</p>
-<h3 id="基尔霍夫定理"><a href="#基尔霍夫定理" class="headerlink" title="基尔霍夫定理"></a>基尔霍夫定理</h3><script type="math/tex; mode=display">
-\begin{aligned}
-&\sum_{k=1}^{k}i_{k}= \sum _{k=1}^{k}Re(\dot I_{km}e^{j \omega t})=0\\
-&\Rightarrow \sum_{k=1}^k\dot I_{km}=0;\\
-&同理\sum_{k=1}^k\dot U_{km}=0;
-\end{aligned}</script><p>列题P_14 8-5</p>
-<h3 id="三种基本电路元件VCR-的相量形式"><a href="#三种基本电路元件VCR-的相量形式" class="headerlink" title="三种基本电路元件VCR 的相量形式"></a>三种基本电路元件VCR 的相量形式</h3><h5 id="阻抗Z"><a href="#阻抗Z" class="headerlink" title="阻抗Z:"></a>阻抗Z:</h5><ul>
-<li><p>电抗:$Z=jX;X=Im[Z]$</p>
-</li>
-<li><p>$z=|z|\angle\phi$</p>
-</li>
-<li><p>$Z=\frac {\dot U}{\dot I}=\frac {U\angle\phi_u}{I\angle\phi_i}=R(\angle\phi_u-\angle\phi_i)$</p>
-</li>
-<li></li>
-</ul>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>元件</th>
-<th>时域</th>
-<th>相量</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>—-</td>
-<td>$u=u_mcos(\omega t+\phi)$</td>
-<td>$\dot U_m=U_m\angle{\phi_u}$</td>
-<td></td>
-</tr>
-<tr>
-<td>—-</td>
-<td>$i=\sqrt2 i(\omega t+\phi)$</td>
-<td>$\dot I_m=\sqrt2I\angle{\phi_i}$</td>
-<td></td>
-</tr>
-<tr>
-<td>电阻R</td>
-<td>$u=R\cdot i$</td>
-<td>$Z_R=R=\frac {\dot U}{\dot I}$</td>
-<td>$\angle\phi<em>{uR}=\angle\phi</em>{IR}$</td>
-</tr>
-<tr>
-<td>电容C</td>
-<td>$i_c=C\frac {du_c(t)}{dt}$</td>
-<td>$Z_C=\frac 1{j\omega c}=\frac {\dot U_c}{\dot I_c}$</td>
-<td>$\angle\phi<em>{uc}-\angle\phi</em>{Ic}=-90^{\circ}$</td>
-</tr>
-<tr>
-<td>电感L</td>
-<td>$U_L=L\cdot\frac {dl_l{t}}{dt}$</td>
-<td>$Z_L=j\omega L=\frac {\dot U_L}{\dot I_L}$</td>
-<td>$\angle\phi<em>{uL}-\angle\phi</em>{IL}=90^{\circ}$</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>P_27</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204750.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204750.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="时域与相量"></p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20221014204905.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221014204905.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="相量图"></p>
-<h2 id="第九章-正弦稳态功率和能量"><a href="#第九章-正弦稳态功率和能量" class="headerlink" title="第九章    正弦稳态功率和能量"></a>第九章    正弦稳态功率和能量</h2><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>名字</th>
-<th>计算公式</th>
-<th>单位</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>平均功率</td>
-<td>$P=UIcos\phi(注：\phi为电压电流的相位差，UI都为模)$</td>
-<td>瓦特w</td>
-</tr>
-<tr>
-<td>无功功率</td>
-<td>$Q=UI\sin \phi$</td>
-<td>乏var</td>
-</tr>
-<tr>
-<td>视在功率</td>
-<td>$S=UI=\sqrt {P^2+Q^2}$</td>
-<td>$伏安V\cdot A$</td>
-</tr>
-<tr>
-<td><a href="#fgl">复功率</a></td>
-<td>$\stackrel {\sim}{S}=\dot U\dot {I^*}=P+jQ=j2\omega(W_L-W_C)$</td>
-<td>证明P_87</td>
-</tr>
-<tr>
-<td>功率因数</td>
-<td>$\lambda=\frac P S=cos\phi$</td>
-<td>$\phi&gt;0$电容性</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><a id="fgl">复功率</a></p>
-<p><strong>复功率</strong>的实部P应为网络中各电阻元件消耗功率的总和，虚部Q应为网络中各动态元件无功功率的代数和，且$W_L$应为网络中所有电感储能平均值的总和，$W_C$应为网络中所有电容储能平均值的总和。这一关系称为复功率守恒。</p>
-<h2 id="最大功率"><a href="#最大功率" class="headerlink" title="最大功率"></a>最大功率</h2><p>负载载电阻获得<strong>最大功率的条件取决于</strong>电路内何者为定值、何者为变量。</p>
-<ol>
-<li><p>当负载的电阻及电抗均可独立地变化；</p>
-<ul>
-<li>负载获得最大功率的条件是：$X_L=-X_S以及R_L=R_S。$也就是<strong>负载阻抗为电源内阻抗的共轭复数。</strong></li>
-</ul>
-<script type="math/tex; mode=display">
- \begin{split}
-   Z_L=Z_S^* \\
-   P_{Lmax}=\frac {U_s^2}{4R_S}
-\end{split}</script></li>
-</ol>
-<ol>
-<li>载阻抗角固定而模可改变。</li>
-</ol>
-<p>负载获得最大功率的条件是：<strong>负载阻抗的模</strong>应与<strong>电源内阻抗的模</strong>相等，称为模匹配。当负载是纯电阻时，即$|Z|=R_L$        时，最大功率的条件是$R_L=\sqrt {R^2_s+X^2_s}$而不是$R_L=R_S$,这是应当注意的。显然，在这一情祝下所得</p>
-<h2 id="零状态响应条件下S域元件模型"><a href="#零状态响应条件下S域元件模型" class="headerlink" title="零状态响应条件下S域元件模型)"></a><a href="(https://www.jianshu.com/p/2e70ee35a7ed">零状态响应条件下S域元件模型</a>)</h2><p>★时域电路变换为S域电路模型后，电路中的<strong>电阻</strong>R、电容C、电感L<strong>均等效为电阻来计算</strong>，电阻值分别为R、$\frac 1{sC}$、sL，电压源、<strong>电流源直接写作变换式。</strong></p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/20221019180628.png" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/20221019180628.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt></p>
-<p>相关连接:</p>
-<p>​    <a href="https://www.jianshu.com/p/a756f397783f">https://www.jianshu.com/p/a756f397783f</a></p>
-<h2 id="功率"><a href="#功率" class="headerlink" title="功率"></a>功率</h2>]]></content>
-      <tags>
-        <tag>考研</tag>
-        <tag>电路分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>智能小车</title>
-    <url>/2023050825119/</url>
-    <content><![CDATA[<p><a href="归一化/归一化.md" title="归一化">归一化</a></p>
-<p>水平电感线圈对较远处道路状况相对比较敏感。水平方向的传感器对<strong>前方弯道非常敏感</strong>,有利于提前感知跑道的变化趋势,及早做出准确的控制策略。</p>
-<p>比列K：本文以偏差的二次幂作为比例系数来达到上述目的</p>
-<p>根据两水平电感的和值与差值可以比较容易判断小车在赛道所处的位置</p>
-<p>为提高小车平均速度，使其在较短的时间内完成预定的赛道，速度控制至关重要</p>
-<p><img src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电磁_pMnL-18-H8"></p>
-<p>为了保证“小曲率弯道使用较小的Kp,大曲率弯道相应地使用较大的Kp”的原则,本文以<strong>偏差的二次幂</strong>作为比例系数来达到上述目的。</p>
-]]></content>
-      <tags>
-        <tag>比赛，智能小车</tag>
       </tags>
   </entry>
   <entry>
@@ -2018,6 +1971,57 @@ p\leq1时,发散,\\
       </tags>
   </entry>
   <entry>
+    <title>发动机原理-参数篇</title>
+    <url>/2021101116575/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>发动机原理</category>
+      </categories>
+      <tags>
+        <tag>汽车构造</tag>
+        <tag>发动机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>变速器认识</title>
+    <url>/2021092936547/</url>
+    <content><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291711188.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291711188.png" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="变速器认识"></p>
+<h1 id="变速器"><a href="#变速器" class="headerlink" title="变速器"></a>变速器</h1><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><h3 id="操纵机构"><a href="#操纵机构" class="headerlink" title="操纵机构"></a>操纵机构</h3><h4 id="远距离换挡"><a href="#远距离换挡" class="headerlink" title="远距离换挡"></a>远距离换挡</h4><p>在有些汽车上，由于变速器离驾驶员座位较远，则需要在<font color="cornflowerblue">变速杆</font>与<font color="cornflowerblue">拨叉</font>之间加装一些<font color="cornflowerblue">辅助杠杆</font>或<font color="cornflowerblue">一套传动机构</font>，构成远距离操纵机构。这种操纵机构多用于发动机<font color="cornflowerblue">前置前轮驱动</font>的汽车，如桑塔纳2000汽车的五档手动变速器，由于其变速器安装在前驱动桥处，远离驾驶员座椅，需要采用这种操纵方式，如图3－42所示。</p>
+<p align="right"><font color="orange">--- 《手动变速器换挡结构图》</font></p>
+
+<p><img src="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291934266.jpeg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291934266.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="手动变速器换挡机构结构图"></p>
+<h3 id="安全装置"><a href="#安全装置" class="headerlink" title="安全装置"></a>安全装置</h3><p><font color="cornflowerblue">自锁装置</font>都是采用自锁钢球对拨叉轴进行<font color="cornflowerblue">轴向定位</font>锁止</p>
+<p><font color="cornflowerblue">互锁装置</font>用于防止同时挂上两个档位。如图3－46所示，互锁装置由互锁钢球和互锁销组成。</p>
+<p><font color="cornflowerblue">倒档锁</font>装置用于防止误挂倒档</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291955435.jpeg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/xqyr2/img@main/202109291955435.jpeg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="手动变速器换挡机构结构图"></p>
+<p align="right"><font color="orange">--- 《手动变速器换挡结构图》</font></p>
+
+<h2 id="参考连接"><a href="#参考连接" class="headerlink" title="参考连接"></a>参考连接</h2><p><a href="https://www.qcwxjs.com/shoudongbianshuqi/12391.html">手动变速器换挡机构结构图</a></p>
+]]></content>
+      <categories>
+        <category>汽车构造</category>
+      </categories>
+      <tags>
+        <tag>汽车构造</tag>
+        <tag>变速器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>智能小车</title>
+    <url>/2023050825119/</url>
+    <content><![CDATA[<p><a href="归一化/归一化.md" title="归一化">归一化</a></p>
+<p>水平电感线圈对较远处道路状况相对比较敏感。水平方向的传感器对<strong>前方弯道非常敏感</strong>,有利于提前感知跑道的变化趋势,及早做出准确的控制策略。</p>
+<p>比列K：本文以偏差的二次幂作为比例系数来达到上述目的</p>
+<p>根据两水平电感的和值与差值可以比较容易判断小车在赛道所处的位置</p>
+<p>为提高小车平均速度，使其在较短的时间内完成预定的赛道，速度控制至关重要</p>
+<p><img src="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" class="lazyload placeholder" data-srcset="https://gitee.com/xqyr/img/raw/img/%E7%94%B5%E7%A3%81_pMnL-18-H8.jpg" srcset="https://pic1.zhimg.com/v2-cd38920285d125be80b3eb504052c550_b.webp" alt="电磁_pMnL-18-H8"></p>
+<p>为了保证“小曲率弯道使用较小的Kp,大曲率弯道相应地使用较大的Kp”的原则,本文以<strong>偏差的二次幂</strong>作为比例系数来达到上述目的。</p>
+]]></content>
+      <tags>
+        <tag>比赛，智能小车</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>汽油机电控喷油技术</title>
     <url>/2021092910113/</url>
     <content><![CDATA[<h2 id="供气系统"><a href="#供气系统" class="headerlink" title="供气系统"></a>供气系统</h2><ul>
@@ -2025,5 +2029,250 @@ p\leq1时,发散,\\
 <li>没有旁通空气道，发动机怠速进气量由节气门直接控制的空气供给系统</li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>高中的三观</title>
+    <url>/2023062765152/</url>
+    <content><![CDATA[<p>高三那年我很难受。</p>
+<p>我成绩不好。高一高二那年老师觉得我还可以，想把我当重本生培养。但是我懒或者不适合学某些科目，成绩越来越差。</p>
+<p>我父母很累。我家庭的经济其实不好，父母在做保洁供我读书。母亲一直给我灌输，我们为你读书很幸苦，你要好好读书。我母亲是一个很厉害的女人。我在高靠的压力下，蹦出这样的观念，母亲没有来到我们这样的家庭，会有一个现代女人很精彩的人生。高考的压力</p>
+<p>以上是我能想到的压力。</p>
+<p>我高三很难受，一直不能排解的那种。我能想到上面的原因。但感觉又不是那些原因。反正我高三很少快乐。但是我越不快乐，越是表现的快乐，总是不时的近乎癫狂的兴奋。</p>
+<p>在一次下课时间，我觉得我要写点东西。因为我在高中写了些东西。我感觉我写东西的时候，会排解掉这些情绪。</p>
+<p>以下就是我写的</p>
+<center>
+<b>荷塘说</b> <br>
+
+有荷塘，莲叶茂盛，绿浪盖千里，不见塘底 <br>
+
+根为藕，或玲珑雪白，或色衰            <br>
+
+有蛀洞，其内糟粕                    <br>
+
+果为尸，化为淤泥，养其白藕          <br>
+
+后赏其塘上景                        <br>
+
+莲叶千里，荷花映日，朝气磅礴        <br>
+
+</center>
+
+<ol>
+<li>国家社会将“映日荷花，无穷碧”展现给我们看，却只有少部分人愿意写写下面的浊黑淤泥。</li>
+</ol>
+<p>莲叶没有被吹动或不去拨动莲叶，没有露出塘底景色。</p>
+<p>总是喊着极大的圣人道理，而这些道理也只是为了方便自己。“借”来的道理，终归不是自己的。“道德绑架”，“众口铄金”，’’因为一个缺点讨厌一个人，因为一个优点喜欢一个人。”都是愚昧，目光短浅。</p>
+<ol>
+<li>无意或者有意看见了黑泥。便自以为是了，说世间就是这样，人性就是这样。以道德为工具，做着“理所当然”的恶事。眼中这世界是灰色或黑色的，终不得解脱。古人讲道理太多，自相矛盾。反而讲道理成为了最没用的事情……</li>
+</ol>
+<p>他可知道他的藕在疯狂吸食淤泥的养分，又可知藕上有蛀洞，淤泥也在疯狂侵蚀他。以人性养恶意，生生不息啊。</p>
+<ol>
+<li><p>感受或理解泥下是玲珑雪白藕。泥的浊黑，恶臭养出藕的玲珑雪白。人是荷，是藕，是莲，是美好的事物，不是什么淤泥。不对恶报以绝世之厌恶，不对人报以灭绝之希望。莲之所以能在阳光与清风中摇摆，是因为在藕作根基，泥不能染。困难在于藕深埋于泥之下，不可见。只能宽容理解所向。佛之大慈悲。</p>
+</li>
+<li><p>承认是泥养出的藕。承认藕的死亡终成泥。以恶生善，以善成恶。道之阴阳无极…….</p>
+</li>
+<li><p>再看看映日荷，无穷碧，依然高兴。此举得解脱……</p>
+</li>
+</ol>
+<p>上善若水。流水无意，却滋养万物。我希望，不刻意为善，但日常举动，平常生活，都能给身边的人带来善意。</p>
+<p>我高中一直想一句话，总有一些时刻你会以为自己是狗，甚至狗都不如，但是只要挺过了那段时间，你就会发现原来自己是人。</p>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>qt编程</title>
+    <url>/2023062764278/</url>
+    <content><![CDATA[<p><a href="https://www.zhihu.com/question/516763330/answer/2557951919">(19 封私信 / 82 条消息) 如何优雅的在Windows上使用Qt开发STM32程序呢? - 知乎 (zhihu.com)</a></p>
+<p>基于《学习之路2》学习qt</p>
+<p>我们是推荐在栈上创建组件。因为要靠人工管理<code>new</code>和<code>delete</code>的出错概率要远大于在栈上的自动控制。除此之外，在堆上和在栈上创建已经没有任何区别。</p>
+<h1 id="看看最开始的程序"><a href="#看看最开始的程序" class="headerlink" title="看看最开始的程序"></a>看看最开始的程序</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QApplication&gt;</span></span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* @brief  允许在执行时写参数，这种格式是固定写法</span></span><br><span class="line"><span class="comment">* @pragrm argc 参数个数</span></span><br><span class="line"><span class="comment">*@pragrm argv[] 参数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span> </span>&#123;</span><br><span class="line">   <span class="comment">/*为基于QT Wigets的应用提供主事件循环*/</span></span><br><span class="line">    <span class="function">QApplication <span class="title">a</span><span class="params">(argc, argv)</span></span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*进入主事件循环，直到调用exit()，返回它的值*/</span></span><br><span class="line">    <span class="keyword">return</span> QApplication::<span class="built_in">exec</span>();</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>注：主事件循环是<ol>
+<li>处理分发事件</li>
+<li>初始化和终结程序</li>
+<li>设置系统范围和程序范围</li>
+</ol>
+</li>
+</ul>
+<p>如何理解下面代码：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">Widget::<span class="built_in">Widget</span>(QWidget *parent) :<span class="built_in">QWidget</span>(parent)</span><br></pre></td></tr></table></figure>
+<p>将parent设置为nullptr将构造一个没有父对象的对象。如果对象是一个QWidget，它将成为一个顶级窗口。</p>
+<h1 id="信号和槽-signal-and-slot"><a href="#信号和槽-signal-and-slot" class="headerlink" title="信号和槽(signal and slot)"></a>信号和槽(signal and slot)</h1><p> Qt 5 中，<code>QObject::connect()</code>有五个重载：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*@param sender:发出信号的对象</span></span><br><span class="line"><span class="comment">*@param signal:发出的信号</span></span><br><span class="line"><span class="comment">*@param receiver:接收信号的对象</span></span><br><span class="line"><span class="comment">*@param slot:接收信号后调用的槽函数</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="built_in">connect</span>(sender,   signal,receiver, slot);</span><br><span class="line"></span><br><span class="line"><span class="function">QMetaObject::Connection <span class="title">connect</span><span class="params">(<span class="type">const</span> QObject *, <span class="type">const</span> <span class="type">char</span> *,</span></span></span><br><span class="line"><span class="params"><span class="function">                                <span class="type">const</span> QObject *, <span class="type">const</span> <span class="type">char</span> *,</span></span></span><br><span class="line"><span class="params"><span class="function">                                Qt::ConnectionType)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">QMetaObject::Connection <span class="title">connect</span><span class="params">(<span class="type">const</span> QObject *, <span class="type">const</span> QMetaMethod &amp;,</span></span></span><br><span class="line"><span class="params"><span class="function">                                <span class="type">const</span> QObject *, <span class="type">const</span> QMetaMethod &amp;,</span></span></span><br><span class="line"><span class="params"><span class="function">                                Qt::ConnectionType)</span></span>;</span><br><span class="line"><span class="comment">//这个函数其实是将 this 指针作为 receiver</span></span><br><span class="line"><span class="function">QMetaObject::Connection <span class="title">connect</span><span class="params">(<span class="type">const</span> QObject *, <span class="type">const</span> <span class="type">char</span> *,</span></span></span><br><span class="line"><span class="params"><span class="function">                                <span class="type">const</span> <span class="type">char</span> *,</span></span></span><br><span class="line"><span class="params"><span class="function">                                Qt::ConnectionType)</span> <span class="type">const</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">QMetaObject::Connection <span class="title">connect</span><span class="params">(<span class="type">const</span> QObject *, PointerToMemberFunction,</span></span></span><br><span class="line"><span class="params"><span class="function">                                <span class="type">const</span> QObject *, PointerToMemberFunction,</span></span></span><br><span class="line"><span class="params"><span class="function">                                Qt::ConnectionType)</span></span></span><br><span class="line"><span class="function"><span class="comment">//functor这个类型可以接受 static 函数、全局函数以及 Lambda 表达式。</span></span></span><br><span class="line"><span class="function">QMetaObject::Connection <span class="title">connect</span><span class="params">(<span class="type">const</span> QObject *, PointerToMemberFunction,</span></span></span><br><span class="line"><span class="params"><span class="function">                                Functor)</span></span>;</span><br></pre></td></tr></table></figure>
+<h1 id="添加动作（Action"><a href="#添加动作（Action" class="headerlink" title="添加动作（Action)"></a>添加动作（Action)</h1><p>Qt 将用户与界面进行交互的元素抽象为一种“动作”，使用<code>QAction</code>类表示。</p>
+<p><code>QAction</code>包含了图标、菜单文字、快捷键、状态栏文字、浮动帮助等信息</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @ 给QAction传入了一个icon图标，一个text文本和this指针</span></span><br><span class="line"><span class="comment"> * @param filename 以 : 开始，意味着从资源文件中查找资源</span></span><br><span class="line"><span class="comment"> * @param open 文本值前面有一个 &amp;，意味着这将成为一个快捷键。注意看截图中 File 的 F 有一个下划线。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">    openAction = <span class="keyword">new</span> <span class="built_in">QAction</span>(<span class="built_in">QIcon</span>(<span class="string">&quot;:images/doc-open&quot;</span>), <span class="built_in">tr</span>(<span class="string">&quot;&amp;Open...&quot;</span>),<span class="keyword">this</span>);</span><br><span class="line">  <span class="comment">//使用了setShortcut()函数，用于说明这个QAction的快捷键.Qt 的QKeySequence为我们定义了很多内置的快捷键，比如我们使用的 Open。</span></span><br><span class="line">    openAction-&gt;<span class="built_in">setShortcuts</span>(QKeySequence::Open);</span><br><span class="line">    <span class="comment">//setStatusTip()则实现了当用户鼠标滑过这个 action 时，会在主窗口下方的状态栏显示相应的提示。</span></span><br><span class="line">    openAction-&gt;<span class="built_in">setStatusTip</span>(<span class="built_in">tr</span>(<span class="string">&quot;OPen an existing file&quot;</span>));</span><br><span class="line">   <span class="comment">//点击 槽函数open</span></span><br><span class="line">	<span class="built_in">connect</span>(openAction,&amp;QAction::triggered,<span class="keyword">this</span>,&amp;MainWindow::open);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//下面的menuBar()、toolBar()和statusBar()三个是QMainWindow的函数，用于创建并返回菜单栏、工具栏和状态栏。</span></span><br><span class="line">    QMenu *file = <span class="built_in">menuBar</span>()-&gt;<span class="built_in">addMenu</span>(<span class="built_in">tr</span>(<span class="string">&quot;&amp;File&quot;</span>));</span><br><span class="line">    file-&gt;<span class="built_in">addAction</span>(openAction);</span><br><span class="line">    QToolBar *toolBar = <span class="built_in">addToolBar</span>(<span class="built_in">tr</span>(<span class="string">&quot;&amp;File&quot;</span>));</span><br><span class="line">    toolBar-&gt;<span class="built_in">addAction</span>(openAction);</span><br><span class="line">    <span class="built_in">statusBar</span>() ;</span><br></pre></td></tr></table></figure>
+<h1 id="导入资源文件"><a href="#导入资源文件" class="headerlink" title="导入资源文件"></a>导入资源文件</h1><p><a href="https://www.devbean.net/2012/08/qt-study-road-2-resource-files/">原文连接</a></p>
+<h2 id="cmake"><a href="#cmake" class="headerlink" title="cmake"></a>cmake</h2><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置资源文件名称</span></span><br><span class="line"><span class="keyword">SET</span>(RCC_FILES images.qrc)</span><br><span class="line"><span class="comment"># 添加QRC文件的函数 ,找到包再用函数</span></span><br><span class="line">qt5_add_resources(QRC <span class="variable">$&#123;RCC_FILES&#125;</span>)</span><br><span class="line">//添加</span><br><span class="line"><span class="keyword">add_executable</span>(<span class="variable">$&#123;PROJECT_NAME&#125;</span> <span class="variable">$&#123;QRC&#125;</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="对象模型-MOC"><a href="#对象模型-MOC" class="headerlink" title="对象模型(MOC)"></a>对象模型(MOC)</h1><p>用标准 C++ 编译器编译 Qt 源程序之前，Qt 先使用一个叫做 moc（Meta Object Compiler，元对象编译器）的工具，先对 Qt 源代码进行一次预处理。</p>
+<p>你应当注意到了，信号函数是不需要编写实现代码的，那怎么可以通过标准 C++ 的编译呢？，这其实就是 moc 进行了处理之后的效果。</p>
+<p>Qt 使用 moc，为标准 C++ 增加了一些特性：</p>
+<ul>
+<li>信号槽机制，用于解决对象之间的通讯，这个我们已经了解过了，可以认为是 Qt 最明显的特性之一；</li>
+<li>可查询，并且可设计的对象属性；</li>
+<li>强大的事件机制以及事件过滤器；</li>
+<li><strong>基于上下文的字符串翻译机制（国际化），也就是 tr() 函数，我们简单地介绍过；</strong></li>
+<li>复杂的定时器实现，用于在事件驱动的 GUI 中嵌入能够精确控制的任务集成；</li>
+<li>层次化的可查询的对象树，提供一种自然的方式管理对象关系。</li>
+<li>智能指针（QPointer），在对象析构之后自动设为 0，防止野指针；</li>
+<li>能够跨越库边界的动态转换机制。</li>
+</ul>
+<h2 id="parent-指针"><a href="#parent-指针" class="headerlink" title="parent 指针"></a>parent 指针</h2><p>当你创建一个<code>QObject</code>对象时，会看到<code>QObject</code>的构造函数接收一个<code>QObject</code>指针作为参数，这个参数就是 parent，也就是父对象指针</p>
+<p>我们创建的这个<code>QObject</code>对象会自动添加到其父对象的<code>children()</code>列表。当父对象析构的时候，这个列表中的所有对象也会被析构。</p>
+<p>（<strong>注意，这里的父对象并不是继承意义上的父类！</strong>）</p>
+<p>我们也可以自己删除子对象，它们会自动从其父对象列表中删除。</p>
+<p><code>QObject::dumpObjectTree()</code>和<code>QObject::dumpObjectInfo()</code>这两个函数进行这方面的调试。</p>
+<p>。Qt 保证没有<code>QObject</code>会被 delete 两次，这是由析构顺序决定的。</p>
+<p>看看下面代码</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   QWidget window;</span><br><span class="line">  <span class="function">QPushButton <span class="title">quit</span><span class="params">(<span class="string">&quot;Quit&quot;</span>, &amp;window**)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>作为父组件的 window 和作为子组件的 quit 都是<code>QObject</code>的子类（事实上，它们都是<code>QWidget</code>的子类，而<code>QWidget</code>是<code>QObject</code>的子类）。这段代码是正确的，quit 的析构函数不会被调用两次，因为标准 C++ （ISO/IEC 14882:2003）要求，局部对象的析构顺序应该按照其创建顺序的相反过程。因此，这段代码在超出作用域时，会先调用 quit 的析构函数，将其从父对象 window 的子对象列表中删除，然后才会再调用 window 的析构函数。</p>
+<h1 id="布局管理（layout）"><a href="#布局管理（layout）" class="headerlink" title="布局管理（layout）"></a>布局管理（layout）</h1><p><a href="https://blog.csdn.net/qq_42516974/article/details/107331989?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=qt布局技巧&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-107331989.nonecase">(13条消息) QT常用的布局方法_SharedNotNew的博客-CSDN博客_qt布局技巧</a></p>
+<p>所谓 GUI 界面，归根结底，就是一堆组件的叠加。我们创建一个窗口，把按钮放上面，把图标放上面，这样就成了一个界面。</p>
+<p>我们创建了一个<code>QHBoxLayout</code>对象。显然，这就是一个布局管理器。然后将组件都添加到这个布局管理器，并且把该布局管理器设置为窗口的布局管理器。这些代码看起来都是顺理成章的，应该很容易明白。并且，布局管理器很聪明地做出了正确的行为：保持<code>QSpinBox</code>宽度不变，自动拉伸<code>QSlider</code>的宽度。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">MainWindow::Layout_set</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    spinBox-&gt;<span class="built_in">setRange</span>(<span class="number">0</span>, <span class="number">130</span>);</span><br><span class="line">    slider-&gt;<span class="built_in">setRange</span>(<span class="number">0</span>, <span class="number">130</span>);</span><br><span class="line"></span><br><span class="line">    spinBox-&gt;<span class="built_in">setValue</span>(<span class="number">35</span>);</span><br><span class="line">   layout = <span class="keyword">new</span> QHBoxLayout;</span><br><span class="line">    layout-&gt;<span class="built_in">addWidget</span>(spinBox);</span><br><span class="line">    layout-&gt;<span class="built_in">addWidget</span>(slider);</span><br><span class="line">    <span class="keyword">this</span>-&gt;<span class="built_in">setLayout</span>(layout);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th><a href="https://blog.csdn.net/leacock1991/article/details/118947828?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=QT%E5%B8%83%E5%B1%80layout&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-118947828.nonecase">一些布局类</a></th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QBoxLayout</td>
+<td>水平或垂直排列子控件</td>
+</tr>
+<tr>
+<td>QButtonGroup</td>
+<td>用于组织按钮控件组的容器</td>
+</tr>
+<tr>
+<td>QFormLayout</td>
+<td>管理输入控件和其相关的标签</td>
+</tr>
+<tr>
+<td>QGraphicsAnchor</td>
+<td>表示在QGraphicsAnchorLayout中两个项目之间的锚</td>
+</tr>
+<tr>
+<td>QGraphicsAnchorLayout</td>
+<td>可以在图形视图中将控件锚定在一起的布局</td>
+</tr>
+<tr>
+<td>QGridLayout</td>
+<td>网格布局</td>
+</tr>
+<tr>
+<td>QGroupBox</td>
+<td>带标题的分组框</td>
+</tr>
+<tr>
+<td>QHBoxLayout</td>
+<td>水平排列控件</td>
+</tr>
+<tr>
+<td>QLayout</td>
+<td>几何管理器的基类</td>
+</tr>
+<tr>
+<td>QLayoutItem</td>
+<td>QLayout 操作的抽象item</td>
+</tr>
+<tr>
+<td>QSizePolicy</td>
+<td>描述水平和垂直大小调整策略的布局属性</td>
+</tr>
+<tr>
+<td>QSpacerItem</td>
+<td>布局中的空间隔</td>
+</tr>
+<tr>
+<td>QStackedLayout</td>
+<td>堆栈布局，同一时间只有一个控件可见</td>
+</tr>
+<tr>
+<td>QStackedWidget</td>
+<td>堆栈窗体，同一时间只有一个控件可见</td>
+</tr>
+<tr>
+<td>QVBoxLayout</td>
+<td>垂直排列控件</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li><h3 id="布局类有几个关键的成员函数"><a href="#布局类有几个关键的成员函数" class="headerlink" title="布局类有几个关键的成员函数"></a>布局类有几个关键的成员函数</h3></li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">addSpacing</span><span class="params">(<span class="type">int</span> size)</span></span>; <span class="comment">//添加间隔大小</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">setContentsMargins</span><span class="params">(<span class="number">20</span>,<span class="number">20</span>,<span class="number">20</span>,<span class="number">20</span>)</span></span>;  <span class="comment">//设置外边距</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addStretch</span><span class="params">(<span class="type">int</span> stretch = <span class="number">0</span>)</span></span>; <span class="comment">//添加控件大小比例</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addSpacerItem</span><span class="params">(QSpacerItem *spacerItem)</span></span>; <span class="comment">//添加弹簧</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addWidget</span><span class="params">(QWidget *, <span class="type">int</span> stretch = <span class="number">0</span>, Qt::Alignment alignment = Qt::Alignment())</span></span>;<span class="comment">//添加普通控件</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addLayout</span><span class="params">(QLayout *layout, <span class="type">int</span> stretch = <span class="number">0</span>)</span></span>;<span class="comment">//添加子布局</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">addStretch</span><span class="params">()</span></span>; <span class="comment">//加入 空间间隔 占位符，使两个按钮靠右对齐</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="信号重载"><a href="#信号重载" class="headerlink" title="信号重载"></a>信号重载</h1><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">QObject::<span class="built_in">connect</span>(spinBox, &amp;QSpinBox::valueChanged, slider, &amp;QSlider::setValue);</span><br></pre></td></tr></table></figure>
+<p>当我们使用<code>&amp;QSpinBox::valueChanged</code>取函数指针时，编译器不知道应该取哪一个函数（记住前面我们介绍过的，经过 moc 预处理后，signal 也是一个普通的函数。）的地址，因此报错。解决的方法很简单，编译器不是不能确定哪一个函数吗？那么我们就显式指定一个函数。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方法就是，我们创建一个函数指针，这个函数指针参数指定为 int：</span></span><br><span class="line"><span class="built_in">void</span> (QSpinBox:: *spinBoxSignal)(<span class="type">int</span>) = &amp;QSpinBox::valueChanged;</span><br><span class="line"><span class="comment">//然后我们将这个函数指针作为 signal，与 QSlider 的函数连接：</span></span><br><span class="line">QObject::<span class="built_in">connect</span>(spinBox, spinBoxSignal, slider, &amp;QSlider::setValue);</span><br><span class="line"></span><br><span class="line"><span class="comment">//同上</span></span><br><span class="line">QObject::<span class="built_in">connect</span>(&amp;newspaper,</span><br><span class="line">                 (<span class="built_in">void</span> (Newspaper:: *)(<span class="type">const</span> QString &amp;, <span class="type">const</span> QDate &amp;))&amp;Newspaper::newPaper,</span><br><span class="line">                 &amp;reader,</span><br><span class="line">                 &amp;Reader::receiveNewspaper);</span><br></pre></td></tr></table></figure>
+<p>也可以</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">QObject::<span class="built_in">connect</span>(&amp;newspaper,</span><br><span class="line">                 <span class="built_in">static_cast</span>&lt;<span class="built_in">void</span> (Newspaper:: *)(<span class="type">const</span> QString &amp;, <span class="type">const</span> QDate &amp;)&gt;(&amp;Newspaper::newPaper),</span><br><span class="line">                 &amp;reader,</span><br><span class="line">                 &amp;Reader::receiveNewspaper);</span><br></pre></td></tr></table></figure>
+<p>下一篇对话框。。。。</p>
+<p><a href="https://doc.qt.io/qt.html">第三方库</a></p>
+<h1 id><a href="#" class="headerlink" title=" "></a> </h1>]]></content>
+      <tags>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>屋外的树</title>
+    <url>/2023062747006/</url>
+    <content><![CDATA[<p>在我小时候，我家屋外有三棵果树。两株橘子树和一棵梨树。</p>
+<p>橘子树一矮一高。矮的那株就算是小时后的我用力够一够也能够碰到枝丫，将橘子摘下。不过我摘完那几个够得着的橘子后，想要再吃到橘子。就要叫大人了。但是小时候的我通常都是不好叫大人帮忙的。因为通过自己摘子。感觉自己有一份独特的本领。特别是我将摘下的橘子拿个大人的时候，大人们总会用逗小孩的语气夸赞我，这对我是几位受用的。</p>
+<p>这颗橘子树虽然矮，但是却不好爬上去。枝丫都比较细，我还没有抓住树枝增上去呢，树枝就断了。但是那高处的橘子却总是诱惑着我。我在屋外玩泥土，找蚯蚓的时候总是能看见那树上的橘子。这样的念头跑到一个小孩的脑中，就会让他不知不觉中去爬那棵树。但树枝却总被我扳断。这时候母亲就会出来骂我，说我顽皮。有几次还差点被母亲用那断枝教训。</p>
+<p>相比于那棵矮树。他右边那棵高的橘子树就好爬的很多。它有许多向外支出的粗壮的树枝。我能用手抓住那些树枝蹭上去。只需要几步，我就能爬到很高，大概三四米的样子。这时候大人们又出现了。他们并没有佩服我的爬树能力。只是骂我，说这样很危险。我能也只好从树上下来了。但是这样的教训却没有让我感到沮丧，我只是怕被打。我能从他们那生气而又担心的语气中听出他们是绝不会做这样危险的事情的。这不像摘橘子。大人们都能够做到，而这个爬树我却是超越了大人。</p>
+<p>以后我也会趁他们的目光不在我身上的时候，爬到树上去，靠着树枝，半躺着，摘橘子吃。他们慢慢的也表现出了无奈。又换了另外一种方法说我，橘子吃多了会上火。我自然不信，当然也不知道上火的具体意思。可每年这个时候我嘴巴都会生疮。这就不由得我不信了。</p>
+<p>那棵梨树，我确实想不到有趣的记忆了。它又高又少枝丫。记得他那光秃秃的主杆总是留着一些黄色透明固体。它结的梨，我想吃的话也只有去拿一根长长的杆子打下了。但是通常打下了的梨，就是已经面目全非了。好像它的果子有些时候很涩，有些时候却有些甜味。</p>
+<p>大人告诉我这三棵果树包括后山上的几棵果树都是爷爷年轻时候种的。那时候如果母亲从集市上买回水果，我吃的时候就总会问，我们可以在屋外种吗？母亲也对这个话题有兴趣，会和我聊几句。但是吃完水果后，母亲忘了，我也忘了。我也试过将水果的种子埋到土里，但是都没有涨起来。</p>
+<p>我们都知道树可以活很多年。但这三棵果树却没有活过我的童年。好像是因为树干中空死了。好像因为树挡了上山干活人的路。这些都是大人告诉我的。我也记得在树被父亲砍了的前年，那棵矮树结的果子不太甜了。</p>
+<p>当我放学回家，发现树没有了，我是生气和沮丧的。但是父母给了我理由，我也找不到生气的理由，好像还有一点懵。我没有想过树会没有。</p>
+<p>后来父亲从外面拿了两株树苗。因为我家屋外那小路下面就是一片鱼塘。父亲说需要有树的根巩固泥土，要不小路容易塌。可这两株树苗不是果树。我是有点失落的。</p>
+<p>现在爷爷栽的树没了。父亲栽的两株树长成了两簇灌木丛。他们说这树就是这样的。</p>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>划过天空的橙红</title>
+    <url>/2023062717402/</url>
+    <content><![CDATA[<p>我在小学的时候。上学的路有两条，一条常走的公路，和另一条池塘边的小路。那次我不知为什么走了小路。</p>
+<p>其实到现在了，我已经不记得那是什么时候了。 在我开始回想的时候，那个池塘已经是池塘，而不是稻田。可稻田变成池塘还是几年的事。不过那天我确实在那条路上看到，澄清的天空有一条太阳色的流星划过，我还为此犹豫是上课还是去追寻它掉落的方向。</p>
+<p>我是选择了走向学校。这并不是因为我爱学习。只是因为我的怯懦，和意识到他掉落的地方是我所不能达到的。</p>
+<p>我背对它去上学，期间也回过头看过一次，不过短暂。它就在我的背后划过。之后再回过头看就只剩白天了。我也不能证明它的存在。</p>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我在末日当丧尸</title>
+    <url>/2023062734107/</url>
+    <content><![CDATA[<p>我正在一堆被血侵染的杂物里翻着东西，还不时将带有较多血液的布料放入嘴中咀嚼。周围是残败的建筑，和还燃烧着的汽车。</p>
+<p>刚才这里大约有七八个人正在与丧尸搏斗，可以看出那七八个人也是在这末日中身经百战的。杀伐果断。但是丧失的数量越来越多。不出意外的被越来越多的丧尸淹没。等到丧尸都离开后。只留下了这些被血侵染的衣物和武器。</p>
+<p>每次看见人类我都会躲得远远的。因为我知道能够活到现在的人类没有一个是善茬。我的左手就是被一个我想啃他脑袋的人，用喷子打断的。那次因为有其他丧尸冲上去了，我才能趁机逃跑，活到现在。</p>
+<p>之后我就会跟在一群丧尸的后面。保持一定的距离。等到他们发现人类，攻下人类后，我才上去，吃早已被数百只丧尸吃过的现场。</p>
+<p>要不是我腰上的那块腐肉已经脱落了。膝盖也长满了蛆虫。拖着这条快腐烂完全的腿越来越费劲。我也不会冒险离人类活动区这么近。我需要生肉来修复我的身体。</p>
+<p>没错。我是一只丧尸。</p>
+<p>其实我以前也是人类。但人类的记忆终止于一个周日的中午。我吃了自己做好的午饭，去躺在床上睡午觉，一觉醒来，映入眼帘的就是倒塌的大楼，染血的街道。一群丧尸大军正追赶这一群人。而我正在丧尸群中。</p>
+<p>当我正再惊愕，还没有反应过来是什么情况的时候。我那短暂的意识又消失了。再次醒来已经是夜晚。我一个人，不，应该说一只丧尸在街上漫无目的游荡。<br>我不知道我这种成为丧尸后还能恢复意识的算不算唯一。但绝对是特列。因为到现在我还没有遇到一只丧尸和我一样有人类的意识的。</p>
+<p>刚开始认识到每次恢复意识只有短暂的时间。我就趁着有意识往远离人类的地方，往城外走去。我可不想在不清不楚的时候，被砍下脑袋。后来发现这样不行。变成丧尸后，身体就会像尸体一样腐烂。我也尝试过吃食物，类似于水果，米饭之类的、但是都难以下咽，就算是强迫自己，硬吞下去。到最后也是不能消化。直接从已经腐烂的肚子里滚出来。只有吃生肉。什么生肉都可以。吃下去就会慢慢修复我的身体。腐烂的地方也会在吃下去后慢慢长出好的肉来。当然人肉是在所有肉中最美味的。</p>
+<p>刚开始，我苏醒的人类意识所具有的伦理道德并不允许我吃人肉。所以我只好尝试捕捉动物。我会用我人类的知识事先布好陷阱。之后就算失去意识。我的那些陷阱有的也会起作用。当我恢复意识的时候。就会去查看陷阱的成果。刚开始我看着受伤或者已经死了的动物，虽然我想要吃掉它们，但是还是下不去口。只有等到我失去意识后才会凭借着丧尸的本能吃掉它们。</p>
+<p>但是就连动物也会变成丧尸。随着一天一天过去，越来越多的动物变成丧尸。而我也很难再捕捉到，甚至遇到活生生的动物。我能吃的东西越来越少，我的这副丧尸身体也越来越腐朽。</p>
+<p>有的人类持有这样一种观点，他们认为人一旦变成丧尸就是死了。吃人，游荡，吼叫……之后的一切行动都是没有意识的机械的活动。</p>
+<p>但是当我觉醒意识后。我能清醒感受到对吃人肉的欲望，在很久没有吃肉后，我也能清醒的感受到我正在死亡，伴随而来的还有恐惧和不甘。我不知道这是不是我人类意识和丧尸欲望混合后产生的畸形情绪。但是我清楚的知道我要活下去。</p>
+<p>为了活下去，我就必须吃人。</p>
+<p>我开始向着有人的地方走去。有时候失去意识，随意游荡时，也没有太偏离路线。</p>
+<p>我又回到了城市。</p>
+]]></content>
+      <tags>
+        <tag>落日飘绪</tag>
+      </tags>
   </entry>
 </search>
