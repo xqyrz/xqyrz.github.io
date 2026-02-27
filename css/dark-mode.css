@@ -1,0 +1,70 @@
+/* 深色模式全局变量覆盖 */
+body.dark-mode {
+    --bg-light: #121212;          /* 深色背景主色 */
+    --bg-gray: #1e1e1e;           /* 深色背景次要色 */
+    --text-dark: #e0e0e0;         /* 深色文本主色 */
+    --white: #1f1f1f;             /* 深色模式下的"白色"（卡片/导航背景） */
+    --secondary-color: #a0a0a0;   /* 深色模式次要文本色 */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);  /* 深色模式阴影 */
+    --shadow-md: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* 导航栏深色样式 */
+.dark-mode .header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .logo,
+.dark-mode .nav-link,
+.dark-mode .mobile-nav-link,
+.dark-mode .menu-btn {
+    color: var(--text-dark);
+}
+
+.dark-mode .nav-link:hover,
+.dark-mode .mobile-nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* 首页板块深色样式 */
+.dark-mode .home-section {
+    background-color: #165DFF15;  /* 主色调半透明适配深色 */
+}
+
+/* 卡片类组件深色样式（关于、技能、联系表单） */
+.dark-mode .about-card,
+.dark-mode .skill-card,
+.dark-mode .contact-form {
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+/* 表单输入框深色样式 */
+.dark-mode .form-input {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+    color: var(--text-dark);
+}
+
+.dark-mode .form-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px #165DFF30;
+}
+
+/* 页脚深色样式（加深对比度） */
+.dark-mode .footer {
+    background-color: #0f0f0f;
+}
+
+.dark-mode .copyright {
+    color: #888888;
+}
+
+.dark-mode .social-link {
+    color: #888888;
+}
+
+.dark-mode .social-link:hover {
+    color: var(--text-dark);
+}

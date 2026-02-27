@@ -1,0 +1,23 @@
+[
+    {
+        "title": "CAN 016",
+        "filename": "can-016.html",
+        "cover": "https://picsum.photos/800/1000?random=16",
+        "description": "Gray start to the year with snow. Everything stands still at the edges of the city. Ilford HP5+ at 800.",
+        "keywords": ["Adox XT-3", "Ilford HP5+", "Revue SC4"]
+    },
+    {
+        "title": "CAN 015",
+        "filename": "can-015.html",
+        "cover": "https://picsum.photos/800/1000?random=15",
+        "description": "Sunny 16 estimates on a cold Sunday in January with Fomapan 200 in the Praktica. Winter sun through 20mm Flektogon.",
+        "keywords": ["Adox XT-3", "Fomapan 200", "Praktica MTL3"]
+    },
+    {
+        "title": "CAN 014",
+        "filename": "can-014.html",
+        "cover": "https://picsum.photos/800/1000?random=14",
+        "description": "Harbor towns and some findings on the way from Lohals to Bagenkop. Revue SC4 loaded with Ilford HP5+.",
+        "keywords": ["Adox D-76", "Ilford HP5+", "Revue SC4"]
+    }
+]
